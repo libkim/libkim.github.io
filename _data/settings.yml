@@ -2,9 +2,9 @@
 analytics-id: #leave blank to not use Analytics
 
 #Subtitle
-subtitle:
+subtitle: 엎질러진 글들의 도서관
   active: true
-  text: Lib Kim\Library
+  text: Library Of Spilled Text
 
 #Nav 
 nav:
