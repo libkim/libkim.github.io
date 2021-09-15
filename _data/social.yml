@@ -3,5 +3,5 @@
 
 
 social:
-  - {icon: 'github', type: "brand", link: 'https://www.github.com/pandasekh'}
+  - {icon: 'github', type: "brand", link: 'https://www.github.com/libkim'}
   - {icon: 'rss', type: "solid", link: "/feed.xml"}
