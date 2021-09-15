@@ -1,6 +1,6 @@
 # Site settings
-title: 솔라빔
-description: "Lib Kim Library"
+title: Lib Kim
+description: "Lib Kim\Library"
 url: "https://libkim.github.io"
 baseurl: "/"
 author:
@@ -27,7 +27,6 @@ facebook:
 logo: /assets/img/logo.jpg
 social:
   links: #List your social links here
-    - https://www.pixiv.net/users/62783858
     - https://www.github.com/pandasekh
     - https://www.linkedin.com/in/alessio-franceschi/
 webmaster_verifications:
