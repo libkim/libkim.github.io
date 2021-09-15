@@ -1,6 +1,6 @@
 # Site settings
 title: Lib Kim
-description: "Library"
+description: "일기장"
 url: "https://libkim.github.io"
 baseurl: "/"
 author:
