@@ -4,4 +4,5 @@
 
 social:
   - {icon: 'github', type: "brand", link: 'https://www.github.com/libkim'}
+  - {icon: 'itch-io', type: "brand", link: 'https://libkimkilllab.itch.io'}
   - {icon: 'rss', type: "solid", link: "/feed.xml"}
