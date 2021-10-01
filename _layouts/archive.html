@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Archive
 ---
 
-{% assign postsByDate =
-    site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}
+{% assign postsByDate = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}
 {% for year in postsByDate %}
   <h2 class = "archive-date" id = "date-{{post.date | date: "%B %Y"}}">{{ year.name }}</h2>
     <ul>
