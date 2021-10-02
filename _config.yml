@@ -2,7 +2,7 @@
 title: 솔라빔
 description: "엎질러진 글들의 도서관"
 url: "https://libkim.github.io"
-baseurl: "/"
+baseurl:
 author:
   name: "libkim"
   email: "libkimh@gmail.com"
