@@ -1,15 +1,18 @@
 <!doctype html>
 <html>
+  
 <head>
-  {% render "head" %}
+  {% include head.html %}
 </head>
+  
 <body>
   <div class="container">
-    {% render "header" %}
+    {% include header.html %}
     <div class="post-container">
       {{ content }}
     </div>
   </div>
-{%- render "footer" -%}
+{% include footer.html %}
 </body>
+  
 </html>
