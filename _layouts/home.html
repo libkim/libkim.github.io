@@ -6,27 +6,24 @@ layout: default
 
 <div class="post">
   <h2 id="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-    {% if site.data.settings.date-under-post.active %} 
-    <div class = "post-info">
-        <span>
-            <i class="far fa-calendar" aria-hidden="true"></i>
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time> - <i class="far fa-clock"></i> 
-            {% include reading_time.html %}
-        </span>
+  {% if site.data.settings.date-under-post.active %}
+    <div class="post-info">
+      <i class="far fa-calendar" aria-hidden="true"></i>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time> - <i class="far fa-clock"></i>
+      {% include reading_time.html %}
     </div>
-    {% endif %}
+  {% endif %}
 
-    {% if site.data.settings.featured-img.active %}
+  {% if site.data.settings.featured-img.active %}
     <div class = "featured-img-container">
-    {% if post.image %}
-        <a href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}"/></a>
-    {% endif %}
-    {% if post.gif %}
-        <a href="{{ post.url | relative_url }}">{% include gif.html file = post.gif %}</a>
-    {% endif %}
+      {% if post.image %}
+        <a href="{{ post.url }}"><img src="{{ post.image }}"/></a>
+      {% endif %}
+      {% if post.gif %}
+        <a href="{{ post.url }}">{% include gif.html file = post.gif %}</a>
+      {% endif %}
     </div>
-    {% endif %}
+  {% endif %}
 
     <p>
         {% if post.customexcerpt %}
