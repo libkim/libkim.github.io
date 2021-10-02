@@ -1,6 +1,3 @@
-#Google Analytics
-analytics-id: #leave blank to not use Analytics
-
 #Subtitle
 subtitle:
   active: true
