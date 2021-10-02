@@ -5,17 +5,16 @@
       <h2>{{ site.data.settings.subtitle.text }}</h2>
     {% endif %}
   </div>
-
-	<div id="subheader">
-		{% if site.data.settings.nav.pages.active %}
-		<nav class="pages">
-			{%- include pages.html -%}
-		</nav>
-		{% endif %}
-		{% if site.data.settings.nav.social.active %}
-		<nav class="social">
-			{% include social.html %}
-		</nav>
-		{% endif %}
-	</div>
+  <div id="subheader">
+    {% if site.data.settings.nav.pages.active %}
+      <nav class="pages">
+        {% include pages.html %}
+      </nav>
+    {% endif %}
+    {% if site.data.settings.nav.social.active %}
+      <nav class="social">
+        {% include social.html %}
+      </nav>
+    {% endif %}
+  </div>
 </header>
