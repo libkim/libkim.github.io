@@ -1,3 +1,4 @@
 pages:
-  - {name: '나', url: 'about.html'}
-  - {name: '일기', url: 'contact.html'}
+  - {name: '자료실', url: 'about.html'}
+  - {name: '연속간행물실', url: 'contact.html'}
+  - {name: 'DB', url: 'contact.html'}
