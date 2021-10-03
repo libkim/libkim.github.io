@@ -7,7 +7,7 @@ author:
   name: libkim
   email: 'libkimh@gmail.com'
   url: 'https://libkim.github.io'
-permalink: /:year/:month/:day/:title:output_ext
+permalink: /:year/:month/:day/:title
 
 #Plugins
 plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
