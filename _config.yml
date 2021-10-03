@@ -1,12 +1,12 @@
 # Site settings
 title: 솔라빔
-description: "엎질러진글들의도서관"
-url: "https://libkim.github.io"
+description: 엎질러진글들의도서관
+url: 'https://libkim.github.io'
 baseurl:
 author:
-  name: "libkim"
-  email: "libkimh@gmail.com"
-  url: "https://libkim.github.io"
+  name: libkim
+  email: 'libkimh@gmail.com'
+  url: 'https://libkim.github.io'
 permalink: /:year/:month/:day/:title:output_ext
 
 #Plugins
@@ -26,9 +26,9 @@ facebook:
   admins:
 logo: /assets/img/logo.jpg
 social:
-  links: #List your social links here
-    - https://www.github.com/pandasekh
-    - https://www.linkedin.com/in/alessio-franceschi/
+  links:
+    - https://github.com/pandasekh
+    - https://linkedin.com/in/alessio-franceschi/
 webmaster_verifications:
   google:
   bing:
