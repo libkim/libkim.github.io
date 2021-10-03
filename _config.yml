@@ -1,7 +1,7 @@
 # Site settings
 title: 솔라빔
 description: 엎질러진글들의도서관
-url: 'https://libkim.github.io'
+url: 'https://libkim.github.io/'
 baseurl:
 author:
   name: libkim
