@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 립
+title: Lib
 permalink: /lib
 ---
 
