@@ -1,10 +1,19 @@
 <header id="header">
-  <div id="site_title">
-    <a href="{{ site.url }}"><h1>{{ site.title }}</h1></a>
-    {% if site.data.settings.subtitle.active %}
-      <h2>{{ site.data.settings.subtitle.text }}</h2>
-    {% endif %}
+  
+  <div id="titSite">
+    {% unless page.title == "404" %}
+      <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+      {% if site.data.settings.subtitle.active %}
+        <h2>{{ site.data.settings.subtitle.text }}</h2>
+      {% endif %}
+    {% else %}
+      <h1>{{ page.title }}</h1>
+      {% if site.data.settings.subtitle.active %}
+        <h2>{{ page.description }}</h2>
+      {% endif %}
+    {% endunless %}
   </div>
+  
   <div id="subheader">
     {% if site.data.settings.nav.pages.active %}
       <nav class="pages">
