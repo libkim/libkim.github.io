@@ -1,4 +1,4 @@
 pages:
-  - {name: '자료실', url: '/referenceroom'}
-  - {name: '연속간행물실', url: '/periodicalroom'}
-  - {name: 'DB', url: '/contact'}
+  - {name: '신분증', url: '/about'}
+  - {name: '갈증', url: '/thirst'}
+  - {name: '염증', url: '/flame'}
