@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lib
-permalink: /lib
+permalink: /about
 ---
 
 # [YAMT - Yet Another Minimal Theme](https://yamt.netlify.app/)
