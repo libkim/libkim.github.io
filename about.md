@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 자료실
-permalink: /about
+title: 립
+permalink: /lib
 ---
 
 # [YAMT - Yet Another Minimal Theme](https://yamt.netlify.app/)
