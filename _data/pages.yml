@@ -2,4 +2,4 @@ pages:
   - {name: '립', url: '/about'}
   - {name: '아크', url: '/archive'}
   - {name: '시리얼라이즈드', url: '/serialized'}
-  - {name: '다타바세', url: '/database'}
+  - {name: 'DB', url: '/database'}
