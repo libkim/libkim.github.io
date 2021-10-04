@@ -1,5 +1,5 @@
 ---
 layout: default
 title: DB
-permalink: /db
+permalink: /database
 ---
