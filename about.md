@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: 자료실
 permalink: /about
 ---
 
