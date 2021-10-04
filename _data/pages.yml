@@ -1,4 +1,4 @@
 pages:
-  - {name: '자료실', url: '/referenceroom.html'}
-  - {name: '연속간행물실', url: '/periodicalroom.html'}
+  - {name: '자료실', url: '/referenceroom'}
+  - {name: '연속간행물실', url: '/periodicalroom'}
   - {name: 'DB', url: '/contact'}
