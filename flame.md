@@ -1,5 +1,5 @@
 ---
 layout: default
-title: 염증
-permalink: /flame
+title: 스템
+permalink: /stem
 ---
