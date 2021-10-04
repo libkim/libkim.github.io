@@ -1,4 +1,5 @@
 pages:
-  - {name: '신분증', url: '/about'}
-  - {name: '갈증', url: '/thirst'}
-  - {name: '염증', url: '/flame'}
+  - {name: '립', url: '/about'}
+  - {name: '아크', url: '/archive'}
+  - {name: '시리얼라이즈드', url: '/serialized'}
+  - {name: 'DB', url: '/database'}
