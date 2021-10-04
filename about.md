@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lib
+title: about
 permalink: /about
 ---
 
