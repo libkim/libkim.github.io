@@ -1,7 +1,7 @@
 <header id="header">
   
   <div id="titSite">
-    {% unless page.title == "404" %}
+    {% if page.title != "404" %}
       <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
       {% if site.data.settings.subtitle.active %}
         <h2>{{ site.data.settings.subtitle.text }}</h2>
@@ -11,7 +11,7 @@
       {% if site.data.settings.subtitle.active %}
         <h2>{{ page.description }}</h2>
       {% endif %}
-    {% endunless %}
+    {% endif %}
   </div>
   
   <div id="subheader">
