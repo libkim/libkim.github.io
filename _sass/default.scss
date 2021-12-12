@@ -7,38 +7,6 @@
 	src: url(/assets/font/ChosunKg.woff);
 }
 
-@media {
-	body {
-		background-color: white;
-		font-family: "Noto Sans KR", sans-serif;
-		color: black;
-		header {
-			width: 50vw;
-			height: 100px;
-			float: left;
-			h1 {
-				text-align: center;
-				a {
-					color: black;
-					text-decoration: none;
-				}
-			}
-			h2 {
-				text-align: center;
-			}
-		}
-		nav {
-			width: 50vw;
-			height: 100px;
-			float: right;
-
-			h3 {
-				color: gray;
-			}
-		}
-	}
-}
-
 @media print {
 	body {
 		background-color: white;
