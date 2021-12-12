@@ -29,7 +29,7 @@ mathjax:
 #Show related posts based on categories
 related-posts:
   active: true
-  title: "You May Also Enjoy"
+  title: 'You May Also Enjoy'
 
 #Comments
 comments: true

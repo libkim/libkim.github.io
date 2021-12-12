@@ -16,21 +16,21 @@
 
     a{
         text-decoration: none;
-        color: $base;
+        color: $another-sec-color;
     }
 
     a:hover{
-        color: black;
+        color: $secondary-color;
     }
 
     .paginate-button{
-        border: 1px solid #e0e0e0;
+        border: 1px solid $accent-color;
         border-radius: 3px;
         padding: 15px 35px;
         display: inline-block;
         font-size: 16px;
     }
     .paginate-button:hover{
-        background-color: $light-grey;
+        background-color: $accent-color;
     }
 }

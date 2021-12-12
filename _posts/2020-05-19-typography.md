@@ -1,4 +1,4 @@
----
+﻿---
 title: Typography
 layout: post
 categories: [Typography, Markdown]
@@ -13,7 +13,7 @@ Reference: [GitHub flavored Markdown](https://help.github.com/en/github/writing-
 
 
 
-## Styling text
+## 스타일링 텍스트
 **bold**
 {% highlight markdown %}
 **bold**
@@ -34,7 +34,7 @@ Reference: [GitHub flavored Markdown](https://help.github.com/en/github/writing-
 ***bold and italic***
 {% endhighlight %}
 
-## Quotes
+## 참조 Quotes
 >This is a quote
 {% highlight markdown %}
 >This is a quote
@@ -48,7 +48,7 @@ Reference: [GitHub flavored Markdown](https://help.github.com/en/github/writing-
 ><cite><a href="#">The author</a></cite>
 {% endhighlight %}
 
-## Links
+## 링크들 Links 1234
 Theme designed by [Alessio Franceschi](https://alessiofranceschi.me).
 {% highlight markdown %}
 Theme designed by [Alessio Franceschi](https://alessiofranceschi.me).
@@ -59,7 +59,7 @@ Links can also be relative. [Like this one](/contact.html).
 Links can also be relative. [Like this one](/contact.html).
 {% endhighlight %}
 
-## Lists
+## 리스트 Lists
 Unordered:
 - this
 - is

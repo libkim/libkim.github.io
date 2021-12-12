@@ -2,16 +2,13 @@
     html{
         overflow-y: auto;
     }
-    .container {
-        width: 88vw;
-    }
-    #header{
+    header{
         width: 80vw;
         #subheader{
             display: flex;
             flex-flow: column wrap;
             align-items: center;
-            .pages{
+            #pages{
                 margin-top: 12px;
                 order: 2;
                 text-align: center;
@@ -19,7 +16,7 @@
                     font-size: 1.15rem;
                 }
             }
-            .social{
+            #social{
                 order: 1;
                 i{
                     font-size: 1.3rem;

@@ -1,20 +1,24 @@
-# Site settings
-title: 솔라빔
-description: 엎질러진글들의도서관
+#Site settings
+title: '솔라빔'
+description: '엎질러진글들의도서관'
 url: 'https://libkim.github.io/'
 baseurl:
-author:
-  name: libkim
-  email: 'libkimh@gmail.com'
-  url: 'https://libkim.github.io'
-permalink: /:year/:month/:day/:title
+permalink: '/:year/:month/:day/:title'
+
+#Manifest
+manifest_name: 'Web App Full Name'
+manifest_short_name: 'Short Name' # Appears in "Add to home screen" dialogues and may have other importance also
+manifest_lang: en
+manifest_background_color: white
+manifest_short_name:
+manifest_display: standalone
 
 #Plugins
 plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 
 #Pagination
 paginate: 3
-paginate_path: "/page:num/"
+paginate_path: '/page:num/'
 
 #SEO
 twitter:
@@ -27,8 +31,8 @@ facebook:
 logo: /assets/img/logo.jpg
 social:
   links:
-    - https://github.com/pandasekh
-    - https://linkedin.com/in/alessio-franceschi/
+    - 'https://github.com/pandasekh'
+    - 'https://linkedin.com/in/alessio-franceschi/'
 webmaster_verifications:
   google:
   bing:
@@ -39,7 +43,7 @@ lang: en_US
 
 #Highlighter
 kramdown:
-  input:          GFM
+  input: GFM
   syntax_highlighter: rouge
 
   syntax_highlighter_opts:
@@ -50,7 +54,7 @@ kramdown:
       line_numbers: false
       start_line: 1
 
-#Sass
+# Sass
 sass:
   style: compressed
   sourcemap: never

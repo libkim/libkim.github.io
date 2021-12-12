@@ -10,7 +10,7 @@
         text-decoration: underline;
     }
     a:visited{
-       color: $base; 
+       color: $another-sec-color;
     }
 }
 
@@ -20,5 +20,5 @@
     width: 5rem;
     height: 1px;
     margin: 23px auto;
-    background-color: #d5d5d5;
+    background-color: $accent-color;
 }

@@ -2,6 +2,5 @@
 # and add it's color in /_sass/social.scss. Brand defines Font Awesome's font type (fas is solid, fab is brand).
 
 social:
-  - {icon: 'github', type: 'brand', link: 'https://github.com/libkim'}
-  - {icon: 'itch-io', type: 'brand', link: 'https://libkimkilllab.itch.io'}
-  - {icon: 'rss', type: 'solid', link: '/feed.xml'}
+  - {icon: github, type: brand, link: 'https://github.com/libkim'}
+  - {icon: 'itch-io', type: brand, link: 'https://libkimkilllab.itch.io'}
