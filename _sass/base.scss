@@ -88,9 +88,8 @@ html {
 		width: 0; flex-grow: 0;
 		transform-origin: center bottom;
 	}
-	li:hover::after {
-	}
 }
+
 #markdown-toc:hover {
 	transform: rotate(0);
 	li {
