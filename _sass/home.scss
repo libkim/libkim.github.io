@@ -1,14 +1,3 @@
-.featured-img-container{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    img{
-        max-width: 100%;
-        height: auto;
-        max-height: 450px;
-        @include border(7px);
-    }
-}
-
 .continue-reading{
     a{
         color: $another-sec-color;
@@ -19,9 +8,4 @@
     a:hover{
         color: black;
     }
-}
-
-.post-info{
-    font-size: 1rem;
-    color: $another-sec-color;
 }

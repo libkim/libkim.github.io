@@ -1,7 +1,7 @@
 #Site settings
 title: '솔라빔'
 description: '엎질러진글들의도서관'
-url: 'http://127.0.0.1:4000/'
+url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
 

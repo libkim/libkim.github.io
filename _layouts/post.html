@@ -3,11 +3,14 @@ layout: default
 ---
 
 <article class="post">
-	<h3>{{ page.title }}</h3>
+	<div class="post-title">
+		<h3>{{ page.title }}</h3>
+	</div>
+	
 	{% if site.data.settings.date-under-post.active %}
-		<p class="post-info">
-			{{ page.date | date_to_string }}
-		</p>
+		<div class="post-info">
+			<p>{{ page.date | date_to_string }}</p>
+		</div>
 	{% endif %}
 
 	{{ content }}
