@@ -24,28 +24,26 @@ layout: default
 				</div>
 			</div>
 
-			<div class="flex-col-container">
-				<div class="thumbnail">
-					{% if post.image %}
-						<a href="{{ post.url }}"><img src="{{ post.image }}"/></a>
+			<div class="thumbnail">
+				{% if post.image %}
+					<a href="{{ post.url }}"><img src="{{ post.image }}"/></a>
+				{% endif %}
+
+				{% if post.gif %}
+					<a href="{{ post.url }}">{% include gif.html file = post.gif %}</a>
+				{% endif %}
+			</div>
+
+			<div class="text-preview">
+				<p>
+					{% if post.customexcerpt %}
+						{{ post.customexcerpt | strip_html | truncatewords:50 }}
+					{% else %}
+						{{ post.content | strip_html | truncatewords:50 }}
 					{% endif %}
-	
-					{% if post.gif %}
-						<a href="{{ post.url }}">{% include gif.html file = post.gif %}</a>
-					{% endif %}
-				</div>
-				
-				<div class="text-preview">
-					<p>
-						{% if post.customexcerpt %}
-							{{ post.customexcerpt | strip_html | truncatewords:50 }}
-						{% else %}
-							{{ post.content | strip_html | truncatewords:50 }}
-						{% endif %}
-			
-						<span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continue reading...</a></span>
-					</p>
-				</div>
+		
+					<span class = "continue-reading"><a href="{{ post.url | relative_url }}">Continue reading...</a></span>
+				</p>
 			</div>
 		</div>
 	</article>
