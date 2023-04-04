@@ -1,20 +1,18 @@
 - title: エア・ギア
-  plat: tva
-  ser:
+  platform: tva
+  oad:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
-      plat: oad
     
 - title: PandoraHearts
-  plat: tva
+  platform: tva
 
 - title: 괴물이야기
-  plat: tva
-  ser:
+  platform: tva
+  film:
     - title: 상처이야기
-      plat: flim
   
 - title: 세토의 신부
-  plat: tva
+  platform: tva
 
 - title: ハウルの動く城
   plat: film
