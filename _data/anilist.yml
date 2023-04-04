@@ -1,18 +1,16 @@
 anilist:
   - title: エア・ギア
-  pltf: tva
-  
-  - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
-    type: oad
+    plat: tva
+    - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
+      plat: oad
     
-- title: PandoraHearts
-  type: tva
+  - title: PandoraHearts
+    plat: tva
 
-- title: 괴물이야기
-  type: tva
-  
-  - title: 상처이야기
-    type: movie
+  - title: 괴물이야기
+    type: tva
+    - title: 상처이야기
+      type: movie
   
 - title: 세토의 신부
   type: tva
