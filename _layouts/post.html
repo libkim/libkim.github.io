@@ -15,13 +15,20 @@ layout: default
 
 	{{ content }}
 	
-	{% for product in site.data.anilist %}
 	<table>
-		<th>제목</th>
-		<th>후속작</th>
-		<th>극장판</th>
-		<td>{{ product.title }}</p>
-	{% endfor %}
+		<tr>
+			<th>제목</th>
+			<th>후속작</th>
+			<th>극장판</th>
+		</tr>
+		{% for product in site.data.anilist %}
+			<tr>
+				<td>{{ product.title }}</td>
+				<td>{{ product.title.oad.title }}</td>
+				<td>{{ product.title.film.title }}</td>
+			</tr>
+		{% endfor %}
+	</table>
 </article>
 
 {% if site.data.settings.categories.active %}
