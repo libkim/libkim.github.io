@@ -25,7 +25,7 @@ layout: default
 			<tr>
 				<td>{{ product.title }}</td>
 				<td>{{ product.platform }}</td>
-				<td>{{ product.oad }}</td>
+				<td>{{ product.oad | map: "title" }}</td>
 			</tr>
 		{% endfor %}
 	</table>
