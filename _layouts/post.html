@@ -16,7 +16,11 @@ layout: default
 	{{ content }}
 	
 	{% for product in site.data.anilist %}
-	        <p>{{ product.title }}</p>
+	<table>
+		<th>제목</th>
+		<th>후속작</th>
+		<th>극장판</th>
+		<td>{{ product.title }}</p>
 	{% endfor %}
 </article>
 
