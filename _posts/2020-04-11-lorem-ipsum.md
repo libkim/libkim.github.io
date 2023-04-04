@@ -15,3 +15,39 @@ Nunc interdum accumsan condimentum. Fusce vulputate non ligula id ultricies. Int
 Sed a tellus nisl. Integer nec sapien non velit mollis mollis ac sed justo. Etiam sed diam viverra, ullamcorper enim quis, molestie lacus. Proin sagittis egestas sapien condimentum finibus. Suspendisse semper non eros eu venenatis. Cras laoreet nisl at elit maximus, quis viverra nulla sollicitudin. Donec scelerisque, lectus et pulvinar pellentesque, dolor metus scelerisque risus, non sagittis nisi mauris et massa. Nunc eu pellentesque mi. Curabitur iaculis scelerisque tempor. Integer at erat ut quam blandit gravida. Suspendisse ut maximus magna.
 
 Donec vel porta felis. Donec porttitor est sed arcu dapibus, vel suscipit metus fermentum. Proin a orci non lacus egestas condimentum ac a lacus. Integer sit amet consequat nibh. Nam vitae mauris eget lorem consectetur sodales. Vivamus malesuada est eget euismod placerat. Phasellus placerat libero at porttitor facilisis. Curabitur cursus, nisl at placerat euismod, ipsum erat convallis nulla, sit amet sodales est orci in massa. Sed nec diam vitae mauris tempor pharetra. Nulla facilisi. Phasellus efficitur tempor sagittis. Etiam dapibus turpis purus, sed dictum mauris elementum at.
+
+<button onclick="sortTable()">▼</button><button onclick="reverseTable()">▼</button>
+<table border="0.25" id="AniList">
+  <th>제목</th>
+  <th>후속작</th>
+  <th>극장판</th>
+  <tr>
+    <td>エア・ギア</td>
+    <td>エア・ギア 黒の羽と眠りの森 -Break on the sky-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PandoraHearts</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>化物語</td>
+    <td><ol><li>偽物語</li><li>猫物語（黒）</li></ol></td>
+    <td><ol><li>傷物語 I 鉄血篇</li><li>傷物語 II 熱血篇</li><li>傷物語 III 冷血篇</li></ol></td>
+  </tr>
+  <tr>
+    <td>瀬戸の花嫁</td>
+    <td><ol><li>瀬戸の花嫁OVA 仁</li><li>瀬戸の花嫁OVA 義</li></ol></td>
+    <td></td>
+  </tr>
+</table>
+
+
+
+<script type="text/javascript">
+var myTable = document.getElementById("AniList"); 
+var replace = replacement(myTable); 
+function sortTable(){    replace.ascending( );    } 
+function reverseTable(){    replace.descending( );    } 
+</script>
