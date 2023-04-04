@@ -1,22 +1,23 @@
-anilist:
-  - title: エア・ギア
-    plat: tva
+- title: エア・ギア
+  plat: tva
+  ser:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
       plat: oad
     
-  - title: PandoraHearts
-    plat: tva
+- title: PandoraHearts
+  plat: tva
 
-  - title: 괴물이야기
-    type: tva
+- title: 괴물이야기
+  plat: tva
+  ser:
     - title: 상처이야기
-      type: movie
+      plat: flim
   
 - title: 세토의 신부
-  type: tva
+  plat: tva
 
 - title: ハウルの動く城
-  type: movie
+  plat: film
 
 - title: 우리 집의 여우 신령님.
   type:
