@@ -24,8 +24,8 @@ layout: default
 		{% for product in site.data.anilist %}
 			<tr>
 				<td>{{ product.title }}</td>
-				<td>{{ product.platform }}</td>
 				<td>{{ product.oad | map: "title" }}</td>
+				<td>{{ product.film | map: "title" }}</td>
 			</tr>
 		{% endfor %}
 	</table>
