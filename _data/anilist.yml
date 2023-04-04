@@ -1,6 +1,8 @@
 - title: エア・ギア
-  type: tva
-  title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
+  pltf: tva
+  - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
+    type: oad
+  - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
     type: oad
   
 - title: PandoraHearts
@@ -8,7 +10,9 @@
 
 - title: 괴물이야기
   type: tva
-  title: 상처이야기
+  - title: 상처이야기
+    type: movie
+  - title: 상처이야기
     type: movie
   
 - title: 세토의 신부
