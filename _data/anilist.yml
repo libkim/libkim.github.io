@@ -1,12 +1,16 @@
-title:
-  tva: エア・ギア
+- title: エア・ギア
+  type: tva
   oad: エア・ギア 黒の羽と眠りの森 -Break on the sky-
-title:
-    tva: PandoraHearts
-  title:
-    tva: 괴물이야기
-    film: 상처이야기
-  title:
-    tva: 세토의 신부
-  title: 
-    film: ハウルの動く城
+  
+- title: PandoraHearts
+  type: tva
+
+- title: 괴물이야기
+  type: tva
+  film: 상처이야기
+  
+- title: 세토의 신부
+  type: tva
+
+- title: ハウルの動く城
+  type: movie
