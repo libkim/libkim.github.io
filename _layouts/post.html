@@ -25,14 +25,18 @@ layout: default
       <tr>
         <td>{{ product.title }}</td>
         <td>
-          {% for product in product.next %}
-            {{ product.title }}
-          {% endfor %}
+          <ol>
+            {% for product in product.next %}
+              <li>{{ product.title }}</li>
+            {% endfor %}
+          </ol>
         </td>
         <td>
-          {% for product in product.film %}
-            {{ product.title }}
-          {% endfor %}
+          <ol>
+            {% for product in product.film %}
+              <li>{{ product.title }}</li>
+            {% endfor %}
+          </ol>
         </td>
       </tr>
     {% endfor %}
