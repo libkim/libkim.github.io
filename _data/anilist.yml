@@ -10,9 +10,8 @@
 
 - title: 괴물 이야기
   platform: tva
-  next:
+  film:
     - title: 상처 이야기
-      platform: film
   
 - title: 세토의 신부
   platform: tva
