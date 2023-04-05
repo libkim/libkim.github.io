@@ -15,37 +15,6 @@ layout: default
 
   {{ content }}
 
-  <table id="anilist">
-    <thead>
-      <tr>
-        <th>제목<button onclick="sortTable()">▼</button><button onclick="reverseTable()">▲</button></th>
-        <th>후속작</th>
-        <th>극장판</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for product in site.data.anilist %}
-        <tr>
-          <td>{{ product.title }}</td>
-          <td>
-            <ol>
-              {% for product in product.next %}
-                <li>{{ product.title }}</li>
-              {% endfor %}
-            </ol>
-          </td>
-          <td>
-            <ol>
-              {% for product in product.film %}
-                <li>{{ product.title }}</li>
-              {% endfor %}
-            </ol>
-          </td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-
 </article>
 
 {% if site.data.settings.categories.active %}
@@ -67,11 +36,4 @@ layout: default
       "ko", "en", "num"
     ]);
   });
-</script>
-
-<script type="text/javascript">
-  var myTable = document.getElementById( "anilist" ); 
-  var replace = replacement( myTable );
-  function sortTable(){ replace.ascending(); } 
-  function reverseTable(){ replace.descending(); } 
 </script>
