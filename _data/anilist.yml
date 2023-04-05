@@ -1,15 +1,17 @@
 - title: エア・ギア
   platform: tva
-  oad:
+  next:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
+      platform: oad
     
 - title: PandoraHearts
   platform: tva
 
-- title: 괴물이야기
+- title: 괴물 이야기
   platform: tva
-  film:
-    - title: 상처이야기
+  next:
+    - title: 상처 이야기
+      platform: film
   
 - title: 세토의 신부
   platform: tva
@@ -856,7 +858,7 @@
 
 - title: 하이큐!!
   platform: tva
-  tva:
+  next:
     - title: 하이큐!! 세컨드 시즌
     - title: 하이큐!! 카라스마고교 VS 시라토리자와학원고교
     
