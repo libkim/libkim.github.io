@@ -25,8 +25,10 @@ layout: default
       <tr>
         <td>{{ product.title }}</td>
         <td>
-          {% for product in title.oad %}
-            {{ product.title }}
+          {% for product in site.data.anilist %}
+            {% for product in title.oad %}
+              {{ product.title }}
+            {% endfor %}
           {% endfor %}
         </td>
         <td>
