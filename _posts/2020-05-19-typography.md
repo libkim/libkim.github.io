@@ -1,4 +1,4 @@
-﻿---
+---
 title: Typography
 layout: post
 categories: [Typography, Markdown]
@@ -6,6 +6,7 @@ image: /assets/img/rose.jpg
 description: "Basic typography and styling for your posts."
 customexcerpt: "Basic and advanced typography in YAMT."
 ---
+
 Reference: [GitHub flavored Markdown](https://help.github.com/en/github/writing-on-github).
 
 * random line to make it work. This will be removed.
