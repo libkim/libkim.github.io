@@ -18,10 +18,6 @@ featured-img:
 categories:
   active: true
 
-#Show date and read time under the post title
-date-under-post:
-  active: true
-
 #Use MathJAX
 mathjax:
   active: true
