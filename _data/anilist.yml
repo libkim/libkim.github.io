@@ -1,5 +1,6 @@
 - title: エア・ギア
   platform: tva
+  complete: true
   next:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
       platform: oad
