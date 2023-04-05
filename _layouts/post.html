@@ -21,17 +21,23 @@ layout: default
       <th>후속작</th>
       <th>극장판</th>
     </tr>
-    {% for animation in site.data.anilist %}
+    {% for product in site.data.anilist %}
       <tr>
-        <td>{{ animation.title }}</td>
+        <td>{{ product.title }}</td>
         <td>
-          {% for animation title.oad %}
-            {{ animation.title }}
+          {% for product in title.ova %}
+            {{ product.title }}
+          {% endfor %}
+          {% for product in title.oad %}
+            {{ product.title }}
+          {% endfor %}
+          {% for product in title.ona %}
+            {{ product.title }}
           {% endfor %}
         </td>
         <td>
-          {% for animation title.film %}
-            {{ animation.title }}
+          {% for product in title.film %}
+            {{ product.title }}
           {% endfor %}
         </td>
       </tr>
