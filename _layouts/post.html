@@ -25,14 +25,12 @@ layout: default
       <tr>
         <td>{{ product.title }}</td>
         <td>
-          {% for product in site.data.anilist %}
-            {% for product in title.oad %}
-              {{ product.title }}
-            {% endfor %}
+          {% for product in anilist.oad %}
+            {{ product.title }}
           {% endfor %}
         </td>
         <td>
-          {% for product in title.film %}
+          {% for product in anilist.film %}
             {{ product.title }}
           {% endfor %}
         </td>
