@@ -20,15 +20,24 @@ layout: default
 			<th>제목</th>
 			<th>후속작</th>
 			<th>극장판</th>
-		</tr>
-		{% for product in site.data.anilist %}
-			<tr>
-				<td>{{ product.title }}</td>
-				<td>{{ product.oad | map: "title" }}</td>
-				<td>{{ product.film | map: "title" }}</td>
-			</tr>
+	</tr>
+ {% for animation in site.data.anilist %}
+  <tr>
+   <td>{{ animation.title }}</td>
+   <td>
+    {% for animation title.oad %}
+     {{ animation.title }}
+    {% endfor %}
+   </td>
+			  <td>
+    {% for animation title.film %}
+     {{ animation.title }}
+    {% endfor %}
+   </td>
+  </tr>
 		{% endfor %}
-	</table>
+</table>
+
 </article>
 
 {% if site.data.settings.categories.active %}
