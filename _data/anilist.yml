@@ -1,6 +1,5 @@
 - title: エア・ギア
   platform: tva
-  complete: true
   next:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
       platform: oad
@@ -854,10 +853,10 @@
   platform: tva
 
 - title: 암살교실
-  platform: tva
+  lastwatchedep: 2
 
 - title: 하이큐!!
-  platform: tva
+  lastwatchedep: 2
   next:
     - title: 하이큐!! 세컨드 시즌
     - title: 하이큐!! 카라스마고교 VS 시라토리자와학원고교
