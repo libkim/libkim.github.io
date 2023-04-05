@@ -15,9 +15,9 @@ layout: default
 
   {{ content }}
 
-  <table>
+  <table id="anilist">
     <tr>
-      <th>제목</th>
+      <th>제목<button onclick="sortTD( 0 )">▼</button><button onclick="reverseTD( 0 )">▲</button></th>
       <th>후속작</th>
       <th>극장판</th>
     </tr>
@@ -63,4 +63,11 @@ layout: default
       "ko", "en", "num"
     ]);
   });
+</script>
+
+<script type="text/javascript">
+  var myTable = document.getElementById( "anilist" ); 
+  var replace = replacement( myTable ); 
+  function sortTD( index ){ replace.ascending( index ); } 
+  function reverseTD( index ){ replace.descending( index ); } 
 </script>
