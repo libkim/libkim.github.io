@@ -16,30 +16,34 @@ layout: default
   {{ content }}
 
   <table id="anilist">
-    <tr>
-      <th>제목<button onclick="sortTD( 0 )">▼</button><button onclick="reverseTD( 0 )">▲</button></th>
-      <th>후속작</th>
-      <th>극장판</th>
-    </tr>
-    {% for product in site.data.anilist %}
+    <thead>
       <tr>
-        <td>{{ product.title }}</td>
-        <td>
-          <ol>
-            {% for product in product.next %}
-              <li>{{ product.title }}</li>
-            {% endfor %}
-          </ol>
-        </td>
-        <td>
-          <ol>
-            {% for product in product.film %}
-              <li>{{ product.title }}</li>
-            {% endfor %}
-          </ol>
-        </td>
+        <th>제목<button onclick="sortTD( 0 )">▼</button><button onclick="reverseTD( 0 )">▲</button></th>
+        <th>후속작</th>
+        <th>극장판</th>
       </tr>
-    {% endfor %}
+    </thead>
+    <tbody>
+      {% for product in site.data.anilist %}
+        <tr>
+          <td>{{ product.title }}</td>
+          <td>
+            <ol>
+              {% for product in product.next %}
+                <li>{{ product.title }}</li>
+              {% endfor %}
+            </ol>
+          </td>
+          <td>
+            <ol>
+              {% for product in product.film %}
+                <li>{{ product.title }}</li>
+              {% endfor %}
+            </ol>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
   </table>
 
 </article>
