@@ -1,4 +1,4 @@
-﻿---
+---
 title: YAMT 입니다!
 layout: post
 categories: [Typography, Markdown, Tips]
