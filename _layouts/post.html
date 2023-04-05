@@ -3,60 +3,60 @@ layout: default
 ---
 
 <article class="post">
-	<div class="post-title">
-		<h3>{{ page.title }}</h3>
-	</div>
-	
-	{% if site.data.settings.date-under-post.active %}
-		<div class="post-info">
-			<p>{{ page.date | date_to_string }}</p>
-		</div>
-	{% endif %}
+  <div class="post-title">
+    <h3>{{ page.title }}</h3>
+  </div>
 
-	{{ content }}
-	
-	<table>
-		<tr>
-			<th>제목</th>
-			<th>후속작</th>
-			<th>극장판</th>
-	</tr>
- {% for animation in site.data.anilist %}
-  <tr>
-   <td>{{ animation.title }}</td>
-   <td>
-    {% for animation title.oad %}
-     {{ animation.title }}
+  {% if site.data.settings.date-under-post.active %}
+    <div class="post-info">
+      <p>{{ page.date | date_to_string }}</p>
+    </div>
+  {% endif %}
+
+  {{ content }}
+
+  <table>
+    <tr>
+      <th>제목</th>
+      <th>후속작</th>
+      <th>극장판</th>
+    </tr>
+      {% for animation in site.data.anilist %}
+      <tr>
+        <td>{{ animation.title }}</td>
+        <td>
+          {% for animation title.oad %}
+            {{ animation.title }}
+          {% endfor %}
+        </td>
+        <td>
+          {% for animation title.film %}
+            {{ animation.title }}
+          {% endfor %}
+        </td>
+      </tr>
     {% endfor %}
-   </td>
-			  <td>
-    {% for animation title.film %}
-     {{ animation.title }}
-    {% endfor %}
-   </td>
-  </tr>
-		{% endfor %}
-</table>
+  </table>
 
 </article>
 
 {% if site.data.settings.categories.active %}
-	{% include categories.html %}
+  {% include categories.html %}
 {% endif %}
 
 {% if site.data.settings.related-posts.active %}
-	{% include related-posts.html %}
+  {% include related-posts.html %}
 {% endif %}
 
 {% if site.data.settings.mathjax.active %}
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	</script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 {% endif %}
 
 <script>
-	$(document).ready(function(e){
-		$("#markdown-toc").multilingual([
-			"ko", "en", "num"
-		]);
-	});
+  $(document).ready(function (e) {
+    $("#markdown-toc").multilingual([
+      "ko", "en", "num"
+    ]);
+  });
 </script>
