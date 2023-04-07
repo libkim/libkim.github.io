@@ -786,11 +786,15 @@
 - title: 고식
   platform: tva
 
-- title: 로그 호라이즌
-  platform: tva
+- title: ログ・ホライズン
+  next:
+    - title: ログ・ホライズン（2期）
+    - title: ログ・ホライズン 円卓崩壊
+      lastwatchedep: 0
 
 - title: 늑대와 향신료
   platform: tva
+  lastwatchedep: 5
 
 - title: 수염을 깎다
   platform: tva
