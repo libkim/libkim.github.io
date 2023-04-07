@@ -854,7 +854,7 @@
   platform: tva
 
 - title: 블루 피리어드
-  platform: tva
+  lastwatchedep: 3
 
 - title: 암살교실
   lastwatchedep: 3
