@@ -11,12 +11,14 @@
     </div>
     {% include footer.html %}
     
+    {% assign ganadalist=""|split:',' %}
+      {% for product in site.data.ganadalist %}
+        {% if product.title != anilist.title %}
+         {% assign ganadalist = ganadalist | push: product %}
+        {% endif %}
+      {% endfor %}
+    
     <script>
-      {% assign ganadalist=""|split:',' %}
-      {% for product in site.data.anilist %}
-      
-      
-      
       // 정렬하고자 하는 열의 값을 배열로 가져옵니다.
       var table = document.getElementById("aniList");
       var rows = table.rows;
