@@ -857,7 +857,7 @@
   platform: tva
 
 - title: 암살교실
-  lastwatchedep: 2
+  lastwatchedep: 3
 
 - title: 하이큐!!
   lastwatchedep: 4
@@ -871,8 +871,8 @@
 - title: ソウナンですか？
   lastwatchedep: 1
 
-- title:
-  platform: tva
+- title: 최강 음양사 전생
+  lastwatchedep: 1
 
 - title:
   platform: tva
