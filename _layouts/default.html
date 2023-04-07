@@ -12,11 +12,35 @@
     {% include footer.html %}
     
     <script>
-      var options = {
-        valueNames: ['title', 'score', 'type']
-      };
-      var userList = new List('table', options);
-    </script>
+      // 정렬하고자 하는 열의 값을 배열로 가져옵니다.
+      var table = document.getElementById("myTable");
+      var rows = table.rows;
+      var arr = [];
+      for (var i = 1; i < rows.length; i++) {
+        var cells = rows[i].cells;
+        arr.push(cells[0].innerText); // 이름 열의 값을 배열에 추가합니다.
+      }
 
+      // 배열을 가나다순으로 정렬합니다.
+      arr.sort(function(a, b) {
+        return a.localeCompare(b, 'ko-KR', {'sensitivity': 'base'});
+      });
+
+      // 정렬된 배열을 이용하여 표를 다시 생성합니다.
+      var tbody = document.createElement('tbody');
+        for (var i = 0; i < arr.length; i++) {
+          for (var j = 1; j < rows.length; j++) {
+          var cells = rows[j].cells;
+          if (cells[0].innerText === arr[i]) { // 이름 열이 일치하는 행을 찾습니다.
+            var row = document.createElement('tr');
+            for (var k = 0; k < cells.length; k++) {
+              row.appendChild(cells[k].cloneNode(true)); // 행을 복제하여 새로운 행을 생성합니다.
+            }
+            tbody.appendChild(row); // 새로운 행을 tbody에 추가합니다.
+          }
+        }
+      }
+      table.replaceChild(tbody, table.getElementsByTagName('tbody')[0]); // 기존의 tbody를 새로운 tbody로 교체합니다.
+    </script>
   </body>
 </html>
