@@ -11,14 +11,7 @@
     </div>
     {% include footer.html %}
     
-    {% assign ganadalist = "" | split: ',' %}
-    {% for product in site.ganadalist %}
-      {% if product.title = "" | split: ',' %}
-      {% for product in product.next %}
-      {% endfor %}
-    {% endfor %}
-        
-    {% assign ganadalist = "{{ my_array | sort_natural | join: ", " }}" | split:',' %}
+    {% assign ganadalist = "{{ {% for product in site.data.anilist | map: 'title' %}{% endfor %} | sort_natural | join: ", " }}" | split:',' %}
     {% for product in site.data.ganadalist %}
       {% if product.title != anilist.title %}
         {% assign ganadalist = ganadalist | push: product %}
