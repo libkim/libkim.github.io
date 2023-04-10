@@ -1,9 +1,10 @@
 - title: エア・ギア
-  platform: tva
+  koreantitle: 에어 기어
+  aired: 2006-04
   next:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
-      platform: oad
-    
+      koreantitle: 에어 기어 검은 날개와 잠자는 숲 -Break on the sky-
+
 - title: PandoraHearts
   platform: tva
 
