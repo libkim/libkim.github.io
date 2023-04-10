@@ -10,8 +10,5 @@
       {{ content }}
     </div>
     {% include footer.html %}
-    
-    {% assign ganadalist = "{{ {% for product in site.data.anilist | map: 'title' %}{% endfor %} | sort_natural | join: ", " }}" | split:',' %}
-    
   </body>
 </html>
