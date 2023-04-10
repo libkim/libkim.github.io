@@ -843,8 +843,9 @@
 - title: 서번트 서비스
   platform: tva
 
-- title: 서머타임 렌더
-  platform: tva
+- title: サマータイムレンダ
+  koreantitle: 서머타임 렌더
+  lastwatchedep: 5
 
 - title: 봇치 더 록
   platform: tva
