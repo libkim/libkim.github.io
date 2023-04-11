@@ -11,13 +11,13 @@
 
 - title: 化物語
   koreantitle: 괴물 이야기
-  aired: 2009-07
+  debut: 2009-07
   films:
     - title: 傷物語 I 鉄血篇
       koreantitle: 상처 이야기 Ⅰ 철혈편
   
 - title: 세토의 신부
-  platform: tva
+  debut:
 
 - title: ハウルの動く城
   translation: 하울의 움직이는 성
