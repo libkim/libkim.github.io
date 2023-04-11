@@ -10,13 +10,13 @@ layout: post
   
   function sortDateAsc(){
     tbody.innerHTML = `
-      {% assign sorted = site.data.anilist | sort: 'date' %}
+      {% assign sorted = site.data.anilist | sort: 'debut' %}
       {% for product in sorted %}
         <tr>
-          <td>{{ product.date }}</td>
+          <td>{{ product.debut }}</td>
           <td>{{ product.title }}</td>
           <td>
-            {% for product in product.next %}
+            {% for product in product.follow-ups %}
               {{ product.title }}<br>
             {% endfor %}
           </td>
