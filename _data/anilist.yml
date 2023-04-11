@@ -16,32 +16,39 @@
     - title: 傷物語 I 鉄血篇
       koreantitle: 상처 이야기 Ⅰ 철혈편
   
-- title: 세토의 신부
-  debut:
+- title: 瀬戸の花嫁
+  koreantitle: 세토의 신부
+  debut: 2007-04
+  follow-ups:
+    - title: 瀬戸の花嫁OVA
+      koreantitle: 세토의 신부 OVA
 
 - title: ハウルの動く城
   koreantitle: 하울의 움직이는 성
+  debut: 2004-11
 
-- title: 우리 집의 여우 신령님.
-  platform: tva
+- title: 我が家のお稲荷さま。
+  koreantitle: 우리 집의 여우 신령님.
+  debut: 2008-04
 
-- title: 바보와 시험과 소환수
-  platform: tva
+- title: バカとテストと召喚獣
+  koreantitle: 바보와 시험과 소환수
+  debut: 2010-01
 
 - title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
-  platform: tva
+  debut: 
 
 - title: 비비 플로라이트 아이즈 송
-  platform: tva
+  debut: 
 
 - title: 아이돌즈!
-  platform: tva
+  debut: 
 
 - title: 거미입니다만, 문제라도?
-  platform: tva
+  debut: 
 
 - title: 투러브루
-  platform: tva
+  debut: 
 
 - title: 나루토
   platform: tva
@@ -864,7 +871,7 @@
   lastwatchedep: 3
 
 - title: 하이큐!!
-  lastwatchedep: 8
+  lastwatchedep: 9
   follow-ups:
     - title: 하이큐!! 세컨드 시즌
     - title: 하이큐!! 카라스마고교 VS 시라토리자와학원고교
