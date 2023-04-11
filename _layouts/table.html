@@ -2,32 +2,61 @@
 layout: post
 ---
 
-<button id="switchJapaneseBtn">あ</button>
-<button id="switchKoreanBtn">가</button>
-<button id="sortDebutAscBtn" onclick="sortDebutAsc()">날짜오름차순</button>
-<button id="sortDebutDescBtn" onclick="sortDebutDesc()">날짜내림차순</button>
+<button onclick="switchTitleToOriginalLanguage()">あ</button>
+<button onclick="switchTitleToKorean()">가</button>
+<button onclick="sortTableByDebutAsc()">날짜오름차순</button>
+<button onclick="sortTableByDebutDesc()">날짜내림차순</button>
 
 {{ content }}
 
 <script>
   
+  let switchedTitle = "title";
+  let sortedTable = "debutAscTable";
   let tbody = document.getElementById('anilistTbody');
   
-  function sortDebutAsc(){
+  function switchTitleToOriginalLanguage(){
+    let switchedTitle = "title";
+    if (sortedTable == "debutAscTable"){
+      sortTableByDebutAsc();
+    }
+    else if (sortedTable == "debutDescTable"){
+      sortTableByDebutDesc();
+    }
+    else {
+      let sortedTable = "debutAscTable";
+    }
+  }
+  
+  function switchTitleToKorean(){
+    let switchedTitle = "koreantitle";
+    if (sortedTable == "debutAscTable"){
+      sortTableByDebutAsc();
+    }
+    else if (sortedTable == "debutDescTable"){
+      sortTableByDebutDesc();
+    }
+    else {
+      let sortedTable = "debutAscTable";
+    }
+  }
+  
+  function sortTableByDebutAsc(){
+    let sortedTable = "debutAscTable";
     tbody.innerHTML = `
       {% assign sorted = site.data.anilist | sort: 'debut' %}
       {% for product in sorted %}
         <tr>
           <td>{{ product.debut }}</td>
-          <td>{{ product.title }}</td>
+          <td>{{ product.${switchedTitle} }}</td>
           <td>
             {% for product in product.follow-ups %}
-              {{ product.title }}<br>
+              {{ product.${switchedTitle} }}<br>
             {% endfor %}
           </td>
           <td>
             {% for product in product.films %}
-              {{ product.title }}<br>
+              {{ product.${switchedTitle} }}<br>
             {% endfor %}
           </td>
         </tr>
@@ -35,21 +64,22 @@ layout: post
     `;
   }
   
-  function sortDebutDesc(){
+  function sortTableByDebutDesc(){
+    let sortedTable = "debutDescTable";
     tbody.innerHTML = `
       {% assign sorted = site.data.anilist | sort: 'debut' | reverse %}
       {% for product in sorted %}
         <tr>
           <td>{{ product.debut }}</td>
-          <td>{{ product.title }}</td>
+          <td>{{ product.${switchedTitle} }}</td>
           <td>
             {% for product in product.follow-ups %}
-              {{ product.title }}<br>
+              {{ product.${switchedTitle} }}<br>
             {% endfor %}
           </td>
           <td>
             {% for product in product.films %}
-              {{ product.title }}<br>
+              {{ product.${switchedTitle} }}<br>
             {% endfor %}
           </td>
         </tr>
