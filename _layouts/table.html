@@ -4,8 +4,8 @@ layout: post
 
 <button id="switchJapaneseBtn">あ</button>
 <button id="switchKoreanBtn">가</button>
-<button id="sortDateAscBtn" onclick="sortDateAsc()">날짜오름차순</button>
-<button id="sortDateDescBtn">날짜내림차순</button>
+<button id="sortDebutAscBtn" onclick="sortDebutAsc()">날짜오름차순</button>
+<button id="sortDebutDescBtn" onclick="sortDebutDesc()">날짜내림차순</button>
 
 {{ content }}
 
@@ -13,7 +13,7 @@ layout: post
   
   let tbody = document.getElementById('anilistTbody');
   
-  function sortDateAsc(){
+  function sortDebutAsc(){
     tbody.innerHTML = `
       {% assign sorted = site.data.anilist | sort: 'debut' %}
       {% for product in sorted %}
@@ -26,7 +26,7 @@ layout: post
             {% endfor %}
           </td>
           <td>
-            {% for product in product.film %}
+            {% for product in product.films %}
               {{ product.title }}<br>
             {% endfor %}
           </td>
@@ -34,5 +34,26 @@ layout: post
       {% endfor %}
     `;
   }
-
+  
+  function sortDebutDesc(){
+    tbody.innerHTML = `
+      {% assign sorted = site.data.anilist | sort: 'debut' | reverse %}
+      {% for product in sorted %}
+        <tr>
+          <td>{{ product.debut }}</td>
+          <td>{{ product.title }}</td>
+          <td>
+            {% for product in product.follow-ups %}
+              {{ product.title }}<br>
+            {% endfor %}
+          </td>
+          <td>
+            {% for product in product.films %}
+              {{ product.title }}<br>
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+    `;
+  }
 </script>
