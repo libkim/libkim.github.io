@@ -53,8 +53,9 @@
 - title: 나루토
   platform: tva
 
-- title: 듀라라라!!
-  platform: tva
+- title: デュラララ!!
+  koreantitle: 듀라라라!!
+  debut: 2010-01
 
 - title: 나츠메 우인장
   platform: tva
@@ -318,7 +319,8 @@
   platform: tva
 
 - title: K
-  platform: tva
+  koreantitle: K
+  debut: 2012-10
 
 - title: 천원돌파 그렌라간
   platform: tva
@@ -867,7 +869,9 @@
 - title: 블루 피리어드
   lastwatchedep: 4
 
-- title: 암살교실
+- title: 暗殺教室
+  koreantitle: 암살 교실
+  debut: 2013-12
   lastwatchedep: 3
 
 - title: 하이큐!!
