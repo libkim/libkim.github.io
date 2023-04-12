@@ -13,7 +13,7 @@ layout: post
   
   let switchedTitle = "title";
   let sortedTable = "debutAscTable";
-  let tbody = document.getElementById('anilistTbody');
+  let tbody = document.getElementById('aniListTbody');
   
   function switchTitleToOriginalLanguage(){
     let switchedTitle = "title";
@@ -38,7 +38,7 @@ layout: post
   function sortTable(){
     if (switchedTitle == "title" && sortedTable == "debutAscTable"){
       tbody.innerHTML = `
-        {% assign sorted = site.data.anilist | sort: 'debut' %}
+        {% assign sorted = site.data.ani-list | sort: 'debut' %}
         {% for product in sorted %}
           <tr>
             <td>{{ product.debut }}</td>
@@ -59,7 +59,7 @@ layout: post
     }
     else if (switchedTitle == "title" && sortedTable == "debutDescTable"){
       tbody.innerHTML = `
-        {% assign sorted = site.data.anilist | sort: 'debut' | reverse %}
+        {% assign sorted = site.data.ani-list | sort: 'debut' | reverse %}
         {% for product in sorted %}
           <tr>
             <td>{{ product.debut }}</td>
@@ -80,7 +80,7 @@ layout: post
     }
     else if (switchedTitle == "koreantitle" && sortedTable == "debutAscTable"){
       tbody.innerHTML = `
-        {% assign sorted = site.data.anilist | sort: 'debut' %}
+        {% assign sorted = site.data.ani-list | sort: 'debut' %}
         {% for product in sorted %}
           <tr>
             <td>{{ product.debut }}</td>
@@ -101,7 +101,7 @@ layout: post
     }
     else if (switchedTitle == "koreantitle" && sortedTable == "debutDescTable"){
       tbody.innerHTML = `
-        {% assign sorted = site.data.anilist | sort: 'debut' | reverse %}
+        {% assign sorted = site.data.ani-list | sort: 'debut' | reverse %}
         {% for product in sorted %}
           <tr>
             <td>{{ product.debut }}</td>
