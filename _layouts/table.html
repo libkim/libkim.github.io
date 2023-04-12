@@ -15,26 +15,6 @@ layout: post
   let sortedTable = "debutAscTable";
   let tbody = document.getElementById('aniListTbody');
   
-  function switchTitleToOriginalLanguage(){
-    switchedTitle = "title";
-    sortTable();
-  }
-  
-  function switchTitleToKorean(){
-    switchedTitle = "koreantitle";
-    sortTable();
-  }
-  
-  function sortTableByDebutAsc(){
-    sortedTable = "debutAscTable";
-    sortTable();
-  }
-  
-  function sortTableByDebutDesc(){
-    sortedTable = "debutDescTable";
-    sortTable();
-  }
-  
   function sortTable(){
     if (switchedTitle == "title" && sortedTable == "debutAscTable"){
       tbody.innerHTML = `
@@ -120,5 +100,22 @@ layout: post
         {% endfor %}
       `;
     }
+  }
+  
+  function switchTitleToOriginalLanguage(){
+    switchedTitle = "title";
+    sortTable();
+  }
+  function switchTitleToKorean(){
+    switchedTitle = "koreantitle";
+    sortTable();
+  }
+  function sortTableByDebutAsc(){
+    sortedTable = "debutAscTable";
+    sortTable();
+  }
+  function sortTableByDebutDesc(){
+    sortedTable = "debutDescTable";
+    sortTable();
   }
 </script>
