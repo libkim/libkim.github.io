@@ -9,8 +9,9 @@
     
   - photography:
  
-- shading: cel shading
-  nsfw: true
+- shading:
+  - cel shading
+
   hair: long hair, blue hair, half up, braid
   eyes: half closed eyes, green eyes, long eyelashes
   gaze: looking at viewer
