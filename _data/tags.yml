@@ -1,6 +1,15 @@
-- type: painting
-  media: digital painting
-  shading: cel shading
+- nsfw:
+  - true
+  - false
+- type:
+  - painting:
+    - digital painting
+    - watercolor painting
+    - oil painting
+    
+  - photography:
+ 
+- shading: cel shading
   nsfw: true
   hair: long hair, blue hair, half up, braid
   eyes: half closed eyes, green eyes, long eyelashes
