@@ -19,7 +19,7 @@
   - background blur
   - motion blur
 
-- shading:
+- shadings:
   - cel shading
 
 - hair colors:
@@ -38,14 +38,16 @@
   - magenta
   - white
 
-- hair length:
+- hair lengths:
   - long hair
   - medium hair
   - short hair
 
 - hairstyles:
-  - long hair
-  - blue hair, half up, braid
+  - half up
+  - braid
+
+
   eyes: half closed eyes, green eyes, long eyelashes
   gaze: looking at viewer
   mouth: open mouth
