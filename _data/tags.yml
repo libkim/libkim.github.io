@@ -13,10 +13,12 @@
   - deep focus
   - shallow focus:
     - front focus
-    - complete background blur
     - back focus
   - soft focus
   - out of focus
+
+- blur:
+  - complete background blur
 
 - shading:
   - cel shading
