@@ -8,6 +8,15 @@
     - oil painting
   - photography:
  
+- focus:
+  - deep focus
+  - shallow focus:
+    - front focus
+    - complete background blur
+    - back focus
+  - soft focus
+  - out of focus
+
 - shading:
   - cel shading
 
