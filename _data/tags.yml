@@ -45,17 +45,17 @@
   - cel shading
 
 - skin:
-  - skin colors
+  - colors
   
 - hair:
-  - hair colors
-  - hair lengths
+  - colors
+  - lengths
   - hairstyles:
     - half up
     - braid
 
 - eyes:
-  - eye colors
+  - colors
   - eyelash lengths
 
 
