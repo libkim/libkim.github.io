@@ -44,6 +44,9 @@
 - shadings:
   - cel shading
 
+- skin:
+  - skin colors
+  
 - hair:
   - hair colors
   - hair lengths
