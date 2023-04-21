@@ -1,6 +1,4 @@
-- nsfw:
-  - true
-  - false
+- nsfw
 
 - type:
   - painting:
@@ -9,7 +7,7 @@
     - oil painting
   - photography:
  
-- focus:
+- focuses:
   - deep focus
   - shallow focus:
     - front focus
@@ -18,12 +16,34 @@
   - out of focus
 
 - blur:
-  - complete background blur
+  - background blur
+  - motion blur
 
 - shading:
   - cel shading
 
-- hair:
+- hair colors:
+  - black
+  - red
+  - vermilion
+  - orange
+  - amber
+  - yellow
+  - chartreuse
+  - green
+  - teal
+  - blue
+  - violet
+  - purple
+  - magenta
+  - white
+
+- hair length:
+  - long hair
+  - medium hair
+  - short hair
+
+- hairstyles:
   - long hair
   - blue hair, half up, braid
   eyes: half closed eyes, green eyes, long eyelashes
