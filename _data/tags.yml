@@ -44,17 +44,17 @@
 - shadings:
   - cel shading
 
-- hair lengths
+- hair:
+  - hair colors
+  - hair lengths
+  - hairstyles:
+    - half up
+    - braid
 
-- hair colors
+- eyes:
+  - eye colors
+  - eyelash lengths
 
-- hairstyles:
-  - half up
-  - braid
-
-- eye colors
-
-- eyelash lengths
 
 
 half closed eyes, green eyes, long eyelashes
