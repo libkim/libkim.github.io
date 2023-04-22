@@ -18,9 +18,9 @@ layout: post
 <script>
 
   const container = document.getElementById("tagContainer");
-  const downloadLinkContainer = document.getElementById("downloadLinkContainer");
+  const downloadButton = document.getElementById("downloadButton");
   const tableCells = document.querySelectorAll("#wordTable td");
-let tags = [];
+  let tags = [];
 
   for (const cell of tableCells) {
     cell.addEventListener("click", () => {
@@ -40,12 +40,20 @@ let tags = [];
   }
 
   function downloadTags() {
-    const link = document.createElement("a");
-    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(tags.join(", "));
-    link.download = "tags.txt";
-    link.innerHTML = "Download tags";
-
-    downloadLinkContainer.appendChild(link);
+    const tagString = tags.join(", ");
+    const blob = new Blob([tagString], {type: "text/plain;charset=utf-8"});
+    const filename = "tags.txt";
+    if (window.navigator.msSaveOrOpenBlob) {
+      window.navigator.msSaveBlob(blob, filename);
+    } else {
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+      URL.revokeObjectURL(link.href);
+    }
   }
+
+  downloadButton.addEventListener("click", downloadTags);
 
 </script>
