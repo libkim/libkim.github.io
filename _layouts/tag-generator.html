@@ -18,16 +18,18 @@ layout: post
 
     if (existingTags.length > 0) {
       existingTags += ", ";
-    }
+  }
 
-    container.innerText = existingTags + tags.join(", ");
+    const newTags = tags.join(", ");
+    container.innerText = existingTags + newTags;
 
     const link = document.createElement("a");
-    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(container.innerText);
+    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(newTags);
     link.download = "tags.txt";
     link.innerHTML = "Download tags";
 
     container.appendChild(document.createElement("br"));
     container.appendChild(link);
-  }
+}
+
 </script>
