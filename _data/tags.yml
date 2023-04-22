@@ -58,12 +58,16 @@
   - colors
   - eyelash lengths
 
+- gazes:
+  - looking at viewer
 
+- mouth:
+  - open mouth
 
-half closed eyes,
-  gaze: looking at viewer
-  mouth: open mouth
-  action: sex, spread legs, lying on back
+- action: sex, spread legs, lying on back
   background: image
   underwear: g-string, crotchless panty
-  Accessories: hairband, garter
+
+- accessories:
+  - hairband
+  - garter
