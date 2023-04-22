@@ -1,0 +1,28 @@
+---
+layout: post
+---
+
+<input id="tagInput" type="text" placeholder="Enter text here...">
+<button onclick="generateTags()">Generate Tags</button>
+<div id="tagContainer"></div>
+
+{{ content }}
+
+<script>
+
+function generateTags() {
+  const input = document.getElementById("tagInput").value;
+  const tags = input.split(" ");
+  const container = document.getElementById("tagContainer");
+
+  container.innerHTML = "";
+
+  tags.forEach(tag => {
+    const newTag = document.createElement("span");
+    newTag.classList.add("tag");
+    newTag.innerText = tag;
+    container.appendChild(newTag);
+  });
+}
+
+</script>
