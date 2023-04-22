@@ -22,6 +22,13 @@ layout: post
 
     container.innerText = existingTags + tags.join(", ");
 
+    const link = document.createElement("a");
+    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(container.innerText);
+    link.download = "tags.txt";
+    link.innerHTML = "Download tags";
+
+    container.appendChild(document.createElement("br"));
+    container.appendChild(link);
   }
 
 </script>
