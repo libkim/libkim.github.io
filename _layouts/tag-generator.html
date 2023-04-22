@@ -18,7 +18,7 @@ layout: post
 
     if (existingTags.length > 0) {
       existingTags += ", ";
-  }
+    }
 
     const newTags = tags.join(", ");
     container.innerText = existingTags + newTags;
@@ -30,6 +30,6 @@ layout: post
 
     container.appendChild(document.createElement("br"));
     container.appendChild(link);
-}
+  }
 
 </script>
