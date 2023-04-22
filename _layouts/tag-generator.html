@@ -45,9 +45,12 @@ layout: post
     container.appendChild(document.createTextNode(" "));
   }
 
+
   function downloadTags() {
+    const input = document.getElementById("tagInput");
+
     const link = document.createElement("a");
-    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(container.innerText);
+    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(input.value);
     link.download = "tags.txt";
     link.innerHTML = "Download tags";
 
