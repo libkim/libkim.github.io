@@ -15,14 +15,14 @@ layout: post
     const tags = input.split(" ");
     const container = document.getElementById("tagContainer");
 
-  container.innerHTML = "";
+    container.innerHTML = "";
 
-  tags.forEach(tag => {
-    const newTag = document.createElement("span");
-    newTag.classList.add("tag");
-    newTag.innerText = tag;
-    container.appendChild(newTag);
-  });
-}
+    tags.forEach(tag => {
+      const newTag = document.createElement("span");
+      newTag.classList.add("tag");
+      newTag.innerText = tag;
+      container.appendChild(newTag);
+    });
+  }
 
 </script>
