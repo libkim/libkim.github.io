@@ -20,12 +20,12 @@ layout: post
   const container = document.getElementById("tagContainer");
   const downloadButton = document.getElementById("downloadButton");
   const tableCells = document.querySelectorAll("#wordTable td");
-  let tags = [];
+let tags = [];
 
   for (const cell of tableCells) {
     cell.addEventListener("click", () => {
       const word = cell.innerText.trim();
-      addTag(word);
+      toggleTag(word);
     });
   }
 
@@ -37,6 +37,31 @@ layout: post
     tag.classList.add("tag");
     container.appendChild(tag);
     container.appendChild(document.createTextNode(", "));
+  }
+
+  function removeTag(word) {
+    tags = tags.filter(tag => tag !== word);
+    renderTags();
+  }
+
+  function toggleTag(word) {
+    const index = tags.indexOf(word);
+    if (index === -1) {
+      addTag(word);
+    } else {
+      removeTag(word);
+    }
+  }
+
+  function renderTags() {
+    container.innerHTML = "";
+    tags.forEach(tag => {
+      const tagElement = document.createElement("span");
+      tagElement.innerText = tag;
+      tagElement.classList.add("tag");
+      container.appendChild(tagElement);
+      container.appendChild(document.createTextNode(", "));
+    });
   }
 
   function downloadTags() {
