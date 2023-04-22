@@ -2,30 +2,47 @@
 layout: post
 ---
 
-<input id="tagInput" type="text" placeholder="Enter text here...">
-<button onclick="generateTags()">Generate Tags</button>
+<input id="tagInput" type="text" placeholder="Enter tags here...">
+<table id="wordTable">
+  <tr>
+    <td>apple</td>
+    <td>banana</td>
+  </tr>
+  <tr>
+    <td>car</td>
+    <td>bicycle</td>
+  </tr>
+</table>
 <div id="tagContainer"></div>
 <div id="downloadLinkContainer"></div>
-<button onclick="downloadTags()">Download Tags</button>
-
-{{ content }}
 
 <script>
 
   const container = document.getElementById("tagContainer");
   const downloadLinkContainer = document.getElementById("downloadLinkContainer");
+  const tableCells = document.querySelectorAll("#wordTable td");
 
-  function generateTags() {
-    const input = document.getElementById("tagInput").value;
-    const tags = input.split(" ");
-    let existingTags = container.innerText.trim();
+  for (const cell of tableCells) {
+    cell.addEventListener("click", () => {
+      addTag(cell.innerText);
+    });
+  }
+
+  function addTag(word) {
+    const input = document.getElementById("tagInput");
+    let existingTags = input.value.trim();
 
     if (existingTags.length > 0) {
       existingTags += ", ";
     }
 
-    const newTags = tags.join(", ");
-    container.innerText = existingTags + newTags;
+    input.value = existingTags + word;
+
+    const tag = document.createElement("span");
+    tag.innerText = word;
+    tag.classList.add("tag");
+    container.appendChild(tag);
+    container.appendChild(document.createTextNode(" "));
   }
 
   function downloadTags() {
