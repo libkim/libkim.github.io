@@ -2,7 +2,6 @@
 layout: post
 ---
 
-<input id="tagInput" type="text" placeholder="Enter tags here...">
 <table id="wordTable">
   <tr>
     <td>apple</td>
@@ -16,41 +15,34 @@ layout: post
 <div id="tagContainer"></div>
 <div id="downloadLinkContainer"></div>
 
+
 <script>
 
   const container = document.getElementById("tagContainer");
   const downloadLinkContainer = document.getElementById("downloadLinkContainer");
   const tableCells = document.querySelectorAll("#wordTable td");
+let tags = [];
 
   for (const cell of tableCells) {
     cell.addEventListener("click", () => {
-      addTag(cell.innerText);
+      const word = cell.innerText.trim();
+      addTag(word);
     });
   }
 
   function addTag(word) {
-    const input = document.getElementById("tagInput");
-    let existingTags = input.value.trim();
-
-    if (existingTags.length > 0) {
-      existingTags += ", ";
-    }
-
-    input.value = existingTags + word;
+    tags.push(word);
 
     const tag = document.createElement("span");
     tag.innerText = word;
     tag.classList.add("tag");
     container.appendChild(tag);
-    container.appendChild(document.createTextNode(" "));
+    container.appendChild(document.createTextNode(", "));
   }
 
-
   function downloadTags() {
-    const input = document.getElementById("tagInput");
-
     const link = document.createElement("a");
-    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(input.value);
+    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(tags.join(", "));
     link.download = "tags.txt";
     link.innerHTML = "Download tags";
 
