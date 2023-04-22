@@ -5,15 +5,19 @@ layout: post
 <input id="tagInput" type="text" placeholder="Enter text here...">
 <button onclick="generateTags()">Generate Tags</button>
 <div id="tagContainer"></div>
+<div id="downloadLinkContainer"></div>
+<button onclick="downloadTags()">Download Tags</button>
 
 {{ content }}
 
 <script>
 
+  const container = document.getElementById("tagContainer");
+  const downloadLinkContainer = document.getElementById("downloadLinkContainer");
+
   function generateTags() {
     const input = document.getElementById("tagInput").value;
     const tags = input.split(" ");
-    const container = document.getElementById("tagContainer");
     let existingTags = container.innerText.trim();
 
     if (existingTags.length > 0) {
@@ -22,14 +26,15 @@ layout: post
 
     const newTags = tags.join(", ");
     container.innerText = existingTags + newTags;
+  }
 
+  function downloadTags() {
     const link = document.createElement("a");
-    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(newTags);
+    link.href = "data:text/plain;charset=utf-8," + encodeURIComponent(container.innerText);
     link.download = "tags.txt";
     link.innerHTML = "Download tags";
 
-    container.appendChild(document.createElement("br"));
-    container.appendChild(link);
+    downloadLinkContainer.appendChild(link);
   }
 
 </script>
