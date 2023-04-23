@@ -20,7 +20,8 @@
   - medium
   - short
 
-- nsfw
+- group:
+  name: nsfw
 
 - type:
   - painting:
