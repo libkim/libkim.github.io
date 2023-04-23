@@ -20,7 +20,7 @@
   - medium
   - short
 
-- nsfw
+- name: nsfw
 
 - group: painting
   - digital painting
@@ -30,16 +30,20 @@
   - photography:
  
 - group: focus
-  - name: deep focus
-  - name: soft focus
-  - name: out of focus
-  - group: selective focus
-    - name: front focus
-    - name: back focus
+  children:
+    - name: deep focus
+    - name: soft focus
+    - name: out of focus
+    - group: selective focus
+      children:
+        - name: front focus
+        - name: back focus
 
-- blur:
-  - background blur
-  - motion blur
+- group: blur/mosaic
+  children:
+    - name: background blur
+    - name: motion blur
+
 
 - shadings:
   - cel shading
