@@ -20,8 +20,7 @@
   - medium
   - short
 
-- group:
-  name: nsfw
+nsfw
 
 - type:
   - painting:
@@ -30,7 +29,7 @@
     - oil painting
   - photography:
  
-- focuses:
+focuses:
   - deep focus
   - shallow focuses:
     - front focus
