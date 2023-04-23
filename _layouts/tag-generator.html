@@ -3,14 +3,14 @@ layout: post
 ---
 
 <table id="wordTable">
-  <tr>
-    <td>apple</td>
-    <td>banana</td>
-  </tr>
-  <tr>
-    <td>car</td>
-    <td>bicycle</td>
-  </tr>
+  {% for product in site.data.tags %}
+    <tr>
+      <td>{{ product }}</td>
+      {% for product in product %}
+        <td>{{ product }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
 </table>
 <div id="tagContainer"></div>
 <button id="downloadButton">Download tags</button>
