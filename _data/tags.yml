@@ -39,10 +39,17 @@
         - name: front focus
         - name: back focus
 
-- group: blur/mosaic
+- group: blur
   tags:
-    - name: background blur
-    - name: motion blur
+    - group: gaussian blur
+      tags:
+        - name: blurred face
+        - name: blurred Vagina
+        - name: blurred background
+    - group: motion blur
+      tags:
+        - name: horizontal motion blur
+        - name: vertical motion blur
 
 
 - shadings:
