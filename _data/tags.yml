@@ -71,9 +71,12 @@
         - name: half up
         - name: braid
 
-- eyes:
-  - colors
-  - eyelash lengths
+- group: eyes
+  tags:
+    - group: eye color
+      tags:
+    - group: eyelash lengths
+      tags:
 
 - gazes:
   - looking at viewer
