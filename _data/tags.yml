@@ -30,17 +30,17 @@
   - photography:
  
 - group: focus
-  children:
+  tags:
     - name: deep focus
     - name: soft focus
     - name: out of focus
     - group: selective focus
-      children:
+      tags:
         - name: front focus
         - name: back focus
 
 - group: blur/mosaic
-  children:
+  tags:
     - name: background blur
     - name: motion blur
 
