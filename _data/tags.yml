@@ -29,13 +29,13 @@
     - oil painting
   - photography:
  
-- focus:
-  - deep focus
-  - soft focus
-  - out of focus
-  - selective focus:
-    - front focus
-    - back focus
+- group: focus
+  - name: deep focus
+  - name: soft focus
+  - name: out of focus
+  - group: selective focus
+    - name: front focus
+    - name: back focus
 
 - blur:
   - background blur
