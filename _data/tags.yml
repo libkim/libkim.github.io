@@ -29,13 +29,13 @@ nsfw
     - oil painting
   - photography:
  
-- group: focuse
+- focuse:
   - deep focus
-  - shallow focuses:
-    - front focus
-    - back focus
   - soft focus
   - out of focus
+  - selective focus:
+    - front focus
+    - back focus
 
 - blur:
   - background blur
