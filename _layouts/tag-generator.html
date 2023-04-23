@@ -2,11 +2,10 @@
 layout: post
 ---
 
-<table id="wordTable">
-  {% for product in site.data.tags %}
+<table class="wordTable">
     <tr>
       <td>{{ product }}</td>
-      {% for product in product %}
+      {% for product in site.data.tags %}
         <td>{{ product }}</td>
       {% endfor %}
     </tr>
@@ -19,7 +18,7 @@ layout: post
 
   const container = document.getElementById("tagContainer");
   const downloadButton = document.getElementById("downloadButton");
-  const tableCells = document.querySelectorAll("#wordTable td");
+  const tableCells = document.querySelectorAll(".wordTable td");
 let tags = [];
 
   for (const cell of tableCells) {
