@@ -2,82 +2,79 @@
 layout: post
 ---
 
-<table class="wordTable">
-    <tr>
-      <td>{{ product }}</td>
-      {% for product in site.data.tags %}
-        <td>{{ product }}</td>
-      {% endfor %}
-    </tr>
+<div id="checkboxContainer">
+  {% for product in site.data.tags %}
+    <input type="checkbox" id="appleCheckbox" value="{{ product.group }}">
+    <label for="appleCheckbox">{{ product.group }}</label>
+    <br>
   {% endfor %}
-</table>
+</div>
 <div id="tagContainer"></div>
 <button id="downloadButton">Download tags</button>
 
 <script>
 
-  const container = document.getElementById("tagContainer");
-  const downloadButton = document.getElementById("downloadButton");
-  const tableCells = document.querySelectorAll(".wordTable td");
+const container = document.getElementById("tagContainer");
+const downloadButton = document.getElementById("downloadButton");
+const checkboxes = document.querySelectorAll("#checkboxContainer input[type='checkbox']");
 let tags = [];
 
-  for (const cell of tableCells) {
-    cell.addEventListener("click", () => {
-      const word = cell.innerText.trim();
-      toggleTag(word);
-    });
+for (const checkbox of checkboxes) {
+  checkbox.addEventListener("change", () => {
+    const word = checkbox.value;
+    toggleTag(word, checkbox.checked);
+  });
+}
+
+function addTag(word) {
+  tags.push(word);
+
+  const tag = document.createElement("span");
+  tag.innerText = word;
+  tag.classList.add("tag");
+  container.appendChild(tag);
+  container.appendChild(document.createTextNode(", "));
+}
+
+function removeTag(word) {
+  tags = tags.filter(tag => tag !== word);
+  renderTags();
+}
+
+function toggleTag(word, checked) {
+  if (checked) {
+    addTag(word);
+  } else {
+    removeTag(word);
   }
+}
 
-  function addTag(word) {
-    tags.push(word);
-
-    const tag = document.createElement("span");
-    tag.innerText = word;
-    tag.classList.add("tag");
-    container.appendChild(tag);
+function renderTags() {
+  container.innerHTML = "";
+  tags.forEach(tag => {
+    const tagElement = document.createElement("span");
+    tagElement.innerText = tag;
+    tagElement.classList.add("tag");
+    container.appendChild(tagElement);
     container.appendChild(document.createTextNode(", "));
-  }
+  });
+}
 
-  function removeTag(word) {
-    tags = tags.filter(tag => tag !== word);
-    renderTags();
+function downloadTags() {
+  const tagString = tags.join(", ");
+  const blob = new Blob([tagString], {type: "text/plain;charset=utf-8"});
+  const filename = "tags.txt";
+  if (window.navigator.msSaveOrOpenBlob) {
+    window.navigator.msSaveBlob(blob, filename);
+  } else {
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    link.click();
+    URL.revokeObjectURL(link.href);
   }
+}
 
-  function toggleTag(word) {
-    const index = tags.indexOf(word);
-    if (index === -1) {
-      addTag(word);
-    } else {
-      removeTag(word);
-    }
-  }
-
-  function renderTags() {
-    container.innerHTML = "";
-    tags.forEach(tag => {
-      const tagElement = document.createElement("span");
-      tagElement.innerText = tag;
-      tagElement.classList.add("tag");
-      container.appendChild(tagElement);
-      container.appendChild(document.createTextNode(", "));
-    });
-  }
-
-  function downloadTags() {
-    const tagString = tags.join(", ");
-    const blob = new Blob([tagString], {type: "text/plain;charset=utf-8"});
-    const filename = "tags.txt";
-    if (window.navigator.msSaveOrOpenBlob) {
-      window.navigator.msSaveBlob(blob, filename);
-    } else {
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = filename;
-      link.click();
-      URL.revokeObjectURL(link.href);
-    }
-  }
-
-  downloadButton.addEventListener("click", downloadTags);
+downloadButton.addEventListener("click", downloadTags);
 
 </script>
