@@ -22,11 +22,11 @@
 
 - nsfw
 
-- type:
-  - painting:
-    - digital painting
-    - watercolor painting
-    - oil painting
+- group: painting
+  - digital painting
+  - watercolor painting
+  - oil painting
+
   - photography:
  
 - group: focus
