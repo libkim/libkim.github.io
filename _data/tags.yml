@@ -52,8 +52,10 @@
         - name: vertical motion blur
 
 
-- shadings:
-  - cel shading
+
+- group: shading
+  tags:
+    - name: cel shading
 
 - group: skin
   tags:
