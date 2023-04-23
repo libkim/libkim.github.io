@@ -5,7 +5,7 @@ layout: post
 <div id="checkboxContainer">
   {% for product in site.data.tags %}
     <input type="checkbox" id="{{ product[0] | append: "Checkbox" }}" value="{{ product[0] }}">
-    <label for="{{ product[0] | append: "Checkbox" }}">{{ product[0] }}</label>
+    <label for="{{ product[0] | append: "Checkbox" }}">"{{ product[0] }}"</label>
     <br>
   {% endfor %}
 </div>
