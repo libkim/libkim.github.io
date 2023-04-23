@@ -51,8 +51,6 @@
         - name: horizontal motion blur
         - name: vertical motion blur
 
-
-
 - group: shading
   tags:
     - name: cel shading
