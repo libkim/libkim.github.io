@@ -55,15 +55,21 @@
 - shadings:
   - cel shading
 
-- skin:
-  - colors
-  
-- hair:
-  - colors
-  - lengths
-  - styles:
-    - half up
-    - braid
+- group: skin
+  tags:
+    - group: skin color
+      tags:
+
+- group: hair
+  tags:
+    - group: hair color
+      tags:
+    - group: hair lengths
+      tags:
+    - group: hairstyles
+      tags:
+        - name: half up
+        - name: braid
 
 - eyes:
   - colors
@@ -81,4 +87,8 @@
 
 - accessories:
   - hairband
-  - garter
+
+- group: skin
+  tags:
+    - group: skin color
+      tags:  - garter
