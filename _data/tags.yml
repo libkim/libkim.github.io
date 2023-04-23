@@ -29,10 +29,10 @@ nsfw
     - oil painting
   - photography:
  
-- tag-group: focuse
-  - deep focus
-  - soft focus
-  - out of focus
+- group: focuse
+  - name: deep focus
+  - name: soft focus
+  - name: out of focus
   - selective focus:
     - front focus
     - back focus
