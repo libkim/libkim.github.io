@@ -87,10 +87,7 @@
   background: image
   underwear: g-string, crotchless panty
 
-- accessories:
-  - hairband
-
-- group: skin
+- group: accessories
   tags:
-    - group: skin color
-      tags:  - garter
+    - name: hairband
+    - name: garter
