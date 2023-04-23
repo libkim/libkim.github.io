@@ -23,11 +23,10 @@
 - name: nsfw
 
 - group: painting
-  - digital painting
-  - watercolor painting
-  - oil painting
-
-  - photography:
+  tags:
+    - name: digital painting
+    - name: watercolor painting
+    - name: oil painting
  
 - group: focus
   tags:
