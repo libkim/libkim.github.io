@@ -28,6 +28,14 @@
     - name: watercolor painting
     - name: oil painting
  
+- group: perspective
+  tags:
+    - name: one-point perspective
+    - name: two-point perspective
+    - name: three-point perspective
+    - name: curvilinear perspective
+
+
 - group: focus
   tags:
     - name: deep focus
