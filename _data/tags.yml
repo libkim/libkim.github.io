@@ -1,6 +1,10 @@
 - group: character
   tags:
-    - name: 
+    - name:
+
+- group: caricaturization
+  tags:
+    - name: chibi
 
 - colors:
   - black
