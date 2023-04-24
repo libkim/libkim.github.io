@@ -92,6 +92,42 @@
     - group: eyelash lengths
       tags:
 
+
+- group: top
+  tags:
+    - name: blouse
+    - name: dress shirt
+    - name: hoodie
+    - name: sweater
+    - name: cardigan
+    - name: tank top
+    - name: vest
+    - name: jacket
+    - name: blazer
+    - name: coat
+    - name: trench coat
+    - name: raincoat
+    - name: windbreaker
+    - name: parka
+    - name: anorak
+    - name: overcoat
+    - name: sweatshirt
+    - name: t-shirt
+    - name: polo shirt
+    - name: long goose down
+    - name: hawaiian shirt
+    - name: waistcoat
+    - name: puffer vest
+    - name: long coat
+    - name: blouse
+    - name: blouse
+    - name: blouse
+    - name: blouse
+    - name: blouse
+    - name: blouse
+
+
+
 - gazes:
   - looking at viewer
 
