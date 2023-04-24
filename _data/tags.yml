@@ -27,13 +27,15 @@
     - name: digital painting
     - name: watercolor painting
     - name: oil painting
- 
-- group: perspective
+
+- group: 3d projection
   tags:
-    - name: one-point perspective
-    - name: two-point perspective
-    - name: three-point perspective
-    - name: curvilinear perspective
+    - group: perspective
+      tags:
+        - name: one-point perspective
+        - name: two-point perspective
+        - name: three-point perspective
+        - name: curvilinear perspective
 
 
 - group: focus
