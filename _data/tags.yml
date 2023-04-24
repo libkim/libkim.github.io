@@ -32,11 +32,16 @@
   tags:
     - group: perspective
       tags:
-        - name: one-point perspective
-        - name: two-point perspective
-        - name: three-point perspective
+        - name: 1-point perspective
+        - name: 2-point perspective
+        - name: 3-point perspective
         - name: curvilinear perspective
-
+    - group: perspective
+      tags:
+        - name: 1-point perspective
+        - name: 2-point perspective
+        - name: 3-point perspective
+        - name: curvilinear perspective
 
 - group: focus
   tags:
