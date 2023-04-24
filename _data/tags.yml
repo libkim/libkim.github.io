@@ -28,14 +28,13 @@
     - name: watercolor painting
     - name: oil painting
 
-- group: 3d projection
+- group: projection
   tags:
-    - group: perspective
+    - group: orthographic
       tags:
-        - name: 1-point perspective
-        - name: 2-point perspective
-        - name: 3-point perspective
-        - name: curvilinear perspective
+        - name: isometric
+        - name: dimetric
+        - name: trimetric
     - group: perspective
       tags:
         - name: 1-point perspective
@@ -58,6 +57,7 @@
     - group: gaussian blur
       tags:
         - name: blurred face
+        - name: blurred penis
         - name: blurred Vagina
         - name: blurred background
     - group: motion blur
@@ -101,6 +101,8 @@
 - action: sex, spread legs, lying on back
   background: image
   underwear: g-string, crotchless panty
+
+- name: cross-section
 
 - group: accessories
   tags:
