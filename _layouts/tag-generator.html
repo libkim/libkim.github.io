@@ -10,7 +10,7 @@ layout: post
         {% for product in product.tags %}
           <li>{{ product.name }}</li>
           <li>{{ product.group }}
-            <ol>{% for product in product.tags %}</ol>
+            <ol>{% for product in product.tags %}{% endfor %}</ol>
           </li>
         {% endfor %}
       </ol>
