@@ -2,6 +2,23 @@
 layout: post
 ---
 
+<ul>
+  {% for product in site.data.tags %}
+    <li>{{ product.name }}</li>
+    <li>{{ product.group }}
+      <ol>
+        {% for product in product.tags %}
+          <li>{{ product.name }}</li>
+          <li>{{ product.group }}
+            <ol>{% for product in product.tags %}</ol>
+          </li>
+        {% endfor %}
+      </ol>
+    </li>
+  {% endfor %}
+</ul>
+
+
 <div id="checkboxContainer">
   {% for product in site.data.tags %}
     <input type="checkbox" id="{{ product.group | append: "Checkbox" }}" value="{{ product.group }}">
