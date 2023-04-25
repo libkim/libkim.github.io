@@ -2,9 +2,10 @@
   tags:
     - name:
 
-- group: caricaturization
+- group: chibi
   tags:
-    - name: chibi
+    - name: 2 heads tall
+    - name: 3 heads tall
 
 - colors:
   - black
