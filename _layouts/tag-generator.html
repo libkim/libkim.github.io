@@ -23,31 +23,27 @@ layout: post
 </ul>
 
 
-<div id="checkboxContainer">
-  {% for product in site.data.tags %}
-    <input type="checkbox" id="{{ product.group | append: "Checkbox" }}" value="{{ product.group }}">
-    <label for="{{ product.group | append: "Checkbox" }}">
-      {{ product.group }}
-    </label>
-    <br>
-  {% endfor %}
+<div class="chips">
+  <div class="chip" data-category="fruit" data-value="apple">Apple</div>
+  <div class="chip" data-category="fruit" data-value="banana">Banana</div>
+  <div class="chip" data-category="fruit" data-value="orange">Orange</div>
+</div>
+<div class="chips">
+  <div class="chip" data-category="transport" data-value="car">Car</div>
+  <div class="chip" data-category="transport" data-value="bike">Bike</div>
+  <div class="chip" data-category="transport" data-value="airplane">Airplane</div>
 </div>
 <div id="tagContainer"></div>
 <button id="downloadButton">Download tags</button>
+
 
 <script>
 
 const container = document.getElementById("tagContainer");
 const downloadButton = document.getElementById("downloadButton");
-const checkboxes = document.querySelectorAll("#checkboxContainer input[type='checkbox']");
+const fruitChips = document.querySelectorAll(".chips[data-category='fruit'] .chip");
+const transportChips = document.querySelectorAll(".chips[data-category='transport'] .chip");
 let tags = [];
-
-for (const checkbox of checkboxes) {
-  checkbox.addEventListener("change", () => {
-    const word = checkbox.value;
-    toggleTag(word, checkbox.checked);
-  });
-}
 
 function addTag(word) {
   tags.push(word);
@@ -96,6 +92,22 @@ function downloadTags() {
     link.click();
     URL.revokeObjectURL(link.href);
   }
+}
+
+for (const chip of fruitChips) {
+  chip.addEventListener("click", () => {
+    const word = chip.getAttribute("data-value");
+    toggleTag(word, chip.classList.contains("selected"));
+    chip.classList.toggle("selected");
+  });
+}
+
+for (const chip of transportChips) {
+  chip.addEventListener("click", () => {
+    const word = chip.getAttribute("data-value");
+    toggleTag(word, chip.classList.contains("selected"));
+    chip.classList.toggle("selected");
+  });
 }
 
 downloadButton.addEventListener("click", downloadTags);
