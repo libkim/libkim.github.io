@@ -102,3 +102,17 @@ html {
 		transform: rotate(0);
 	}
 }
+
+.chip {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  background-color: #ddd;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.chip.selected {
+  background-color: #66c;
+  color: #fff;
+}
