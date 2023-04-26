@@ -41,77 +41,19 @@ layout: post
 
 <script>
 
-const container = document.getElementById("tagContainer");
-const downloadButton = document.getElementById("downloadButton");
-const fruitChips = document.querySelectorAll(".chips[data-category='fruit'] .chip");
-const transportChips = document.querySelectorAll(".chips[data-category='transport'] .chip");
-let tags = [];
+const chips = document.querySelectorAll('.chip');
 
-function addTag(word) {
-  tags.push(word);
-
-  const tag = document.createElement("span");
-  tag.innerText = word;
-  tag.classList.add("tag");
-  container.appendChild(tag);
-  container.appendChild(document.createTextNode(", "));
-}
-
-function removeTag(word) {
-  tags = tags.filter(tag => tag !== word);
-  renderTags();
-}
-
-function toggleTag(word, checked) {
-  if (checked) {
-    addTag(word);
-  } else {
-    removeTag(word);
-  }
-}
-
-function renderTags() {
-  container.innerHTML = "";
-  tags.forEach(tag => {
-    const tagElement = document.createElement("span");
-    tagElement.innerText = tag;
-    tagElement.classList.add("tag");
-    container.appendChild(tagElement);
-    container.appendChild(document.createTextNode(", "));
+chips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    chip.classList.toggle('selected');
+    updateSelectedChips();
   });
-}
+});
 
-function downloadTags() {
-  const tagString = tags.join(", ");
-  const blob = new Blob([tagString], {type: "text/plain;charset=utf-8"});
-  const filename = "tags.txt";
-  if (window.navigator.msSaveOrOpenBlob) {
-    window.navigator.msSaveBlob(blob, filename);
-  } else {
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = filename;
-    link.click();
-    URL.revokeObjectURL(link.href);
-  }
+function updateSelectedChips() {
+  const selectedChips = document.querySelectorAll('.chip.selected');
+  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.category}: ${chip.dataset.value}`);
+  document.getElementById('selected-chips').textContent = selectedValues.join(', ');
 }
-
-for (const chip of fruitChips) {
-  chip.addEventListener("click", () => {
-    const word = chip.getAttribute("data-value");
-    toggleTag(word, chip.classList.contains("selected"));
-    chip.classList.toggle("selected");
-  });
-}
-
-for (const chip of transportChips) {
-  chip.addEventListener("click", () => {
-    const word = chip.getAttribute("data-value");
-    toggleTag(word, chip.classList.contains("selected"));
-    chip.classList.toggle("selected");
-  });
-}
-
-downloadButton.addEventListener("click", downloadTags);
 
 </script>
