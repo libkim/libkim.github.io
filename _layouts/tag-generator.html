@@ -22,20 +22,22 @@ layout: post
   {% endfor %}
 </ul>
 
-
-<div class="chips">
-  <div class="chip" data-category="fruit" data-value="apple">Apple</div>
-  <div class="chip" data-category="fruit" data-value="banana">Banana</div>
-  <div class="chip" data-category="fruit" data-value="orange">Orange</div>
-</div>
-<div class="chips">
+<div class="category">
+  <h3>Transport</h3>
   <div class="chip" data-category="transport" data-value="car">Car</div>
   <div class="chip" data-category="transport" data-value="bike">Bike</div>
   <div class="chip" data-category="transport" data-value="airplane">Airplane</div>
 </div>
-<div id="tagContainer"></div>
-<button id="downloadButton">Download tags</button>
-
+<div class="category">
+  <h3>Fruit</h3>
+  <div class="chip" data-category="fruit" data-value="apple">Apple</div>
+  <div class="chip" data-category="fruit" data-value="banana">Banana</div>
+  <div class="chip" data-category="fruit" data-value="orange">Orange</div>
+</div>
+<div>
+  <h3>Selected Chips:</h3>
+  <div id="selected-chips"></div>
+</div>
 
 <script>
 
