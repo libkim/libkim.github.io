@@ -45,6 +45,12 @@ const chips = document.querySelectorAll('.chip');
 
 chips.forEach(chip => {
   chip.addEventListener('click', () => {
+    if (chip.dataset.category === 'transport') {
+      if (selectedTransportChip) {
+        selectedTransportChip.classList.remove('selected');
+      }
+      selectedTransportChip = chip;
+    } 
     chip.classList.toggle('selected');
     updateSelectedChips();
   });
