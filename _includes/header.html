@@ -9,14 +9,14 @@
 </header>
 
 <nav>
-	<ul id="pages">
-		{% for item in site.data.pages.pages %}
-			<li><a href="{{ item.url }}">{{ item.name }}</a></li>
-		{% endfor %}
-	</ul>
-	<ul id="social">
-		{% for item in site.data.social.social %}
-			<li><a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a></li>
-		{% endfor %}
-	</ul>
+  <ul id="pages">
+    {% for item in site.data.pages.pages %}
+      <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+  <ul id="social">
+    {% for item in site.data.social.social %}
+      <li><a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a></li>
+    {% endfor %}
+  </ul>
 </nav>
