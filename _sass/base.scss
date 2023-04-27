@@ -32,39 +32,38 @@ html {
 }
 
 #markdown-toc {
-	counter-reset: menu;
-	list-style-type: none;
-	display: inline-block;
-	width: 300px;
-	// transform: rotate(-30deg);
-	li {
-		display: flex;
-		justify-content: flex-start;
-		order: 0;
-		a {
-			text-decoration: none;
-		}
-		a:link {
-			color: black;
-		}
-	}
-	li::before {
-		content: "";
-		display: block;
-		border-bottom: 1px dotted black;
-		position: relative;
-		top: 0px;
-		flex: 1 1 auto;
-		order:1;
-	}
-	li::after {
-		counter-increment: menu;
-		content: counters(menu, ".");
-		flex: 0 0 auto;
-		order: 2;
-		// transform: rotate(30deg);
-	}
+  counter-reset: menu;
+  list-style-type: none;
+  display: inline-block;
+  width: 300px;
+  li {
+    display: flex;
+    justify-content: flex-start;
+    order: 0;
+    a {
+      text-decoration: none;
+    }
+    a:link {
+      color: black;
+    }
+  }
+  li::before {
+    content: "";
+    display: block;
+    border-bottom: 1px dotted black;
+    position: relative;
+    top: 0px;
+    flex: 1 1 auto;
+    order:1;
+  }
+  li::after {
+  counter-increment: menu;
+  content: counters(menu, ".");
+  flex: 0 0 auto;
+  order: 2;
+  }
 }
+
 #markdown-toc::before {
 	content: "Contents";
 	font-family: OldLondon;
