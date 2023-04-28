@@ -67,9 +67,26 @@ chips.forEach(chip => {
   });
 });
 
+
+const transportRadios = document.querySelectorAll('input[name="transport"]');
+let selectedTransportRadio = null;
+
+transportRadios.forEach(radio => {
+  radio.addEventListener('change', () => {
+    if (selectedTransportRadio) {
+      selectedTransportRadio.checked = false;
+    }
+    selectedTransportRadio = radio;
+    updateSelectedChips();
+  });
+});
+
 function updateSelectedChips() {
   const selectedChips = document.querySelectorAll('.chip.selected');
   const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.category}: ${chip.dataset.value}`);
+  if (selectedTransportRadio) {
+    selectedValues.push(`Transport: ${selectedTransportRadio.value}`);
+  }
   document.getElementById('selected-chips').textContent = selectedValues.join(', ');
 }
 
