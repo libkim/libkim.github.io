@@ -19,11 +19,6 @@ layout: post
 
 function clearCheck(name) {
   var radio = document.querySelector('input[type=radio][name=${name}]:checked');
-  radio.checked = false;
-};
-
-function clearCheck(name) {
-  var radio = document.querySelector('input[type=radio][name=${name}]:checked');
   if (!!radio) {
     radio.checked = false;
   };
