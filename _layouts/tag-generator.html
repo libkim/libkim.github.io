@@ -2,22 +2,25 @@
 layout: post
 ---
 
-<div class="category"> 
   <h3>Transport</h3>
-  <div class="chip" data-value="car" onclick="selectChip(this)">Car</div>
-  <div class="chip" data-value="bike" onclick="selectChip(this)">Bike</div>
-  <div class="chip" data-value="airplane" onclick="selectChip(this)">Airplane</div>
+  <div class="choiceChips">
+    <div class="chip" data-value="car" onclick="selectChip(this)">Car</div>
+    <div class="chip" data-value="bike" onclick="selectChip(this)">Bike</div>
+    <div class="chip" data-value="airplane" onclick="selectChip(this)">Airplane</div>
+  </div>
 
   <h3>Fruit</h3>
-  <div class="chip" data-value="apple" onclick="selectChip(this)">Apple</div>
-  <div class="chip" data-value="banana" onclick="selectChip(this)">Banana</div>
-  <div class="chip" data-value="orange" onclick="selectChip(this)">Orange</div>
+  <div class="filterChips">
+    <div class="chip" data-value="apple" onclick="selectChip(this)">Apple</div>
+    <div class="chip" data-value="banana" onclick="selectChip(this)">Banana</div>
+    <div class="chip" data-value="orange" onclick="selectChip(this)">Orange</div>
+  </div>
 
   <h3>Selected Tags</h3>
   <div id="selected-chips"></div>
-</div> 
 
-<script> 
+<script>
+
 function selectChip(chip) {
    const isTransport = chip.classList.contains('transport');
    if (isTransport) {
