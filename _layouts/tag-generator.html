@@ -30,22 +30,12 @@ chips.forEach(chip => {
       updateSelectedChips();
     }
       updateSelectedChips();
-  } else {
+  } else if (chip.dataset.type == 'fl') {
     chip.addEventListener('click', () => {
       chip.classList.toggle('selected');
       updateSelectedChips();
     }
   }
-
-  chip.addEventListener('click', () => {
-    
-
-      choiceChips.forEach(chip => {
-        chip.classList.remove('selected');
-      })
-
-    
-  });
 });
 
 function updateSelectedChips() {
