@@ -25,23 +25,17 @@ layout: post
 <div class="category">
 
   <h3>Transport</h3>
-  <label class="chip">Car
-    <input type="radio" name="transport" value="car" onclick="updateSelectedTags()">
-  </label>
-  <label class="chip">Bike
-    <input type="radio" name="transport" value="bike" onclick="updateSelectedTags()">
-  </label>
-  <label class="chip">Airplane
-    <input type="radio" name="transport" value="airplane" onclick="updateSelectedTags()">
-  </label>
+  <span class="chip" data-value="car">Car</span>
+  <span class="chip" data-category="transport" data-value="bike">Bike</span>
+  <span class="chip" data-category="transport" data-value="airplane">Airplane</span>
 
   <h3>Fruit</h3>
-  <span class="chip" data-category="fruit" data-value="apple">Apple</span>
-  <span class="chip" data-category="fruit" data-value="banana">Banana</span>
-  <span class="chip" data-category="fruit" data-value="orange">Orange</span>
+  <span class="chip" data-value="apple">Apple</span>
+  <span class="chip" data-value="banana">Banana</span>
+  <span class="chip" data-value="orange">Orange</span>
 
   <h3>Selected Tags</h3>
-  <div id="selected-tags"></div>
+  <div id="selected-values"></div>
 
 </div>
 
@@ -51,38 +45,15 @@ const chips = document.querySelectorAll('.chip');
 
 chips.forEach(chip => {
   chip.addEventListener('click', () => {
-    if (chip.dataset.category === 'transport') {
-      if (selectedTransportChip) {
-        selectedTransportChip.classList.remove('selected');
-      }
-      selectedTransportChip = chip;
-    } 
     chip.classList.toggle('selected');
-    updateSelectedChips();
-  });
-});
-
-
-const transportRadios = document.querySelectorAll('input[name="transport"]');
-let selectedTransportRadio = null;
-
-transportRadios.forEach(radio => {
-  radio.addEventListener('change', () => {
-    if (selectedTransportRadio) {
-      selectedTransportRadio.checked = false;
-    }
-    selectedTransportRadio = radio;
     updateSelectedChips();
   });
 });
 
 function updateSelectedChips() {
   const selectedChips = document.querySelectorAll('.chip.selected');
-  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.category}: ${chip.dataset.value}`);
-  if (selectedTransportRadio) {
-    selectedValues.push(`Transport: ${selectedTransportRadio.value}`);
-  }
-  document.getElementById('selected-chips').textContent = selectedValues.join(', ');
+  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`);
+  document.getElementById('selected-values').textContent = selectedValues.join(', ');
 }
 
 </script>
