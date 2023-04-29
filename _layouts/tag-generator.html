@@ -20,9 +20,31 @@ layout: post
 const chips = document.querySelectorAll('.chip');
 
 chips.forEach(chip => {
+  if (chip.dataset.type == 'ch') {
+    chip.addEventListener('click', () => {
+      const choiceChips = document.querySelectorAll('div[data-type="ch"');
+      choiceChips.forEach(chip => {
+        chip.classList.remove('selected');
+      }
+      chip.classList.toggle('selected');
+      updateSelectedChips();
+    }
+      updateSelectedChips();
+  } else {
+    chip.addEventListener('click', () => {
+      chip.classList.toggle('selected');
+      updateSelectedChips();
+    }
+  }
+
   chip.addEventListener('click', () => {
-    chip.classList.toggle('selected');
-    updateSelectedChips();
+    
+
+      choiceChips.forEach(chip => {
+        chip.classList.remove('selected');
+      })
+
+    
   });
 });
 
