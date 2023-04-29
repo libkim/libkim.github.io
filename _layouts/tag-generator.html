@@ -2,39 +2,44 @@
 layout: post
 ---
 
-<div class="category">
+<div class="category"> 
+   <h3>Transport</h3> 
+   <span class="chip transport" data-value="car">Car</span> 
+   <span class="chip transport" data-value="bike">Bike</span> 
+   <span class="chip transport" data-value="airplane">Airplane</span> 
 
-  <h3>Transport</h3>
-  <span class="chip" data-value="car">Car</span>
-  <span class="chip" data-value="bike">Bike</span>
-  <span class="chip" data-value="airplane">Airplane</span>
+   <h3>Fruit</h3> 
+   <span class="chip fruit" data-value="apple">Apple</span> 
+   <span class="chip fruit" data-value="banana">Banana</span> 
+   <span class="chip fruit" data-value="orange">Orange</span>
 
-  <h3>Fruit</h3>
-  <span class="chip" data-value="apple">Apple</span>
-  <span class="chip" data-value="banana">Banana</span>
-  <span class="chip" data-value="orange">Orange</span>
-
-  <h3>Selected Tags</h3>
-  <div id="selected-chips"></div>
-
+   <h3>Selected Tags</h3> 
+   <div id="selected-chips"></div>
 </div>
 
-
 <script>
+const transportChips = document.querySelectorAll('.chip.transport');
 
-const chips = document.querySelectorAll('.chip');
+transportChips.forEach(chip => { 
+   chip.addEventListener('click', () => { 
+      if (chip.classList.contains('selected')) {
+         chip.classList.remove('selected');
+         updateSelectedChips();
+      } else {
+         transportChips.forEach(transportChip => {
+            if (transportChip !== chip) {
+               transportChip.classList.remove('selected');
+            }
+         });
+         chip.classList.add('selected');
+         updateSelectedChips();
+      }
+   }); 
+}); 
 
-chips.forEach(chip => {
-  chip.addEventListener('click', () => {
-    chip.classList.toggle('selected');
-    updateSelectedChips();
-  });
-});
-
-function updateSelectedChips() {
-  const selectedChips = document.querySelectorAll('.chip.selected');
-  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`);
-  document.getElementById('selected-chips').textContent = selectedValues.join(', ');
+function updateSelectedChips() { 
+   const selectedChips = document.querySelectorAll('.chip.selected'); 
+   const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`); 
+   document.getElementById('selected-chips').textContent = selectedValues.join(', '); 
 }
-
 </script>
