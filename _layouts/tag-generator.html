@@ -3,30 +3,33 @@ layout: post
 ---
 
 <h3>Choice Chip</h3>
-<input type="radio" name="transport" value="airplane">Airplane
-<input type="radio" name="transport" value="bicycle">Bicycle
-<input type="radio" name="transport" value="car">Car
+<div class="chip" data-type="ch" data-value="apple">Apple</div>
+<div class="chip" data-type="ch" data-value="banana">Banana</div>
+<div class="chip" data-type="ch" data-value="orange">Orange</div>
 
 <h3>Filter Chip</h3>
-<div class="chip" data-value="apple">Apple</div>
-<div class="chip" data-value="banana">Banana</div>
-<div class="chip" data-value="orange">Orange</div>
+<div class="chip" data-type="fl" data-value="apple">Apple</div>
+<div class="chip" data-type="fl" data-value="banana">Banana</div>
+<div class="chip" data-type="fl" data-value="orange">Orange</div>
 
 <h3>Result</h3>
 <div id='result'></div>
 
 <script>
 
-document.getElementByName('transport').onclick = function() {
-  var radio = document.querySelector('input[type=radio][name=transport]:checked');
-  radio.checked = false;
+const chips = document.querySelectorAll('.chip');
+
+chips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    chip.classList.toggle('selected');
+    updateSelectedChips();
+  });
+});
+
+function updateSelectedChips() {
+  const selectedChips = document.querySelectorAll('.chip.selected');
+  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.category}: ${chip.dataset.value}`);
+  document.getElementById('selected-chips').textContent = selectedValues.join(', ');
 }
-
-
-// if 선택되어 있는 라디오 버튼 눌렀으면 해제 또는 전체해제
-
-// 안됨. 전체해제 된 다음 라디오버튼이 선택되는 듯?
-
-
 
 </script>
