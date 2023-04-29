@@ -18,6 +18,16 @@ layout: post
 </div>
 
 <script>
+
+const chips = document.querySelectorAll('.chip');
+
+chips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    chip.classList.toggle('selected'); 
+    updateSelectedChips(); 
+  });
+}); 
+
 const transportChips = document.querySelectorAll('.chip.transport');
 
 transportChips.forEach(chip => { 
