@@ -2,40 +2,24 @@
 layout: post
 ---
 
-  <h3>Transport</h3>
-  <div class="choiceChips">
-    <div class="chip" data-value="car" onclick="selectChip(this)">Car</div>
-    <div class="chip" data-value="bike" onclick="selectChip(this)">Bike</div>
-    <div class="chip" data-value="airplane" onclick="selectChip(this)">Airplane</div>
-  </div>
+<h3>Choice Chip</h3>
+<input type="radio" name="transport" value="airplane">Airplane
+<input type="radio" name="transport" value="bicycle">Bicycle
+<input type="radio" name="transport" value="car" onclick="clearcheck()">Car
 
-  <h3>Fruit</h3>
-  <div class="filterChips">
-    <div class="chip" data-value="apple" onclick="selectChip(this)">Apple</div>
-    <div class="chip" data-value="banana" onclick="selectChip(this)">Banana</div>
-    <div class="chip" data-value="orange" onclick="selectChip(this)">Orange</div>
-  </div>
+<h3>Filter Chip</h3>
+<div class="chip" data-value="apple">Apple</div>
+<div class="chip" data-value="banana">Banana</div>
+<div class="chip" data-value="orange">Orange</div>
 
-  <h3>Selected Tags</h3>
-  <div id="selected-chips"></div>
+<h3>Result</h3>
+<div id='result'></div>
 
 <script>
 
-function selectChip(chip) {
-   const isTransport = chip.classList.contains('transport');
-   if (isTransport) {
-      const selectedTransportChip = document.querySelector('.chip.transport.selected');
-      if (selectedTransportChip) {
-         selectedTransportChip.classList.remove('selected');
-      }
-   }
-   chip.classList.toggle('selected');
-   updateSelectedChips();
-}
+function clearCheck() {
+  var radio = document.querySelector('input[type=radio][name=transport]:checked');
+  radio.checked = false;
+};
 
-function updateSelectedChips() { 
-   const selectedChips = document.querySelectorAll('.chip.selected'); 
-   const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`); 
-   document.getElementById('selected-chips').textContent = selectedValues.join(', '); 
-} 
 </script>
