@@ -3,9 +3,9 @@ layout: post
 ---
 
 <h3>Choice Chip</h3>
-<input type="radio" name="transport" value="airplane" onclick="clearCheck(transport)">Airplane
-<input type="radio" name="transport" value="bicycle" onclick="clearCheck(transport)">Bicycle
-<input type="radio" name="transport" value="car" onclick="clearCheck(transport)">Car
+<input type="radio" name="transport" value="airplane" onclick="clearCheck()">Airplane
+<input type="radio" name="transport" value="bicycle" onclick="clearCheck()">Bicycle
+<input type="radio" name="transport" value="car" onclick="clearCheck()">Car
 
 <h3>Filter Chip</h3>
 <div class="chip" data-value="apple">Apple</div>
@@ -17,12 +17,15 @@ layout: post
 
 <script>
 
-function clearCheck(name) {
-  var radio = document.querySelector('input[type=radio][name=' + name + ']:checked');
+function clearCheck() {
+  var radio = document.querySelector(input[type=radio][name=transport]:checked);
   if (!!radio) {
     radio.checked = false;
   }
 }
+
+
+
 
 // if 선택되어 있는 라디오 버튼 눌렀으면 해제 또는 전체해제
 
