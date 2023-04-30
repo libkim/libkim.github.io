@@ -111,32 +111,7 @@ html {
   cursor: pointer;
 }
 
-.chip.selected {
+.chip .selected {
   background-color: #66c;
-  color: #fff;
-}
-
-.category .radio-buttons label {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.category .radio-buttons input[type="radio"] {
-  display: none;
-}
-
-.category .radio-buttons .chip {
-  display: inline-block;
-  background-color: #e0e0e0;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #333;
-  cursor: pointer;
-}
-
-.category .radio-buttons input[type="radio"]:checked + .chip {
-  background-color: #2196f3;
   color: #fff;
 }
