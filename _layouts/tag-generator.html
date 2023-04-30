@@ -17,7 +17,7 @@ layout: post
 
 <script>
 
-const chips = document.querySelectorAll(".chip");
+const chips = document.querySelectorAll('.chip');
 
 chips.forEach(chip => {
   if (chip.classList.contains('choice')) {
@@ -26,6 +26,9 @@ chips.forEach(chip => {
         chip.classList.remove('selected');
       } else {
         // 그룹 안 selected 전체 해제;
+        const group = document.querySelectorAll('');
+        
+        
         chip.classList.add('selected');
       }
     });
