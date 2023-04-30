@@ -28,11 +28,11 @@ chips.forEach(chip => {
         // 그룹 안 selected 전체 해제;
         chip.classList.add('selected');
       }
-    }
+    });
   } else {
     chip.addEventListener('click', () => {
       chip.classList.toggle('selected');
-    }
+    });
   }
 }
 
