@@ -25,10 +25,10 @@ chips.forEach(chip => {
       if (chip.classList.contains('selected')) {
         chip.classList.remove('selected');
       } else {
-        // 그룹 안 selected 전체 해제;
-        const group = document.querySelectorAll('');
-        
-        
+        const group = document.querySelectorAll(`[data-group='fruit']`);
+        group.forEach(chip => {
+          chip.classList.remove('selected');
+        });
         chip.classList.add('selected');
       }
     });
