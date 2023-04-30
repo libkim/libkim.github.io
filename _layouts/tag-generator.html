@@ -20,8 +20,14 @@ layout: post
 const chips = document.querySelectorAll('.chip');
 
 chips.forEach(chip => {
-  if (chip.dataset.type == 'ch') {
+  if (chip.dataset.type == 'fl') {
     chip.addEventListener('click', () => {
+      chip.classList.toggle('selected');
+    }
+  } else {
+    chip.addEventListener('click', () => {
+      if ()
+    }
       const choiceChips = document.querySelectorAll('div[data-type="ch"');
       choiceChips.forEach(chip => {
         chip.classList.remove('selected');
