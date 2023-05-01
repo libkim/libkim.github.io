@@ -49,5 +49,11 @@ function updateSelectedChips() {
   const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`); document.getElementById('selectedValues').textContent = selectedValues.join(', ');
 }
 
+function downloadSelectedValues() {
+  const tagString = document.getElementById('selectedValues').textContent;
+  const filename = "tags.txt";
+}
+
+downloadButton.addEventListener('click', downloadSelectedValues);
 
 </script>
