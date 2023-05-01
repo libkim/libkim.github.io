@@ -2,6 +2,12 @@
 layout: post
 ---
 
+
+<h3>Choice Chip</h3>
+<div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
+<div class="choice chip" data-group="fruit1" data-value="banana">Banana</div>
+<div class="choice chip" data-group="fruit1" data-value="orange">Orange</div>
+
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit" data-value="apple">Apple</div>
 <div class="choice chip" data-group="fruit" data-value="banana">Banana</div>
@@ -24,7 +30,7 @@ chips.forEach(chip => {
       if (chip.classList.contains('selected')) {
         chip.classList.remove('selected');
       } else {
-        const group = document.querySelectorAll(`[data-group='fruit']`);
+        const group = document.querySelectorAll(`[data-group='${chip.dataset.group}']`);
         group.forEach(chip => {
           chip.classList.remove('selected');
         });
