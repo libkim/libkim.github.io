@@ -19,7 +19,7 @@ layout: post
 <div class="chip" data-value="orange">Orange</div>
 
 <h3>Result</h3>
-<div id='selected-chips'></div>
+<div id='selectedValues></div>
 
 <script>
 
@@ -46,8 +46,8 @@ chips.forEach(chip => {
 
 function updateSelectedChips() {
   const selectedChips = document.querySelectorAll('.chip.selected');
-  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`);
-  document.getElementById('selected-chips').textContent = selectedValues.join(', ');
+  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`); document.getElementById('selectedValues').textContent = selectedValues.join(', ');
 }
+
 
 </script>
