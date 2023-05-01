@@ -47,10 +47,12 @@
 - title: 거미입니다만, 문제라도?
   debut: 
 
-- title: 투러브루
+- title:
+  korean-title: 투러브루
   debut: 
 
-- title: 나루토
+- title:
+  korean-title: 나루토
   platform: tva
 
 - title: デュラララ!!
