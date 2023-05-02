@@ -1,4 +1,4 @@
-Please list about 50 animations in the yml form as below. Please write the title in Japanese if the original title is Japanese.
+I want to modify the existing yml file to the information I found on the Internet. For example, the form is as follows.
 
 - title: エア・ギア
   korean-title: 에어 기어
@@ -36,6 +36,8 @@ Please list about 50 animations in the yml form as below. Please write the title
 - title: バカとテストと召喚獣
   korean-title: 바보와 시험과 소환수
   debut: 2010-01
+
+And the part I want to change is as below.
 
 - title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
   debut: 
