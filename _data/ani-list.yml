@@ -1,59 +1,61 @@
 - title: エア・ギア
-  koreantitle: 에어 기어
+  korean-title: 에어 기어
   debut: 2006-04
   follow-ups:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
-      koreantitle: 에어 기어 검은 날개와 잠자는 숲 -Break on the sky-
+      korean-title: 에어 기어 검은 날개와 잠자는 숲 -Break on the sky-
 
 - title: PandoraHearts
-  koreantitle: 판도라하츠
+  korean-title: 판도라하츠
   debut: 2009-04
 
 - title: 化物語
-  koreantitle: 괴물 이야기
+  korean-title: 괴물 이야기
   debut: 2009-07
   films:
     - title: 傷物語 I 鉄血篇
       koreantitle: 상처 이야기 Ⅰ 철혈편
 
 - title: 瀬戸の花嫁
-  koreantitle: 세토의 신부
+  korean-title: 세토의 신부
   debut: 2007-04
   follow-ups:
     - title: 瀬戸の花嫁OVA
-      koreantitle: 세토의 신부 OVA
+      korean-title: 세토의 신부 OVA
 
 - title: ハウルの動く城
-  koreantitle: 하울의 움직이는 성
+  korean-title: 하울의 움직이는 성
   debut: 2004-11
 
 - title: 我が家のお稲荷さま。
-  koreantitle: 우리 집의 여우 신령님.
+  korean-title: 우리 집의 여우 신령님.
   debut: 2008-04
 
 - title: バカとテストと召喚獣
-  koreantitle: 바보와 시험과 소환수
+  korean-title: 바보와 시험과 소환수
   debut: 2010-01
 
 - title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
   debut: 
 
-- title: 비비 플로라이트 아이즈 송
-  debut: 
-
-- title: 아이돌즈!
-  debut: 
-
-- title: 거미입니다만, 문제라도?
+- title: ビビィ フローライトアイズソング
+  korean-title: 비비 플로라이트 아이즈 송
   debut: 
 
 - title:
+  korean-title: 아이돌즈!
+  debut: 
+
+- title: 蜘蛛ですが、なにか？
+  korean-title: 거미입니다만, 문제라도?
+  debut:
+
+- title: To LOVEる -とらぶる-
   korean-title: 투러브루
-  debut: 
+  debut:
 
-- title:
+- title: NARUTO -ナルト-
   korean-title: 나루토
-  platform: tva
 
 - title: デュラララ!!
   koreantitle: 듀라라라!!
@@ -868,8 +870,9 @@
 - title: 이나리 콩콩
   platform: tva
 
-- title: 블루 피리어드
-  lastwatchedep: 4
+- title:
+  korean-title: 블루 피리어드
+  lastwatchedep: 5
 
 - title: 暗殺教室
   koreantitle: 암살 교실
