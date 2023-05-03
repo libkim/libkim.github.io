@@ -58,42 +58,42 @@ layout: post
         {% endfor %}
       `;
     }
-    else if (switchedTitle == "koreantitle" && sortedTable == "debutAscTable"){
+    else if (switchedTitle == "koreanTitle" && sortedTable == "debutAscTable"){
       tbody.innerHTML = `
         {% assign sorted = site.data.ani-list | sort: 'debut' %}
         {% for product in sorted %}
           <tr>
             <td>{{ product.debut }}</td>
-            <td>{{ product.koreantitle }}</td>
+            <td>{{ product.korean-title }}</td>
             <td>
               {% for product in product.follow-ups %}
-                {{ product.koreantitle }}<br>
+                {{ product.korean-title }}<br>
               {% endfor %}
             </td>
             <td>
               {% for product in product.films %}
-                {{ product.koreantitle }}<br>
+                {{ product.korean-title }}<br>
               {% endfor %}
             </td>
           </tr>
         {% endfor %}
       `;
     }
-    else if (switchedTitle == "koreantitle" && sortedTable == "debutDescTable"){
+    else if (switchedTitle == "koreanTitle" && sortedTable == "debutDescTable"){
       tbody.innerHTML = `
         {% assign sorted = site.data.ani-list | sort: 'debut' | reverse %}
         {% for product in sorted %}
           <tr>
             <td>{{ product.debut }}</td>
-            <td>{{ product.koreantitle }}</td>
+            <td>{{ product.korean-title }}</td>
             <td>
               {% for product in product.follow-ups %}
-                {{ product.koreantitle }}<br>
+                {{ product.korean-title }}<br>
               {% endfor %}
             </td>
             <td>
               {% for product in product.films %}
-                {{ product.koreantitle }}<br>
+                {{ product.korean-title }}<br>
               {% endfor %}
             </td>
           </tr>
@@ -107,7 +107,7 @@ layout: post
     sortTable();
   }
   function switchTitleToKorean(){
-    switchedTitle = "koreantitle";
+    switchedTitle = "koreanTitle";
     sortTable();
   }
   function sortTableByDebutAsc(){
