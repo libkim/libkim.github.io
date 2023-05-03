@@ -935,9 +935,13 @@
   debut: 2022-11
 
 - title: 呪術廻戦
-  koreantitle: 주술회전
+  korean-title: 주술회전
   debut: 2020-10
   lastwatchedep: 21
+  films:
+    - title: 劇場版 呪術廻戦 0
+      korean-title: 극장판 주술회전 0
+      debut: 2021-12
 
 - title: 환영을 달리는 태양
   lastwatchedep: 1
