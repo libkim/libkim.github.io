@@ -914,8 +914,13 @@
 - title: 환영을 달리는 태양
   lastwatchedep: 1
 
-- title:
-  platform: tva
+- title: のんのんびより
+  korean-title: 논논비요리
+  debut: 2013-10-08
+  follow-ups:
+    - title: のんのんびより のんすとっぷ
+      korean-title: 논논비요리 논스톱
+      debut: 2021-01-10
 
 - title:
   platform: tva
