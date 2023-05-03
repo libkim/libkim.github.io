@@ -106,8 +106,23 @@
 - title: 미나미가
   platform: tva
 
-- title: 은혼
-  platform: tva
+- title: 銀魂
+  korean-title: 은혼
+  debut: 2006-04
+  follow-ups:
+    - title: 銀魂’
+      korean-title: 은혼’
+      debut: 2011-04
+    - title: 銀魂’延長戦
+      korean-title: 은혼’ 연장전
+      debut: 2012-10
+    - title: 銀魂ﾟ
+      korean-title: 은혼ﾟ
+      debut: 2015-04
+    - title: 銀魂.
+      korean-title: 은혼.
+      debut: 2017-01
+  films:
 
 - title: 카노콘
   platform: tva
