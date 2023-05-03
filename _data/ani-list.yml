@@ -181,8 +181,19 @@
 - title: 딸기 100%
   platform: tva
 
-- title: 강철의 연금술사
-  platform: tva
+- title: ONE PIECE
+  korean-title: 원피스
+  debut: 1999-10
+  follow-ups:
+
+- title: 鋼の錬金術師
+  korean-title: 강철의 연금술사
+  debut: 2003-10
+  follow-ups:
+    - title: 鋼の錬金術師 FULLMETAL ALCHEMIST
+      korean-title: 강철의 연금술사 FULLMETAL ALCHEMIST
+      debut: 2009-04
+  films:
 
 - title: 요스가노소라
   platform: tva
@@ -193,8 +204,9 @@
 - title: 바쿠만.
   platform: tva
 
-- title: 데스노트
-  platform: tva
+- title: DEATH NOTE
+  korean-title: 데스노트
+  debut: 2006-10
 
 - title: 테가미바치
   platform: tva
