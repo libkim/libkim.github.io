@@ -916,11 +916,18 @@
 
 - title: のんのんびより
   korean-title: 논논비요리
-  debut: 2013-10-08
+  debut: 2013-10
   follow-ups:
     - title: のんのんびより のんすとっぷ
+      korean-title: 논논비요리 리피트
+      debut: 2015-07
+    - title: のんのんびより のんすとっぷ
       korean-title: 논논비요리 논스톱
-      debut: 2021-01-10
+      debut: 2021-01
+  films:
+    - title: 劇場版 のんのんびより ばけーしょん
+      korean-title: 극장판 논논비요리 베케이션
+      debut: 2018-08
 
 - title:
   platform: tva
