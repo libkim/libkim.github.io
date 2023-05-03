@@ -879,11 +879,14 @@
   debut: 2013-12
   lastwatchedep: 3
 
-- title: 하이큐!!
+- title: ハイキュー!!
+  korean-title: 하이큐!!
   lastwatchedep: 13
   follow-ups:
     - title: 하이큐!! 세컨드 시즌
     - title: 하이큐!! 카라스마고교 VS 시라토리자와학원고교
+    - title: ハイキュー!! TO THE TOP
+      korean-title: 하이큐!! TO THE TOP
     
 - title: ネトゲの嫁は女の子じゃないと思った?
   koreantitle: 온라인 게임의 신부는 여자아이가 아니라고 생각한 거야?
