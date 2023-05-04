@@ -57,7 +57,7 @@ function updateSelectedChips() {
 }
 
 function downloadTags() {
-  const tags = selectedValues.join(", ");
+  const tags = document.getElementById("selectedValues");
   const blob = new Blob([tags], {type: "text/plain;charset=utf-8"});
   const filename = "tags.txt";
   if (window.navigator.msSaveOrOpenBlob) {
