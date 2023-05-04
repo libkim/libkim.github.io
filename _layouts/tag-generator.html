@@ -2,7 +2,6 @@
 layout: post
 ---
 
-
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
 <div class="choice chip" data-group="fruit1" data-value="banana">Banana</div>
@@ -23,35 +22,36 @@ layout: post
 
 <script>
 
-const chips = document.querySelectorAll('.chip');
+  const chips = document.querySelectorAll('.chip');
 
-chips.forEach(chip => {
-  if (chip.classList.contains('choice')) {
-    chip.addEventListener('click', () => {
-      if (chip.classList.contains('selected')) {
-        chip.classList.remove('selected');
-        updateSelectedChips();
-      } else {
-        const group = document.querySelectorAll(`[data-group='${chip.dataset.group}']`);
-        group.forEach(chip => {
+  chips.forEach(chip => {
+    if (chip.classList.contains('choice')) {
+      chip.addEventListener('click', () => {
+        if (chip.classList.contains('selected')) {
           chip.classList.remove('selected');
-        });
-        chip.classList.add('selected');
+          updateSelectedChips();
+        } else {
+          const group = document.querySelectorAll(`[data-group='${chip.dataset.group}']`);
+          group.forEach(chip => {
+            chip.classList.remove('selected');
+          });
+          chip.classList.add('selected');
+          updateSelectedChips();
+        }
+      });
+    } else {
+      chip.addEventListener('click', () => {
+        chip.classList.toggle('selected');
         updateSelectedChips();
-      }
-    });
-  } else {
-    chip.addEventListener('click', () => {
-      chip.classList.toggle('selected');
-      updateSelectedChips();
-    });
-  }
-});
+      });
+    }
+  });
 
-function updateSelectedChips() {
-  const selectedChips = document.querySelectorAll('.chip.selected');
-  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`); document.getElementById('selectedValues').textContent = selectedValues.join(', ');
-}
+  function updateSelectedChips() {
+    const selectedChips = document.querySelectorAll('.chip.selected');
+    const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`);
+    document.getElementById('selectedValues').textContent = selectedValues.join(', ');
+  }
 
 function downloadTags() {
   const tags = selectedValues.join(", ");
