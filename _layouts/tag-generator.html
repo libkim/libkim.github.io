@@ -29,17 +29,20 @@ chips.forEach(chip => {
     chip.addEventListener('click', () => {
       if (chip.classList.contains('selected')) {
         chip.classList.remove('selected');
+        updateSelectedChips();
       } else {
         const group = document.querySelectorAll(`[data-group='${chip.dataset.group}']`);
         group.forEach(chip => {
           chip.classList.remove('selected');
         });
         chip.classList.add('selected');
+        updateSelectedChips();
       }
     });
   } else {
     chip.addEventListener('click', () => {
       chip.classList.toggle('selected');
+      updateSelectedChips();
     });
   }
 });
@@ -49,9 +52,9 @@ function updateSelectedChips() {
   const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`); document.getElementById('selectedValues').textContent = selectedValues.join(', ');
 }
 
-function downloadSelectedValues() {
-  const tagString = document.getElementById('selectedValues').textContent;
-  const blob = new Blob([tagString], {type: "text/plain;charset=utf-8"});
+function downloadTags() {
+  const tags = selectedValues.join(", ");
+  const blob = new Blob([tags], {type: "text/plain;charset=utf-8"});
   const filename = "tags.txt";
   if (window.navigator.msSaveOrOpenBlob) {
     window.navigator.msSaveBlob(blob, filename);
@@ -61,8 +64,9 @@ function downloadSelectedValues() {
     link.download = filename;
     link.click();
     URL.revokeObjectURL(link.href);
+  }
 }
 
-downloadButton.addEventListener('click', downloadSelectedValues);
+downloadButton.addEventListener("click", downloadTags);
 
 </script>
