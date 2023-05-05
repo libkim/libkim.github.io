@@ -27,6 +27,8 @@ layout: post
 
 const chips = document.querySelectorAll(".chip");
 
+let prompt = [];
+
 chips.forEach(chip => {
   if (chip.classList.contains("choice")) {
     chip.addEventListener("click", () => {
@@ -52,13 +54,12 @@ chips.forEach(chip => {
 
 function updatePrompt() {
   const selectedChips = document.querySelectorAll(".chip.selected");
-  const selectedValues = Array.from(selectedChips).map(chip => chip.dataset.value);
-  const prompt = document.getElementById("promptContainer");
-  prompt.textContent = selectedValues.join(", ");
+  prompt = Array.from(selectedChips).map(chip => chip.dataset.value);
+  const promptContainer = document.getElementById("promptContainer");
+  promptContainer.textContent = prompt.join(", ");
 }
 
 function downloadPrompt() {
-  const prompt = document.getElementById("promptContainer");
   const blob = new Blob([prompt], {type: "text/plain;charset=utf-8"});
   const filename = "tags.txt";
   if (window.navigator.msSaveOrOpenBlob) {
