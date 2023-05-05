@@ -51,7 +51,10 @@ chips.forEach(chip => {
 });
 
 function updatePrompt() {
+  const prompt = document.getElementById("promptContainer");
+
   const selectedChips = document.querySelectorAll(".chip.selected");
+  
   const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`);
   document.getElementById('selectedValues').textContent = selectedValues.join(", ");
 }
