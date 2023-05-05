@@ -1,18 +1,18 @@
 
-@media all and (min-width: $breakpoint-3) and (max-width: calc($breakpoint-4 - 1px)) {
+@media all and (min-width: calc($desktop-width + 1px)) {
 
 }
 
-@media all and (min-width: $breakpoint-2) and (max-width: calc($breakpoint-3 - 1px)) {
+@media all and (min-width: calc($tablet-width + 1px)) and (max-width: $laptop-width)) {
 
 }
 
-@media all and (min-width: calc($smartphone + 1px)) and (max-width: $tablet) {
+@media all and (min-width: calc($smartphone-width + 1px)) and (max-width: $tablet-width) {
 
 }
 
-@media all and (max-width: $smartphone) {
-
+@media all and (max-width: $smartphone-width) {
+  
 }
 
 
