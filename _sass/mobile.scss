@@ -7,7 +7,7 @@
 
 }
 
-@media all and (min-width: $breakpoint-1 + 1px) and (max-width: $breakpoint-2) {
+@media all and (min-width:calc($breakpoint-1 + 1px)) and (max-width: $breakpoint-2) {
 
 }
 
