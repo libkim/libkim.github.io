@@ -20,7 +20,7 @@ layout: post
 <h3>Prompt</h3>
 <div id="promptContainer"></div>
 
-<button id="downloadPromptBtn">Download Prompt</button>
+<button onclick="downloadPrompt();">Download Prompt</button>
 
 
 <script>
@@ -58,7 +58,7 @@ function updatePrompt() {
 }
 
 function downloadPrompt() {
-  const tags = document.getElementById("selectedValues");
+  const prompt = document.getElementById("promptContainer");
   const blob = new Blob([tags], {type: "text/plain;charset=utf-8"});
   const filename = "tags.txt";
   if (window.navigator.msSaveOrOpenBlob) {
@@ -71,9 +71,5 @@ function downloadPrompt() {
     URL.revokeObjectURL(link.href);
   }
 }
-
-const downloadButton = document.getElementById("downloadButton");
-
-downloadButton.addEventListener("click", downloadTags);
 
 </script>
