@@ -12,12 +12,9 @@ $column-size: 70px;
 
 
 // Breakpoints
-$breakpoint-1-max: 480px;
-$breakpoint-2-min: 481px;
-$breakpoint-2-max: 768px;
-$breakpoint-3-min: 769px;
-$breakpoint-3-max: 1279px;
-$breakpoint-4-min: 1280px;
+$breakpoint-1: 480px;
+$breakpoint-2: 768px;
+$breakpoint-3: 1279px;
 
 // Mixins
 @mixin border($amount) {
