@@ -7,11 +7,11 @@
 
 }
 
-@media all and (min-width: $breakpoint-1) and (max-width: calc($breakpoint-2 - 1px)) {
+@media all and (min-width: $smartphones-breakpoint) and (max-width: calc($tablets-breakpoint - 1px)) {
 
 }
 
-@media all and (max-width: calc($breakpoint-1 - 1px)) {
+@media all and (max-width: calc($smartphones-breakpoint - 1px)) {
 
 }
 
