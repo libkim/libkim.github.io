@@ -52,20 +52,12 @@ chips.forEach(chip => {
 
 function updatePrompt() {
   const selectedChips = document.querySelectorAll(".chip.selected");
-  const selectedValues = Array.from(selectedChips).map(chip => `${chip.dataset.value}`);
-
-
+  const selectedValues = Array.from(selectedChips).map(chip => chip.dataset.value);
   const prompt = document.getElementById("promptContainer");
   prompt.textContent = selectedValues.join(", ");
-
-
-  
-  
-  
-  
 }
 
-function downloadTags() {
+function downloadPrompt() {
   const tags = document.getElementById("selectedValues");
   const blob = new Blob([tags], {type: "text/plain;charset=utf-8"});
   const filename = "tags.txt";
