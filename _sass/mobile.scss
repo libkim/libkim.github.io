@@ -7,11 +7,11 @@
 
 }
 
-@media all and (min-width: calc($smartphones + 1px)) and (max-width: $tablets) {
+@media all and (min-width: calc($smartphone + 1px)) and (max-width: $tablet) {
 
 }
 
-@media all and (max-width: $smartphones) {
+@media all and (max-width: $smartphone) {
 
 }
 
