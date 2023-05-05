@@ -1,5 +1,5 @@
 
-@media all and (min-width:1024px) and (max-width:1279px) {
+@media all and (min-width: $breakpoint-3) and (max-width: calc($breakpoint-4 - 1px)) {
 
 }
 
