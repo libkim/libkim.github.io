@@ -54,13 +54,13 @@ chips.forEach(chip => {
 
 function updatePrompt() {
   const selectedChips = document.querySelectorAll(".chip.selected");
-  prompt = Array.from(selectedChips).map(chip => chip.dataset.value);
+  prompt = Array.from(selectedChips).map(chip => chip.dataset.value).join(", ");
   const promptContainer = document.getElementById("promptContainer");
-  promptContainer.textContent = prompt.join(", ");
+  promptContainer.textContent = prompt;
 }
 
 function downloadPrompt() {
-  const blob = new Blob([prompt.join(", ")], {type: "text/plain;charset=utf-8"});
+  const blob = new Blob([prompt], {type: "text/plain;charset=utf-8"});
   const filename = "tags.txt";
   if (window.navigator.msSaveOrOpenBlob) {
     window.navigator.msSaveBlob(blob, filename);
