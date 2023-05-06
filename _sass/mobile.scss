@@ -22,6 +22,9 @@
   }
   header {
     width: 25vw;
+    #bar {
+      font-color: $another-sec-color
+    }
   }
   nav {
     order: -1;
