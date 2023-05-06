@@ -23,11 +23,14 @@
   header {
     font-family: 'ChosunKm';
     font-size: 2rem;
+    .title {
+      word-spacing: 4rem;
+    }
     .bar {
       color: $another-sec-color;
     }
     .description {
-      font-family: 'ChosunKg';
+      font-family: 'Raleway', sans-serif;
     }
   }
   nav {
