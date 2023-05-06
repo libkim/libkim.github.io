@@ -1,16 +1,16 @@
 #Site settings
-title: '金 立'
-description: '엎질러진글들의도서관'
+title: 金 立
+en-title: Lib Kim
+description: 엎질러진글들의도서관
 url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
 
 #Manifest
-manifest_name: 'Web App Full Name'
-manifest_short_name: 'Short Name' # Appears in "Add to home screen" dialogues and may have other importance also
+manifest_name: 엎질러진글들의도서관
+manifest_short_name: Lib Kim
 manifest_lang: en
 manifest_background_color: white
-manifest_short_name:
 manifest_display: standalone
 
 plugins:
