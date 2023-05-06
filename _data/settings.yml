@@ -3,13 +3,6 @@ subtitle:
   active: true
   text: 엎질러진글들의도서관
 
-#Nav 
-nav:
-  pages:
-    active: true
-  social:
-    active: true
-
 #Featured images in homepage
 featured-img:
   active: true
