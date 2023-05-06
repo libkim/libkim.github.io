@@ -12,13 +12,16 @@
 }
 
 @media all and (max-width: $smartphone-width) {
+  html {
+    font-size: 62.5%;
+  }
   body {
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
   header {
-    width: 100vw;
+    width: 50vw;
   }
   nav {
     order: -1;
