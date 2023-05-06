@@ -21,10 +21,12 @@
     flex-direction: column;
   }
   header {
-    font-family: 'ChosunKm';
     font-size: 2rem;
     .bar {
       color: $another-sec-color;
+    }
+    .description {
+      font-family: 'ChosunKm';
     }
   }
   nav {
