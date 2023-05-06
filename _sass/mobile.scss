@@ -38,15 +38,17 @@
   }
   #pages {
     order: 2;
-    margin-top: 12px;
-    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    text-align: right;
     a {
       font-size: 1.15rem;
     }
   }
   #social {
     order: 1;
-    margin-top: 12px;
+    margin-top: 1rem;
+    display: flex;
     i {
       font-size: 1.3rem;
     }
