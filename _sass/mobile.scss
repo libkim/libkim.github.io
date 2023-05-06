@@ -21,8 +21,9 @@
     flex-direction: column;
   }
   header {
-    font-weight: bold;
+    font-weight: 600;
     .bar {
+      font-weight: 400;
       color: $another-sec-color;
     }
   }
