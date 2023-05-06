@@ -13,14 +13,14 @@ manifest_background_color: white
 manifest_short_name:
 manifest_display: standalone
 
-#Plugins
+# Plugins
 plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 
-#Pagination
+# Pagination
 paginate: 3
 paginate_path: '/page:num/'
 
-#SEO
+# SEO
 twitter:
   username:
   card:
@@ -41,7 +41,7 @@ webmaster_verifications:
   baidu:
 lang: en_US
 
-#Highlighter
+# Highlighter
 kramdown:
   input: GFM
   syntax_highlighter: rouge
