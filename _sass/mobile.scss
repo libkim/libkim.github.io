@@ -12,6 +12,11 @@
 }
 
 @media all and (max-width: $smartphone-width) {
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
   header {
     width: 100vw;
   }
