@@ -24,16 +24,16 @@
   header {
     width: 70vw;
     height: 55vw;
-    font-family: 'ChosunKm';
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'ChosunKm';
     .title {
-      font-weight: light;
+      font-size: 6rem;
       word-spacing: 3rem;
     }
     .description {
-      font-weight: light;
+      font-size: 4rem;
       color: $another-sec-color;
     }
   }
