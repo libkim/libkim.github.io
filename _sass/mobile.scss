@@ -35,8 +35,9 @@
       }
     }
     .description {
+      display: flex;
+      justify-content: center;
       p {
-        text-align: center;
         font-size: 4rem;
         line-height: 1.5;
         color: $another-sec-color;
