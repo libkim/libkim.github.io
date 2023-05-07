@@ -1,5 +1,6 @@
 #Site settings
-title: 金 立 — Lib Kim
+title: 金 立
+en-title: Lib Kim
 description: Welcome to spilledNotesLibrary.
 url: 'https://libkim.github.io/'
 baseurl:
