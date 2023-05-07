@@ -1,8 +1,7 @@
 #Site settings
 title: 김 립
 en-title: Lib Kim
-description: Lib Kim is game designer, visual artist, and creative coder.
-en-description: SpilledNotesLibrary
+description: Lib Kim is game designer, visual artist and librarian of 엎질러진글들의도서관.
 url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
