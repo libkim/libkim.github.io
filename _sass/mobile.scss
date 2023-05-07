@@ -36,8 +36,9 @@
     }
     .description {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       p {
+        text-align: center;
         font-size: 4rem;
         line-height: 1.5;
         color: $another-sec-color;
