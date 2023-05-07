@@ -1,13 +1,13 @@
 #Site settings
 title: 김 립
 en-title: Lib Kim
-description: Lib Kim is game designer, visual artist and librarian of 엎질러진글들의도서관.
+description: is librarian of 엎질러진글들의도서관.
 url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
 
 #Manifest
-manifest_name: 김 립 | 엎질러진글들의도서관
+manifest_name: Lib Kim | 엎질러진글들의도서관
 manifest_short_name: Lib Kim
 manifest_lang: en
 manifest_background_color: white
