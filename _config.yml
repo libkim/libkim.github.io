@@ -1,13 +1,12 @@
 #Site settings
-title: 김 립
-en-title: Lib Kim
-description: Librarian of 엎질러진글들의도서관
+title: 金 立 — Lib Kim
+description: Welcome to spilledNotesLibrary.
 url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
 
 #Manifest
-manifest_name: Lib Kim | 엎질러진글들의도서관
+manifest_name: 金 立 — Lib Kim
 manifest_short_name: Lib Kim
 manifest_lang: en
 manifest_background_color: white
