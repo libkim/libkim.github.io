@@ -22,13 +22,18 @@
     flex-direction: column;
   }
   header {
-    width: 55vw;
+    width: 70vw;
+    height: 55vw;
     font-family: 'ChosunKm';
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .title {
+      font-weight: light;
       word-spacing: 3rem;
     }
     .bar {
+      font-weight: light;
       color: $another-sec-color;
     }
   }
