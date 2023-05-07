@@ -1,7 +1,7 @@
 #Site settings
 title: 김 립
 en-title: Lib Kim
-description: is librarian of 엎질러진글들의도서관.
+description: Librarian of 엎질러진글들의도서관
 url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
