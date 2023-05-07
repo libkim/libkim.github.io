@@ -29,12 +29,16 @@
     justify-content: space-between;
     font-family: 'ChosunKm';
     .title {
-      font-size: 6rem;
-      word-spacing: 3rem;
+      p {
+        font-size: 6rem;
+        word-spacing: 3rem;
+      }
     }
     .description {
-      font-size: 4rem;
-      color: $another-sec-color;
+      p {
+        font-size: 4rem;
+        color: $another-sec-color;
+      }
     }
   }
   nav {
