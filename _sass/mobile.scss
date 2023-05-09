@@ -97,7 +97,8 @@
     box shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF; 
     border-radius: 0;   
   }
-   label input:checked + .menu + ul { opacity: 1; }
+
+   label input:checked + .menu + ul { opacity: 1; }
   
   label ul { 
     z-index: 200; 
