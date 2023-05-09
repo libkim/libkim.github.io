@@ -15,12 +15,14 @@
   html {
     font-size: 62.5%;
   }
+
   body {
     width: 100vw;
     padding: 5vw;
     display: flex;
     flex-direction: column;
   }
+
   header {
     width: 70vw;
     height: 55vw;
@@ -44,6 +46,7 @@
       }
     }
   }
+
   nav {
     order: -1;
     width: 100vw;
