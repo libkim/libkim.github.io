@@ -48,33 +48,9 @@
 <script>
 var menu = document.getElementById("menu");
 var overlay = document.getElementById("overlay");
-var body = document.body;
 
 function toggleMenu() {
-  if (menu.classList.contains("open")) {
-    closeMenu();
-  } else {
-    openMenu();
-  }
-}
-
-function openMenu() {
-  menu.classList.add("open");
-  overlay.style.display = "block";
-  body.classList.add("menu-open");
-  document.addEventListener("click", handleOutsideClick);
-}
-
-function closeMenu() {
-  menu.classList.remove("open");
-  overlay.style.display = "none";
-  body.classList.remove("menu-open");
-  document.removeEventListener("click", handleOutsideClick);
-}
-
-function handleOutsideClick(event) {
-  if (!menu.contains(event.target)) {
-    closeMenu();
-  }
+  menu.classList.toggle("open");
+  overlay.classList.toggle("open");
 }
 </script>
