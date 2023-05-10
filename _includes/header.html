@@ -53,4 +53,10 @@ function toggleMenu() {
   menu.classList.toggle("open");
   overlay.classList.toggle("open");
 }
+
+overlay.addEventListener("click", function() {
+  if (menu.classList.contains("open")) {
+    toggleMenu();
+  }
+});
 </script>
