@@ -51,16 +51,32 @@
 </nav>
 
 <script>
+var menu = document.getElementById("menu");
+var overlay = document.getElementById("overlay");
+
 function toggleMenu() {
-  var menu = document.getElementById("menu");
-  var overlay = document.getElementById("overlay");
-  
   if (menu.style.display === "block") {
-    menu.style.display = "none";
-    overlay.style.display = "none";
+    closeMenu();
   } else {
-    menu.style.display = "block";
-    overlay.style.display = "block";
+    openMenu();
+  }
+}
+
+function openMenu() {
+  menu.style.display = "block";
+  overlay.style.display = "block";
+  document.addEventListener("click", handleOutsideClick);
+}
+
+function closeMenu() {
+  menu.style.display = "none";
+  overlay.style.display = "none";
+  document.removeEventListener("click", handleOutsideClick);
+}
+
+function handleOutsideClick(event) {
+  if (!menu.contains(event.target) && !overlay.contains(event.target)) {
+    closeMenu();
   }
 }
 </script>
