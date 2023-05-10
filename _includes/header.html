@@ -56,7 +56,7 @@ var overlay = document.getElementById("overlay");
 var body = document.body;
 
 function toggleMenu() {
-  if (menu.style.display === "block") {
+  if (menu.classList.contains("open")) {
     closeMenu();
   } else {
     openMenu();
@@ -64,23 +64,22 @@ function toggleMenu() {
 }
 
 function openMenu() {
-  menu.style.display = "block";
+  menu.classList.add("open");
   overlay.style.display = "block";
-  body.classList.add("menu-open"); // body에 클래스 추가
+  body.classList.add("menu-open");
   document.addEventListener("click", handleOutsideClick);
 }
 
 function closeMenu() {
-  menu.style.display = "none";
+  menu.classList.remove("open");
   overlay.style.display = "none";
-  body.classList.remove("menu-open"); // body의 클래스 제거
+  body.classList.remove("menu-open");
   document.removeEventListener("click", handleOutsideClick);
 }
 
 function handleOutsideClick(event) {
-  if (!menu.contains(event.target)) { // 메뉴 이외의 영역 클릭 시 닫힘
+  if (!menu.contains(event.target) && !event.target.classList.contains("navbar")) {
     closeMenu();
   }
 }
-
 </script>
