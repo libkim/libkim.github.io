@@ -47,64 +47,6 @@
     }
   }
 
-  .navbar {
-    background: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9999;
-  }
-
-  #hamburger {
-    display: block;
-    width: 30px;
-    height: 25px;
-    margin: 15px;
-    cursor: pointer;
-  }
-
-  #hamburger span {
-    background: #fff;
-    display: block;
-    height: 3px;
-    margin-bottom: 5px;
-  }
-
-  #menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    display: none;
-    z-index: 9998;
-  }
-
-  #menu li {
-    padding: 20px;
-  }
-
-  #menu li a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  #overlay {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 9997;
-  }
-
   .menu {
     display: none;
     position: fixed;
@@ -120,6 +62,34 @@
     display: block;
   }
 
+  #overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9997;
+  }
+
+ .navbar {
+   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #f1f1f1;
+    z-index: 9999;
+  }
+
+  .hamburger {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+ 
   nav {
     order: -1;
     width: 100vw;
