@@ -53,6 +53,7 @@
 <script>
 var menu = document.getElementById("menu");
 var overlay = document.getElementById("overlay");
+var body = document.body;
 
 function toggleMenu() {
   if (menu.style.display === "block") {
@@ -65,18 +66,21 @@ function toggleMenu() {
 function openMenu() {
   menu.style.display = "block";
   overlay.style.display = "block";
+  body.classList.add("menu-open"); // body에 클래스 추가
   document.addEventListener("click", handleOutsideClick);
 }
 
 function closeMenu() {
   menu.style.display = "none";
   overlay.style.display = "none";
+  body.classList.remove("menu-open"); // body의 클래스 제거
   document.removeEventListener("click", handleOutsideClick);
 }
 
 function handleOutsideClick(event) {
-  if (!event.target.closest(".navbar")) {
+  if (!menu.contains(event.target)) { // 메뉴 이외의 영역 클릭 시 닫힘
     closeMenu();
   }
 }
+
 </script>
