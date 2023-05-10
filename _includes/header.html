@@ -20,17 +20,22 @@
   {% endif %}
 </header>
 
-<label>
-  <input type="checkbox">
-  <span class="menu">
-    <span class="hamburger"></span>
-  </span>
-  <ul>
-    {% for item in site.data.pages.pages %}
-      <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-    {% endfor %}
+<div id="overlay"></div>
+  
+<div class="navbar">
+  <div id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+    
+  <ul id="menu">
+    <li><a href="#">메뉴 항목 1</a></li>
+    <li><a href="#">메뉴 항목 2</a></li>
+    <li><a href="#">메뉴 항목 3</a></li>
+    <li><a href="#">메뉴 항목 4</a></li>
   </ul>
-</label>
+</div>
 
 <nav>
   <ul id="pages">
