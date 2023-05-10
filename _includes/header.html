@@ -75,7 +75,7 @@ function closeMenu() {
 }
 
 function handleOutsideClick(event) {
-  if (!menu.contains(event.target) && !overlay.contains(event.target)) {
+  if (!event.target.closest(".navbar")) {
     closeMenu();
   }
 }
