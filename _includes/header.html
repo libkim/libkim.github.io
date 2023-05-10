@@ -59,4 +59,14 @@ overlay.addEventListener("click", function() {
     toggleMenu();
   }
 });
+
+// 메뉴 외부의 영역 클릭 시 메뉴 닫기
+document.addEventListener("click", function(event) {
+  var targetElement = event.target;
+  if (!targetElement.closest(".navbar")) {
+    if (menu.classList.contains("open")) {
+      toggleMenu();
+    }
+  }
+});
 </script>
