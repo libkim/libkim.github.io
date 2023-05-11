@@ -47,60 +47,6 @@
     }
   }
 
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: #f1f1f1;
-    z-index: 9999;
-  }
-
-  .hamburger {
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-  }
-
-  .menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 9998;
-  }
-
-  .menu.open {
-    display: block;
-  }
-
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .menu ul li {
-    margin-bottom: 20px;
-  }
-
-  .menu ul li a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-  }
-
   nav {
     order: -1;
     width: 100vw;
