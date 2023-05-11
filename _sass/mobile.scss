@@ -46,8 +46,9 @@
       }
     }
   }
-
+ 
   #overlay {
+    z-index: 120;
     position: fixed;
     top: 0;
     left: 0;
@@ -57,6 +58,13 @@
     backdrop-filter: brightness(1.1) blur(20px);
     mix-blend-mode: overlay;
   }
+  #hamburgerBtn {
+    z-index: 121;
+  }
+  #hamburgerPages {
+    z-index: 121;
+  }
+
 
   nav {
     order: -1;
