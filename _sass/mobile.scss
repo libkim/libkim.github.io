@@ -59,9 +59,11 @@
     mix-blend-mode: overlay;
   }
   #hamburgerBtn {
+    position: fixed;
     z-index: 121;
   }
   #hamburgerPages {
+    position: fixed;
     z-index: 121;
   }
 
