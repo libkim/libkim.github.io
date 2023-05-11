@@ -44,14 +44,18 @@
 </nav>
 
 <script>
-
 function toggleMenu() {
   const overlay = document.getElementById("overlay");
-  const hamburgerPages = document.getElementById("hbgPages");
-  if(con.style.display=='none') {
-    con.style.display = 'block'; 	
+  const hamburgerPages = document.getElementById("hamburgerPages");
+  if(overlay.style.display=="none") {
+    overlay.style.display = "block";
   } else {
-    	con.style.display = 'none';
+    	overlay.style.display = "none";
+  }
+  if(hamburgerPages.style.display=="none") {
+    hamburgerPages.style.display = "block";
+  } else {
+    	hamburgerPages.style.display = "none";
   }
 }
 </script>
