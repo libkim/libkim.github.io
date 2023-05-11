@@ -20,16 +20,14 @@
   {% endif %}
 </header>
 
-<div class="navbar">
-  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-  <div id="menu" class="menu">
-    <ul>
-      <li><a href="#">메뉴 항목 1</a></li>
-      <li><a href="#">메뉴 항목 2</a></li>
-      <li><a href="#">메뉴 항목 3</a></li>
-    </ul>
-  </div>
-  <div id="overlay" class="overlay"></div>
+<div id="hamburger">
+  <div id="overlay"></div>
+  <button class="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
+  <ul id="hamburgerPages">
+    {% for item in site.data.pages.pages %}
+      <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
 
 <nav>
@@ -46,27 +44,14 @@
 </nav>
 
 <script>
-var menu = document.getElementById("menu");
-var overlay = document.getElementById("overlay");
 
 function toggleMenu() {
-  menu.classList.toggle("open");
-  overlay.classList.toggle("open");
+  const overlay = document.getElementById("overlay");
+  const hamburgerPages = document.getElementById("hbgPages");
+  if(con.style.display=='none') {
+    con.style.display = 'block'; 	
+  } else {
+    	con.style.display = 'none';
+  }
 }
-
-overlay.addEventListener("click", function() {
-  if (menu.classList.contains("open")) {
-    toggleMenu();
-  }
-});
-
-// 메뉴 외부의 영역 클릭 시 메뉴 닫기
-document.addEventListener("click", function(event) {
-  var targetElement = event.target;
-  if (!targetElement.closest(".navbar")) {
-    if (menu.classList.contains("open")) {
-      toggleMenu();
-    }
-  }
-});
 </script>
