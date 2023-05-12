@@ -67,14 +67,15 @@
     position: fixed;
     top: 5vw;
     right: 5vw;
-    width: 10vw;
-    height: 10vw;
+    width: 5vw;
+    height: 5vw;
     z-index: 121;
   }
   #hamburgerPages {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 50%;
+    right: 50%;
+    text-align: center;
     z-index: 121;
   }
 
