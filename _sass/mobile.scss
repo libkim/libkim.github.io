@@ -48,7 +48,9 @@
   }
  
   #hamburger {
-    position: relative;
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
   }
   #overlay {
     z-index: 120;
@@ -62,7 +64,7 @@
     mix-blend-mode: overlay;
   }
   #hamburgerBtn {
-    position: relative;
+    position: fixed;
     z-index: 121;
   }
   #hamburgerPages {
