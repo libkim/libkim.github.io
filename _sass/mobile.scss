@@ -50,7 +50,7 @@
   #hamburger {
     position: fixed;
     top: 5rem;
-    left: 5rem;
+    right: 5rem;
   }
   #overlay {
     z-index: 120;
@@ -65,8 +65,6 @@
   }
   #hamburgerBtn {
     position: fixed;
-    top: 5rem;
-    left: 5rem;
     z-index: 121;
   }
   #hamburgerPages {
