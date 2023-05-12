@@ -48,7 +48,9 @@
   }
  
   #hamburger {
-    position: relative;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
   }
   #overlay {
     z-index: 120;
