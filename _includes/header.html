@@ -18,16 +18,21 @@
       <p>Not Found</p>
     </div>
   {% endif %}
+</header>
+
+<nav>
   <div id="hamburger">
     <div id="overlay"></div>
     <button id="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
-    <ul id="hamburgerPages">
-      {% for item in site.data.pages.pages %}
-        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-      {% endfor %}
-    </ul>
+    <div id="hamburgerPages">
+      <ul>
+        {% for item in site.data.pages.pages %}
+          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
-</header>
+</nav>
 
 <nav>
   <ul id="pages">
