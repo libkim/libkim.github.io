@@ -44,17 +44,7 @@
     }
   }
 
-  #overlay {
-    z-index: 120;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    -webkit-backdrop-filter: brightness(1.1) blur(20px);
-    backdrop-filter: brightness(1.1) blur(20px);
-    mix-blend-mode: overlay;
-  }
+  
   #hamburgerBtn {
     position: fixed;
     top: 5vw;
@@ -70,6 +60,17 @@
       position: fixed;
       top: 5vw;
       right: 5vw;
+      #overlay {
+        z-index: 120;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        -webkit-backdrop-filter: brightness(1.1) blur(20px);
+        backdrop-filter: brightness(1.1) blur(20px);
+        mix-blend-mode: overlay;
+      }
       .pages {
         position: fixed;
         top: 50%;
