@@ -21,14 +21,10 @@
 </header>
 
 <nav>
- 
-</nav>
-
-<nav>
   <div id="hamburger">
     <div id="overlay"></div>
     <button id="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
-    <div id="hamburgerMenu">
+    <div id="popupMenu">
       <ul>
         {% for item in site.data.pages.pages %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
