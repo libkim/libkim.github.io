@@ -50,7 +50,11 @@
       top: 0;
       left: 0;
       #overlay {
-        position: inherit;
+        display: none;
+      }
+      #overlay.open {
+        display: block;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 1000;
@@ -61,7 +65,7 @@
         mix-blend-mode: overlay;
       }
       #hamburgerBtn {
-        position: inherit;
+        position: fixed;
         top: 5vw;
         right: 5vw;
         z-index: 1001;
@@ -73,7 +77,7 @@
       }
       .pages.open {
         display: block;
-        position: inherit;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
