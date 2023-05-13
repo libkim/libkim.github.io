@@ -15,16 +15,14 @@
   html {
     font-size: 62.5%;
   }
-
   body {
     width: 100vw;
     padding: 5vw;
     display: flex;
     flex-direction: column;
   }
-
   header {
-    width: 70vw;
+    width: 90vw;
     height: 55vw;
     display: flex;
     flex-direction: column;
@@ -37,21 +35,15 @@
       }
     }
     .description {
-      display: flex;
-      flex-direction: column;
       p {
+        text-align: center;
         font-size: 4rem;
         line-height: 1.5;
         color: $another-sec-color;
       }
     }
   }
- 
-  #hamburger {
-    position: fixed;
-    top: 5rem;
-    right: 5rem;
-  }
+
   #overlay {
     z-index: 120;
     position: fixed;
@@ -71,7 +63,7 @@
     height: 5vw;
     z-index: 121;
   }
-  #hamburgerPages {
+  #popupPages {
     position: fixed;
     top: 50%;
     right: 50%;
@@ -80,14 +72,17 @@
   }
 
   nav {
-    order: -1;
-    width: 100vw;
-    display: none;
-    justify-content: space-between;
+    #hamburger {
+      position: fixed;
+      top: 5vw;
+      right: 5vw;
+    }
+    #navbar {
+      display: none;
+    }
   }
 
   #pages {
-    display: none;
     order: 2;
     margin-top: 1rem;
     text-align: right;
@@ -95,9 +90,7 @@
       font-size: 1.15rem;
     }
   }
-
   #social {
-    display: none;
     order: 1;
     margin-top: 1rem;
     li {
