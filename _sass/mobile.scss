@@ -44,17 +44,6 @@
     }
   }
 
-  
-  #hamburgerBtn {
-    position: fixed;
-    top: 5vw;
-    right: 5vw;
-    width: 5vw;
-    height: 5vw;
-    z-index: 121;
-  }
-  
-
   nav {
     #hamburger {
       position: fixed;
@@ -70,6 +59,14 @@
         -webkit-backdrop-filter: brightness(1.1) blur(20px);
         backdrop-filter: brightness(1.1) blur(20px);
         mix-blend-mode: overlay;
+      }
+      #hamburgerBtn {
+        position: fixed;
+        top: 5vw;
+        right: 5vw;
+        width: 5vw;
+        height: 5vw;
+        z-index: 121;
       }
       .pages {
         position: fixed;
@@ -90,13 +87,14 @@
         }
       }
       #social {
-      order: 1;
-      margin-top: 1rem;
-      li {
-        margin-right: 1rem;
-      }
-      i {
-        font-size: 1.3rem;
+        order: 1;
+        margin-top: 1rem;
+        li {
+          margin-right: 1rem;
+        }
+        i {
+          font-size: 1.3rem;
+        }
       }
     }
   }
