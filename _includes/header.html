@@ -53,16 +53,9 @@
 <script>
 function toggleMenu() {
   const overlay = document.getElementById("overlay");
-  const pages = document.getElementById("hamburger").getElementsByClassName("pages");
-  if(overlay.style.display=="none") {
-    overlay.style.display = "block";
-  } else {
-    overlay.style.display = "none";
-  }
-  if(pages.style.display=="none") {
-    pages.style.display = "block";
-  } else {
-    pages.style.display = "none";
-  }
+  const pages = document.querySelector("#hamburger .pages");
+
+  overlay.classList.toggle("open");
+  pages.classList.toggle("open");
 }
 </script>
