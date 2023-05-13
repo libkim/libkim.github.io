@@ -81,25 +81,23 @@
     }
     #navbar {
       display: none;
-    }
-  }
-
-  .pages {
-    order: 2;
-    margin-top: 1rem;
-    text-align: right;
-    a {
-      font-size: 1.15rem;
-    }
-  }
-  #social {
-    order: 1;
-    margin-top: 1rem;
-    li {
-      margin-right: 1rem;
-    }
-    i {
-      font-size: 1.3rem;
+      .pages {
+        order: 2;
+        margin-top: 1rem;
+        text-align: right;
+        a {
+          font-size: 1.15rem;
+        }
+      }
+      #social {
+      order: 1;
+      margin-top: 1rem;
+      li {
+        margin-right: 1rem;
+      }
+      i {
+        font-size: 1.3rem;
+      }
     }
   }
 }
