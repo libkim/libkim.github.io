@@ -24,7 +24,7 @@
   <div id="hamburger">
     <div id="overlay"></div>
     <button id="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
-    <div id="popupPages">
+    <div id="popupMenu">
       <ul>
         {% for item in site.data.pages.pages %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
@@ -53,16 +53,16 @@
 <script>
 function toggleMenu() {
   const overlay = document.getElementById("overlay");
-  const popupPages = document.getElementById("popupPages");
+  const popupMenu = document.getElementById("popupMenu");
   if(overlay.style.display=="none") {
     overlay.style.display = "block";
   } else {
     	overlay.style.display = "none";
   }
-  if(popupPages.style.display=="none") {
-    popupPages.style.display = "block";
+  if(popupMenu.style.display=="none") {
+    popupMenu.style.display = "block";
   } else {
-    	popupPages.style.display = "none";
+    	popupMenu.style.display = "none";
   }
 }
 </script>
