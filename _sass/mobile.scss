@@ -63,26 +63,27 @@
     height: 5vw;
     z-index: 121;
   }
-  #popupPages {
-    position: fixed;
-    top: 50%;
-    right: 50%;
-    text-align: center;
-    z-index: 121;
-  }
+  
 
   nav {
     #hamburger {
       position: fixed;
       top: 5vw;
       right: 5vw;
+      .pages {
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        text-align: center;
+        z-index: 121;
+      }
     }
     #navbar {
       display: none;
     }
   }
 
-  #pages {
+  .pages {
     order: 2;
     margin-top: 1rem;
     text-align: right;
