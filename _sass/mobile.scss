@@ -69,7 +69,10 @@
         height: 5vw;
       }
       .pages {
-        display
+        display: none;
+      }
+      .pages.open {
+        display: block;
         position: inherit;
         top: 50%;
         left: 50%;
