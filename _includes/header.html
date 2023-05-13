@@ -52,8 +52,9 @@
 
 <script>
 function toggleMenu() {
-  const overlay = document.getElementById("overlay");
-  const pages = document.getElementByClassName("pages")[0];
+  const hamburger = document.getElementById("hamburger");
+  const overlay = hamburger.getElementById("overlay");
+  const pages = hamburger.getElementByClassName("pages")[0];
   if(overlay.style.display=="none") {
     overlay.style.display = "block";
   } else {
