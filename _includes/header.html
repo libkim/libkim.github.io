@@ -21,10 +21,14 @@
 </header>
 
 <nav>
+ 
+</nav>
+
+<nav>
   <div id="hamburger">
     <div id="overlay"></div>
     <button id="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
-    <div id="hamburgerPages">
+    <div id="hamburgerMenu">
       <ul>
         {% for item in site.data.pages.pages %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
@@ -32,19 +36,22 @@
       </ul>
     </div>
   </div>
-</nav>
-
-<nav>
-  <ul id="pages">
-    {% for item in site.data.pages.pages %}
-      <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-    {% endfor %}
-  </ul>
-  <ul id="social">
-    {% for item in site.data.social.social %}
-      <li><a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a></li>
-    {% endfor %}
-  </ul>
+  <div id="navbar">
+    <div id="pages">
+      <ul>
+        {% for item in site.data.pages.pages %}
+          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="social">
+      <ul>
+        {% for item in site.data.social.social %}
+          <li><a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <script>
