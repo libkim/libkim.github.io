@@ -24,7 +24,7 @@
   <div id="hamburger">
     <div id="overlay"></div>
     <button id="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
-    <div id="popupMenu">
+    <div id="popupPages">
       <ul>
         {% for item in site.data.pages.pages %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
