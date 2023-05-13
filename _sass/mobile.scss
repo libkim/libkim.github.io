@@ -44,6 +44,15 @@
     }
   }
 
+  .pages {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    text-align: center;
+    z-index: 121;
+  }
+
+
   nav {
     #hamburger {
       position: fixed;
@@ -66,13 +75,6 @@
         right: 5vw;
         width: 5vw;
         height: 5vw;
-        z-index: 121;
-      }
-      .pages {
-        position: fixed;
-        top: 50%;
-        right: 50%;
-        text-align: center;
         z-index: 121;
       }
     }
