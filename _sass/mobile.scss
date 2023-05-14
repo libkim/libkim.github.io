@@ -37,16 +37,11 @@
       display: flex;
       align-items: center;
       p {
-        display: inline-block;
+        width: 100%;
         text-align: justify;
         text-justify: inter-cluster;
         font-family: 'ChosunKm';
         font-size: 2rem;
-      }
-      p:after {
-        content: "";
-        width: 100%;
-        display: inline-block;
       }
     }
     .description {
