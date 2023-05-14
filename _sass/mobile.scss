@@ -37,13 +37,9 @@
       display: flex;
       align-items: center;
       p {
-        text-align: justify;
+        text-align-last: justify;
+        font-family: 'ChosunKm';
         font-size: 2rem;
-      }
-      p:after {
-        content: "";
-        width: 100%;
-        display: inline-block;
       }
     }
     .description {
