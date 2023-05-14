@@ -32,14 +32,14 @@
       top: 5vw;
       left: 5vw;
       z-index: 1001;
-      width: 25vw;
-      height: 10vw;
+      width: 50vw;
+      height: 15vw;
       display: flex;
       align-items: center;
       p {
+        text-align: justify;
         font-family: 'ChosunKm';
         font-size: 2rem;
-        text-align: justify;
       }
     }
     .description {
