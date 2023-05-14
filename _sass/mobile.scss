@@ -32,7 +32,7 @@
       top: 5vw;
       left: 5vw;
       z-index: 1001;
-      width: 50vw;
+      width: 25vw;
       height: 15vw;
       display: flex;
       align-items: center;
@@ -40,6 +40,7 @@
         text-align: justify;
         font-family: 'ChosunKm';
         font-size: 2rem;
+        display: inline-block;
       }
     }
     .description {
