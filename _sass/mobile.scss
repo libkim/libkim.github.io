@@ -43,6 +43,11 @@
         font-family: 'ChosunKm';
         font-size: 2rem;
       }
+      p:after {
+        content: "";
+        width: 100%;
+        display: inline-block;
+      }
     }
     .description {
       p {
