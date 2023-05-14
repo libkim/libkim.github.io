@@ -38,13 +38,9 @@
       align-items: center;
       p {
         text-align: justify;
+        text-justify: inter-cluster;
         font-family: 'ChosunKm';
         font-size: 2rem;
-      }
-      p:after {
-        content: "";
-        display: inline-block;
-        width: 100%;
       }
     }
     .description {
