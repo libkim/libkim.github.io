@@ -38,8 +38,12 @@
       align-items: center;
       p {
         text-align: justify;
-        text-justify: inter-cluster;
         font-size: 2rem;
+      }
+      p:after {
+        content: "";
+        width: 100%;
+        display: inline-block;
       }
     }
     .description {
