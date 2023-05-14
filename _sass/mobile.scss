@@ -40,7 +40,11 @@
         text-align: justify;
         font-family: 'ChosunKm';
         font-size: 2rem;
+      }
+      p:after {
+        content: "";
         display: inline-block;
+        width: 100%;
       }
     }
     .description {
