@@ -28,8 +28,14 @@
     flex-direction: column;
     justify-content: space-between;
     .title {
-      font-family: 'ChosunKm';
+      position: fixed;
+      top: 5vw;
+      left: 5vw;
+      z-index: 1001;
+      width: auto;
+      height: 5vw;
       p {
+        font-family: 'ChosunKm';
         font-size: 2rem;
         word-spacing: 3rem;
       }
