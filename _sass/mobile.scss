@@ -34,12 +34,13 @@
       z-index: 1001;
       width: auto;
       height: 15vw;
-      display: inline-block;
       p {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
         font-family: 'ChosunKm';
         font-size: 2rem;
         word-spacing: 3rem;
-        vertical-align: middle;
       }
     }
     .description {
