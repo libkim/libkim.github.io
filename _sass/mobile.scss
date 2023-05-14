@@ -35,18 +35,11 @@
       width: 25vw;
       height: 15vw;
       display: flex;
-      flex-direction: row;
       align-items: center;
       p {
         text-align: justify;
-        text-justify: inter-cluster;
         font-family: 'ChosunKm';
         font-size: 2rem;
-        &:after {
-          content: "";
-          display: inline-block;
-          width: 100%;
-        }
       }
     }
     .description {
