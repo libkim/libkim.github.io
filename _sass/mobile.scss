@@ -36,14 +36,15 @@
       height: 15vw;
       display: flex;
       align-items: center;
+      text-align: justify;
+      text-align-last: justify;
+      font-family: 'ChosunKm';
+      font-size: 2rem;
       p {
         display: inline-block;
-        text-align: justify;
-        text-align-last: justify;
-        font-family: 'ChosunKm';
-        font-size: 2rem;
       }
       p:after {
+        display: inline-block;
         content: "";
       }
     }
