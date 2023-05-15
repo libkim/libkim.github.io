@@ -1,18 +1,14 @@
 <header>
   {% if page.title != "404" %}
     <div class="title">
-      <a href="{{ site.url }}">
-        <p>{{ site.title }}</p>
-      </a>
+      <p><a href="{{ site.url }}">{{ site.title }}</a></p>
     </div>
     <div class="description">
       <p>{{ site.description }}</p>
     </div>
   {% else %}
     <div class="title">
-      <a href="{{ site.url }}">
-        <p>404</p>
-      </a>
+      <p><a href="{{ site.url }}">404</a></p>
     </div>
     <div class="description">
       <p>Not Found</p>
