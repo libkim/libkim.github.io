@@ -153,18 +153,15 @@
 
 
 @media (max-width: 768px){
-    .post-info{
-        text-align: center;
-    }
-    ::-webkit-scrollbar {
-        height: 3px;
-      }
-    div .highlight{
-        padding-left: 8px;
-        padding-right: 0px;
-    }
-    pre .highlight{
-        padding-left: 8px;
-        padding-right: 0px;
-    }
+  ::-webkit-scrollbar {
+    height: 3px;
+  }
+  div .highlight{
+    padding-left: 8px;
+    padding-right: 0px;
+  }
+  pre .highlight{
+    padding-left: 8px;
+    padding-right: 0px;
+  }
 }
