@@ -4,27 +4,27 @@
 
 <title>
   {% if page.title == "Home" %}
-    {{ site.title }}, {{ site.description }}
+    {{ site.title }}
   {% else %}
     {{ page.title }} | {{ site.title }}
   {% endif %}
 </title>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/assets/js/jquery.multilingual.min.js"></script>
-
-<!--Atom-->
+<!-- Atom -->
 <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml">
-<!--Favicon-->
+<!-- Favicon -->
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<!--CSS-->
+<!-- CSS -->
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/syntax.css">
 <link rel="stylesheet" href="/assets/css/multilingual.css">
-<!--Icons-->
+<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<!--SEO Plugin-->
+<!-- SEO Plugin -->
 {% seo %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/assets/js/jquery.multilingual.min.js"></script>
