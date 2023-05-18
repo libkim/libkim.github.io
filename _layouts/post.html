@@ -6,22 +6,15 @@ layout: default
   <div class="post-title">
     <h3>{{ page.title }}</h3>
   </div>
-  
   <div class="post-info">
     <p>{{ page.date | date_to_string }}</p>
   </div>
-
   {{ content }}
-
 </article>
 
-{% if site.data.settings.categories.active %}
-  {% include categories.html %}
-{% endif %}
+{% include categories.html %}
 
-{% if site.data.settings.related-posts.active %}
-  {% include related-posts.html %}
-{% endif %}
+{% include related-posts.html %}
 
 {% if site.data.settings.mathjax.active %}
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
