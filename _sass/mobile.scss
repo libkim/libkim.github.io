@@ -87,15 +87,15 @@
           word-break: break-all;
         }
       }
-      .datetime {
-        z-index: 2;
-        width: 90px;
-        margin-top: 14px;
-        font-family: 'Raleway', sans-serif;
-        font-size: 1.8rem;
-        color: $another-sec-color;
+      .post-info {
+        margin-top: 5vw;
+        width: 18vw;
+        height: auto;
         p {
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.8rem;
           line-height: 1.4em;
+          color: $another-sec-color;
         }
       }
     }
