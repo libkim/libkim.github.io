@@ -1,7 +1,7 @@
 #Site settings
 title: 金 立
 en-title: Lib Kim
-description: 'Welcome to spilledNotesLibrary.'
+description: 'Welcome to spilled Notes Library.'
 url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
