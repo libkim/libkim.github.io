@@ -898,20 +898,24 @@
   koreantitle: 서머타임 렌더
   lastwatchedep: 5
 
-- title: 봇치 더 록
-  platform: tva
+- title: ぼっち・ざ・ろっく！
+  ko-title: 봇치 더 록!
+  debut: 
 
-- title: 이나리 콩콩
-  platform: tva
+- title: いなり、こんこん、恋いろは。
+  ko-title: 이나리, 콩콩, 사랑의 첫걸음.
+  debut: 2014-01
+  lastwatchedep: 1
 
-- title:
-  korean-title: 블루 피리어드
-  lastwatchedep: 5
+- title: ブルーピリオド
+  ko-title: 블루 피리어드
+  debut: 2021-10
+  lastwatchedep: 6
 
 - title: 暗殺教室
   koreantitle: 암살 교실
   debut: 2013-12
-  lastwatchedep: 3
+  lastwatchedep: 7
 
 - title: ハイキュー!!
   ko-title: 하이큐!!
