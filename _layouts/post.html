@@ -9,7 +9,9 @@ layout: default
   <div class="post-info">
     <p>{{ page.date | date_to_string }}</p>
   </div>
-  {{ content }}
+  <div class="post-content">
+    {{ content }}
+  </div>
 </article>
 
 {% include categories.html %}
