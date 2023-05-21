@@ -937,7 +937,6 @@
 - title: 呪術廻戦
   korean-title: 주술회전
   debut: 2020-10
-  lastwatchedep: 21
   films:
     - title: 劇場版 呪術廻戦 0
       korean-title: 극장판 주술회전 0
@@ -962,5 +961,9 @@
       debut: 2018-08
 
 - title: イエスタデイをうたって
-  korean-title: 예스터데이를 불러줘
+  ko-title: 예스터데이를 불러줘
   debut: 2020-04
+
+- title: 推しの子
+  ko-title: 최애의 아이
+  debut: 2023-04
