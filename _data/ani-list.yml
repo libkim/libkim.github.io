@@ -262,11 +262,17 @@
 - title: 해파리 공주
   platform: tva
 
-- title: 이것은 좀비입니까?
-  platform: tva
+- title: これはゾンビですか？
+  ko-title: 이것은 좀비입니까?
+  debut: 2011-01
 
-- title: 슈타인즈 게이트
-  platform: tva
+- title: Steins;Gate
+  ko-title: 슈타인즈;게이트
+  debut: 2011-04
+  follow-ups:
+    - title: Steins;Gate 0
+      ko-title: 슈타인즈;게이트 0
+      debut: 2018-04
 
 - title: 꽃이 피는 첫걸음
   platform: tva
