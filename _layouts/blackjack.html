@@ -42,6 +42,7 @@ layout: post
 <div id="player2Buttons"></div>
 
 <script>
+let turnCount = 0;
 let isPlayer1First = true;
 let deck = [
   'sA', 's2', 's3', 's4', 's5', 's6',
@@ -75,6 +76,15 @@ let player2Nums = [
 
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
+}
+
+function updateTurn() {
+  
+}
+
+function gameStart() {
+  turnCount++;
+  updateTurn();
 }
 
 </script>
