@@ -1,21 +1,26 @@
 - title: エア・ギア
-  korean-title: 에어 기어
+  ko-title: 에어 기어
   debut: 2006-04
   follow-ups:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
-      korean-title: 에어 기어 검은 날개와 잠자는 숲 -Break on the sky-
+      ko-title: 에어 기어 검은 날개와 잠자는 숲 -Break on the sky-
+      debut: 2010-11
 
 - title: PandoraHearts
-  korean-title: 판도라하츠
+  ko-title: 판도라하츠
   debut: 2009-04
 
 - title: 化物語
-  korean-title: 괴물 이야기
+  ko-title: 괴물 이야기
   debut: 2009-07
   films:
     - title: 傷物語 I 鉄血篇
-      koreantitle: 상처 이야기 Ⅰ 철혈편
-
+      ko-title: 상처 이야기 Ⅰ 철혈편
+    - title: 傷物語 Ⅱ 熱血篇
+      ko-title: 상처 이야기 Ⅰ 철혈편
+    - title: 傷物語 Ⅲ 冷血篇
+      ko-title: 상처 이야기 Ⅰ 철혈편
+    
 - title: 瀬戸の花嫁
   korean-title: 세토의 신부
   debut: 2007-04
