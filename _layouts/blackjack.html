@@ -4,21 +4,39 @@ layout: post
 
 <style>
 #player1BtnCon {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#player1Buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #player1BoardCon {
+  width: 30%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #player2BoardCon {
+  width: 30%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #player2BtnCon {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#player2Buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,7 +122,7 @@ function shuffle(array) {
 }
 
 function updateTurn() {
-  document.getElementById("turn").innerText = "턴" + turnCount;
+  document.getElementById("turn").innerText = "턴 " + turnCount;
 }
 
 function gameStart() {
