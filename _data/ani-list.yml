@@ -14,34 +14,39 @@
   ko-title: 괴물 이야기
   debut: 2009-07
   films:
-    - title: 傷物語 I 鉄血篇
+    - title: 傷物語〈Ⅰ鉄血篇〉
       ko-title: 상처 이야기
-    - title: 傷物語 Ⅱ 熱血篇
+      debut: 2016-01
+    - title: 傷物語〈Ⅱ熱血篇〉
       ko-title: 상처 이야기
+      debut: 2016-08
     - title: 傷物語〈Ⅲ冷血篇〉
       ko-title: 상처 이야기
+      debut: 2017-01
     
 - title: 瀬戸の花嫁
-  korean-title: 세토의 신부
+  ko-title: 세토의 신부
   debut: 2007-04
   follow-ups:
     - title: 瀬戸の花嫁OVA
-      korean-title: 세토의 신부 OVA
+      ko-title: 세토의 신부 OVA
+      debut:
 
 - title: ハウルの動く城
-  korean-title: 하울의 움직이는 성
+  ko-title: 하울의 움직이는 성
   debut: 2004-11
 
 - title: 我が家のお稲荷さま。
-  korean-title: 우리 집의 여우 신령님.
+  ko-title: 우리 집의 여우 신령님.
   debut: 2008-04
 
 - title: バカとテストと召喚獣
-  korean-title: 바보와 시험과 소환수
+  ko-title: 바보와 시험과 소환수
   debut: 2010-01
 
-- title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
-  debut: 
+- title: スライム倒して300年、知らないうちにレベルMAXになってました
+  ko-title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
+  debut: 2021-04
 
 - title: ビビィ フローライトアイズソング
   korean-title: 비비 플로라이트 아이즈 송
