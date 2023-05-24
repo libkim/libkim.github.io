@@ -941,11 +941,11 @@
   debut: 2023-01
 
 - title: すずめの戸締まり
-  koreantitle: 스즈메의 문단속
+  ko-title: 스즈메의 문단속
   debut: 2022-11
 
 - title: 呪術廻戦
-  korean-title: 주술회전
+  ko-title: 주술회전
   debut: 2020-10
   films:
     - title: 劇場版 呪術廻戦 0
