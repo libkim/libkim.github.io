@@ -11,7 +11,13 @@ layout: post
   position: absolute;
   top: 3px;
   left: 50%;
-  transform: translate (-50%, 0);
+  transform: translate(0, -50%);
+}
+#dealBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #player1BtnCon {
   width: 20%;
@@ -102,7 +108,7 @@ layout: post
 </style>
 
 <div id="viewer"></div>
-<div id="gameStartBtn"></div>
+<div id="dealBtn"></div>
 <div id="turn"></div>
 <div id="player1BtnCon"></div>
 <div id="player1Buttons"></div>
@@ -182,7 +188,7 @@ function updateTurn() {
   document.getElementById("turn").innerText = "턴 " + turnCount;
 }
 
-function gameStart() {
+function deal() {
   turnCount++;
   updateTurn();
 }
