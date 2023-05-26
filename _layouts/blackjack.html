@@ -2,132 +2,104 @@
 layout: post
 ---
 
-<style>
-#player1BtnCon {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#player1Buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#player1BoardCon {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#player2BoardCon {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#player2BtnCon {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#player2Buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+<h1>Blackjack</h1>
+<div id="message" class="message">Click 'Deal' to start the game!</div>
+<button id="deal" onclick="deal()">Deal</button>
+<button id="hit" onclick="hit()">Hit</button>
+<button id="stand" onclick="stand()">Stand</button>
+<div id="player-hand"></div>
+<div id="dealer-hand"></div>
 
-</style>
-
-<div id="viewer"></div>
-<div id="gameStartBtn"></div>
-<div id="turn"></div>
-<div id="player1BtnCon"></div>
-<div id="player1Buttons"></div>
-<div id="player1BoardCon"></div>
-<div id="player1Result"></div>
-<div id="player1Board"></div>
-<div id="player1Card0"></div>
-<div id="player1Card1"></div>
-<div id="player1Card2"></div>
-<div id="player1Card3"></div>
-<div id="player1Card4"></div>
-<div id="player1Card5"></div>
-<div id="player1Card6"></div>
-<div id="player1Card7"></div>
-<div id="player1Card8"></div>
-<div id="player1Card9"></div>
-<div id="player1Card10"></div>
-<div id="player1Card11"></div>
-<div id="player1BoardValue"></div>
-<div id="player2BoardCon"></div>
-<div id="player2Result"></div>
-<div id="player2Board"></div>
-<div id="player2Card0"></div>
-<div id="player2Card1"></div>
-<div id="player2Card2"></div>
-<div id="player2Card3"></div>
-<div id="player2Card4"></div>
-<div id="player2Card5"></div>
-<div id="player2Card6"></div>
-<div id="player2Card7"></div>
-<div id="player2Card8"></div>
-<div id="player2Card9"></div>
-<div id="player2Card10"></div>
-<div id="player2Card11"></div>
-<div id="player2BoardValue"></div>
-<div id="player2BtnCon"></div>
-<div id="player2Buttons"></div>
 
 <script>
-let turnCount = 0;
-let isPlayer1First = true;
-let deck = [
-  'sA', 's2', 's3', 's4', 's5', 's6',
-  's7', 's8', 's9', 'sX', 'sJ', 'sQ',
-  'sK', 'dA', 'd2', 'd3', 'd4', 'd5',
-  'd6', 'd7', 'd8', 'd9', 'dX', 'dJ',
-  'dQ', 'dK', 'cA', 'c2', 'c3', 'c4',
-  'c5', 'c6', 'c7', 'c8', 'c9', 'cX',
-  'cJ', 'cQ', 'cK', 'hA', 'h2', 'h3',
-  'h4', 'h5', 'h6', 'h7', 'h8', 'h9',
-  'hX', 'hJ', 'hQ', 'hK'
-];
-let player1Cards = [
-  'void', 'void', 'void', 'void', 'void',
-  'void', 'void', 'void', 'void', 'void',
-  'void', 'void'
-];
-let player2Cards = [
-  'void', 'void', 'void', 'void', 'void',
-  'void', 'void', 'void', 'void', 'void',
-  'void', 'void'
-];
-let player1Nums = [
-  0, 0, 0, 0, 0, 0,
-  0, 0, 0, 0, 0, 0
-];
-let player2Nums = [
-  0, 0, 0, 0, 0, 0,
-  0, 0, 0, 0, 0, 0
+// Define the card suits and ranks
+const suits = ["Hearts", "Clubs", "Diamonds", "Spades"];
+const ranks = [
+  "Ace",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "Jack",
+  "Queen",
+  "King",
 ];
 
-function shuffle(array) {
-  array.sort(() => Math.random() - 0.5);
+// Create a deck of cards
+let deck = [];
+for (let suit of suits) {
+  for (let rank of ranks) {
+    deck.push({ rank, suit });
+  }
 }
 
-function updateTurn() {
-  document.getElementById("turn").innerText = "턴 " + turnCount;
+// Shuffle the deck
+function shuffleDeck() {
+  for (let i = deck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [deck[i], deck[j]] = [deck[j], deck[i]];
+  }
 }
 
-function gameStart() {
-  turnCount++;
-  updateTurn();
+// Deal initial cards to the player and dealer
+function deal() {
+  shuffleDeck();
+
+  // Clear hands
+  document.getElementById("player-hand").innerHTML = "";
+  document.getElementById("dealer-hand").innerHTML = "";
+
+  // Deal two cards to the player
+  const playerHand = [deck.pop(), deck.pop()];
+  for (let card of playerHand) {
+    showCard(card, "player-hand");
+  }
+
+  // Deal two cards to the dealer
+  const dealerHand = [deck.pop(), deck.pop()];
+  for (let card of dealerHand) {
+    showCard(card, "dealer-hand");
+  }
+
+  // Enable/disable buttons
+  document.getElementById("deal").disabled = true;
+  document.getElementById("hit").disabled = false;
+  document.getElementById("stand").disabled = false;
+
+  // Update game message
+  document.getElementById("message").textContent = "Choose to hit or stand.";
 }
+
+// Add a new card to the player's hand
+function hit() {
+  if (deck.length === 0) {
+    // If the deck is empty, shuffle a new deck
+    shuffleDeck();
+  }
+
+  // Deal a card to the player
+  const card = deck.pop();
+  showCard(card, "player-hand");
+
+  // Check if the player busts (goes over 21)
+  const playerScore = calculateScore(getHandValue("player-hand"));
+  if (playerScore > 21) {
+    endGame("You lose! Bust!");
+  }
+}
+
+// End the game and determine the winner
+function stand() {
+  // Disable buttons
+  document.getElementById("hit").disabled = true;
+  document.getElementById("stand").disabled = true;
+
+  // Reveal the dealer's hidden card
+  const dealerCard = document.querySelector("#dealer-hand img:first
 
 </script>
