@@ -8,16 +8,24 @@ layout: post
   height: 55vw;
 }
 #turn {
+  display: none;
+}
+#turn.active {
   position: absolute;
   top: 3px;
   left: 50%;
   transform: translate(0, -50%);
+  display: block;
 }
 #dealBtn {
+  display: none;
+}
+#dealBtn.active {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: block;
 }
 #player1BtnCon {
   width: 20%;
@@ -27,9 +35,12 @@ layout: post
   justify-content: center;
 }
 #player1Buttons {
+  display: none;
+}
+#player1Buttons.active {
   width: 100%;
   height: auto;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -41,9 +52,12 @@ layout: post
   justify-content: center;
 }
 #player1Result {
+  display: none;
+}
+#player1Result.active {
   width: 100%;
   height: auto;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
