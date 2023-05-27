@@ -135,25 +135,37 @@ layout: post
 </style>
 
 <div id="viewer"></div>
-<div id="startBtn" class="active"></div>
-<div id="turn"></div>
-<div id="player1BtnCon"></div>
-<div id="player1Buttons"></div>
-<div id="player1BoardCon"></div>
-<div id="player1Result"></div>
-<div id="player1Board"></div>
-<div id="player1Card0"></div>
-<div id="player1Card1"></div>
-<div id="player1Card2"></div>
-<div id="player1Card3"></div>
-<div id="player1Card4"></div>
-<div id="player1Card5"></div>
-<div id="player1Card6"></div>
-<div id="player1Card7"></div>
-<div id="player1Card8"></div>
-<div id="player1Card9"></div>
-<div id="player1BoardValue"></div>
-<div id="player2BoardCon"></div>
+  <div id="startBtn" class="active">
+     <button type="button" onclick="start()">게임 시작</button>
+  </div>
+  <div id="turn">
+  </div>
+  <div id="player1BtnCon">
+    <div id="player1Buttons">
+      <button type="button" onclick="hit(1)">히트</button>
+      <button type="button" onclick="stay(1)">스테이</button>
+    </div>
+  </div>
+  <div id="player1BoardCon">
+    <div id="player1Result">
+    </div>
+    <div id="player1Board">
+      <div id="player1Card0">
+        <img src="/asset/img/sA.png">
+      </div>
+      <div id="player1Card1"></div>
+      <div id="player1Card2"></div>
+      <div id="player1Card3"></div>
+      <div id="player1Card4"></div>
+      <div id="player1Card5"></div>
+      <div id="player1Card6"></div>
+      <div id="player1Card7"></div>
+      <div id="player1Card8"></div>
+      <div id="player1Card9"></div>
+    </div>
+    <div id="player1BoardValue">
+    </div>
+  <div id="player2BoardCon"></div>
 <div id="player2Result"></div>
 <div id="player2Board"></div>
 <div id="player2Card0"></div>
