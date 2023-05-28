@@ -29,7 +29,7 @@ layout: post
   transform: translate(-50%, 0);
   display: block;
 }
-#player1BtnCon {
+#player1BtnCon, #player2BtnCon {
   width: 20%;
   height: 100%;
   display: flex;
@@ -37,35 +37,37 @@ layout: post
   justify-content: center;
   background-color: #F0EDD4;
 }
-#player1Buttons {
+#player1Buttons, #player2Buttons {
   display: none;
 }
-#player1Buttons.active {
+#player1Buttons.active, #player2Buttons.active {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#player1BoardCon {
+#player1BoardCon, #player2BoardCon {
   width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-#player1Result {
+#player1Result, #player2Result {
   display: none;
 }
-#player1Result.active {
+#player1Result.active, player2Result.active {
   width: 100%;
   height: auto;
   margin-bottom: 3px;
   display: block;
   text-align: center;
 }
-#player1Board {
+#player1Board, #player2Board {
   width: 100%;
+  max-width: 234px;
   height: auto;
   margin-bottom: 3px;
   padding-left: 3px;
@@ -73,91 +75,26 @@ layout: post
   flex-wrap: wrap;
   justify-content: center;
 }
-#player1Card0, #player1Card1, #player1Card2, #player1Card3, #player1Card4, #player1Card5, #player1Card6, #player1Card7, #player1Card8, #player1Card9 {
+#player1Card0, #player1Card1, #player1Card2, #player1Card3, #player1Card4, #player1Card5, #player2Card0, #player2Card1, #player2Card2, #player2Card3, #player2Card4, #player2Card5 {
   margin-right: 3px;
 }
-.player1CardH {
-  margin-right: 3px;
-  opacity: 0;
-}
-#player1Board div img {
-  width: 25px;
-  height: 36px;
-  object-fit: cover;
-}
-#player1BoardValue {
-  display: none;
-}
-#player1BoardValue.active {
-  width: 100%;
-  height: auto;
-  display: block;
-  text-align: center;
-}
-#player2BoardCon {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #F0EDD4;
-}
-#player2Result {
-  display: none;
-}
-#player2Result.active {
-  width: 100%;
-  height: auto;
-  margin-bottom: 3px;
-  display: block;
-  text-align: center;
-}
-#player2Board {
-  width: 100%;
-  height: auto;
-  margin-bottom: 3px;
-  padding-left: 3px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#player2Card0, #player2Card1, #player2Card2, #player2Card3, #player2Card4, #player2Card5, #player2Card6, #player2Card7, #player2Card8, #player2Card9 {
-  margin-right: 3px;
-}
-.player2CardH {
+.card {
   margin-right: 3px;
   opacity: 0;
 }
-#player2Board div img {
-  width: 25px;
-  height: 36px;
+#player1Board div img, #player2Board div img {
+  width: 36px;
+  height: 51px;
   object-fit: cover;
 }
-#player2BoardValue {
+#player1BoardValue, #player2BoardValue {
   display: none;
 }
-#player2BoardValue.active {
+#player1BoardValue.active, #player2BoardValue.active {
   width: 100%;
   height: auto;
   display: block;
   text-align: center;
-}
-#player2BtnCon {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#player2Buttons {
-  display: none;
-}
-#player2Buttons.active {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 </style>
 
