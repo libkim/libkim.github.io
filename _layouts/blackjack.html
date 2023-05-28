@@ -250,6 +250,14 @@ let player2NumsSum = 100;
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
+function activateStartBtn() {
+  const element = document.getElementById("startBtn");
+  element.classList.add("active");
+}
+function deactivateStartBtn() {
+  const element = document.getElementById("startBtn");
+  element.classList.remove("active");
+}
 function activateTurn() {
   const element = document.getElementById("turn");
   element.classList.add("active");
@@ -323,6 +331,10 @@ function updateBoardValues() {
 }
 
 function start() {
+  deactivateStartBtn();
+  activateTurn();
+  activateButtons();
+  activateBoardValues();
   turnCount++;
   updateTurn();
 }
