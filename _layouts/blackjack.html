@@ -227,32 +227,45 @@ let deck = [
 ];
 let player1Cards = [
   'void', 'void', 'void', 'void', 'void',
-  'void', 'void', 'void', 'void', 'void',
-  'void', 'void'
+  'void'
 ];
 let player2Cards = [
   'void', 'void', 'void', 'void', 'void',
-  'void', 'void', 'void', 'void', 'void',
-  'void', 'void'
+  'void'
 ];
 let player1Nums = [
-  0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0
 ];
 let player2Nums = [
-  0, 0, 0, 0, 0, 0,
   0, 0, 0, 0, 0, 0
 ];
 
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
-
+function activateTurn() {
+  const element = document.getElementById("turn");
+  element.classList.add("active");
+}
+function deactivateTurn() {
+  const element = document.getElementById("turn");
+  element.classList.remove("active");
+}
 function updateTurn() {
   document.getElementById("turn").innerText = "턴 " + turnCount;
 }
-
-function deal() {
+function activateButtons(p) {
+  const element = document.getElementById("turn");
+  element.classList.add("active");
+}
+function deactivateButtons(p) {
+  const element = document.getElementById("turn");
+  element.classList.remove("active");
+}
+function updateButtons(p) {
+  document.getElementById("turn").innerText = "턴 " + turnCount;
+}
+function start() {
   turnCount++;
   updateTurn();
 }
