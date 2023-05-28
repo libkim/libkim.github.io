@@ -259,16 +259,41 @@ function deactivateTurn() {
 function updateTurn() {
   document.getElementById("turn").innerText = "턴 " + turnCount;
 }
-function activateButtons(p) {
-  const element = document.getElementById("turn");
-  element.classList.add("active");
+function activateButtons() {
+  if (isPlayer1First) {
+    const element = document.getElementById("player1Buttons");
+    element.classList.add("active");
+  } else {
+    const element = document.getElementById("player2Buttons");
+    element.classList.add("active");
+  }
 }
-function deactivateButtons(p) {
-  const element = document.getElementById("turn");
-  element.classList.remove("active");
+function deactivateButtons() {
+  const element0 = document.getElementById("player1Buttons");
+  element0.classList.remove("active");
+  const element1 = document.getElementById("player2Buttons");
+  element1.classList.remove("active");
 }
-function updateButtons(p) {
-  document.getElementById("turn").innerText = "턴 " + turnCount;
+function updateButtons() {
+  const element0 = document.getElementById("player1Buttons");
+  element0.classList.toggle("active");
+  const element1 = document.getElementById("player2Buttons");
+  element1.classList.toggle("active");
+}
+function activateResult() {
+  const element0 = document.getElementById("player1Result");
+  element0.classList.add("active");
+  const element1 = document.getElementById("player2Result");
+  element1.classList.add("active");
+}
+function deactivateResult() {
+  const element0 = document.getElementById("player1Result");
+  element0.classList.remove("active");
+  const element1 = document.getElementById("player2Result");
+  element1.classList.remove("active");
+}
+function updateResult() {   document.getElementById("player1Result").innerText = "승";
+  document.getElementById("player2Result").innerText = "승";
 }
 function start() {
   turnCount++;
