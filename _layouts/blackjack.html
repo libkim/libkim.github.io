@@ -353,6 +353,50 @@ function updateBoardValues() {
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
+function whatIsNum(i) {
+  case 'A'
+    return 1;
+    break;
+  case '2'
+    return 2;
+    break;
+  case '3'
+    return 3;
+    break;
+  case '4'
+    return 4;
+    break;
+  case '5'
+    return 5;
+    break;
+  case '6'
+    return 6;
+    break;
+  case '7'
+    return 7;
+    break;
+  case '8'
+    return 8;
+    break;
+  case '9'
+    return 9;
+    break;
+  case 'X'
+    return 10;
+    break;
+  case 'J'
+    return 10;
+    break;
+  case 'Q'
+    return 10;
+    break;
+  case 'K'
+    return 10;
+    break;
+  default
+    return 0;
+    break;
+}
 function sumNums() {
   player1NumsSum = player1Nums[0] + player1Nums[1] + player1Nums[2] + player1Nums[3] + player1Nums[4] + player1Nums[5];
   player2NumsSum = player2Nums[0] + player2Nums[1] + player2Nums[2] + player2Nums[3] + player2Nums[4] + player2Nums[5];
