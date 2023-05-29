@@ -330,7 +330,7 @@ function updateResults() {
   element1.innerText = "승";
 }
 function updateBoards() {
-  for (let i = 0; i < 6; i++;) {
+  for (let i = 0; i < 6; i++) {
     const element0 = document.querySelector(`#player1Card${i} img`);
     element0.src = "/assets/img/cards/" + player1Cards[i] + ".jpeg";
     const element1 = document.querySelector(`#player2Card${i} img`);
