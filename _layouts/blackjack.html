@@ -59,6 +59,7 @@ layout: post
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   overflow: hidden;
 }
 #player2BoardCon {
@@ -72,6 +73,7 @@ layout: post
   top: 10%;
   left: 35%;
   transform: translate(-50%, -50%);
+  z-index: 6;
   display: block;
 }
 #player2Result.active {
@@ -79,6 +81,7 @@ layout: post
   top: 10%;
   left: 65%;
   transform: translate(-50%, -50%);
+  z-index: 6;
   display: block;
 }
 #player1Board, #player2Board {
@@ -109,13 +112,15 @@ layout: post
   bottom: 10%;
   left: 35%;
   transform: translate(-50%, 50%);
+  z-index: 6;
   display: block;
 }
 #player2BoardValue.active {
   position: absolute;
   bottom: 10%;
-  left: 35%;
+  left: 65%;
   transform: translate(-50%, 50%);
+  z-index: 6;
   display: block;
 }
 </style>
