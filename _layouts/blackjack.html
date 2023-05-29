@@ -57,7 +57,7 @@ layout: post
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 #player2BoardCon {
@@ -68,18 +68,19 @@ layout: post
 }
 #player1Result.active, #player2Result.active {
   width: 100%;
-  height: auto;
+  height: 10%;
   display: block;
   text-align: center;
 }
 #player1Board, #player2Board {
   width: 100%;
   max-width: 234px;
-  height: 75%;
+  height: 60%;
   max-height: 161px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: end;
   gap: 1px 3px;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -101,7 +102,7 @@ layout: post
 }
 #player1BoardValue.active, #player2BoardValue.active {
   width: 100%;
-  height: auto;
+  height: 10%;
   display: block;
   text-align: center;
 }
