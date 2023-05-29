@@ -424,13 +424,13 @@ function hit(p) {
       player1Nums[turnCount / 2 + 1.5] = whatIsNum(player1Cards[turnCount / 2 + 1.5][1]);
       sumNums();
       checkBust(1);
-      checkEnd();
+      updateButtons();
     } else {
       player1Card[turnCount / 2 + 1] = pop(deck);
       player1Nums[turnCount / 2 + 1] = whatIsNum(player1Cards[turnCount / 2 + 1][1]);
       sumNums();
       checkBust(1);
-      checkEnd();
+      updateButtons();
     }
   } else {
     if (isPlayer1First) {
@@ -438,13 +438,13 @@ function hit(p) {
       player2Nums[turnCount / 2 + 1] = whatIsNum(player2Cards[turnCount / 2 + 1][1]);
       sumNums();
       checkBust(2);
-      checkEnd();
+      updateButtons();
     } else {
       player2Card[turnCount / 2 + 1.5] = pop(deck);
       player2Nums[turnCount / 2 + 1.5] = whatIsNum(player2Cards[turnCount / 2 + 1.5][1]);
       sumNums();
       checkBust(2);
-      checkEnd();
+      updateButtons();
     }
   }
 }
