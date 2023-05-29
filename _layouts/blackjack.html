@@ -271,9 +271,6 @@ let player2Nums = [
 let player1NumsSum = 100;
 let player2NumsSum = 100;
 
-function shuffle(array) {
-  array.sort(() => Math.random() - 0.5);
-}
 function activateStartBtn() {
   const element = document.getElementById("startBtn");
   element.classList.add("active");
@@ -353,6 +350,17 @@ function updateBoardValues() {
   const element1 = document.getElementById("player2BoardValue");
   element1.innerText = "b + " + player2NumsSum;
 }
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+function draw(p) {
+  if (p == 1) {
+    const element = document.getElementById("player1Buttons");
+    element.classList.add("active");
+  } else {
+    const element = document.getElementById("player2Buttons");
+    element.classList.add("active");
+  }
 
 function start() {
   deactivateStartBtn();
@@ -362,5 +370,10 @@ function start() {
   activateBoardValues();
   turnCount++;
   updateTurn();
+  shuffle(deck);
+  draw(1);
+  draw(2);
+  updateBoards();
+  updateBoardValues();
 }
 </script>
