@@ -67,14 +67,19 @@ layout: post
 #player1Result, #player2Result {
   display: none;
 }
-#player1Result.active, #player2Result.active {
+#player1Result.active {
   position: absolute;
   top: 10%;
-  left: 50%;
-  width: 100%;
-  height: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
   display: block;
-  text-align: center;
+}
+#player2Result.active {
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  display: block;
 }
 #player1Board, #player2Board {
   width: 100%;
