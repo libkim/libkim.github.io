@@ -532,7 +532,7 @@
   platform: tva
 
 - title: 名探偵コナン
-  korean-title: 명탐정 코난
+  ko-title: 명탐정 코난
   debut: 1996-01
 
 - title: 크레용 신짱
@@ -691,17 +691,22 @@
 - title: 치토세 겟츄!!
   platform: tva
 
-- title: 구구레! 코쿠리상
-  platform: tva
+- title: 繰繰れ！コックリさん
+  ko-title: 나와라! 코쿠리 상
+  debut: 2014-10
 
 - title: School Days
-  platform: tva
+  ko-title: 스쿨 데이즈
+  debut: 2007-07
 
 - title: SHIROBAKO
-  platform: tva
+  ko-title: 시로바코
+  debut: 2014-10
+  lastwatchedep: 1
 
-- title: ACCA 13구 감찰과
-  platform: tva
+- title: ACCA13区監察課
+  ko-title: ACCA 13구 감찰과
+  debut: 2017-01
 
 - title: GJ부
   platform: tva
