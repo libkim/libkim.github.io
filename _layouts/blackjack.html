@@ -77,7 +77,7 @@ layout: post
 #player2Result.active {
   position: absolute;
   top: 10%;
-  left: 75%;
+  left: 65%;
   transform: translate(-50%, -50%);
   display: block;
 }
@@ -104,11 +104,19 @@ layout: post
 #player1BoardValue, #player2BoardValue {
   display: none;
 }
-#player1BoardValue.active, #player2BoardValue.active {
-  width: 100%;
-  height: 10%;
+#player1BoardValue.active {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  transform: translate(-50%, 50%);
   display: block;
-  text-align: center;
+}
+#player2BoardValue.active {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  transform: translate(-50%, 50%);
+  display: block;
 }
 </style>
 
