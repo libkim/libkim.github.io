@@ -346,9 +346,9 @@ function deactivateBoardValues() {
 }
 function updateBoardValues() {
   const element0 = document.getElementById("player1BoardValue");
-  element0.innerText = "a + " + player1NumsSum;
+  element0.innerText = "a + " + player1NumsSum - player1Nums[0];
   const element1 = document.getElementById("player2BoardValue");
-  element1.innerText = "b + " + player2NumsSum;
+  element1.innerText = "b + " + player2NumsSum - player2Nums[0];
 }
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
