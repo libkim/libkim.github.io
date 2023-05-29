@@ -353,15 +353,52 @@ function updateBoardValues() {
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
-function draw(p) {
+function sumNums() {
+  player1NumsSum = player1Nums[0] + player1Nums[1] + player1Nums[2] + player1Nums[3] + player1Nums[4] + player1Nums[5];
+  player2NumsSum = player2Nums[0] + player2Nums[1] + player2Nums[2] + player2Nums[3] + player2Nums[4] + player2Nums[5];
+}
+function deal() {
+  player1Card[0] = pop(deck);
+  player1Nums[0] = whatIsNum(player1Cards[0][1]);
+  player2Card[0] = pop(deck);
+  player2Nums[0] = whatIsNum(player2Cards[0][1]);
+  player1Card[1] = pop(deck);
+  player1Nums[1] = whatIsNum(player1Cards[1][1]);
+  player2Card[1] = pop(deck);
+  player2Nums[1] = whatIsNum(player2Cards[1][1]);
+  sumNums();
+}
+function hit(p) {
   if (p == 1) {
-    const element = document.getElementById("player1Buttons");
-    element.classList.add("active");
+    if (isPlayer1First) {
+      player1Card[turnCount / 2 + 1.5] = pop(deck);
+      player1Nums[turnCount / 2 + 1.5] = whatIsNum(player1Cards[turnCount / 2 + 1.5][1]);
+      sumNums();
+      checkBust(1);
+      checkEnd();
+    } else {
+      player1Card[turnCount / 2 + 1] = pop(deck);
+      player1Nums[turnCount / 2 + 1] = whatIsNum(player1Cards[turnCount / 2 + 1][1]);
+      sumNums();
+      checkBust(1);
+      checkEnd();
+    }
   } else {
-    const element = document.getElementById("player2Buttons");
-    element.classList.add("active");
+    if (isPlayer1First) {
+      player2Card[turnCount / 2 + 1] = pop(deck);
+      player2Nums[turnCount / 2 + 1] = whatIsNum(player2Cards[turnCount / 2 + 1][1]);
+      sumNums();
+      checkBust(2);
+      checkEnd();
+    } else {
+      player2Card[turnCount / 2 + 1.5] = pop(deck);
+      player2Nums[turnCount / 2 + 1.5] = whatIsNum(player2Cards[turnCount / 2 + 1.5][1]);
+      sumNums();
+      checkBust(2);
+      checkEnd();
+    }
   }
-
+}
 function start() {
   deactivateStartBtn();
   activateTurn();
@@ -371,8 +408,7 @@ function start() {
   turnCount++;
   updateTurn();
   shuffle(deck);
-  draw(1);
-  draw(2);
+  deal();
   updateBoards();
   updateBoardValues();
 }
