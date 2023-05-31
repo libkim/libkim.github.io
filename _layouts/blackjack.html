@@ -303,22 +303,23 @@ function deactivateTurn() {
 function updateTurn() {
   document.getElementById("turn").innerText = "턴 " + turnCount;
 }
-function activateButtons() {
-  if (isPlayer1First) {
-    const element = document.getElementById("player1Buttons");
+function activateButtons(p, button) {
+  if (p == 1) {
+    if (isPlayer1First) {
+      const element = document.getElementById("player1Buttons");
     element.classList.add("active");
   } else {
     const element = document.getElementById("player2Buttons");
     element.classList.add("active");
   }
 }
-function deactivateButtons() {
+function deactivateButtons(p, button) {
   const element0 = document.getElementById("player1Buttons");
   element0.classList.remove("active");
   const element1 = document.getElementById("player2Buttons");
   element1.classList.remove("active");
 }
-function updateButtons() {
+function updateButtons(p, button) {
   const element0 = document.getElementById("player1Buttons");
   element0.classList.toggle("active");
   const element1 = document.getElementById("player2Buttons");
