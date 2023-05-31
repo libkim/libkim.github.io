@@ -243,7 +243,22 @@ layout: post
 <script>
 let turnCount = 0;
 let isPlayer1First = true;
-let deck = [
+let isPlayer1Stay = false;
+let isPlayer2Stay = false;
+let isPlayer1Bust = false;
+let isPlayer2Bust = false;
+let isPlayer1Full = false;
+let isPlayer2Full = false;
+let player1BoardValue = "? + 0";
+let player2BoardValue = "? + 0";
+let player1StayValue = 0;
+let player2StayValue = 0;
+let player1HitValue = 0;
+let player2HitValue = 0;
+let player1FullValue = 0;
+let player2FullValue = 0;
+
+const deck = [
   'sA', 's2', 's3', 's4', 's5', 's6',
   's7', 's8', 's9', 'sX', 'sJ', 'sQ',
   'sK', 'dA', 'd2', 'd3', 'd4', 'd5',
@@ -254,22 +269,20 @@ let deck = [
   'h4', 'h5', 'h6', 'h7', 'h8', 'h9',
   'hX', 'hJ', 'hQ', 'hK'
 ];
-let player1Cards = [
-  'void', 'void', 'void', 'void', 'void',
-  'void'
+const player1Cards = [
+  'void', 'void', 'void',
+  'void', 'void', 'void'
 ];
-let player2Cards = [
-  'void', 'void', 'void', 'void', 'void',
-  'void'
+const player2Cards = [
+  'void', 'void', 'void',
+  'void', 'void', 'void'
 ];
-let player1Nums = [
+const player1Nums = [
   0, 0, 0, 0, 0, 0
 ];
-let player2Nums = [
+const player2Nums = [
   0, 0, 0, 0, 0, 0
 ];
-let player1NumsSum = 100;
-let player2NumsSum = 100;
 
 function activateStartBtn() {
   const element = document.getElementById("startBtn");
