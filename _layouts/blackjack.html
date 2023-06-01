@@ -322,21 +322,13 @@ function activateButtons(p, button) {
         break;
       default:
         const element = document.querySelectorAll("#player1BtnCon div");
-        element.classList.add("active");
-
+        elements.forEach(element => {
+          element.classList.add("active");
+        });
     }
   } else {
-    switch (button) {
-      case 'hit':
-        const element = document.getElementById("player2HitBtn");
-        element.classList.add("active");
-      case 'stay':
-        const element = document.getElementById("player2StayBtn");
-        element.classList.add("active");
-      case 'pass':
-        const element = document.getElementById("player2PassBtn");
-        element.classList.add("active");
-    }
+
+  }
 }
 function deactivateButtons(p, button) {
   const element0 = document.getElementById("player1Buttons");
