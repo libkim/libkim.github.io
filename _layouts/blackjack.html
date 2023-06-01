@@ -135,8 +135,10 @@ layout: post
     턴 0
   </div>
   <div id="player1BtnCon">
-    <div id="player1Buttons">
+    <div id="player1HitBtn">
       <button type="button" onclick="hit(1)">히트</button>
+    </div>
+    <div id="player1StayBtn">
       <button type="button" onclick="stay(1)">스테이</button>
     </div>
   </div>
@@ -305,13 +307,29 @@ function updateTurn() {
 }
 function activateButtons(p, button) {
   if (p == 1) {
-    if (isPlayer1First) {
-      const element = document.getElementById("player1Buttons");
-    element.classList.add("active");
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player1HitBtn");
+        element.classList.add("active");
+      case 'stay':
+        const element = document.getElementById("player1StayBtn");
+        element.classList.add("active");
+      case 'pass':
+        const element = document.getElementById("player1PassBtn");
+        element.classList.add("active");
+    }
   } else {
-    const element = document.getElementById("player2Buttons");
-    element.classList.add("active");
-  }
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player2HitBtn");
+        element.classList.add("active");
+      case 'stay':
+        const element = document.getElementById("player2StayBtn");
+        element.classList.add("active");
+      case 'pass':
+        const element = document.getElementById("player2PassBtn");
+        element.classList.add("active");
+    }
 }
 function deactivateButtons(p, button) {
   const element0 = document.getElementById("player1Buttons");
