@@ -395,9 +395,23 @@ function deactivateButton(p, button) {
     }
   }
 }
-function activateResults() {
-  const element0 = document.getElementById("player1Result");
-  element0.classList.add("active")
+function resultText(p) {
+  if (player1StayValue > player2StayValue) {
+    if (p == 1) {
+      return "승";
+    } else {
+      return "패";
+    }
+  } else if (player1StayValue < player2StayValue) {
+    if (p == 1) {
+      return "패";
+    } else {
+      return "승";
+    }
+  } else {
+    return "무";
+  }
+
 function deactivateResults() {
   const element0 = document.getElementById("player1Result");
   element0.classList.remove("active");
