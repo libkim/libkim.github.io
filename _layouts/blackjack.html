@@ -311,12 +311,19 @@ function activateButtons(p, button) {
       case 'hit':
         const element = document.getElementById("player1HitBtn");
         element.classList.add("active");
+        break;
       case 'stay':
         const element = document.getElementById("player1StayBtn");
         element.classList.add("active");
+        break;
       case 'pass':
         const element = document.getElementById("player1PassBtn");
         element.classList.add("active");
+        break;
+      default:
+        const element = document.querySelectorAll("#player1BtnCon div");
+        element.classList.add("active");
+
     }
   } else {
     switch (button) {
