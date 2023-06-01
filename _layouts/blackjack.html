@@ -305,7 +305,7 @@ function deactivateTurn() {
 function updateTurn() {
   document.getElementById("turn").innerText = "턴 " + turnCount;
 }
-function activateButtons(p, button) {
+function activateButton(p, button) {
   if (p == 1) {
     switch (button) {
       case 'hit':
@@ -350,24 +350,54 @@ function activateButtons(p, button) {
     }
   }
 }
-function deactivateButtons(p, button) {
-  const element0 = document.getElementById("player1Buttons");
-  element0.classList.remove("active");
-  const element1 = document.getElementById("player2Buttons");
-  element1.classList.remove("active");
-}
-function updateButtons(p, button) {
-  const element0 = document.getElementById("player1Buttons");
-  element0.classList.toggle("active");
-  const element1 = document.getElementById("player2Buttons");
-  element1.classList.toggle("active");
+function deactivateButton(p, button) {
+  if (p == 1) {
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player1HitBtn");
+        element.classList.remove("active");
+        break;
+      case 'stay':
+        const element = document.getElementById("player1StayBtn");
+        element.classList.remove("active");
+        break;
+      case 'pass':
+        const element = document.getElementById("player1PassBtn");
+        element.classList.remove("active");
+        break;
+      default:
+        const elements = document.querySelectorAll("#player1BtnCon div");
+        elements.forEach(element => {
+          element.classList.remove("active");
+        });
+        break;
+    }
+  } else {
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player2HitBtn");
+        element.classList.remove("active");
+        break;
+      case 'stay':
+        const element = document.getElementById("player2StayBtn");
+        element.classList.remove("active");
+        break;
+      case 'pass':
+        const element = document.getElementById("player2PassBtn");
+        element.classList.remove("active");
+        break;
+      default:
+        const elements = document.querySelectorAll("#player2BtnCon div");
+        elements.forEach(element => {
+          element.classList.remove("active");
+        });
+        break;
+    }
+  }
 }
 function activateResults() {
   const element0 = document.getElementById("player1Result");
-  element0.classList.add("active");
-  const element1 = document.getElementById("player2Result");
-  element1.classList.add("active");
-}
+  element0.classList.add("active")
 function deactivateResults() {
   const element0 = document.getElementById("player1Result");
   element0.classList.remove("active");
