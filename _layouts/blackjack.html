@@ -396,22 +396,35 @@ function deactivateButton(p, button) {
   }
 }
 function resultText(p) {
+if (isPlayer1Stay && isPlayer2Stay) {
   if (player1StayValue > player2StayValue) {
-    if (p == 1) {
-      return "승";
-    } else {
-      return "패";
+    switch (p) {
+      case 1:
+        return "승";
+        break;
+      case 2:
+        return "패";
+        break;
+      default:
+        return "";
+        break;
     }
   } else if (player1StayValue < player2StayValue) {
-    if (p == 1) {
-      return "패";
-    } else {
-      return "승";
+    switch (p) {
+      case 1:
+        return "패";
+        break;
+      case 2:
+        return "승";
+        break;
+      default:
+        return "";
+        break;
     }
   } else {
     return "무";
   }
-
+}
 function deactivateResults() {
   const element0 = document.getElementById("player1Result");
   element0.classList.remove("active");
