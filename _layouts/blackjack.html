@@ -321,13 +321,33 @@ function activateButtons(p, button) {
         element.classList.add("active");
         break;
       default:
-        const element = document.querySelectorAll("#player1BtnCon div");
+        const elements = document.querySelectorAll("#player1BtnCon div");
         elements.forEach(element => {
           element.classList.add("active");
         });
+        break;
     }
   } else {
-
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player2HitBtn");
+        element.classList.add("active");
+        break;
+      case 'stay':
+        const element = document.getElementById("player2StayBtn");
+        element.classList.add("active");
+        break;
+      case 'pass':
+        const element = document.getElementById("player2PassBtn");
+        element.classList.add("active");
+        break;
+      default:
+        const elements = document.querySelectorAll("#player2BtnCon div");
+        elements.forEach(element => {
+          element.classList.add("active");
+        });
+        break;
+    }
   }
 }
 function deactivateButtons(p, button) {
