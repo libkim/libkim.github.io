@@ -396,8 +396,29 @@ function deactivateButton(p, button) {
   }
 }
 function resultText(p) {
-if (isPlayer1Stay && isPlayer2Stay) {
-  if (player1StayValue > player2StayValue) {
+  if (isPlayer1Stay && isPlayer2Stay) {
+    if (player1StayValue > player2StayValue) {
+      switch (p) {
+        case 1:
+          return "승";
+          break;
+        case 2:
+          return "패";
+          break;
+      }
+    } else if (player1StayValue < player2StayValue) {
+      switch (p) {
+        case 1:
+          return "패";
+          break;
+        case 2:
+          return "승";
+          break;
+      }
+    } else {
+      return "무";
+    }
+  } else if (isPlayer1Stay && isPlayer2Bust) {
     switch (p) {
       case 1:
         return "승";
@@ -405,11 +426,8 @@ if (isPlayer1Stay && isPlayer2Stay) {
       case 2:
         return "패";
         break;
-      default:
-        return "";
-        break;
     }
-  } else if (player1StayValue < player2StayValue) {
+  } else if (isPlayer1Bust && isPlayer2Stay) {
     switch (p) {
       case 1:
         return "패";
@@ -417,13 +435,33 @@ if (isPlayer1Stay && isPlayer2Stay) {
       case 2:
         return "승";
         break;
-      default:
-        return "";
-        break;
     }
-  } else {
+  } else if (isPlayer1Bust && isPlayer2Bust) {
     return "무";
-  }
+  } else if (isPlayer1Full && isPlayer2Full) {
+    if (player1FullValue > player2FullValue) {
+      switch (p) {
+        case 1:
+          return "승";
+          break;
+        case 2:
+          return "패";
+          break;
+      }
+    } else if (player1FullValue < player2FullValue) {
+      switch (p) {
+        case 1:
+          return "패";
+          break;
+        case 2:
+          return "승";
+          break;
+      }
+    } else {
+      return "무";
+    }
+  } else if (isPlayer1Full && isPlayer2Bust) {
+
 }
 function deactivateResults() {
   const element0 = document.getElementById("player1Result");
