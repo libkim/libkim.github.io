@@ -65,38 +65,67 @@
   debut:
 
 - title: NARUTO -ナルト-
-  korean-title: 나루토
+  ko-title: 나루토
 
 - title: デュラララ!!
-  koreantitle: 듀라라라!!
+  ko-title: 듀라라라!!
   debut: 2010-01
 
-- title: 나츠메 우인장
-  platform: tva
+- title: 夏目友人帳
+  ko-title: 나츠메 우인장
+  debut: 2008-07
+  follow-ups:
+    - title: 続 夏目友人帳
+      ko-title: 속 나츠메 우인장
+      debut: 2009-01
+    - title: 夏目友人帳 参
+      ko-title: 나츠메 우인장 삼
+      debut: 2011-07
+    - title: 夏目友人帳 肆
+      ko-title: 나츠메 우인장 사
+      debut: 2012-01
+    - title: 夏目友人帳 伍
+      ko-title: 나츠메 우인장 오
+      debut: 2016-10
+    - title: 夏目友人帳 陸
+      ko-title: 나츠메 우인장 육
+      debut: 2017-04
+  films:
+    - title: 劇場版 夏目友人帳 ～うつせみに結ぶ～
+      ko-title:
+      debut: 2018-10
 
-- title: 크게 들어올려서
-  platform: tva
+- title: 
+  ko-title: 크게 들어올려서
+  debut:
 
 - title: 너에게 닿기를
-  platform: tva
+  ko-title:
+  debut:
 
 - title: 토라도라!
-  platform: tva
+  ko-title:
+  debut:
 
 - title: 러브★콤
-  platform: tva
+  ko-title:
+  debut:
 
 - title: 우리들이 있었다
-  platform: tva
+  ko-title:
+  debut:
 
 - title: 나는 친구가 적다
-  platform: tva
+  ko-title:
+  debut:
 
 - title: 케이온!
-  platform: tva
+  ko-title:
+  debut:
 
 - title: 스즈미야 하루히의 우울
-  platform: tva
+  ko-title:
+  debut:
 
 - title: 내 여동생이 이렇게 귀여울 리가 없어
   platform: tva
