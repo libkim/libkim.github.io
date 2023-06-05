@@ -889,8 +889,10 @@
     - title: ログ・ホライズン 円卓崩壊
       lastwatchedep: 0
 
-- title: 늑대와 향신료
-  lastwatchedep: 8
+- title: 狼と香辛料
+  ko-title: 늑대와 향신료
+  debut: 2008-01
+  lastwatchedep: 10
 
 - title: 수염을 깎다
   platform: tva
