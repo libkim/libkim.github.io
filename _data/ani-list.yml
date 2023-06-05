@@ -962,8 +962,12 @@
 
 - title: ハイキュー!!
   ko-title: 하이큐!!
+  debut: 2014-04
   follow-ups:
-    - ko-title: 하이큐!! 세컨드 시즌
+    - title: ハイキュー!! セカンドシーズン
+      ko-title: 하이큐!! 세컨드 시즌
+      debut: 2015-10
+      lastwatchedep: 1
     - ko-title: 하이큐!! 카라스마고교 VS 시라토리자와학원고교
     - title: ハイキュー!! TO THE TOP
       ko-title: 하이큐!! TO THE TOP
