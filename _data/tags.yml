@@ -31,6 +31,14 @@
   tags:
     - name: little headroom
 
+- group: action
+  tags:
+    - name: kneeling
+
+- group: gesture
+  tags:
+    - name: heart hands
+
 - group: character
   tags:
     - name:
