@@ -16,6 +16,13 @@
     - name: watercolor painting
     - name: oil painting
 
+- group: shot
+  tags:
+    - name: eye level shot
+    - name: low angle shot
+    - name: high angle shot
+    - name: overhead shot
+    
 - group: character
   tags:
     - name:
