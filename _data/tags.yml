@@ -1,3 +1,21 @@
+- group: masterpiece
+  tags:
+    - name:
+
+- group: photo
+  tags:
+    - name:
+
+- group: drawing
+  tags:
+    - name:
+
+- group: painting
+  tags:
+    - name: digital painting
+    - name: watercolor painting
+    - name: oil painting
+
 - group: character
   tags:
     - name:
@@ -31,11 +49,7 @@
 
 - name: nsfw
 
-- group: painting
-  tags:
-    - name: digital painting
-    - name: watercolor painting
-    - name: oil painting
+
 
 - group: projection
   tags:
