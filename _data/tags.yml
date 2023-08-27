@@ -22,7 +22,11 @@
     - name: low angle shot
     - name: high angle shot
     - name: overhead shot
-    
+
+- group: framing
+  tags:
+    - name: central framing
+
 - group: character
   tags:
     - name:
