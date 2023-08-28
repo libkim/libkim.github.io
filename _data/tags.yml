@@ -46,9 +46,23 @@
         - name: front focus
         - name: back focus
 
+- group: position
+  tags:
+    - name: all-fours
+    - name: standing
+    - name: kneeling
+    - name: lying
+    - name: sitting
+    - name: squatting
+
 - group: action
   tags:
+    - name: all-fours
+    - name: standing
     - name: kneeling
+    - name: lying
+    - name: sitting
+    - name: squatting
 
 - group: gesture
   tags:
