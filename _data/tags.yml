@@ -36,6 +36,20 @@
     - name: high angle shot
     - name: overhead shot
 
+- group: shot
+  tags:
+    - name: long shot
+    - name: full shot
+    - name: full figure shot
+    - name: knee shot
+    - name: medium shot
+    - name: waist shot
+    - name: bust shot
+    - name: close shot
+    - name: close up shot
+    - name: big close up shot
+    - name: extreme close up shot
+
 - group: headroom
   tags:
     - name: little headroom
