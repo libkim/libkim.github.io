@@ -217,7 +217,14 @@
     - name: blouse
     - name: blouse
 
-
+- group: legwear
+  tags:
+    - name: socks
+    - name: high socks
+    - name: knee socks
+    - name: over knee socks
+    - name: thigh high socks
+    - name: stocking
 
 - gazes:
   - looking at viewer
