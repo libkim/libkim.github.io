@@ -6,6 +6,11 @@
   tags:
     - name:
 
+- group: lens
+  tags:
+    - name: telephoto lens
+    - name: wide-angle lens
+
 - group: drawing
   tags:
     - name:
