@@ -64,6 +64,13 @@
         - name: front focus
         - name: back focus
 
+ group: gender
+  tags:
+    - name: girl
+    - name: boy
+    - name: man
+    - name: woman
+
 - group: position
   tags:
     - name: all-fours
