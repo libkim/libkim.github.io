@@ -16,6 +16,10 @@
     - name: watercolor painting
     - name: oil painting
 
+- group: framing
+  tags:
+    - name: central framing
+
 - group: shot
   tags:
     - name: eye level shot
@@ -23,9 +27,6 @@
     - name: high angle shot
     - name: overhead shot
 
-- group: framing
-  tags:
-    - name: central framing
 
 - group: headroom
   tags:
