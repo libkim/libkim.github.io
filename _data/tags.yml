@@ -27,10 +27,19 @@
     - name: high angle shot
     - name: overhead shot
 
-
 - group: headroom
   tags:
     - name: little headroom
+
+- group: focus
+  tags:
+    - name: deep focus
+    - name: soft focus
+    - name: out of focus
+    - group: selective focus
+      tags:
+        - name: front focus
+        - name: back focus
 
 - group: action
   tags:
@@ -89,15 +98,6 @@
         - name: 3-point perspective
         - name: curvilinear perspective
 
-- group: focus
-  tags:
-    - name: deep focus
-    - name: soft focus
-    - name: out of focus
-    - group: selective focus
-      tags:
-        - name: front focus
-        - name: back focus
 
 - group: blur
   tags:
