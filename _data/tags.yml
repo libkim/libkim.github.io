@@ -217,6 +217,15 @@
     - name: blouse
     - name: blouse
 
+- group: underwear
+  tags:
+    - name: g-string
+    - name: crotchless panty
+    - name: 
+    - name:
+    - name:
+    - name:
+
 - group: legwear
   tags:
     - name: socks
@@ -226,6 +235,16 @@
     - name: thigh high socks
     - name: stocking
 
+- group: 
+  tags:
+    - name: deep focus
+    - name: soft focus
+    - name: 
+    - group: 
+      tags:
+        - name:
+        - name: 
+
 - gazes:
   - looking at viewer
 
@@ -234,7 +253,6 @@
 
 - action: sex, spread legs, lying on back
   background: image
-  underwear: g-string, crotchless panty
 
 - name: cross-section
 
