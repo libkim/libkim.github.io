@@ -11,6 +11,7 @@
 
 - group: purpose
   tags:
+    - name: character design
     - name: influencer marketing
     - name: manga cover design
     - name: editorial design
@@ -317,12 +318,12 @@
   tags:
     - name: color banding
 
-- group: method
+- group: mouth
   tags:
-    - name: photography
-    - name: drawing
-    - name: painting
-    - name: 3D modeling
+    - name: open mouth
+    - name: closed mouth
+    - name: 
+    - name:
 
 - group: decorating
   tags:
@@ -336,9 +337,6 @@
 
 - gazes:
   - looking at viewer
-
-- mouth:
-  - open mouth
 
 - action: sex, spread legs, lying on back
 
