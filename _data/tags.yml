@@ -1,6 +1,7 @@
 - group: artist or production
   tags:
     - name: studio ghibli
+    - name: O!Oi
 
 - group: subject
   tags:
@@ -8,11 +9,12 @@
     - name: man
     - name: lady
     - name: boy
+    - name: hanni
 
 - group: purpose
   tags:
     - name: character design
-    - name: influencer marketing
+    - name: photo shoot
     - name: manga cover design
     - name: editorial design
     - name: still cut
@@ -25,6 +27,18 @@
     - name: 3D modeling
     - name: ai art
 
+- group: utility
+  tags:
+    - name: alluring
+    - name: sensual
+    - name: provocative
+    - name: 
+
+- group: fidelity
+  tags:
+    - name: masterpiece
+    - name: realistic
+
 - group: motive
   tags:
     - name: butterfly
@@ -33,11 +47,11 @@
   tags:
     - name: studio ghibli
 
-- group: utility
+- group: feature
   tags:
-    - name: alluring
-    - name: sensual
-    - name: provocative
+    - name: midriff
+    - name: navel
+    - name: long sleeves
     - name: 
 
 - group: fidelity
@@ -105,9 +119,8 @@
   tags:
     - name: long shot
     - name: full shot
-    - name: full figure shot
     - name: knee shot
-    - name: medium shot
+    - name: cowboy shot
     - name: waist shot
     - name: bust shot
     - name: close shot
@@ -230,6 +243,29 @@
     - group: skin color
       tags:
 
+- group: headwear
+  tags:
+    - name: baseball cap
+    - name: 
+
+- group: subject
+  tags:
+    - name: girl
+    - name: man
+    - name: lady
+    - name: boy
+
+- group: purpose
+  tags:
+    - name: influencer marketing
+
+- group: method
+  tags:
+    - name: photography
+    - name: drawing
+    - name: painting
+    - name: 3D modeling
+
 - group: hair
   tags:
     - group: hair color
@@ -240,7 +276,7 @@
       tags:
         - name: half up
         - name: braid
-        - name: bangs
+        - name: blunt bang
         - name: straight
         - name: curly
         - name: pony tail
