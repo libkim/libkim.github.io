@@ -1,4 +1,4 @@
-- group: artist / production
+- group: artist or production
   tags:
     - name: studio ghibli
 
@@ -22,6 +22,7 @@
     - name: drawing
     - name: painting
     - name: 3D modeling
+    - name: ai art
 
 - group: motive
   tags:
@@ -31,16 +32,16 @@
   tags:
     - name: studio ghibli
 
-- group: subject
+- group: utility
   tags:
-    - name: girl
-    - name: man
-    - name: lady
-    - name: boy
+    - name: alluring
+    - name: 
+    - name: 
+    - name: 
 
-- group: purpose
+- group: verisimilitude
   tags:
-    - name: influencer marketing
+    - name: masterpiece
 
 - group: method
   tags:
