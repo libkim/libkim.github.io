@@ -24,6 +24,28 @@
   tags:
     - name: butterfly
 
+- group: style
+  tags:
+    - name: studio ghibli
+
+- group: subject
+  tags:
+    - name: girl
+    - name: man
+    - name: lady
+    - name: boy
+
+- group: purpose
+  tags:
+    - name: influencer marketing
+
+- group: method
+  tags:
+    - name: photography
+    - name: drawing
+    - name: painting
+    - name: 3D modeling
+
 - group: race
   tags:
     - name: necromancer
