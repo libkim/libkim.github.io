@@ -4,7 +4,9 @@
 
 - group: subject
   tags:
-    - name: fashion influencer
+    - name: girl
+    - name: man
+    - name: lady
 
 - group: purpose
   tags:
