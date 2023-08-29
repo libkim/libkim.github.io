@@ -1,3 +1,15 @@
+- group: artist
+  tags:
+    - name:
+
+- group: subject
+  tags:
+    - name:
+
+- group: purpose
+  tags:
+    - name:
+
 - group: masterpiece
   tags:
     - name:
