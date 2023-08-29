@@ -240,6 +240,10 @@
       tags:
         - name: half up
         - name: braid
+        - name: bangs
+        - name: straight
+        - name: curly
+        - name: pony tail
 
 - group: eyes
   tags:
