@@ -24,12 +24,12 @@
   tags:
     - name: butterfly
 
-- group: subject
+- group: race
   tags:
-    - name: girl
-    - name: man
-    - name: lady
-    - name: fashion influencer
+    - name: necromancer
+    - name: human
+    - name: dragon
+    - name:
     - name: 
 
 - group: purpose
