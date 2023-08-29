@@ -35,8 +35,8 @@
 - group: utility
   tags:
     - name: alluring
-    - name: 
-    - name: 
+    - name: sensual
+    - name: provocative
     - name: 
 
 - group: fidelity
@@ -299,6 +299,31 @@
     - name: thigh high socks
     - name: stocking
 
+- group: tattoo
+  tags:
+    - name: new school
+    - name: lettering
+    - name: irezumi
+
+- group: background
+  tags:
+    - name: color
+    - name: gradation
+    - name: pattern
+    - name: image
+    - name: 
+
+- group: noise
+  tags:
+    - name: color banding
+
+- group: method
+  tags:
+    - name: photography
+    - name: drawing
+    - name: painting
+    - name: 3D modeling
+
 - group: decorating
   tags:
     - name:
@@ -316,7 +341,6 @@
   - open mouth
 
 - action: sex, spread legs, lying on back
-  background: image
 
 - name: cross-section
 
