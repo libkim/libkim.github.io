@@ -14,7 +14,8 @@
     - name: man
     - name: lady
     - name: boy
-    - name: hanni
+    - name: Hanni
+    - name: Penelo
 
 - group: purpose
   tags:
@@ -23,6 +24,7 @@
     - name: manga cover design
     - name: editorial design
     - name: still cut
+    - name: fan art
 
 - group: method
   tags:
