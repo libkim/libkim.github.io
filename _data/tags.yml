@@ -23,8 +23,8 @@
     - name: Hanni
     - name: Penelo
     - name: Lag Seeing
-    - name: Niche
-    - name: Steak
+    - name: 
+    - name: 
 
 - group: purpose
   tags:
@@ -71,12 +71,14 @@
     - name: navel
     - name: long sleeves
     - name: ofuda
-    - name:
+    - name: uniform
 
 - group: element
   tags:
     - name: angel statue
-    - name:
+    - name: cup
+    - name: bread
+    - name: cheese
 
 - group: fidelity
   tags:
@@ -405,7 +407,7 @@
     - name: 
     - name:
 
-- group: decorating
+- group: filter
   tags:
     - name:
     - name: 
@@ -426,3 +428,4 @@
   tags:
     - name: hairband
     - name: garter
+    - name: gloves
