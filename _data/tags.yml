@@ -1,4 +1,9 @@
-- group: artist or production
+- group: artist
+  tags:
+    - name: 
+    - name: 
+
+- group: production
   tags:
     - name: studio ghibli
     - name: O!Oi
