@@ -376,9 +376,11 @@
   tags:
     - name: color
     - name: gradation
-    - name: pattern
+    - group: pattern
+      tags:
+        - name: starry
     - name: image
-    - name: 
+    - name:
 
 - group: noise
   tags:
