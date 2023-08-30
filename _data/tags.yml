@@ -8,6 +8,11 @@
     - name: studio ghibli
     - name: O!Oi
 
+- group: product
+  tags:
+    - name: FINAL FANTASY
+    - name: FF12
+
 - group: subject
   tags:
     - name: girl
@@ -39,7 +44,7 @@
     - name: alluring
     - name: sensual
     - name: provocative
-    - name: 
+    - name: nsfw
 
 - group: fidelity
   tags:
@@ -203,15 +208,12 @@
   - purple
   - magenta
   - white
+  - blonde
 
 - lengths:
   - long
   - medium
   - short
-
-- name: nsfw
-
-
 
 - group: projection
   tags:
@@ -346,6 +348,12 @@
     - name: over knee socks
     - name: thigh high socks
     - name: stocking
+    - name: thigh strap
+
+- group: footwear
+  tags:
+    - name: barefoot
+    - name: boots
 
 - group: tattoo
   tags:
