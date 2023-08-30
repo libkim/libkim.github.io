@@ -192,6 +192,7 @@
     - name: lying
     - name: sitting
     - name: squatting
+    - name: cooking
 
 - group: gesture
   tags:
@@ -429,3 +430,11 @@
     - name: hairband
     - name: garter
     - name: gloves
+    - name: apron
+    - name: belts
+    - name: ties
+    - group: eyewear
+    - group: sashes
+    - name: scarf
+    - name: lanyard
+    - name: piercing
