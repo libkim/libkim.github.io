@@ -12,12 +12,21 @@
 - group: subject
   tags:
     - name: girl
-    - name: man
-    - name: lady
     - name: boy
-    - name: animal
-    - name: monster
+    - name: man
+    - name: woman
+    - name: grandmother
+    - name: grandfather
     - name: architecture
+
+- group: age
+  tags:
+    - name: infant
+    - name: child
+    - name: teen
+    - name: college age
+    - name: young adult
+    - name: middle age
 
 - group: type
   tags:
@@ -184,6 +193,19 @@
     - name: lying
     - name: sitting
     - name: squatting
+    - group: sex position
+      tags:
+        - name: missionary
+        - name: doggy style
+        - name: cowgirl
+        - name: 69
+        - name: prone bone
+        - name: reverse cowgirl
+        - name: lotus
+        - name: butterfly
+        - name: spooning
+        - name: scissor
+        - name: full nelson
 
 - group: action
   tags:
@@ -194,6 +216,9 @@
     - name: sitting
     - name: squatting
     - name: cooking
+    - name: 
+
+
 
 - group: gesture
   tags:
@@ -313,7 +338,6 @@
     - group: eyelash lengths
       tags:
 
-
 - group: top
   tags:
     - name: blouse
@@ -380,9 +404,9 @@
 - group: nail
   tags:
     - name: nail polish
-    - name: sensual
     - name:
-    - name: 
+    - name:
+    - name:
 
 - group: 
   tags:
