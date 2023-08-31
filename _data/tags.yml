@@ -19,13 +19,21 @@
     - name: monster
     - name: architecture
 
+- group: type
+  tags:
+    - group: figurative
+      tags:
+        - name: landscape
+        - name: portrait
+        - name: still life
+    - name: semi-abstract
+    - name: abstract
+
 - group: purpose
   tags:
-    - name: character design
-    - name: photo shoot
-    - name: FINAL FANTASY
-    - name: FF12
-    - name: 
+    - name: representation
+    - name: expression
+    - name: utilization
 
 - group: technique
   tags:
