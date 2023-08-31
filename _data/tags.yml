@@ -9,12 +9,6 @@
     - name: Studio Ghibli
     - name: 
 
-- group: product
-  tags:
-    - name: FINAL FANTASY
-    - name: FF12
-    - name: 
-
 - group: subject
   tags:
     - name: girl
@@ -23,7 +17,7 @@
     - name: boy
     - name: animal
     - name: monster
-    - name: 
+    - name: architecture
 
 - group: purpose
   tags:
@@ -34,13 +28,20 @@
     - name: still cut
     - name: fan art
 
-- group: method
+- group: product
+  tags:
+    - name: FINAL FANTASY
+    - name: FF12
+    - name: 
+
+- group: technique
   tags:
     - name: photography
     - name: drawing
     - name: painting
     - name: 3D modeling
     - name: ai art
+    - name: 
 
 - group: utility
   tags:
@@ -98,9 +99,9 @@
     - name:
     - name: 
 
-- group: purpose
+- group: 
   tags:
-    - name: influencer marketing
+    - name: 
 
 - group: masterpiece
   tags:
