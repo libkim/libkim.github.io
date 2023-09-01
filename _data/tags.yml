@@ -91,7 +91,17 @@
             - group: headwear
               tags:
                 - name: baseball cap
-                - name: 
+                - name: beret
+
+- group: neckwear
+  tags:
+    - name: choker
+    - name: clerical collar
+    - name: neckwarmer
+    - name: necktie
+    - name: scarf
+    - name: neckerchief
+
             - group: top
               tags:
                 - name: blouse
@@ -124,12 +134,35 @@
                 - name: blouse
                 - name: blouse
                 - name: blouse
+
+- group: bottom
+  tags:
+    - group: trouser
+      tags:
+    - group: skirt
+      tags:
+        - name: a-line
+        - name: ballerina
+        - name: denim
+        - name: pencil
+        - name: rah-rah
+
             - group: underwear
               tags:
                 - name: g-string
                 - name: crotchless panty
+                - name: bra
+                - name: camisole
+                - name: undershirt
+                - name: lingerie
+                - name: diaper
+            - group: outerwear
+              tags:
+                - name: apron
                 - name: 
                 - name:
+                - name: 
+                - name: 
                 - name:
                 - name:
             - group: legwear
