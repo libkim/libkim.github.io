@@ -9,12 +9,13 @@
     - name: Studio Ghibli
     - name: 
 
-- group: type
+- group: subject
   tags:
-    - group: figurative
+    - group: type
       tags:
-        - name: landscape
-        - group: portrait
+
+    - name: landscape
+    - group: portrait
           subjects:
             - group: race
               tags:
@@ -56,6 +57,26 @@
                     - name: straight
                     - name: curly
                     - name: pony tail
+            - group: expression
+              tags:
+                - name: happy
+                - name: sad
+                - name: angry
+                - name: exhausted
+                - name: confused
+                - name: bored
+                - name: guilty
+                - name: ecstatic
+                - name: suspicious
+                - name: frustrated
+                - name: confident
+                - name: embarrassed
+                - name: disgusted
+                - name: lonely
+                - name: surprised
+                - name: shocked
+                - name: anxious
+                - name: shy
             - group: eyes
               tags:
                 - group: eye color
@@ -65,6 +86,10 @@
             - group: gazes
               tags:
                 - name: looking at viewer
+            - group: mouth
+              tags:
+                - name: open mouth
+                - name: closed mouth
             - group: headwear
               tags:
                 - name: baseball cap
@@ -138,14 +163,19 @@
                 - name: ring
 
         - name: still life
-    - name: semi-abstract
-    - name: abstract
+ 
 
 - group: purpose
   tags:
-    - name: representation
-    - name: expression
-    - name: utilization
+    - group: representation
+      tags:
+        - name: figurative
+    - group: distortion
+      tags:
+        - name: semi-abstract
+    - group: composition
+      tags:
+        - name: abstract
 
 - group: technique
   tags:
@@ -203,7 +233,6 @@
     - name: drawing
     - name: painting
     - name: 3D modeling
-
 
 - group: lens
   tags:
@@ -284,10 +313,6 @@
 - group: gesture
   tags:
     - name: heart hands
-
-- group: character
-  tags:
-    - name:
 
 - group: chibi
   tags:
@@ -392,12 +417,6 @@
   tags:
     - name: color banding
 
-- group: mouth
-  tags:
-    - name: open mouth
-    - name: closed mouth
-    - name: 
-    - name:
 
 - group: filter
   tags:
