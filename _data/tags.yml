@@ -11,12 +11,10 @@
 
 - group: subject
   tags:
-    - group: type
+    - group: landscape
       tags:
-
-    - name: landscape
     - group: portrait
-          subjects:
+      tags:
             - group: race
               tags:
                 - name: necromancer
@@ -373,10 +371,6 @@
 - group: shading
   tags:
     - name: cel shading
-
-- group: purpose
-  tags:
-    - name: influencer marketing
 
 - group: method
   tags:
