@@ -16,6 +16,13 @@
         - name: landscape
         - group: portrait
           subjects:
+            - group: race
+              tags:
+                - name: necromancer
+                - name: human
+                - name: dragon
+                - name:
+                - name: 
             - group: gender
               tags:
                 - name: girl
@@ -32,13 +39,6 @@
                 - name: college age
                 - name: young adult
                 - name: middle age
-            - group: race
-              tags:
-    - name: necromancer
-    - name: human
-    - name: dragon
-    - name:
-    - name: 
             - group: skin
               tags:
                 - name:
