@@ -9,193 +9,6 @@
     - name: Studio Ghibli
     - name: 
 
-- group: subject
-  tags:
-    - group: landscape
-      tags:
-    - group: portrait
-      tags:
-            - group: race
-              tags:
-                - name: necromancer
-                - name: human
-                - name: dragon
-                - name:
-                - name: 
-            - group: gender
-              tags:
-                - name: girl
-                - name: boy
-                - name: woman
-                - name: man
-                - name: grandmother
-                - name: grandfather
-            - group: age
-              tags:
-                - name: infant
-                - name: child
-                - name: teen
-                - name: college age
-                - name: young adult
-                - name: middle age
-            - group: skin
-              tags:
-                - name:
-            - group: hair
-              tags:
-                - group: hair color
-                  tags:
-                - group: hair lengths
-                  tags:
-                - group: hairstyles
-                  tags:
-                    - name: half up
-                    - name: braid
-                    - name: blunt bang
-                    - name: straight
-                    - name: curly
-                    - name: pony tail
-            - group: expression
-              tags:
-                - name: happy
-                - name: sad
-                - name: angry
-                - name: exhausted
-                - name: confused
-                - name: bored
-                - name: guilty
-                - name: ecstatic
-                - name: suspicious
-                - name: frustrated
-                - name: confident
-                - name: embarrassed
-                - name: disgusted
-                - name: lonely
-                - name: surprised
-                - name: shocked
-                - name: anxious
-                - name: shy
-            - group: eyes
-              tags:
-                - group: eye color
-                  tags:
-                - group: eyelash lengths
-                  tags:
-            - group: gazes
-              tags:
-                - name: looking at viewer
-            - group: mouth
-              tags:
-                - name: open mouth
-                - name: closed mouth
-            - group: headwear
-              tags:
-                - name: baseball cap
-                - name: beret
-
-- group: neckwear
-  tags:
-    - name: choker
-    - name: clerical collar
-    - name: neckwarmer
-    - name: necktie
-    - name: scarf
-    - name: neckerchief
-
-            - group: top
-              tags:
-                - name: blouse
-                - name: dress shirt
-                - name: hoodie
-                - name: sweater
-                - name: cardigan
-                - name: tank top
-                - name: vest
-                - name: jacket
-                - name: blazer
-                - name: coat
-                - name: trench coat
-                - name: raincoat
-                - name: windbreaker
-                - name: parka
-                - name: anorak
-                - name: overcoat
-                - name: sweatshirt
-                - name: t-shirt
-                - name: polo shirt
-                - name: long goose down
-                - name: hawaiian shirt
-                - name: waistcoat
-                - name: puffer vest
-                - name: long coat
-                - name: blouse
-                - name: blouse
-                - name: blouse
-                - name: blouse
-                - name: blouse
-                - name: blouse
-
-- group: bottom
-  tags:
-    - group: trouser
-      tags:
-    - group: skirt
-      tags:
-        - name: a-line
-        - name: ballerina
-        - name: denim
-        - name: pencil
-        - name: rah-rah
-
-            - group: underwear
-              tags:
-                - name: g-string
-                - name: crotchless panty
-                - name: bra
-                - name: camisole
-                - name: undershirt
-                - name: lingerie
-                - name: diaper
-            - group: outerwear
-              tags:
-                - name: apron
-                - name: 
-                - name:
-                - name: 
-                - name: 
-                - name:
-                - name:
-            - group: legwear
-              tags:
-                - name: socks
-                - name: high socks
-                - name: knee socks
-                - name: over knee socks
-                - name: thigh high socks
-                - name: stocking
-                - name: thigh strap
-            - group: footwear
-              tags:
-                - name: barefoot
-                - name: boots
-            - group: accessories
-              tags:
-                - name: hairband
-                - name: garter
-                - name: gloves
-                - name: apron
-                - name: belts
-                - name: ties
-                - group: eyewear
-                - name: sashes
-                - name: scarf
-                - name: lanyard
-                - name: piercing
-                - name: ring
-
-        - name: still life
- 
-
 - group: purpose
   tags:
     - group: representation
@@ -207,6 +20,188 @@
     - group: composition
       tags:
         - name: abstract
+
+- group: subject
+  tags:
+    - group: landscape
+      tags:
+    - group: portrait
+      tags:
+        - group: race
+          tags:
+            - name: necromancer
+            - name: human
+            - name: dragon
+            - name:
+            - name: 
+        - group: gender
+          tags:
+            - name: girl
+            - name: boy
+            - name: woman
+            - name: man
+            - name: grandmother
+            - name: grandfather
+        - group: age
+          tags:
+            - name: infant
+            - name: child
+            - name: teen
+            - name: college age
+            - name: young adult
+            - name: middle age
+        - group: skin
+          tags:
+            - name:
+        - group: hair
+          tags:
+            - group: hair color
+              tags:
+                - group: hair lengths
+                  tags:
+                - group: hairstyles
+                  tags:
+                    - name: half up
+                    - name: braid
+                    - name: blunt bang
+                    - name: straight
+                    - name: curly
+                    - name: pony tail
+        - group: expression
+          tags:
+            - name: happy
+            - name: sad
+            - name: angry
+            - name: exhausted
+            - name: confused
+            - name: bored
+            - name: guilty
+            - name: ecstatic
+            - name: suspicious
+            - name: frustrated
+            - name: confident
+            - name: embarrassed
+            - name: disgusted
+            - name: lonely
+            - name: surprised
+            - name: shocked
+            - name: anxious
+            - name: shy
+        - group: eyes
+          tags:
+            - group: eye color
+              tags:
+            - group: eyelash lengths
+              tags:
+        - group: gazes
+          tags:
+            - name: looking at viewer
+        - group: mouth
+          tags:
+            - name: open mouth
+            - name: closed mouth
+        - group: headwear
+          tags:
+            - name: baseball cap
+            - name: beret
+        - group: neckwear
+          tags:
+            - name: choker
+            - name: clerical collar
+            - name: neckwarmer
+            - name: necktie
+            - name: scarf
+            - name: neckerchief
+        - group: top
+          tags:
+            - name: blouse
+            - name: dress shirt
+            - name: hoodie
+            - name: sweater
+            - name: cardigan
+            - name: tank top
+            - name: vest
+            - name: jacket
+            - name: blazer
+            - name: coat
+            - name: trench coat
+            - name: raincoat
+            - name: windbreaker
+            - name: parka
+            - name: anorak
+            - name: overcoat
+            - name: sweatshirt
+            - name: t-shirt
+            - name: polo shirt
+            - name: long goose down
+            - name: hawaiian shirt
+            - name: waistcoat
+            - name: puffer vest
+            - name: long coat
+            - name: blouse
+            - name: blouse
+            - name: blouse
+            - name: blouse
+            - name: blouse
+            - name: blouse
+        - group: bottom
+          tags:
+            - group: trouser
+              tags:
+            - group: skirt
+              tags:
+                - name: a-line
+                - name: ballerina
+                - name: denim
+                - name: pencil
+                - name: rah-rah
+        - group: underwear
+          tags:
+            - name: g-string
+            - name: crotchless panty
+            - name: bra
+            - name: camisole
+            - name: undershirt
+            - name: lingerie
+            - name: diaper
+        - group: outerwear
+          tags:
+            - name: apron
+            - name: 
+            - name:
+            - name: 
+            - name: 
+            - name:
+            - name:
+        - group: legwear
+          tags:
+            - name: socks
+            - name: high socks
+            - name: knee socks
+            - name: over knee socks
+            - name: thigh high socks
+            - name: stocking
+            - name: thigh strap
+        - group: footwear
+          tags:
+            - name: barefoot
+            - name: boots
+        - group: accessories
+          tags:
+            - name: hairband
+            - name: garter
+            - name: gloves
+            - name: apron
+            - name: belt
+            - group: eyewear
+            - name: sashes
+            - name: scarf
+            - name: lanyard
+            - name: piercing
+            - name: ring
+
+    - group: still life
+      tags:
 
 - group: technique
   tags:
