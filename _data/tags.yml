@@ -241,6 +241,7 @@
     - name: long sleeves
     - name: ofuda
     - name: uniform
+    - name: cross-section
 
 - group: element
   tags:
@@ -309,6 +310,7 @@
     - name: standing
     - name: kneeling
     - name: lying
+    - name: lying on back
     - name: sitting
     - name: squatting
     - group: sex position
@@ -334,7 +336,8 @@
     - name: sitting
     - name: squatting
     - name: cooking
-    - name: 
+    - name: spread legs
+    
 
 - group: gesture
   tags:
@@ -439,8 +442,7 @@
   tags:
     - name: color banding
 
-
-- group: filter
+- group: foreground
   tags:
     - name:
     - name: 
@@ -449,7 +451,3 @@
       tags:
         - name: butterfly
         - name: 
-
-- action: sex, spread legs, lying on back
-
-- name: cross-section
