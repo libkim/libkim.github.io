@@ -94,10 +94,10 @@
           tags:
             - name: girl
             - name: boy
-            - name: woman
             - name: man
-            - name: grandmother
-            - name: grandfather
+            - name: woman
+            - name: old man
+            - name: old woman
         - group: age
           tags:
             - name: infant
@@ -388,6 +388,7 @@
   tags:
     - name: masterpiece
     - name: realistic
+    - name: 
 
 - group: motive
   tags:
@@ -401,6 +402,13 @@
     - name: behance
     - name: pixiv
     - name: movie poster
+    - name: long exposure
+    - name: color splash
+    - name: monochrome
+    - name: tilt-shift
+    - group: frame
+      tags:
+        - name: polaroid
 
 - group: feature
   tags:
@@ -470,6 +478,7 @@
   tags:
   - name: soft
   - name: ambient
+  - name: cinematic
 
 - group: shading
   tags:
