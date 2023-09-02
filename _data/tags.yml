@@ -215,9 +215,6 @@
     - group: photography
       before: photography
       tags:
-        - group: framing
-          tags:
-            - name: central framing
         - group: type of lens
           suffix: lens
           tags:
@@ -239,6 +236,16 @@
               before: medium telephoto
               tags:
                 - name:
+        - group: framing
+          tags:
+            - name: central framing
+        - group: camera angle
+          suffix: shot
+          tags:
+            - name: eye level
+            - name: low angle
+            - name: high angle
+            - name: overhead
         - group: type of shot
           suffix: shot
           tags:
@@ -302,12 +309,7 @@
 
 
 
-- group: shot
-  tags:
-    - name: eye level shot
-    - name: low angle shot
-    - name: high angle shot
-    - name: overhead shot
+
 
 
 
