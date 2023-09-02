@@ -206,6 +206,43 @@
             - name: lanyard
             - name: piercing
             - name: ring
+        - group: position
+          tags:
+            - name: all-fours
+            - name: standing
+            - name: kneeling
+            - name: lying
+            - name: lying on back
+            - name: sitting
+            - name: squatting
+            - group: sex position
+              tags:
+                - name: missionary
+                - name: doggy style
+                - name: cowgirl
+                - name: 69
+                - name: prone bone
+                - name: reverse cowgirl
+                - name: lotus
+                - name: butterfly
+                - name: spooning
+                - name: scissor
+                - name: full nelson
+
+            - group: action
+              tags:
+                - name: all-fours
+                - name: standing
+                - name: kneeling
+                - name: lying
+                - name: sitting
+                - name: squatting
+                - name: cooking
+                - name: spread legs
+
+            - group: gesture
+              tags:
+                - name: heart hands
 
     - group: still life
       tags:
@@ -309,44 +346,6 @@
   tags:
     - name: masterpiece
 
-- group: position
-  tags:
-    - name: all-fours
-    - name: standing
-    - name: kneeling
-    - name: lying
-    - name: lying on back
-    - name: sitting
-    - name: squatting
-    - group: sex position
-      tags:
-        - name: missionary
-        - name: doggy style
-        - name: cowgirl
-        - name: 69
-        - name: prone bone
-        - name: reverse cowgirl
-        - name: lotus
-        - name: butterfly
-        - name: spooning
-        - name: scissor
-        - name: full nelson
-
-- group: action
-  tags:
-    - name: all-fours
-    - name: standing
-    - name: kneeling
-    - name: lying
-    - name: sitting
-    - name: squatting
-    - name: cooking
-    - name: spread legs
-
-- group: gesture
-  tags:
-    - name: heart hands
-
 - group: chibi
   tags:
     - name: 2 heads tall
@@ -403,6 +402,8 @@
         - name: horizontal motion blur
         - name: vertical motion blur
 
+- group: environment
+
 - group: lighting
   tags:
   - name: soft
@@ -411,14 +412,6 @@
 - group: shading
   tags:
     - name: cel shading
-
-- group: method
-  tags:
-    - name: photography
-    - name: drawing
-    - name: painting
-    - name: 3D modeling
-
 
 - group: tattoo
   tags:
@@ -438,9 +431,10 @@
     - name:
 
 - group: background
+  suffix: background
   tags:
-    - name: color
-    - name: gradation
+    - group: color
+    - group: gradation
     - group: pattern
       tags:
         - name: starry
