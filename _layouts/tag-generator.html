@@ -3,10 +3,10 @@ layout: post
 ---
 
 {% assign sorted = site.data.tags | sort: 'group' %} 
-{% for product in sorted %} 
-           <tr> 
-             <td>{{ product.debut }}</td> 
-             <td>{{ product.title }}</td>
+{% for product in sorted %}
+<div class="choice chip" data-group="fruit0" data-value="apple">{{ product.before }}</div>
+<div class="choice chip" data-group="fruit0" data-value="banana">{{ product.after }}</div>
+
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
