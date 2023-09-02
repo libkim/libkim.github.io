@@ -460,20 +460,6 @@
         - name: 3-point perspective
         - name: curvilinear perspective
 
-
-- group: blur
-  tags:
-    - group: gaussian blur
-      tags:
-        - name: blurred face
-        - name: blurred penis
-        - name: blurred vagina
-        - name: blurred background
-    - group: motion blur
-      tags:
-        - name: horizontal motion blur
-        - name: vertical motion blur
-
 - group: environment
 
 - group: lighting
@@ -506,6 +492,18 @@
     - group: effect
       tags:
         - name: breath
+- group: blur
+  tags:
+    - group: gaussian blur
+      tags:
+        - name: blurred face
+        - name: blurred penis
+        - name: blurred vagina
+        - name: blurred background
+    - group: motion blur
+      tags:
+        - name: horizontal motion blur
+        - name: vertical motion blur
     - name: 
     - name: 
     - group: bug
