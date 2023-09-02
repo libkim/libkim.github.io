@@ -1,5 +1,5 @@
 - group: artist
-  before: by
+  before: 'by '
   tags:
     - name: Takeshi Obata
     - name: Yoshitaka Amano
