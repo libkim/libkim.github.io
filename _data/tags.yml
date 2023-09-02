@@ -81,6 +81,7 @@
             - name: Dirty Room
             - name: Dark Room
             - name: On Stage
+       
     - group: portrait
       tags:
         - group: race
@@ -327,6 +328,13 @@
         - group: framing
           tags:
             - name: central framing
+        - group: camera angle
+          tags:
+            - name: eye level shot
+            - name: low angle shot
+            - name: high angle shot
+            - name: overhead shot
+            - name: satellite image
         - group: type of lens
           suffix: lens
           tags:
