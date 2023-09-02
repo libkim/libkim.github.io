@@ -215,6 +215,9 @@
     - group: photography
       before: photography
       tags:
+        - group: framing
+          tags:
+            - name: central framing
         - group: type of lens
           suffix: lens
           tags:
@@ -236,16 +239,6 @@
               before: medium telephoto
               tags:
                 - name:
-        - group: framing
-          tags:
-            - name: central framing
-        - group: camera angle
-          suffix: shot
-          tags:
-            - name: eye level
-            - name: low angle
-            - name: high angle
-            - name: overhead
         - group: type of shot
           suffix: shot
           tags:
@@ -257,12 +250,21 @@
             - name: bust
             - name: close-up
             - name: extreme close-up
-
+        - group: headroom
+          tags:
+        - group: focus
+          tags:
+            - name: deep focus
+            - name: soft focus
+            - name: out of focus
+            - group: selective focus
+              tags:
+                - name: front focus
+                - name: back focus
     - name: drawing
     - name: painting
     - name: 3D modeling
     - name: ai art
-    - name: 
 
 - group: utility
   tags:
@@ -307,26 +309,6 @@
   tags:
     - name: masterpiece
 
-
-
-
-
-
-
-- group: headroom
-  tags:
-    - name: little headroom
-
-- group: focus
-  tags:
-    - name: deep focus
-    - name: soft focus
-    - name: out of focus
-    - group: selective focus
-      tags:
-        - name: front focus
-        - name: back focus
-
 - group: position
   tags:
     - name: all-fours
@@ -360,7 +342,6 @@
     - name: squatting
     - name: cooking
     - name: spread legs
-    
 
 - group: gesture
   tags:
