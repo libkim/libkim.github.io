@@ -28,6 +28,26 @@
   tags:
     - group: landscape
       tags:
+        - group: season
+          tags:
+            - name: spring
+            - name: summer
+            - name: autumn
+            - name: winter
+        - group: time
+          tags:
+            - name: morning
+            - name: afternoon
+            - name: evening
+            - name: night
+        - group: weather
+          tags:
+            - name:
+            - name: boy
+            - name: woman
+            - name: man
+            - name: grandmother
+            - name: grandfather
     - group: portrait
       tags:
         - group: race
