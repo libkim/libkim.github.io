@@ -165,6 +165,20 @@
           tags:
             - name: open mouth
             - name: closed mouth
+        - group: body
+          tags:
+            - name:
+        - group: nail
+          tags:
+            - name: nail polish
+            - name:
+            - name:
+            - name:
+        - group: tattoo
+          tags:
+            - name: new school
+            - name: lettering
+            - name: irezumi
         - group: headwear
           tags:
             - name: baseball cap
@@ -471,22 +485,6 @@
   tags:
     - name: cel shading
 
-- group: tattoo
-  tags:
-    - name: new school
-    - name: lettering
-    - name: irezumi
-
-- group: nail
-  tags:
-    - name: nail polish
-    - name:
-    - name:
-    - name:
-
-- group: 
-  tags:
-    - name:
 
 - group: background
   suffix: background
