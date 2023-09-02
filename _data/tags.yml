@@ -219,7 +219,7 @@
           tags:
             - name: central framing
         - group: type of lens
-          after: lens
+          suffix: lens
           tags:
             - group: wide-angle
               before: wide-angle
@@ -240,7 +240,7 @@
               tags:
                 - name:
         - group: type of shot
-          after: shot
+          suffix: shot
           tags:
             - name: long
             - name: full
