@@ -2,7 +2,7 @@
 layout: post
 ---
 
-{% assign sorted = site.data.tags | sort: 'debut' %} 
+{% assign sorted = site.data.tags | sort: 'group' %} 
 {% for product in sorted %} 
            <tr> 
              <td>{{ product.debut }}</td> 
