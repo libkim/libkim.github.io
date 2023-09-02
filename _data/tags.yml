@@ -504,7 +504,6 @@
   tags:
     - name: cel shading
 
-
 - group: background
   suffix: background
   tags:
@@ -525,20 +524,18 @@
     - group: effect
       tags:
         - name: breath
-- group: blur
-  tags:
-    - group: gaussian blur
-      tags:
-        - name: blurred face
-        - name: blurred penis
-        - name: blurred vagina
-        - name: blurred background
-    - group: motion blur
-      tags:
-        - name: horizontal motion blur
-        - name: vertical motion blur
-    - name: 
-    - name: 
+        - group: blur
+          tags:
+            - group: gaussian blur
+              tags:
+                - name: blurred face
+                - name: blurred penis
+                - name: blurred vagina
+                - name: blurred background
+            - group: motion blur
+              tags:
+                - name: horizontal motion blur
+                - name: vertical motion blur
     - group: bug
       tags:
         - name: butterfly
