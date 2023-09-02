@@ -1,11 +1,13 @@
 - group: artist
   before: 'by '
+  multiple selection: true
   tags:
     - name: Takeshi Obata
     - name: Yoshitaka Amano
     - name: Hiroaki Samura
 
 - group: production
+  before: 'by '
   tags:
     - name: Studio Ghibli
     - name: 
