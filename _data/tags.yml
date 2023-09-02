@@ -94,6 +94,11 @@
                     - name: straight
                     - name: curly
                     - name: pony tail
+        - group: face
+          suffix: face
+          tags:
+            - name: cute
+            - name: beautiful
         - group: expression
           tags:
             - name: happy
