@@ -6,7 +6,10 @@ layout: post
 {% for product in sorted %}
 <div class="choice chip" data-group="fruit0" data-value="apple">{{ product.before }}</div>
 <div class="choice chip" data-group="fruit0" data-value="banana">{{ product.after }}</div>
-
+{% for product in tags %}
+<div class="choice chip" data-group="fruit0" data-value="apple">{{ product.before }}</div>
+<div class="choice chip" data-group="fruit0" data-value="banana">{{ product.after }}</div>
+{% endfor %}
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
