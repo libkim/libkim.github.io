@@ -1,4 +1,5 @@
 - group: artist
+  before: by
   tags:
     - name: Takeshi Obata
     - name: Yoshitaka Amano
@@ -50,6 +51,10 @@
             - name: college age
             - name: young adult
             - name: middle age
+        - group: height
+          tags:
+            - name:
+            - name:
         - group: skin
           tags:
             - name:
@@ -219,6 +224,7 @@
     - name: provocative
     - name: nsfw
     - name: cozy
+    - name: cute
 
 - group: fidelity
   tags:
@@ -262,9 +268,21 @@
     - name: 3D modeling
 
 - group: lens
+  after: lens
+  multiple selection: true
   tags:
-    - name: telephoto lens
-    - name: wide-angle lens
+    - group: type of lens
+      tags:
+        - name: wide-angle
+        - name: short telephoto
+        - name: medium telephoto
+    - group: focal length
+      tags:
+        - name: 20mm
+        - name: 24mm
+        - name: 28mm
+        - name: 35mm
+        - name: 55mm
 
 - group: framing
   tags:
@@ -398,6 +416,11 @@
       tags:
         - name: horizontal motion blur
         - name: vertical motion blur
+
+- group: lighting
+  tags:
+  - name: soft
+  - name: ambient
 
 - group: shading
   tags:
