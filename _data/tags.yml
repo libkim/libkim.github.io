@@ -400,7 +400,15 @@
   tags:
     - name: masterpiece
     - name: realistic
-    - name: 
+    - name: HDR
+    - name: UHD
+    - name: 64K
+    - name: highly detailed
+    - name: studio lighting
+    - name: professional
+    - name: trending on artstation
+    - name: unreal engine
+    - name: high resolution scan
 
 - group: motive
   tags:
