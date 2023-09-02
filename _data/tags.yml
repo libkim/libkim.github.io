@@ -215,7 +215,11 @@
     - group: photography
       before: photography
       tags:
+        - group: framing
+          tags:
+            - name: central framing
         - group: type of lens
+          after: lens
           tags:
             - group: wide-angle
               before: wide-angle
@@ -235,7 +239,7 @@
               before: medium telephoto
               tags:
                 - name:
-        - group: shot type
+        - group: type of shot
           after: shot
           tags:
             - name: long
@@ -296,9 +300,7 @@
   tags:
     - name: masterpiece
 
-- group: framing
-  tags:
-    - name: central framing
+
 
 - group: shot
   tags:
