@@ -397,6 +397,9 @@
   tags:
     - name: Studio Ghibli
     - name: Takeshi Obata
+    - name: artstation
+    - name: behance
+    - name: pixiv
 
 - group: feature
   tags:
