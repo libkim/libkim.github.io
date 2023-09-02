@@ -42,12 +42,11 @@
             - name: night
         - group: weather
           tags:
-            - name:
-            - name: boy
-            - name: woman
-            - name: man
-            - name: grandmother
-            - name: grandfather
+            - name: clear
+            - name: cloudy
+            - name: foggy
+            - name: raining
+            - name: snowing
     - group: portrait
       tags:
         - group: race
