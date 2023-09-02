@@ -47,6 +47,40 @@
             - name: foggy
             - name: raining
             - name: snowing
+        - group: Indoor
+          tags:
+            - name: bath
+            - name: Classroom
+            - name: Bathroom
+            - name: Kitchen
+            - name: Library
+            - name: Prison
+            - name: Pool
+        - group: Outdoor
+          tags:
+            - name: Sky
+            - name: Sea
+            - name: Mountain
+            - name: Beach
+            - name: Castle
+            - name: Ruins
+            - name: Church
+            - name: Forest
+            - name: Flower field
+            - name: Park
+            - name: Shrine
+            - name: Hospital
+            - name: Hotel
+            - name: Love Hotel
+            - name: Factory
+            - name: Inside An Airplane
+            - name: Office
+            - name: Bed
+            - name: Train
+            - name: On The Futon
+            - name: Dirty Room
+            - name: Dark Room
+            - name: On Stage
     - group: portrait
       tags:
         - group: race
