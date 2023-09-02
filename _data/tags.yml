@@ -210,7 +210,30 @@
 
 - group: technique
   tags:
-    - name: photography
+    - group: photography
+      before: photography
+      tags:
+        - group: type of lens
+          tags:
+        - group: wide-angle
+          before: wide-angle
+          tags:
+            - name: 20mm
+            - name: 28mm
+        - group: standard
+          tags:
+            - name: 
+            - name: 
+        - group: short telephoto
+          before: short telephoto
+          tags:
+            - name: 85mm
+            - name: 100mm
+        - group: medium telephoto
+          before: medium telephoto
+          tags:
+            - name:
+
     - name: drawing
     - name: painting
     - name: 3D modeling
@@ -259,30 +282,6 @@
 - group: fidelity
   tags:
     - name: masterpiece
-
-- group: method
-  tags:
-    - name: photography
-    - name: drawing
-    - name: painting
-    - name: 3D modeling
-
-- group: lens
-  after: lens
-  multiple selection: true
-  tags:
-    - group: type of lens
-      tags:
-        - name: wide-angle
-        - name: short telephoto
-        - name: medium telephoto
-    - group: focal length
-      tags:
-        - name: 20mm
-        - name: 24mm
-        - name: 28mm
-        - name: 35mm
-        - name: 55mm
 
 - group: framing
   tags:
