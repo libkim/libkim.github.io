@@ -1,18 +1,15 @@
 - group: artist
-  choice: true
   tags:
     - name: Takeshi Obata
     - name: Yoshitaka Amano
     - name: Hiroaki Samura
 
 - group: production
-  choice: true
   tags:
     - name: Studio Ghibli
     - name: 
 
 - group: purpose
-  choice: true
   tags:
     - group: representation
       tags:
@@ -25,26 +22,22 @@
         - name: abstract
 
 - group: subject
-  choice: true
   tags:
     - group: landscape
       tags:
         - group: season
-          choice: true
           tags:
             - name: spring
             - name: summer
             - name: autumn
             - name: winter
         - group: time
-          choice: true
           tags:
             - name: morning
             - name: afternoon
             - name: evening
             - name: night
         - group: weather
-          choice: true
           tags:
             - name: clear
             - name: cloudy
@@ -52,7 +45,6 @@
             - name: raining
             - name: snowing
         - group: Indoor
-          choice: true
           tags:
             - name: bath
             - name: Classroom
