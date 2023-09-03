@@ -4,11 +4,11 @@ layout: post
 
 {% for product in site.data.tags %}
 
-{% if product.group =! undefined %}
-  {% if product.choice == true %}
-    <div class="choice chip active" data-group="{{ product.group }}" data-value="{{ product.name }}">{{ product.group }}</div>
-  {% else %}
-    <div class="chip active" data-value="{{ product.name }}">{{ product.group }}</div>
+  {% if product.group =! undefined %}
+    {% if product.choice == true %}
+      <div class="choice chip active" data-group="{{ product.group }}">{{ product.group }}</div>
+    {% else %}
+      <div class="chip active" data-value="{{ product.name }}">{{ product.group }}</div>
   {% endif %}
 
 
