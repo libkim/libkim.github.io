@@ -2,8 +2,12 @@
 layout: post
 ---
 
-{% assign sorted = site.data.tags | sort: 'group' %} 
-{% for product in sorted %}
+{% for product in site.data.tags %}
+  {% case product.type %}
+  
+  {{ product.name }}
+{% endfor %}
+
 <div class="choice chip" data-group="fruit0" data-value="apple">{{ product.before }}</div>
 <div class="choice chip" data-group="fruit0" data-value="banana">{{ product.after }}</div>
 <div class="choice chip" data-group="fruit0" data-value="banana">{{ product.tags.name }}</div>
