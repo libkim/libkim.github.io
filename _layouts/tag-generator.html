@@ -2,6 +2,14 @@
 layout: post
 ---
 
+
+#chip {
+   display: none; 
+} 
+#chip.active {
+   display: block;
+}
+
 <h3>Filter Chip</h3>
 {% for product in site.data.tags %}
   <div class="chip active" data-value="{{ product.name }}">{{ product.group }}{{ product.name }}</div>
