@@ -15,7 +15,7 @@
   choice: true
   tags:
     - group: representation
-       choice: true
+      choice: true
       tags:
         - name: figurative
     - group: distortion
