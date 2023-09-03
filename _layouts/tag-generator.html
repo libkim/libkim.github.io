@@ -3,8 +3,8 @@ layout: post
 ---
 
 {% for product in site.data.tags %}
-  {% case product.type %}
-  
+  {% if product.choice == true %}
+    {% assign class = choice chip %}
   {{ product.name }}
 {% endfor %}
 
