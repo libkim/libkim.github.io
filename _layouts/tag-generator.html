@@ -11,8 +11,7 @@ layout: post
     {% if product.choice == true %}
       {% for product in product.tags %}
         {% if product.group =! undefined %}
-       
-        <div class="chip active">{{ product.group }}</div>
+          <div class="choice chip">{{ product.group }}</div>
   
   {% else %}
 
