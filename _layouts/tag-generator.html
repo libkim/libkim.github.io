@@ -9,7 +9,7 @@ layout: post
     <div class="{{ class }}" data-group="{{ product.group }}" data-value="{{ product.name }}">{{ product.group }}</div>
   {% else %}
     {% assign class = active chip %}
-    <div class="{{ class }}" data-group="{{ product.group }}" data-value="{{ product.name }}">{{ product.group }}</div>
+    <div class="{{ class }}" data-value="{{ product.name }}">{{ product.group }}</div>
   {% endif %}
 
 {% endfor %}
