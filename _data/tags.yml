@@ -1,23 +1,29 @@
 - group: artist
+  choice: true
   tags:
     - name: Takeshi Obata
     - name: Yoshitaka Amano
     - name: Hiroaki Samura
 
 - group: production
+  choice: true
   tags:
     - name: Studio Ghibli
     - name: 
 
 - group: purpose
+  choice: true
   tags:
     - group: representation
+       choice: true
       tags:
         - name: figurative
     - group: distortion
+      choice: true
       tags:
         - name: semi-abstract
     - group: composition
+      choice: true
       tags:
         - name: abstract
 
