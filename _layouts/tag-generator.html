@@ -4,9 +4,7 @@ layout: post
 
 <h3>Filter Chip</h3>
 {% for product in site.data.tags %}
-  <div class="chip active">
-    {{ product.group }}{{ product.name }}
-  </div>
+  <div class="chip active">{{ product.group }}{{ product.name }}</div>
   {% if product.choice == true %}
     <h3>Choice Chip</h3>
       {% assign group = product.group %}
