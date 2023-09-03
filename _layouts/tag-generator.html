@@ -3,12 +3,19 @@ layout: post
 ---
 
 {% for product in site.data.tags %}
+
   {% if product.choice == true %}
-    {% assign class = choice chip %}
-  {{ product.name }}
+    {% assign class = active choice chip %}
+<div class="{{ class }}" data-group="{{ product.group }}" data-value="{{ product.name }}">{{ product.name }}</div>
+  {% else %}
+    {% assign class = active chip %}
+<div class="{{ class }}" data-group="{{ product.group }}" data-value="{{ product.name }}">{{ product.name }}</div>
+  {% endif %}
+
 {% endfor %}
 
-<div class="choice chip" data-group="fruit0" data-value="apple">{{ product.before }}</div>
+
+
 <div class="choice chip" data-group="fruit0" data-value="banana">{{ product.after }}</div>
 <div class="choice chip" data-group="fruit0" data-value="banana">{{ product.tags.name }}</div>
   {% for product in product.tags %}
