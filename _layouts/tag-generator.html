@@ -8,6 +8,19 @@ layout: post
 
     <div class="chip active">{{ product.group }}</div>
 
+    {% if product.choice == true %}
+      {% for product in product.tags %}
+        {% if product.group =! undefined %}
+       
+        <div class="chip active">{{ product.group }}</div>
+  
+  {% else %}
+
+    <div class="chip active" data-value="{{ product.name }}">{{ product.name }}</div>
+
+  {% endif %}
+{% endfor %}
+  
   {% else %}
 
     <div class="chip active" data-value="{{ product.name }}">{{ product.name }}</div>
@@ -17,16 +30,6 @@ layout: post
 
 {% endfor %}
 
-
-
-<div class="choice chip" data-group="fruit0" data-value="banana">{{ product.after }}</div>
-<div class="choice chip" data-group="fruit0" data-value="banana">{{ product.tags.name }}</div>
-  {% for product in product.tags %}
-  <div class="choice chip" data-group="fruit0" data-value="apple">{{ product.before }}</div>
-  <div class="choice chip" data-group="fruit0" data-value="banana">{{ product.after }}</div>
- <div class="choice chip" data-group="fruit0" data-value="banana">{{ product.tags.name }}</div>
-  {% endfor %}
-{% endfor %}
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
