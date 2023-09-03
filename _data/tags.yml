@@ -1,5 +1,5 @@
 - group: artist
-  before: 'by '
+  name: artist
   multiple selection: true
   tags:
     - name: Takeshi Obata
