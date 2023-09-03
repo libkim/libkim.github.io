@@ -3,18 +3,18 @@ layout: post
 ---
 
 <h3>Filter Chip</h3>
-{% for product in site.data.tags %}
-  <div class="chip active" data-value="{{ product.name }}">{{ product.group }}{{ product.name }}</div>
+{% for product in site.data.tags %}
+  <div class="chip active" data-value="{{ product.name }}">{{ product.group }}{{ product.name }}</div>
   {% if product.choice == true %}
     <h3>Choice Chip</h3>
     {% assign group = product.group %}
-    {% for product in product.tags %}
-      <div class="choice chip" data-group="{{ group }}" data-value="{{ product.name }}">{{ product.group }}{{ product.name }}</div>
+    {% for tag in product.tags %}
+      <div class="choice chip" data-group="{{ group }}" data-value="{{ tag.name }}">{{ tag.group }}{{ tag.name }}</div>
     {% endfor %}
   {% else %}
     <h3>Filter Chip</h3>
-    {% for product in product.tags %}
-      <div class="chip" data-value="{{ product.name }}">{{ product.group }}{{ product.name }}</div>
+    {% for tag in product.tags %}
+      <div class="chip" data-value="{{ tag.name }}">{{ tag.group }}{{ tag.name }}</div>
     {% endfor %}
   {% endif %}
 {% endfor %}
