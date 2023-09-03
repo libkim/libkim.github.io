@@ -1,6 +1,6 @@
 - group: artist
   name: artist
-  multiple selection: true
+  choice: true
   tags:
     - name: Takeshi Obata
     - name: Yoshitaka Amano
