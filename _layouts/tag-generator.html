@@ -2,37 +2,33 @@
 layout: post
 ---
 
-{% for parentTag in site.data.tags %}
-  {% if parentTag.group =! undefined %}
-    <div class="chip active">{{ parentTag.group }}</div>
+<h3>Filter Chip</h3>
+{% for product in site.data.tags %}
+  {% if product.group =! undefined %}
+    <div class="chip active">{{ product.group }}</div>
     
     {% if product.choice == true %}
-      {% assign group = project.group %}
+      <h3>Choice Chip</h3>
+      {% assign group = product.group %}
+
       {% for product in product.tags %}
         {% if product.group =! undefined %}
-          <div class="choice chip" data-group="group">{{ product.group }}</div>
+          <div class="choice chip" data-group="{{ group }}">{{ product.group }}</div>
+        {% else %}
+          <div class="choice chip" data-value="{{ product.name }}">{{ product.name }}</div>
+        {% endif %}
+      {% endfor %}
 
+    {% else %}
+      <h3>Filter Chip</h3>
 
-    {% if product.choice == true %}
-      {% assign group = project.group %}
       {% for product in product.tags %}
         {% if product.group =! undefined %}
-          <div class="choice chip" data-group="group">{{ product.group }}</div>
-  
+          <div class="chip">{{ product.name }}</div>
+
   {% else %}
-
     <div class="chip active" data-value="{{ product.name }}">{{ product.name }}</div>
-
   {% endif %}
-{% endfor %}
-  
-  {% else %}
-
-    <div class="chip active" data-value="{{ product.name }}">{{ product.name }}</div>
-
-  {% endif %}
-
-
 {% endfor %}
 
 
