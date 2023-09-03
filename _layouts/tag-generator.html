@@ -9,6 +9,13 @@ layout: post
       <div class="choice chip active" data-group="{{ product.group }}">{{ product.group }}</div>
     {% else %}
       <div class="chip active">{{ product.group }}</div>
+    {% endif %}
+  {% else %}
+{% if product.choice == true %}
+      <div class="choice chip active" data-group="{{ product.group }}">{{ product.group }}</div>
+    {% else %}
+      <div class="chip active">{{ product.group }}</div>
+    {% endif %}
   {% endif %}
 
 
