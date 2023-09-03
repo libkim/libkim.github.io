@@ -9,9 +9,10 @@ layout: post
     <div class="chip active">{{ product.group }}</div>
 
     {% if product.choice == true %}
+      {% assign group = project.group %}
       {% for product in product.tags %}
-        {% if product.group =! undefined %}
-          <div class="choice chip" data-group="{{ product.group }}">{{ product.group }}</div>
+        {% if group =! undefined %}
+          <div class="choice chip" data-group="group">{{ product.group }}</div>
   
   {% else %}
 
