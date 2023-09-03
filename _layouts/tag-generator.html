@@ -2,16 +2,21 @@
 layout: post
 ---
 
-{% for product in site.data.tags %}
+{% for parentTag in site.data.tags %}
+  {% if parentTag.group =! undefined %}
+    <div class="chip active">{{ parentTag.group }}</div>
+    
+    {% if product.choice == true %}
+      {% assign group = project.group %}
+      {% for product in product.tags %}
+        {% if product.group =! undefined %}
+          <div class="choice chip" data-group="group">{{ product.group }}</div>
 
-  {% if product.group =! undefined %}
-
-    <div class="chip active">{{ product.group }}</div>
 
     {% if product.choice == true %}
       {% assign group = project.group %}
       {% for product in product.tags %}
-        {% if group =! undefined %}
+        {% if product.group =! undefined %}
           <div class="choice chip" data-group="group">{{ product.group }}</div>
   
   {% else %}
