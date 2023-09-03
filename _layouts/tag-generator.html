@@ -7,9 +7,8 @@ layout: post
   <div class="chip active">
     {{ product.group }}{{ product.name }}
   </div>
-    
-    {% if product.choice == true %}
-      <h3>Choice Chip</h3>
+  {% if product.choice == true %}
+    <h3>Choice Chip</h3>
       {% assign group = product.group %}
 
       {% for product in product.tags %}
