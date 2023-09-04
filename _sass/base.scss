@@ -95,7 +95,7 @@ html {
   display: none; 
 }
 
-.chip.active {
+.filter.chip.active {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
@@ -104,7 +104,7 @@ html {
   cursor: pointer;
 }
 
-.chip.active.selected {
+filter.chip.active.selected {
   background-color: #66c;
   color: #fff;
 }
