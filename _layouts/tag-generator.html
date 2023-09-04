@@ -6,7 +6,7 @@ layout: post
   {% for tag in site.data.tags %}
     <div class="filter chip" data-value="{{ tag.name }}">
       {{ tag.group }}{{ tag.name }}
-      {% if product.choice == true %}
+      {% if product.isFilter == false %}
         {% assign upperGroup = tag.group %}
         {% for product in product.tags %}
           <div class="choice chip" data-group="{{ upperGroup }}" data-value="{{ tag.name }}">
@@ -56,15 +56,16 @@ chips.forEach(chip => {
     chip.addEventListener("click", () => {
       if (chip.classList.contains("selected")) {
         chip.classList.remove("selected");
-        updatePrompt();
       } else {
         const group = document.querySelectorAll(`[data-group="${chip.dataset.group}"]`);
         group.forEach(chip => {
           chip.classList.remove("selected");
         });
         chip.classList.add("selected");
-        updatePrompt();
       }
+      const childChip = chip.childNode;
+      childChip.classList.add("active");
+      updatePrompt();
     });
   } else {
     chip.addEventListener("click", () => {
