@@ -3,7 +3,6 @@ layout: post
 ---
 
 
-<h3>Filter Chip</h3>
 {% for product in site.data.tags %}
   <div class="chip active" data-value="{{ product.name }}">
     <h3>{{ product.group }}{{ product.name }}</h3>
@@ -13,14 +12,14 @@ layout: post
     {% assign group = product.group %}
     {% for tag in product.tags %}
       <div class="choice chip" data-group="{{ group }}" data-value="{{ tag.name }}">
-        <h3>{{ tag.group }}{{ tag.name }}</h3>
+        <div>{{ tag.group }}{{ tag.name }}</div>
       </div>
     {% endfor %}
   {% else %}
     Filter Chip
     {% for tag in product.tags %}
       <div class="chip" data-value="{{ tag.name }}">
-        <h3>{{ tag.group }}{{ tag.name }}</h3>
+        <div>{{ tag.group }}{{ tag.name }}</div>
       </div>
     {% endfor %}
   {% endif %}
