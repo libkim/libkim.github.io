@@ -2,21 +2,25 @@
 layout: post
 ---
 
-<div class="chips">
-  {% for product in site.data.tags %}
-    <div class="chip active" data-value="{{ product.name }}">{{ product.group }}{{ product.name }}</div>
-    {% if product.choice == true %}
-      Choice Chip
-      {% assign group = product.group %}
-      {% for tag in product.tags %}
-        <div class="choice chip" data-group="{{ group }}" data-value="{{ tag.name }}">{{ tag.group }}{{ tag.name }}</div>
-      {% endfor %}
-    {% else %}
-      Filter Chip
-      {% for tag in product.tags %}
-        <div class="filter chip" data-value="{{ tag.name }}">{{ tag.group }}{{ tag.name }}</div>
-      {% endfor %}
-    {% endif %}
+<div>
+  {% for tag in site.data.tags %}
+    <div class="chip" data-value="{{ tag.name }}">
+      {{ tag.group }}{{ tag.name }}
+      {% if product.choice == true %}
+        {% assign upperGroup = tag.group %}
+        {% for product in product.tags %}
+          <div class="choice chip" data-group="{{ upperGroup }}" data-value="{{ tag.name }}">
+            {{ tag.group }}{{ tag.name }}
+          </div>
+        {% endfor %}
+      {% else %}
+        {% for product in product.tags %}
+          <div class="filter chip" data-value="{{ tag.name }}">
+            {{ tag.group }}{{ tag.name }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
   {% endfor %}
 </div>
 
