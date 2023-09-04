@@ -100,11 +100,25 @@ html {
   margin: 4px;
   padding: 4px 8px;
   background-color: #ddd;
-  border-radius: 16px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .chip.active.selected {
   background-color: #66c;
+  color: #fff;
+}
+
+.choice.chip.active {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.choice.chip.active.selected {
+  border: 2px solid #66c;
   color: #fff;
 }
