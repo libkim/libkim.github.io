@@ -63,13 +63,15 @@ chips.forEach(chip => {
         });
         chip.classList.add("selected");
       }
-      const childChip = chip.childNode;
+      const childChip = chip.childNodes;
       childChip.classList.add("active");
       updatePrompt();
     });
   } else {
     chip.addEventListener("click", () => {
       chip.classList.toggle("selected");
+      const childChip = chip.childNodes;
+      childChip.classList.add("active");
       updatePrompt();
     });
   }
