@@ -6,15 +6,15 @@ layout: post
   {% for tag in site.data.tags %}
     <div class="filter chip active" data-value="{{ tag.name }}">
       {{ tag.group }}{{ tag.name }}
-      {% if product.isFilter == false %}
+      {% if tag.isFilter == false %}
         {% assign upperGroup = tag.group %}
-        {% for product in product.tags %}
+        {% for tag in tag.tags %}
           <div class="choice chip" data-group="{{ upperGroup }}" data-value="{{ tag.name }}">
             {{ tag.group }}{{ tag.name }}
           </div>
         {% endfor %}
       {% else %}
-        {% for product in product.tags %}
+        {% for tag in tag.tags %}
           <div class="filter chip" data-value="{{ tag.name }}">
             {{ tag.group }}{{ tag.name }}
           </div>
