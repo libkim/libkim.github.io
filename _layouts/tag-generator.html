@@ -4,7 +4,7 @@ layout: post
 
 <div>
   {% for tag in site.data.tags %}
-    <div class="filter chip" data-value="{{ tag.name }}">
+    <div class="filter chip active" data-value="{{ tag.name }}">
       {{ tag.group }}{{ tag.name }}
       {% if product.isFilter == false %}
         {% assign upperGroup = tag.group %}
