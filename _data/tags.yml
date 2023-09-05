@@ -1,24 +1,24 @@
-- name: artist / production
-  isFilter: true
+- group: artist / production
   hasValue: false
-  hasDetails: true
-  details:
-    - name: Takeshi Obata
-    - name: Yoshitaka Amano
-    - name: Hiroaki Samura
-
-- group: production
-  isFilter: false
-  tags:
-    - name: Studio Ghibli
-    - name: 
+  choiceTags:
+    - group: artist
+      hasValue: false
+      choiceTags:
+        - name: Takeshi Obata
+        - name: Yoshitaka Amano
+        - name: Hiroaki Samura
+    - group: production
+      hasValue: false
+        - name: Studio Ghibli
+        - name: 
+        - name: 
 
 - group: purpose
-  isFilter: false
-  tags:
-    - group: representation
-      choice: true
-      tags:
+  hasValue: false
+  choiceTags:
+    - group: representation    
+      hasValue: false
+      choiceTags:
         - name: figurative
     - group: distortion
       choice: true
