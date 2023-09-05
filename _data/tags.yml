@@ -31,63 +31,72 @@
         - name: abstract
 
 - group: subject
-  tags:
+  hasValue: false
+  choiceTags:
     - group: landscape
-      tags:
+      hasValue: true
+      filterTags:
         - group: season
-          tags:
+          hasValue: false
+          choiceTags:
             - name: spring
             - name: summer
             - name: autumn
             - name: winter
         - group: time
-          tags:
+          hasValue: false
+          choiceTags:
             - name: morning
             - name: afternoon
             - name: evening
             - name: night
         - group: weather
-          tags:
+          hasValue: false
+          choiceTags:
             - name: clear
             - name: cloudy
             - name: foggy
             - name: raining
             - name: snowing
-        - group: Indoor
-          tags:
-            - name: bath
-            - name: Classroom
-            - name: Bathroom
-            - name: Kitchen
-            - name: Library
-            - name: Prison
-            - name: Pool
-        - group: Outdoor
-          choice: true
-          tags:
-            - name: Sky
-            - name: Sea
-            - name: Mountain
-            - name: Beach
-            - name: Castle
-            - name: Ruins
-            - name: Church
-            - name: Forest
-            - name: Flower field
-            - name: Park
-            - name: Shrine
-            - name: Hospital
-            - name: Hotel
-            - name: Love Hotel
-            - name: Factory
-            - name: Inside An Airplane
-            - name: Office
-            - name: Bed
-            - name: Train
-            - name: On The Futon
-            - name: Dirty Room
-            - name: Dark Room
-            - name: On Stage
+        - group: place
+          hasValue: false
+          choiceTags:
+            - group: indoor
+              hasValue: true
+              choiceTags:
+                - name: bath
+                - name: classroom
+                - name: bathroom
+                - name: kitchen
+                - name: library
+                - name: prison
+                - name: pool
+            - group: outdoor
+              hasValue: true
+              choiceTags:
+                - name: sky
+                - name: sea
+                - name: mountain
+                - name: beach
+                - name: castle
+                - name: ruins
+                - name: church
+                - name: forest
+                - name: flower field
+                - name: park
+                - name: shrine
+                - name: hospital
+                - name: hotel
+                - name: love hotel
+                - name: factory
+                - name: inside An Airplane
+                - name: office
+                - name: bed
+                - name: train
+                - name: on the futon
+                - name: dirty room
+                - name: dark room
+                - name: on stage
     - group: portrait
       tags:
         - group: race
