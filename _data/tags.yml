@@ -1,6 +1,8 @@
-- group: artist
-  isFilter: false
-  tags:
+- name: artist / production
+  isFilter: true
+  hasValue: false
+  hasDetails: true
+  details:
     - name: Takeshi Obata
     - name: Yoshitaka Amano
     - name: Hiroaki Samura
