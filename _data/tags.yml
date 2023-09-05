@@ -9,6 +9,7 @@
         - name: Hiroaki Samura
     - group: production
       hasValue: false
+      choiceTags:
         - name: Studio Ghibli
         - name: 
         - name: 
@@ -16,17 +17,17 @@
 - group: purpose
   hasValue: false
   choiceTags:
-    - group: representation    
+    - group: representation
       hasValue: false
       choiceTags:
         - name: figurative
     - group: distortion
-      choice: true
-      tags:
+      hasValue: false
+      choiceTags:
         - name: semi-abstract
     - group: composition
-      choice: true
-      tags:
+      hasValue: false
+      choiceTags:
         - name: abstract
 
 - group: subject
