@@ -143,12 +143,27 @@
             - group: hair color
               hasValue: false
               choiceTags:
-                - name: blonde
                 - name: black
+                - name: blonde
+                - name: brown
+                - name: white
+                - name: red
+                - name: vermilion
+                - name: orange
+                - name: amber
+                - name: yellow
+                - name: chartreuse
+                - name: green
+                - name: teal
+                - name: blue
+                - name: violet
+                - name: purple
+                - name: magenta
             - group: hair lengths
               hasValue: false
               choiceTags:
                 - name: long
+                - name: medium
                 - name: short
             - group: hairstyles
               hasValue: false
@@ -477,37 +492,10 @@
     - name: bread
     - name: cheese
 
-- group: fidelity
-  tags:
-    - name: masterpiece
-
 - group: chibi
   tags:
     - name: 2 heads tall
     - name: 3 heads tall
-
-- colors:
-  - black
-  - brown
-  - red
-  - vermilion
-  - orange
-  - amber
-  - yellow
-  - chartreuse
-  - green
-  - teal
-  - blue
-  - violet
-  - purple
-  - magenta
-  - white
-  - blonde
-
-- lengths:
-  - long
-  - medium
-  - short
 
 - group: projection
   tags:
