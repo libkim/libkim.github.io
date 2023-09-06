@@ -2,27 +2,30 @@
 layout: post
 ---
 
-<div>
-  {% for tag in site.data.tags %}
-    <div class="filter chip active" data-value="{{ tag.name }}">
+{% for tag in site.data.tags %}
+  <div class="filter chip active">
       {{ tag.group }}{{ tag.name }}
-      {% if tag.isFilter == false %}
-        {% assign upperGroup = tag.group %}
-        {% for tag in tag.tags %}
-          <div class="choice chip" data-group="{{ upperGroup }}" data-value="{{ tag.name }}">
-            {{ tag.group }}{{ tag.name }}
-          </div>
-        {% endfor %}
-      {% else %}
-        {% for tag in tag.tags %}
-          <div class="filter chip" data-value="{{ tag.name }}">
-            {{ tag.group }}{{ tag.name }}
-          </div>
-        {% endfor %}
-      {% endif %}
-    </div>
+  </div>
+  {% assign choiceGroup = tag.group %}
+  {% for tag in tag.choiceTags %}
+    {% if tag.hasValue == true %}
+      <div class="choice chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}">
+        {{ tag.group }}{{ tag.name }}
+      </div>
+    {% else %}
+      <div class="choice chip" data-group="{{ choiceGroup }}">
+        {{ tag.group }}{{ tag.name }}
+      </div>
+    {% endif %}
   {% endfor %}
-</div>
+  {% for tag in tag.filterTags %}
+    {% if tag.hasValue == true %}
+      <div class="filter chip" data-value="{{ tag.group }}{{ tag.name }}">
+        {{ tag.group }}{{ tag.name }}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
