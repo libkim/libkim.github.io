@@ -95,30 +95,27 @@ html {
   display: none; 
 }
 
+.choice.chip.active {
+  display: block;
+  margin: 4px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .filter.chip.active {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
-  background-color: #ddd;
   border-radius: 20px;
   cursor: pointer;
 }
 
-.filter.chip.active.selected {
-  background-color: #66c;
-  color: #fff;
-}
-
-.choice.chip.active {
-  display: inline-block;
-  margin: 4px;
-  padding: 4px 8px;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.choice.chip.active.selected {
+.chip.selected {
   border: 2px solid #66c;
+}
+
+.value.chip.selected {
+  background-color: #66c;
   color: #fff;
 }
