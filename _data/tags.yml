@@ -98,51 +98,67 @@
                 - name: dark room
                 - name: on stage
     - group: portrait
-      tags:
+      hasValue: true
+      filterTags:
         - group: race
-          tags:
+          hasValue: false
+          choiceTags:
             - name: necromancer
             - name: human
             - name: dragon
-            - name:
+            - name: ghost
             - name: 
         - group: gender
-          tags:
+          hasValue: false
+          choiceTags:
             - name: girl
             - name: boy
             - name: man
             - name: woman
-            - name: old man
-            - name: old woman
+            - name: guy
+            - name: lady
         - group: age
-          tags:
+          hasValue: false
+          choiceTags:
             - name: infant
             - name: child
             - name: teen
             - name: college age
             - name: young adult
             - name: middle age
+            - name: old
         - group: height
-          tags:
-            - name:
-            - name:
+          hasValue: false
+          choiceTags:
+            - name: tall
+            - name: short
         - group: skin
-          tags:
-            - name:
+          hasValue: false
+          choiceTags:
+            - name: white
+            - name: black
         - group: hair
-          tags:
+          hasValue: false
+          filterTags:
             - group: hair color
-              tags:
-                - group: hair lengths
-                  tags:
-                - group: hairstyles
-                  tags:
-                    - name: half up
-                    - name: braid
-                    - name: blunt bang
-                    - name: straight
-                    - name: curly
-                    - name: pony tail
+              hasValue: false
+              choiceTags:
+                - name: blonde
+                - name: black
+            - group: hair lengths
+              hasValue: false
+              choiceTags:
+                - name: long
+                - name: short
+            - group: hairstyles
+              hasValue: false
+              filterTags:
+                - name: half up
+                - name: braid
+                - name: blunt bang
+                - name: straight
+                - name: curly
+                - name: pony tail
         - group: face
           suffix: face
           tags:
