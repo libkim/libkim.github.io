@@ -113,6 +113,25 @@ html {
   cursor: pointer;
 }
 
+.choice.chip.active.selected {
+  display: block;
+  margin: 4px;
+  padding: 4px 8px;
+  border: 2px solid #66c;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.choice.value.chip.active.selected {
+  display: block;
+  margin: 4px;
+  padding: 4px 8px;
+  background-color: #66c;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .filter.chip.active {
   display: inline-block;
   margin: 4px;
@@ -131,11 +150,21 @@ html {
   cursor: pointer;
 }
 
-.chip.selected {
+.filter.chip.active.selected {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
   border: 2px solid #66c;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.value.chip.selected {
+.filter.value.chip.active.selected {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
   background-color: #66c;
   color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
 }
