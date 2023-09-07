@@ -91,11 +91,15 @@ html {
 }
 
 
-.chip {
+.chips {
   display: none; 
 }
 
-.choice.chip.active {
+.chips.active {
+  display: block; 
+}
+
+.choice.chip {
   display: block;
   margin: 4px;
   padding: 4px 8px;
@@ -104,7 +108,7 @@ html {
   cursor: pointer;
 }
 
-.choice.value.chip.active {
+.choice.value.chip {
   display: block;
   margin: 4px;
   padding: 4px 8px;
@@ -113,7 +117,7 @@ html {
   cursor: pointer;
 }
 
-.choice.chip.active.selected {
+.choice.chip.selected {
   display: block;
   margin: 4px;
   padding: 4px 8px;
@@ -122,7 +126,7 @@ html {
   cursor: pointer;
 }
 
-.choice.value.chip.active.selected {
+.choice.value.chip.selected {
   display: block;
   margin: 4px;
   padding: 4px 8px;
@@ -132,7 +136,7 @@ html {
   cursor: pointer;
 }
 
-.filter.chip.active {
+.filter.chip {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
@@ -141,7 +145,7 @@ html {
   cursor: pointer;
 }
 
-.filter.value.chip.active {
+.filter.value.chip {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
@@ -150,7 +154,7 @@ html {
   cursor: pointer;
 }
 
-.filter.chip.active.selected {
+.filter.chip.selected {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
@@ -159,7 +163,7 @@ html {
   cursor: pointer;
 }
 
-.filter.value.chip.active.selected {
+.filter.value.chip.selected {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
