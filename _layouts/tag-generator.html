@@ -2,12 +2,12 @@
 layout: post
 ---
 
-{% for tag in site.data.tags %}
-  <div class="chipBox active">
+<div class="chips active">
+  {% for tag in site.data.tags %}
     <div class="filter chip">
       {{ tag.group }}
     </div>
-    <div class="chipBox">
+    <div class="chips">
       {% assign choiceGroup = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
@@ -30,8 +30,10 @@ layout: post
             {{ tag.group }}{{ tag.name }}
           </div>
         {% endif %}
+      {% endfor %}
+    </div>
   {% endfor %}
-{% endfor %}
+</div>
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
