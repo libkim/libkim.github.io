@@ -3,31 +3,33 @@ layout: post
 ---
 
 {% for tag in site.data.tags %}
-  <div class="filter chip active">
+  <div class="chipBox active">
+    <div class="filter chip">
       {{ tag.group }}
-  </div>
-  {% assign choiceGroup = tag.group %}
-  {% for tag in tag.choiceTags %}
-    {% if tag.hasValue == false %}
-      <div class="choice chip" data-group="{{ choiceGroup }}">
-        {{ tag.group }}
-      </div>
-    {% else %}
-      <div class="choice value chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}">
-        {{ tag.group }}{{ tag.name }}
-      </div>
-    {% endif %}
-  {% endfor %}
-  {% for tag in tag.filterTags %}
-    {% if tag.hasValue == false %}
-      <div class="filter chip">
-        {{ tag.group }}
-      </div>
-    {% else %}
-      <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}">
-        {{ tag.group }}{{ tag.name }}
-      </div>
-    {% endif %}
+    </div>
+    <div class="chipBox">
+      {% assign choiceGroup = tag.group %}
+      {% for tag in tag.choiceTags %}
+        {% if tag.hasValue == false %}
+          <div class="choice chip" data-group="{{ choiceGroup }}">
+            {{ tag.group }}
+          </div>
+        {% else %}
+          <div class="choice value chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}">
+            {{ tag.group }}{{ tag.name }}
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% for tag in tag.filterTags %}
+        {% if tag.hasValue == false %}
+          <div class="filter chip">
+            {{ tag.group }}
+          </div>
+        {% else %}
+          <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}">
+            {{ tag.group }}{{ tag.name }}
+          </div>
+        {% endif %}
   {% endfor %}
 {% endfor %}
 
