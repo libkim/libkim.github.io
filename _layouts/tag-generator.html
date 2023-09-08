@@ -2,93 +2,6 @@
 layout: post
 ---
 
-
-<style>
-
- #chips1 { 
-   display: block; 
- } 
-  
- #chips2 { 
-   display: none!; 
- }
-
- .choice.chip { 
-   display: block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   border: 2px solid #ddd; 
-   border-radius: 20px; 
-   cursor: pointer; 
- } 
-  
- .choice.value.chip { 
-   display: block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   background-color: #ddd; 
-   border-radius: 20px; 
-   cursor: pointer; 
- } 
-  
- .choice.chip.selected { 
-   display: block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   border: 2px solid #66c; 
-   border-radius: 20px; 
-   cursor: pointer; 
- } 
-  
- .choice.value.chip.selected { 
-   display: block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   background-color: #66c; 
-   color: #fff; 
-   border-radius: 20px; 
-   cursor: pointer; 
- } 
-  
- .filter.chip { 
-   display: inline-block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   border: 2px solid #ddd; 
-   border-radius: 20px; 
-   cursor: pointer; 
- } 
-  
- .filter.value.chip { 
-   display: inline-block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   background-color: #ddd; 
-   border-radius: 20px; 
-   cursor: pointer; 
- } 
-  
- .filter.chip.selected { 
-   display: inline-block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   border: 2px solid #66c; 
-   border-radius: 20px; 
-   cursor: pointer; 
- } 
-  
- .filter.value.chip.selected { 
-   display: inline-block; 
-   margin: 4px; 
-   padding: 4px 8px; 
-   background-color: #66c; 
-   color: #fff; 
-   border-radius: 20px; 
-   cursor: pointer; 
- }
-
-</style>
-
 <div id="chips1">
   {% for tag in site.data.tags %}
     <div class="filter chip">
@@ -171,13 +84,6 @@ chips.forEach(chip => {
     });
   }
 });
-
-function updatePrompt() {
-  const selectedChips = document.querySelectorAll(".chip.selected");
-  prompt = Array.from(selectedChips).map(chip => chip.dataset.value).join(", ");
-  const promptContainer = document.getElementById("promptContainer");
-  promptContainer.textContent = prompt;
-}
 
 function downloadPrompt() {
   const blob = new Blob([prompt], {type: "text/plain;charset=utf-8"});
