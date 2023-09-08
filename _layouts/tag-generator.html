@@ -68,7 +68,6 @@ chips.forEach(chip => {
       if (chip.classList.contains("selected")) {
         chip.classList.remove("selected");
         updatePrompt();
-        chips.classList.remove("active");
       } else {
         const group = document.querySelectorAll(`[data-group="${chip.dataset.group}"]`);
         group.forEach(chip => {
@@ -76,14 +75,12 @@ chips.forEach(chip => {
         });
         chip.classList.add("selected");
         updatePrompt();
-        chips.classList.remove("active");
       }
     });
   } else {
     chip.addEventListener("click", () => {
       chip.classList.toggle("selected");
       updatePrompt();
-      chips.classList.remove("active");
     });
   }
 });
