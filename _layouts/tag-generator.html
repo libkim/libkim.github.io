@@ -7,7 +7,7 @@ layout: post
     <div class="filter chip">
       {{ tag.group }}
     </div>
-    <div class="chips">
+    <div class="chips active">
       {% assign choiceGroup = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
@@ -58,11 +58,6 @@ layout: post
 
 <script>
 
-
-
-const currentNode = document.querySelector("#child-3");
-
-
 const chips = document.querySelectorAll(".chip");
 
 let prompt = [];
@@ -73,6 +68,7 @@ chips.forEach(chip => {
       if (chip.classList.contains("selected")) {
         chip.classList.remove("selected");
         updatePrompt();
+        chips.classList.remove("active");
       } else {
         const group = document.querySelectorAll(`[data-group="${chip.dataset.group}"]`);
         group.forEach(chip => {
@@ -80,12 +76,14 @@ chips.forEach(chip => {
         });
         chip.classList.add("selected");
         updatePrompt();
+        chips.classList.remove("active");
       }
     });
   } else {
     chip.addEventListener("click", () => {
       chip.classList.toggle("selected");
       updatePrompt();
+      chips.classList.remove("active");
     });
   }
 });
