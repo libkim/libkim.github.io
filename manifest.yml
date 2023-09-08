@@ -7,7 +7,7 @@ permalink: manifest.json
   "background_color": "#fff",
   "name": "{{ site.manifest_name }}",
   "short_name": "{{ site.manifest_short_name }}",
-  "display": "{{ site.manifest_display}}",
+  "display": "{{ site.manifest_display }}",
   "icons": [
     { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
     { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
