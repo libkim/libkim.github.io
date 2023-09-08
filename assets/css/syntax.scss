@@ -1,11 +1,11 @@
 ---
 ---
 
-pre{
+pre {
    overflow-x: auto;
 }
 
-.highlight{
+.highlight {
   font-size: 16px;
   border-radius: 5px;
   padding-left: 10px;
@@ -23,7 +23,7 @@ pre{
     monospace;
 }
 
-pre.lineo{
+pre.lineo {
   color: white;
 }
 
@@ -238,11 +238,11 @@ pre.lineo{
   background-color: #49483e;
 }
 
-figure.highlight{
+figure.highlight {
   position: relative;
 }
 
-figure.highlight pre code[data-lang]::before, div.highlight pre code[data-lang]::before{
+figure.highlight pre code[data-lang]::before, div.highlight pre code[data-lang]::before {
   content: attr(data-lang);
   text-transform: uppercase;
   position: absolute;
