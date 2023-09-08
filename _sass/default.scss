@@ -1,26 +1,26 @@
 ﻿@font-face {
-	font-family: OldLondon;
-	src: url(/assets/font/OldLondon.woff);
+  font-family: OldLondon;
+  src: url(/assets/font/OldLondon.woff);
 }
 
 @font-face {
-	font-family: CONSOLA;
-	src: url(/assets/font/CONSOLA.TTF);
+  font-family: CONSOLA;
+  src: url(/assets/font/CONSOLA.TTF);
 }
 
 @font-face {
-	font-family: ChosunKg;
-	src: url(/assets/font/ChosunKg.woff);
+  font-family: ChosunKg;
+  src: url(/assets/font/ChosunKg.woff);
 }
 
 @font-face {
-	font-family: ChosunKm;
-	src: url(/assets/font/ChosunKm.woff2);
+  font-family: ChosunKm;
+  src: url(/assets/font/ChosunKm.woff2);
 }
 
 @media print {
-	body {
-		background-color: white;
-		color: black;
-	}
+  body {
+    background-color: white;
+    color: black;
+  }
 }
