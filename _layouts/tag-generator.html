@@ -7,7 +7,7 @@ layout: post
     <div class="filter chip">
       {{ tag.group }}
     </div>
-    <div class="chips2">
+    <div id="chips2">
       {% assign choiceGroup = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
