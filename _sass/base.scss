@@ -91,12 +91,12 @@ html {
 }
 
 
-.chips {
-  display: none; 
+#chipbox div {
+  display: none;
 }
 
 .chips.active {
-  display: block; 
+  display: block;
 }
 
 .choice.chip {
