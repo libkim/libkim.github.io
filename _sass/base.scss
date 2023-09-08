@@ -90,6 +90,15 @@ html {
   }
 }
 
+
+.chips {
+  display: none;
+}
+
+.chips.active {
+  display: block;
+}
+
 .choice.chip {
   display: block;
   margin: 4px;
@@ -162,12 +171,4 @@ html {
   color: #fff;
   border-radius: 20px;
   cursor: pointer;
-}
-
-.chips.active {
-  display: block;
-}
-
-.chips {
-  display: none;
 }
