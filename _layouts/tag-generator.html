@@ -2,12 +2,12 @@
 layout: post
 ---
 
-<div class="chips active">
+<div id="chips1">
   {% for tag in site.data.tags %}
     <div class="filter chip">
       {{ tag.group }}
     </div>
-    <div class="chips active">
+    <div class="chips2">
       {% assign choiceGroup = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
