@@ -92,7 +92,7 @@ html {
 
 
 .chips:not(.active) {
-  display: none;
+  display: none !important;
 }
 
 .choice.chip {
