@@ -44,12 +44,12 @@ article::after {
   background-color: #d5d5d5;
 }
 
-.chips1 {
+.chips {
   display: block;
-  .chips2 {
+  .detail {
     display: none;
   }
-  .chips2.active {
+  .detail.active {
     display: block;
   }
 }
