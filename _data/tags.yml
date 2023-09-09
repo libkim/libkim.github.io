@@ -221,13 +221,54 @@
         - group: body
           hasValue: false
           filterTags:
-            - name: 
+            - name: fat
+            - name: fit
+            - name: elegant
+            - name: slender
+            - name: burly
+            - name: bulky
+            - name: thin
+            - name: chubby
+            - name: lanky
+            - name: skinny
+            - name: buff
+            - name: ripped
+            - name: rough barrel-chested
+            - name: barrelesque
+            - name: blocky
+            - name: boobylicious
+            - name: bootylicious
+            - name: broad-shouldered
+            - name: bulbous
+            - name: cylindrical
+            - name: ectomorphic
+            - name: endomorphic
+            - name: flat
+            - name: hourglass-shaped
+            - name: inverted-triangular
+            - name: limp
+            - name: mesomorphic
+            - name: pear-shaped
+            - name: pumpkinesque
+            - name: pyramidal
+            - name: rectangular
+            - name: rotund
+            - name: round
+            - name: serpentine
+            - name: shapeless
+            - name: shapely
+            - name: small-waisted
+            - name: spherical
+            - name: spidery
+            - name: square
+            - name: thick-waisted
+            - name: top-heavy
+            - name: triangular
+            - name: wasp-waisted
         - group: nail
-          tags:
+          hasValue: false
+          choiceTags:
             - name: nail polish
-            - name:
-            - name:
-            - name:
         - group: tattoo
           tags:
             - name: new school
