@@ -175,12 +175,13 @@
                 - name: curly
                 - name: pony tail
         - group: face
-          suffix: face
-          tags:
+          hasValue: false
+          choiceTags:
             - name: cute
-            - name: beautiful
+            - name: sexy
         - group: expression
-          tags:
+          hasValue: false
+          choiceTags:
             - name: happy
             - name: sad
             - name: angry
@@ -200,21 +201,27 @@
             - name: anxious
             - name: shy
         - group: eyes
-          tags:
+          hasValue: false
+          filterTags:
             - group: eye color
-              tags:
+              hasValue: false
+              choiceTags:
             - group: eyelash lengths
-              tags:
+              hasValue: false
+              choiceTags:
         - group: gazes
-          tags:
+          hasValue: false
+          choiceTags:
             - name: looking at viewer
         - group: mouth
-          tags:
+          hasValue: false
+          choiceTags:
             - name: open mouth
             - name: closed mouth
         - group: body
-          tags:
-            - name:
+          hasValue: false
+          filterTags:
+            - name: 
         - group: nail
           tags:
             - name: nail polish
@@ -363,6 +370,24 @@
               tags:
                 - name: heart hands
 
+            - group: props
+              hasValue: false
+              filterTags:
+                - name: color
+                - name: angel statue
+                - name: cup
+                - name: bread
+                - name: cheese
+
+            - group: background
+              hasValue: false
+              choiceTags:
+                - group: color
+                - group: gradation
+                - group: pattern
+                  choiceTags:
+                    - name: starry
+
     - group: still life
       tags:
 
@@ -485,13 +510,6 @@
     - name: uniform
     - name: cross-section
 
-- group: element
-  tags:
-    - name: angel statue
-    - name: cup
-    - name: bread
-    - name: cheese
-
 - group: chibi
   tags:
     - name: 2 heads tall
@@ -522,17 +540,6 @@
 - group: shading
   tags:
     - name: cel shading
-
-- group: background
-  suffix: background
-  tags:
-    - group: color
-    - group: gradation
-    - group: pattern
-      tags:
-        - name: starry
-    - name: image
-    - name:
 
 - group: noise
   tags:
