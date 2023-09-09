@@ -2,12 +2,12 @@
 layout: post
 ---
 
-<div class="chips1">
+<div class="chips">
   {% for tag in site.data.tags %}
     <div class="filter chip">
       {{ tag.group }}
     </div>
-    <div class="chips2">
+    <div class="detail">
       {% assign choiceGroup = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
@@ -58,18 +58,16 @@ layout: post
 
 <script>
 
-const chipGroups = document.querySelectorAll(".chipGroup");
-
 const chips = document.querySelectorAll(".chip");
 
 let prompt = [];
 
 chips.forEach(chip => {
+  const detail = chip.nextElementSibling;
   if (chip.classList.contains("choice")) {
     chip.addEventListener("click", () => {
       if (chip.classList.contains("selected")) {
         chip.classList.remove("selected");
-        const detail = chip.nextElementSibling;
         detail.classList.remove("active");
         updatePrompt();
       } else {
@@ -78,7 +76,6 @@ chips.forEach(chip => {
           chip.classList.remove("selected");
         });
         chip.classList.add("selected");
-        const detail = chip.nextElementSibling;
         detail.classList.add("active");
         updatePrompt();
       }
@@ -86,7 +83,6 @@ chips.forEach(chip => {
   } else {
     chip.addEventListener("click", () => {
       chip.classList.toggle("selected");
-      const detail = chip.nextElementSibling;
       detail.classList.toggle("active");
       updatePrompt();
     });
