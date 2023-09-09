@@ -49,6 +49,9 @@ article::after {
   .chips2 {
     display: none;
   }
+  .chips2.active {
+    display: block;
+  }
 }
 
 .choice.chip {
