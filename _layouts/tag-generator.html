@@ -58,6 +58,8 @@ layout: post
 
 <script>
 
+const chipGroups = document.querySelectorAll(".chipGroup");
+
 const chips = document.querySelectorAll(".chip");
 
 let prompt = [];
@@ -67,6 +69,8 @@ chips.forEach(chip => {
     chip.addEventListener("click", () => {
       if (chip.classList.contains("selected")) {
         chip.classList.remove("selected");
+        const detail = chip.nextElementSibling;
+        detail.classList.remove("active");
         updatePrompt();
       } else {
         const group = document.querySelectorAll(`[data-group="${chip.dataset.group}"]`);
@@ -74,12 +78,16 @@ chips.forEach(chip => {
           chip.classList.remove("selected");
         });
         chip.classList.add("selected");
+        const detail = chip.nextElementSibling;
+        detail.classList.add("active");
         updatePrompt();
       }
     });
   } else {
     chip.addEventListener("click", () => {
       chip.classList.toggle("selected");
+      const detail = chip.nextElementSibling;
+      detail.classList.toggle("active");
       updatePrompt();
     });
   }
