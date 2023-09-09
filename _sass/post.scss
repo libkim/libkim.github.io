@@ -44,3 +44,83 @@ article::after {
   background-color: #d5d5d5;
 }
 
+#chips1 {
+  display: block;
+  #chips2 {
+    display: none;
+  }
+}
+
+.choice.chip {
+  display: block;
+  margin: 4px;
+  padding: 4px 8px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.choice.value.chip {
+  display: block;
+  margin: 4px;
+  padding: 4px 8px;
+  background-color: #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.choice.chip.selected {
+  display: block;
+  margin: 4px;
+  padding: 4px 8px;
+  border: 2px solid #66c;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.choice.value.chip.selected {
+  display: block;
+  margin: 4px;
+  padding: 4px 8px;
+  background-color: #66c;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter.chip {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter.value.chip {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  background-color: #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter.chip.selected {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  border: 2px solid #66c;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter.value.chip.selected {
+  display: inline-block;
+  margin: 4px;
+  padding: 4px 8px;
+  background-color: #66c;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
