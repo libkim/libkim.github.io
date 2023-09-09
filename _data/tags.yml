@@ -570,7 +570,20 @@
         - name: 3-point perspective
         - name: curvilinear perspective
 
-- group: environment
+- group: color schemes
+  hasValue: false
+  filterTags:
+    - group: monochromatic color scheme
+      hasValue: true
+      choiceTags:
+        - name: black and white
+    - group: analogous color scheme
+      hasValue: true
+      choiceTags:
+        - name: teal and orange
+    - group: complementary color scheme
+      hasValue: true
+      choiceTags:
 
 - group: lighting
   tags:
