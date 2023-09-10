@@ -28,9 +28,9 @@ layout: post
                 {{ tag.group }} 
               </div> 
             {% else %} 
-             <div class="choice value chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}"> 
-              {{ tag.group }}{{ tag.name }} 
-            </div> 
+              <div class="choice value chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}"> 
+                {{ tag.group }}{{ tag.name }} 
+              </div> 
            {% endif %} 
          {% endfor %} 
          {% for tag in tag.filterTags %} 
