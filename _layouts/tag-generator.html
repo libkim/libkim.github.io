@@ -3,12 +3,12 @@ layout: post
 ---
 
 <h3>Tags</h3>
-<div class="rootChips">
+<div class="chipsets">
   {% for tag in site.data.tags %}
     <div class="filter chip">
       {{ tag.group }}
     </div>
-    <div class="branch1Chips">
+    <div class="chipset1">
       {% assign choiceGroup = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
@@ -20,7 +20,7 @@ layout: post
             {{ tag.group }}{{ tag.name }}
           </div>
         {% endif %}
-        <div class="branch2Chips"> 
+        <div class="chipset"> 
           {% assign choiceGroup = tag.group %} 
           {% for tag in tag.choiceTags %} 
             {% if tag.hasValue == false %} 
