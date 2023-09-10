@@ -281,15 +281,26 @@
             - name: wasp-waisted
         - group: nail
           hasValue: false
-          choiceTags:
-            - name: nail polish
+          filterTags:
+            - group: nail length
+              hasValue: false
+              choiceTags: *length
+            - group: nail shape
+              hasValue: false
+              choiceTags:
+                - name: square
+                - name: coffin
+                - name: stiletto
+                - name: round
         - group: tattoo
-          tags:
+          hasValue: true
+          filterTags:
             - name: new school
             - name: lettering
             - name: irezumi
         - group: headwear
-          tags:
+          hasValue: false
+          choiceTags:
             - name: baseball cap
             - name: beret
         - group: neckwear
