@@ -1,20 +1,33 @@
-color: &color
-  - name: black
-  - name: blonde
-  - name: brown
-  - name: white
-  - name: red
-  - name: vermilion
-  - name: orange
-  - name: amber
-  - name: yellow
-  - name: chartreuse
-  - name: green
-  - name: teal
-  - name: blue
-  - name: violet
-  - name: purple
-  - name: magenta
+- aliases
+    - color: &color
+        - name: black
+        - name: white
+        - name: blonde
+        - name: silver
+        - name: brown
+        - name: red
+        - name: vermilion
+        - name: orange
+        - name: amber
+        - name: yellow
+        - name: chartreuse
+        - name: green
+        - name: teal
+        - name: blue
+        - name: violet
+        - name: purple
+        - name: magenta
+    - size: &size
+        - name: big
+        - name: small
+    - width: &width
+        - name: wide
+        - name: narrow
+    - length: &length
+        - name: long
+        - name: medium
+        - name: short
+    - height: 
 
 - group: artist / production
   hasValue: false
@@ -161,12 +174,9 @@ color: &color
             - group: hair color
               hasValue: false
               choiceTags: *color
-            - group: hair lengths
+            - group: hair length
               hasValue: false
-              choiceTags:
-                - name: long
-                - name: medium
-                - name: short
+              choiceTags: *length
             - group: hairstyles
               hasValue: false
               filterTags:
