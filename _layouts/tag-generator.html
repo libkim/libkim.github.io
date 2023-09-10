@@ -31,19 +31,19 @@ layout: post
               <div class="choice value chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}"> 
                 {{ tag.group }}{{ tag.name }} 
               </div> 
-           {% endif %} 
-         {% endfor %} 
-         {% for tag in tag.filterTags %} 
-           {% if tag.hasValue == false %} 
-             <div class="filter chip"> 
-               {{ tag.group }} 
-             </div> 
-           {% else %} 
-             <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}"> 
-               {{ tag.group }}{{ tag.name }} 
-             </div> 
-           {% endif %} 
-         {% endfor %} 
+            {% endif %} 
+          {% endfor %} 
+          {% for tag in tag.filterTags %} 
+            {% if tag.hasValue == false %} 
+              <div class="filter chip"> 
+                {{ tag.group }} 
+              </div> 
+            {% else %} 
+              <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}"> 
+                {{ tag.group }}{{ tag.name }} 
+              </div> 
+            {% endif %} 
+          {% endfor %} 
         </div>
       {% endfor %}
       {% for tag in tag.filterTags %}
