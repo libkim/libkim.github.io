@@ -1,4 +1,4 @@
-- aliases
+- aliases:
     - color: &color
         - name: black
         - name: white
@@ -27,7 +27,9 @@
         - name: long
         - name: medium
         - name: short
-    - height: 
+    - height: &height
+        - name: tall
+        - name: short
 
 - group: artist / production
   hasValue: false
