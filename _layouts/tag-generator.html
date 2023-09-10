@@ -3,32 +3,32 @@ layout: post
 ---
 
 <h3>Tags</h3>
-<div class="chips">
+<div class="chip-set">
   {% for tag in site.data.tags %}
     <div class="filter chip">
       {{ tag.group }}
     </div>
-    <div class="sub-chips">
-      {% assign sub-chipset_name = tag.group %}
+    <div class="sub-chip-set">
+      {% assign sub-chip-set-val = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
-          <div class="choice chip" data-group="{{ sub-chipset_name }}">
+          <div class="choice chip" data-group="{{ sub-chip-set-val }}">
             {{ tag.group }}
           </div>
         {% else %}
-          <div class="choice value chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}">
+          <div class="choice value chip" data-group="{{ sub-chip-set-val }}" data-value="{{ tag.group }}{{ tag.name }}">
             {{ tag.group }}{{ tag.name }}
           </div>
         {% endif %}
-        <div class="sub-sub-chips">
-          {% assign sub-sub-chipset_name = tag.group %} 
+        <div class="sub-sub-chip-set">
+          {% assign sub-sub-chip-set-val = tag.group %}
           {% for tag in tag.choiceTags %} 
             {% if tag.hasValue == false %} 
-              <div class="choice chip" data-group="{{ sub-sub-chipset_name }}">
+              <div class="choice chip" data-group="{{ sub-sub-chip-set-val }}">
                 {{ tag.group }} 
               </div> 
             {% else %} 
-              <div class="choice value chip" data-group="{{ sub-sub-chipset_name }}" data-value="{{ tag.group }}{{ tag.name }}"> 
+              <div class="choice value chip" data-group="{{ sub-sub-chip-set-val }}" data-value="{{ tag.group }}{{ tag.name }}"> 
                 {{ tag.group }}{{ tag.name }} 
               </div> 
             {% endif %} 
@@ -56,15 +56,15 @@ layout: post
             {{ tag.group }}{{ tag.name }}
           </div>
         {% endif %}
-        <div class="sub-sub-chips"> 
-          {% assign choiceGroup = tag.group %} 
+        <div class="sub-sub-chip-set"> 
+          {% assign sub-sub-chip-set-val = tag.group %} 
           {% for tag in tag.choiceTags %} 
             {% if tag.hasValue == false %} 
-              <div class="choice chip" data-group="{{ choiceGroup }}"> 
+              <div class="choice chip" data-group="{{ sub-sub-chip-set-val }}"> 
                 {{ tag.group }} 
               </div> 
             {% else %} 
-              <div class="choice value chip" data-group="{{ choiceGroup }}" data-value="{{ tag.group }}{{ tag.name }}"> 
+              <div class="choice value chip" data-group="{{ sub-sub-chip-set-val }}" data-value="{{ tag.group }}{{ tag.name }}"> 
                 {{ tag.group }}{{ tag.name }} 
               </div> 
             {% endif %} 
