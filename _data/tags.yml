@@ -1,6 +1,24 @@
+color: &color
+  - name: black
+  - name: blonde
+  - name: brown
+  - name: white
+  - name: red
+  - name: vermilion
+  - name: orange
+  - name: amber
+  - name: yellow
+  - name: chartreuse
+  - name: green
+  - name: teal
+  - name: blue
+  - name: violet
+  - name: purple
+  - name: magenta
+
 - group: artist / production
   hasValue: false
-  choiceTags:
+  choiceTags: &artistOrProduction
     - group: artist
       hasValue: false
       choiceTags:
@@ -35,7 +53,7 @@
   choiceTags:
     - group: landscape
       hasValue: true
-      filterTags:
+      filterTags: &landscape
         - group: season
           hasValue: false
           choiceTags:
@@ -142,23 +160,7 @@
           filterTags:
             - group: hair color
               hasValue: false
-              choiceTags:
-                - name: black
-                - name: blonde
-                - name: brown
-                - name: white
-                - name: red
-                - name: vermilion
-                - name: orange
-                - name: amber
-                - name: yellow
-                - name: chartreuse
-                - name: green
-                - name: teal
-                - name: blue
-                - name: violet
-                - name: purple
-                - name: magenta
+              choiceTags: *color
             - group: hair lengths
               hasValue: false
               choiceTags:
