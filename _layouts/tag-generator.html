@@ -9,14 +9,14 @@ layout: post
       {{ tag.group }}
     </div>
     <div class="sub-chip-set">
-      {% assign sub_chip_set_val = tag.group %}
+      {% assign sub_chip_set = tag.group %}
       {% for tag in tag.choiceTags %}
         {% if tag.hasValue == false %}
-          <div class="choice chip" data-group="{{ sub-chip-set-val }}">
+          <div class="choice chip" data-group="{{ sub_chip_set }}">
             {{ tag.group }}
           </div>
         {% else %}
-          <div class="choice value chip" data-group="{{ sub-chip-set-val }}" data-value="{{ tag.group }}{{ tag.name }}">
+          <div class="choice value chip" data-group="{{ sub_chip_set }}" data-value="{{ tag.group }}{{ tag.name }}">
             {{ tag.group }}{{ tag.name }}
           </div>
         {% endif %}
