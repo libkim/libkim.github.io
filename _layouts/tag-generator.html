@@ -56,21 +56,21 @@ layout: post
             {{ tag.group }}{{ tag.name }}
           </div>
         {% endif %}
-          <div class="sub-sub-chip-group">
-            {% assign sub_sub_chip_group = tag.group %}
-            {% for tag in tag.choiceTags %}
-              {% if tag.hasValue == false %}
-                <div class="choice chip" data-group="{{ sub_sub_chip_group }}">
-                  {{ tag.group }}
-                </div>
-              {% else %}
-                <div class="choice value chip" data-group="{{ sub_sub_chip_group }}" data-value="{{ tag.group }}{{ tag.name }}">
-                  {{ tag.group }}{{ tag.name }}
-                </div>
-              {% endif %}
-            {% endfor %}
+        <div class="sub-sub-chip-group">
+          {% assign sub_sub_chip_group = tag.group %}
+          {% for tag in tag.choiceTags %}
+            {% if tag.hasValue == false %}
+              <div class="choice chip" data-group="{{ sub_sub_chip_group }}">
+                {{ tag.group }}
+              </div>
+            {% else %}
+              <div class="choice value chip" data-group="{{ sub_sub_chip_group }}" data-value="{{ tag.group }}{{ tag.name }}">
+                {{ tag.group }}{{ tag.name }}
+              </div>
+            {% endif %}
+          {% endfor %}
           {% for tag in tag.filterTags %}
-            {% if tag.hasValue == false %}
+            {% if tag.hasValue == false %}
               <div class="filter chip">
                 {{ tag.group }}
               </div>
