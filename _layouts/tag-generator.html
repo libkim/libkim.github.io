@@ -21,7 +21,7 @@ layout: post
           </div>
         {% endif %}
         <div class="sub-sub-chip-box"> 
-          {% assign sub_sub_chip_group = tag.group %} 
+          {% assign sub_sub_chip_group = tag.group %} 
           {% for tag in tag.choiceTags %} 
             {% if tag.hasValue == false %} 
               <div class="choice chip" data-group="{{ sub_sub_chip_group }}">
