@@ -2,6 +2,7 @@
 layout: post
 ---
 
+{% raw %}
 <h3>Tags</h3>
 <div class="chip-box">
   {% for tag in site.data.tags %}
@@ -85,6 +86,7 @@ layout: post
     </div>
   {% endfor %}
 </div>
+{% endraw %}
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
