@@ -2,7 +2,7 @@
 layout: post
 ---
 
-{% raw %}
+
 <h3>Tags</h3>
 <div class="chip-box">
   {% for tag in site.data.tags %}
@@ -71,22 +71,21 @@ layout: post
             {% endif %}
           {% endfor %}
           {% for tag in tag.filterTags %}
-            {% if tag.hasValue == false %} 
-              <div class="filter chip"> 
-                {{ tag.group }} 
-              </div> 
-            {% else %} 
-              <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}"> 
-                {{ tag.group }}{{ tag.name }} 
-              </div> 
-            {% endif %} 
-          {% endfor %} 
+            {% if tag.hasValue == false %}
+              <div class="filter chip">
+                {{ tag.group }}
+              </div>
+            {% else %}
+               <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}">
+                {{ tag.group }}{{ tag.name }}
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
       {% endfor %}
     </div>
   {% endfor %}
 </div>
-{% endraw %}
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
