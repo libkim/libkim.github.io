@@ -2,6 +2,10 @@
 layout: post
 ---
 
+<div id="tag-gen-container">
+</div>
+
+`
 <h3>Tags</h3>
 <div class="chip-box">
   {% for tag in site.data.tags %}
@@ -85,7 +89,7 @@ layout: post
     </div>
   {% endfor %}
 </div>
-
+`
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
@@ -99,6 +103,35 @@ layout: post
 
 
 <script>
+
+const data = site.data.tags;
+const container = document.getElementById("tag-gen-container");
+
+function generateHTML(data) {
+  let html = `<div class="chip-box">\n`;
+
+  for (let tag of data) {
+    html += `<div class="${tag.hasValue ? 'choice value chip' : 'choice chip'}" data-group="${tag.group}" data-value="${tag.group}${tag.name}">
+      ${tag.group}${tag.name}
+    </div>\n`;
+
+    if (tag.choiceTags && tag.choiceTags.length > 0) {
+      html += `<div class="sub-sub-chip-box">\n`;
+      html += generateHTML(tag.choiceTags);
+      html += `</div>\n`;
+    }
+  }
+
+  html += `</div>\n`;
+  return html;
+}
+
+if (container) {
+  container.insertAdjacentHTML('beforeend', generateHTML(data));
+}
+
+
+
 
 const chips = document.querySelectorAll(".chip");
 
