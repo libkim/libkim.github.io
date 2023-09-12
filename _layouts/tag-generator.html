@@ -2,9 +2,26 @@
 layout: post
 ---
 
-<div id="tag-gen-container">
-  <h3>Tags</h3>
-</div>
+{% assign data = site.data.tags %}
+{% capture generateHTML %}
+  {% if data %}
+    {% for tag in data %}
+      <div class="{{ tag.hasValue ? 'choice value chip' : 'choice chip' }}" data-group="{{ tag.group }}" data-value="{{ tag.group }}{{ tag.name }}">
+        {{ tag.group }}{{ tag.name }}
+      </div>
+      {% if tag.choiceTags or tag.filterTags %}
+        <div class="{% if tag.choiceTags %}sub-sub-chip-box{% else %}sub-sub-chip-group{% endif %}">
+          {% include generateHTML.html data=tag.choiceTags or tag.filterTags %}
+        </div>
+      {% endif %}
+    {% else %}
+      <!-- 아무 내용이 없는 경우 -->
+    {% endfor %}
+  {% endif %}
+{% endcapture %}
+
+{{ generateHTML | strip_newlines }}
+
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
@@ -18,35 +35,6 @@ layout: post
 
 
 <script>
-
-const data = site.data.tags;
-const container = document.getElementById("tag-gen-container");
-
-function generateHTML(data) {
-  let html = `<div class="chip-box">\n`;
-
-  for (let tag of data) {
-    html += `<div class="${tag.hasValue ? 'choice value chip' : 'choice chip'}" data-group="${tag.group}" data-value="${tag.group}${tag.name}">
-      ${tag.group}${tag.name}
-    </div>\n`;
-
-    if (tag.choiceTags && tag.choiceTags.length > 0) {
-      html += `<div class="sub-sub-chip-box">\n`;
-      html += generateHTML(tag.choiceTags);
-      html += `</div>\n`;
-    }
-  }
-
-  html += `</div>\n`;
-  return html;
-}
-
-if (container) {
-  container.insertAdjacentHTML('beforeend', generateHTML(data));
-}
-
-
-
 
 const chips = document.querySelectorAll(".chip");
 
