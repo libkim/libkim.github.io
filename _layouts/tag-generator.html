@@ -4,20 +4,37 @@ layout: post
 
 {% assign data = site.data.tags %}
 {% capture generateHTML %}
-  {% if data %}
-    {% for tag in data %}
-      <div class="{{ tag.hasValue ? 'choice value chip' : 'choice chip' }}" data-group="{{ tag.group }}" data-value="{{ tag.group }}{{ tag.name }}">
+  {% for tag in data %}
+    {% if tag.choiceTags and tag.hasValue %}
+      <div class="choice value chip" data-group="{{ tag.group }}" data-value="{{ tag.group }}{{ tag.name }}">
         {{ tag.group }}{{ tag.name }}
       </div>
-      {% if tag.choiceTags or tag.filterTags %}
-        <div class="{% if tag.choiceTags %}sub-sub-chip-box{% else %}sub-sub-chip-group{% endif %}">
-          {% include generateHTML.html data=tag.choiceTags or tag.filterTags %}
-        </div>
-      {% endif %}
-    {% else %}
-      <!-- 아무 내용이 없는 경우 -->
-    {% endfor %}
-  {% endif %}
+    {% elsif tag.choiceTags %}
+      <div class="choice chip" data-group="{{ tag.group }}" data-value="{{ tag.group }}">
+        {{ tag.group }}
+      </div>
+      <div class="sub-sub-chip-box">
+        {% include generateHTML.html data=tag.choiceTags %}
+      </div>
+    {% elsif tag.filterTags and tag.hasValue %}
+      <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}">
+        {{ tag.group }}{{ tag.name }}
+      </div>
+    {% elsif tag.filterTags %}
+      <div class="filter chip">
+        {{ tag.group }}
+      </div>
+      <div class="sub-sub-chip-group">
+        {% include generateHTML.html data=tag.filterTags %}
+      </div>
+    {% elsif tag.name %}
+      <div class="name chip" data-value="{{ tag.group }}{{ tag.name }}">
+        {{ tag.name }}
+      </div>
+    {% endif %}
+  {% else %}
+    <!-- 아무 내용이 없는 경우 -->
+  {% endfor %}
 {% endcapture %}
 
 {{ generateHTML | strip_newlines }}
