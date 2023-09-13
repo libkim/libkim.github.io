@@ -6,7 +6,7 @@ layout: post
 {% capture generateHTML %}
   {% for tag in data %}
     {% if tag.choiceTags and tag.hasValue %}
-      <div class="choice value chip" data-group="{{ tag.group }}" data-value="{{ tag.group }}{{ tag.name }}">
+      <div class="choice value chip" data-value="{{ tag.group }}{{ tag.name }}">
         {{ tag.group }}{{ tag.name }}
       </div>
       <div class="sub-chip-box">
@@ -14,7 +14,7 @@ layout: post
         {{ generateHTML | strip_newlines }}
       </div>
     {% elsif tag.choiceTags %}
-      <div class="choice chip" data-group="{{ tag.group }}" data-value="{{ tag.group }}">
+      <div class="choice chip" data-group="{{ tag.group }}">
         {{ tag.group }}
       </div>
       <div class="sub-chip-box">
