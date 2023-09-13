@@ -44,12 +44,12 @@ article::after {
   background-color: #d5d5d5;
 }
 
-.rootChips {
+.chip-box {
   display: block;
-  .branch1Chips {
+  .sub-chip-box {
     display: none;
   }
-  .branch1Chips.active {
+  .sub-chip-box.active {
     display: block;
   }
 }
