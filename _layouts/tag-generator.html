@@ -47,8 +47,11 @@ layout: post
   {% endfor %}
 {% endcapture %}
 
-{{ generateHTML | strip_newlines }}
 
+<h3>Tags</h3>
+<div class="chip-box">
+  {{ generateHTML | strip_newlines }}
+</div>
 
 <h3>Choice Chip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
