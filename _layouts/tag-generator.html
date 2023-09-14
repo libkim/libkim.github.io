@@ -5,9 +5,8 @@ layout: post
 {% assign data = site.data.tags %}
 
 {% capture generateHTML %}
-  {% if tag.choiceTags %}
-    {% assign data = tag.choiceTags %}
-    {% for tag in data %}
+  {% for tag in data %}
+    {% if tag.choiceTags %}
       {% if tag.hasValue || tag.name %}
         <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.group }}{{ tag.name }}">
           {{ tag.group }}{{ tag.name }}
@@ -21,10 +20,7 @@ layout: post
       <div id="{{ branch | append: "-chip-box" }}">
         {{ generateHTML }}
       </div>
-    {% endfor %}
-  {% elsif tag.filterTags %}
-    {% assign data = tag.filterTags %}
-    {% for tag in data %}
+    {% elsif tag.filterTags %}
       {% if tag.hasValue || tag.name %}
         <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}">
           {{ tag.group }}{{ tag.name }}
@@ -38,8 +34,8 @@ layout: post
       <div id="{{ branch | append: "-chip-box" }}">
         {{ generateHTML }}
       </div>
-    {% endfor %}
-  {% endif %}
+    {% endif %}
+  {% endfor %}
 {% endcapture %}
 
 <h3>Tags</h3>
@@ -50,12 +46,18 @@ layout: post
     </div>
     {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
     <div id="{{ branch | append: "-chip-box" }}">
-      {{ generateHTML }}
+      {% if tag.choiceTags %}
+        {% assign data = tag.choiceTags %}
+        {{ generateHTML }}
+      {% elsif tag.filterTags %}
+        {% assign data = tag.filterTags %}
+        {{ generateHTML }}
+      {% endif %}
     </div>
   {% endfor %}
 </div>
 
-<h3>Choice Chip</h3>
+<h3>choChip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
 <div class="choice chip" data-group="fruit1" data-value="banana">Banana</div>
 <div class="choice chip" data-group="fruit1" data-value="orange">Orange</div>
