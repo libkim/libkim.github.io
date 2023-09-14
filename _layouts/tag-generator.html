@@ -2,55 +2,50 @@
 layout: post
 ---
 
-{% assign data = site.data.tags %}
 {% capture generateHTML %}
-  {% for tag in data %}
-    {% if tag.choiceTags and tag.hasValue %}
-      <div class="choice value chip" data-value="{{ tag.group }}{{ tag.name }}">
+  {% for tag in tag.choiceTags %}
+    {% if tag.hasValue || tag.name %}
+      <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.group }}{{ tag.name }}">
         {{ tag.group }}{{ tag.name }}
       </div>
-      <div class="sub-chip-box">
-        {% assign data = tag.choiceTags %}
-        {{ generateHTML | strip_newlines }}
-      </div>
-    {% elsif tag.choiceTags %}
-      <div class="choice chip" data-group="{{ tag.group }}">
+    {% else %}
+      <div class="choice chip" data-group="{{ branch }}">
         {{ tag.group }}
       </div>
-      <div class="sub-chip-box">
-        {% assign data = tag.choiceTags %}
-        {{ generateHTML | strip_newlines }}
-      </div>
-    {% elsif tag.filterTags and tag.hasValue %}
+    {% endif %}
+    {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
+    <div id="{{ branch | append: "-chip-box" }}">
+      {{ generateHTML | strip_newlines }}
+    </div>
+  {% endfor %}
+  {% for tag in tag.filterTags %}
+    {% if tag.hasValue || tag.name %}
       <div class="filter value chip" data-value="{{ tag.group }}{{ tag.name }}">
         {{ tag.group }}{{ tag.name }}
       </div>
-      <div class="sub-chip-box">
-        {% assign data = tag.filterTags %}
-        {{ generateHTML | strip_newlines }}
-      </div>
-    {% elsif tag.filterTags %}
+    {% else %}
       <div class="filter chip">
         {{ tag.group }}
       </div>
-      <div class="sub-chip-box">
-        {% assign data = tag.filterTags %}
-        {{ generateHTML | strip_newlines }}
-      </div>
-    {% elsif tag.name %}
-      <div class="name chip" data-value="{{ tag.group }}{{ tag.name }}">
-        {{ tag.name }}
-      </div>
     {% endif %}
-  {% else %}
-    <!-- 아무 내용이 없는 경우 -->
+    {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
+    <div id="{{ branch | append: "-chip-box" }}">
+      {{ generateHTML | strip_newlines }}
+    </div>
   {% endfor %}
 {% endcapture %}
 
-
 <h3>Tags</h3>
-<div class="chip-box">
-  {{ generateHTML | strip_newlines }}
+<div id="root-chip-box">
+  {% for tag in site.data.tags %}
+    <div class="filter chip">
+      {{ tag.group }}
+    </div>
+    {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
+    <div id="{{ branch | append: "-chip-box" }}">
+      {{ generateHTML | strip_newlines }}
+    </div>
+  {% endfor %}
 </div>
 
 <h3>Choice Chip</h3>
