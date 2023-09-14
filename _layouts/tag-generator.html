@@ -2,8 +2,6 @@
 layout: post
 ---
 
-{% assign data = site.data.tags %}
-
 {% capture generateHTML %}
   {% for tag in data %}
     {% if tag.choiceTags %}
@@ -40,7 +38,7 @@ layout: post
 
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {% for tag in data %}
+  {% for tag in site.data.tags %}
     <div class="filter chip">
       {{ tag.group }}
     </div>
