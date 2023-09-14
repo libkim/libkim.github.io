@@ -15,7 +15,7 @@ layout: post
     {% endif %}
     {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
     <div id="{{ branch | append: "-chip-box" }}">
-      {{ generateHTML | strip_newlines }}
+      {{ generateHTML }}
     </div>
   {% endfor %}
   {% for tag in tag.filterTags %}
@@ -30,7 +30,7 @@ layout: post
     {% endif %}
     {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
     <div id="{{ branch | append: "-chip-box" }}">
-      {{ generateHTML | strip_newlines }}
+      {{ generateHTML }}
     </div>
   {% endfor %}
 {% endcapture %}
@@ -43,7 +43,7 @@ layout: post
     </div>
     {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
     <div id="{{ branch | append: "-chip-box" }}">
-      {{ generateHTML | strip_newlines }}
+      {{ generateHTML }}
     </div>
   {% endfor %}
 </div>
