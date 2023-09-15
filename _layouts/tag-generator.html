@@ -36,12 +36,19 @@ layout: post
   {% endfor %}
 {% endcapture %}
 
+
+
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {% for tag in site.data.tags %}
-    <div class="filter chip">
-      {{ tag.group }}
-    </div>
+  {% assign filterTags = site.data.tags %}
+  {% if filterTags %}
+    {% for tag in filterTags %}
+      {% if tag.hasValue or tag.name %}
+        <div class="filter value chip" data-value="">
+
+
+
+
     {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
     <div id="{{ branch | append: "-chip-box" }}">
       {% if tag.choiceTags %}
