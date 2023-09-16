@@ -58,7 +58,16 @@ layout: post
 
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {{ generateForTag }}
+  {% for tag in site.data.tags %}
+    <div class="filter chip">
+      {{ tag.group }}
+    </div>
+    <div id="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+      {% for tag in site.data.tags %}
+        {{ filterTag }}
+      {% endfor %}
+    </div>
+  {% endfor %}
 </div>
 
 <h3>choChip</h3>
