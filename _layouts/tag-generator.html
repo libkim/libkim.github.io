@@ -3,7 +3,8 @@ layout: post
 ---
 
 {% capture generateHTML %}
-  {% if filterTags %}
+{% case forTag %}
+  {% when filterTags or site.data.tags %}
     {% for tag in filterTags %}
       {% if tag.name %}
         <div class="filter value chip" data-value="{{ tag.name }}">
@@ -27,7 +28,7 @@ layout: post
         </div>
       {% endif %}
     {% endfor %}
-  {% elsif choiceTags %}
+  {% when choiceTags %}
     {% for tag in choiceTags %}
       {% if tag.name %}
         <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.name }}">
@@ -53,12 +54,12 @@ layout: post
     {% endfor %}
   {% else %}
     vvvv
-  {% endif %}
+{% endcase %}
 {% endcapture %}
 
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {% assign filterTags = site.data.tags %}
+  {% assign forTag = site.data.tags %}
   {{ generateHTML }}
 </div>
 
