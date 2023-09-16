@@ -37,7 +37,7 @@ layout: post
           {{ tag.name }}
         </div>
       {% elsif tag.hasValue %}
-        <div class="filter value chip" data-value="{{ tag.group }}">
+        <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.group }}">
           {{ tag.group }}
         </div>
         {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
@@ -45,7 +45,7 @@ layout: post
           {{ generateHTML }}
         </div>
       {% else %}
-        <div class="filter chip">
+        <div class="choice chip" data-group="{{ branch }}">
           {{ tag.group }}
         </div>
         {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
@@ -54,7 +54,8 @@ layout: post
         </div>
       {% endif %}
     {% endfor %}
-
+  {% endif %}
+</div>
 
 <h3>choChip</h3>
 <div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
