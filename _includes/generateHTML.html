@@ -1,1 +1,52 @@
-
+{% if data == site.data.tags or filterTags %}
+  {% for tag in data %}
+      {% if tag.name %}
+        <div class="filter value chip" data-value="{{ tag.name }}">
+          {{ tag.name }}
+        </div>
+      {% elsif tag.hasValue %}
+        <div class="filter value chip" data-value="{{ tag.group }}">
+          {{ tag.group }}
+        </div>
+        {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
+        <div id="{{ branch | append: "-chip-box" }}">
+          {{ generateHTML }}
+        </div>
+      {% else %}
+        <div class="filter chip">
+          {{ tag.group }}
+        </div>
+        {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
+        <div id="{{ branch | append: "-chip-box" }}">
+          {{ generateHTML }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% elsif choiceTags %}
+    {% for tag in choiceTags %}
+      {% if tag.name %}
+        <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.name }}">
+          {{ tag.name }}
+        </div>
+      {% elsif tag.hasValue %}
+        <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.group }}">
+          {{ tag.group }}
+        </div>
+        {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
+        <div id="{{ branch | append: "-chip-box" }}">
+          {{ generateHTML }}
+        </div>
+      {% else %}
+        <div class="choice chip" data-group="{{ branch }}">
+          {{ tag.group }}
+        </div>
+        {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
+        <div id="{{ branch | append: "-chip-box" }}">
+          {{ generateHTML }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    vvvv
+  {% endif %}
+{% endcapture %}
