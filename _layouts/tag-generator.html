@@ -4,7 +4,7 @@ layout: post
 
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {% include generate-html.html tagData=site.data.tags %}
+  {% render 'generate-html.html', tagData: site.data.tags %}
 </div>
 
 <h3>choChip</h3>
