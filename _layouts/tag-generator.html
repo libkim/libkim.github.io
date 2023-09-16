@@ -4,7 +4,7 @@ layout: post
 
 {% capture generateForTags %}
 {% case forTags %}
-  {% when filterTags or site.data.tags %}
+  {% when site.data.tags %}
     {% for tag in filterTags or site.data.tags %}
       {% if tag.name %}
         <div class="filter value chip" data-value="{{ tag.name }}">
