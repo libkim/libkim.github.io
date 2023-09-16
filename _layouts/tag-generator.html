@@ -2,10 +2,8 @@
 layout: post
 ---
 
-{% capture generate_for_tag %}
-
-{% case for_tag %}
-  {% when site.data.tags %}
+{% capture generateForTag %}
+  {% if site.data.tags %}
     {% for tag in site.data.tags %}
       {% if tag.name %}
         <div class="filter value chip" data-value="{{ tag.name }}">
@@ -29,7 +27,7 @@ layout: post
         </div>
       {% endif %}
     {% endfor %}
-  {% when choiceTags %}
+  {% elsif choiceTags %}
     {% for tag in choiceTags %}
       {% if tag.name %}
         <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.name }}">
@@ -55,8 +53,7 @@ layout: post
     {% endfor %}
   {% else %}
     vvvv
-{% endcase %}
-
+  {% endif %}
 {% endcapture %}
 
 <h3>Tags</h3>
