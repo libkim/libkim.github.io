@@ -2,13 +2,11 @@
 layout: post
 ---
 
-{% capture res %}
-  {% include generateHTML.html data=site.data.tags %}
-{% endcapture %}
+{% assign generateHTML = include.data %}
 
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {{ res }}
+  {{ generateHTML }}
 </div>
 
 <h3>choChip</h3>
