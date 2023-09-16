@@ -2,6 +2,36 @@
 layout: post
 ---
 
+{% capture filterTag %}
+  {% if tag.name %}
+    <div class="">
+    </div>
+  {% elsif tag.hasValue %}
+    <div class="">
+    </div>
+  {% else %}
+    <div class="">
+    </div>
+  {% endif %}
+{% endcapture %}
+
+{% capture choiceTag %}
+  {% if tag.name %}
+    <div class="">
+      {{ tag.name }}
+    </div>
+  {% elsif tag.hasValue %}
+    <div class="">
+      {{ tag.group }}
+    </div>
+  {% else %}
+    <div class="">
+      {{ tag.group }}
+    </div>
+  {% endif %}
+{% endcapture %}
+
+
 {% capture generateForTag %}
   {% if site.data.tags %}
     {% for tag in site.data.tags %}
