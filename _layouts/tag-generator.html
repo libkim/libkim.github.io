@@ -2,10 +2,10 @@
 layout: post
 ---
 
-{% capture generateHTML %}
-{% case forTag %}
+{% capture generateForTags %}
+{% case forTags %}
   {% when filterTags or site.data.tags %}
-    {% for tag in filterTags %}
+    {% for tag in filterTags or site.data.tags %}
       {% if tag.name %}
         <div class="filter value chip" data-value="{{ tag.name }}">
           {{ tag.name }}
@@ -59,8 +59,8 @@ layout: post
 
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {% assign forTag = site.data.tags %}
-  {{ generateHTML }}
+  {% assign forTags = site.data.tags %}
+  {{ generateForTags }}
 </div>
 
 <h3>choChip</h3>
