@@ -1,28 +1,68 @@
-{% if data == site.data.tags or filterTags %}
+{% if data == tag.filterTags or site.data.tags %}
   {% for tag in data %}
-      {% if tag.name %}
-        <div class="filter value chip" data-value="{{ tag.name }}">
-          {{ tag.name }}
-        </div>
-      {% elsif tag.hasValue %}
-        <div class="filter value chip" data-value="{{ tag.group }}">
-          {{ tag.group }}
-        </div>
-        {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
-        <div id="{{ branch | append: "-chip-box" }}">
-          {{ generateHTML }}
-        </div>
-      {% else %}
-        <div class="filter chip">
-          {{ tag.group }}
-        </div>
-        {% assign branch = tag.group | replace: "/", "or" | split: " " | join: "-" %}
-        <div id="{{ branch | append: "-chip-box" }}">
-          {{ generateHTML }}
-        </div>
-      {% endif %}
-    {% endfor %}
-  {% elsif choiceTags %}
+    {% if tag.name %}
+      <div class="filter value chip" data-value="{{ tag.name }}">
+        {{ tag.name }}
+      </div>
+    {% elsif tag.hasValue %}
+      <div class="filter value chip" data-value="{{ tag.group }}">
+        {{ tag.group }}
+      </div>
+      <div id="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+        {% if tag.filterTags %}
+          {% include generateHTML.html data=tag.filterTags %}
+        {% elsif tag.choiceTags %}
+          {% include generateHTML.html data=tag.choiceTags %}
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="filter chip">
+        {{ tag.group }}
+      </div>
+      <div id="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+        {% if tag.filterTags %}
+          {% include generateHTML.html data=tag.filterTags %}
+        {% elsif tag.choiceTags %}
+          {% include generateHTML.html data=tag.choiceTags %}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% elsif data == tag.choiceTags %}
+  {% for tag in data %}
+    {% if tag.name %}
+      <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.name }}">
+        {{ tag.name }}
+      </div>
+    {% elsif tag.hasValue %}
+      <div class="filter value chip" data-value="{{ tag.group }}">
+        {{ tag.group }}
+      </div>
+      <div id="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+        {% if tag.filterTags %}
+          {% include generateHTML.html data=tag.filterTags %}
+        {% elsif tag.choiceTags %}
+          {% include generateHTML.html data=tag.choiceTags %}
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="filter chip">
+        {{ tag.group }}
+      </div>
+      <div id="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+        {% if tag.filterTags %}
+          {% include generateHTML.html data=tag.filterTags %}
+        {% elsif tag.choiceTags %}
+          {% include generateHTML.html data=tag.choiceTags %}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+
+
+
+
     {% for tag in choiceTags %}
       {% if tag.name %}
         <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.name }}">
