@@ -2,12 +2,9 @@
 layout: post
 ---
 
-{% assign generateHTML = include.data %}
-
 <h3>Tags</h3>
 <div id="root-chip-box">
-  {% assign data = site.data.tags %}
-  {{ generateHTML }}
+  {% include generateHTML.html data=site.data.tags %}
 </div>
 
 <h3>choChip</h3>
