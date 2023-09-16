@@ -2,10 +2,7 @@
 layout: post
 ---
 
-
-<h3>Tags</h3>
-<div id="root-chip-box">
-  {% assign filterTags = site.data.tags %}
+{% capture generateHTML %}
   {% if filterTags %}
     {% for tag in filterTags %}
       {% if tag.name %}
@@ -55,6 +52,12 @@ layout: post
       {% endif %}
     {% endfor %}
   {% endif %}
+{% endcapture %}
+
+<h3>Tags</h3>
+<div id="root-chip-box">
+  {% assign filterTags = site.data.tags %}
+  {{ generateHTML}}
 </div>
 
 <h3>choChip</h3>
