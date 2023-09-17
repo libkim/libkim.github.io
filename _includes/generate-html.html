@@ -1,4 +1,4 @@
-{% if tagData == tag.filterTags or site.data.tags %}
+{% if include.data == tag.filterTags or site.data.tags %}
   {% for tag in data %}
     {% if tag.name %}
       <div class="filter value chip" data-value="{{ tag.name }}">
@@ -28,7 +28,7 @@
       </div>
     {% endif %}
   {% endfor %}
-{% elsif tagData == tag.choiceTags %}
+{% elsif include.data == tag.choiceTags %}
   {% assign branch = tag.group %}
   {% for tag in data %}
     {% if tag.name %}
