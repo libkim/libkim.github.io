@@ -1,5 +1,5 @@
 {% assign data = include.data %}
-{% if data == tag.filterTags or site.data.tags %}
+{% if data == site.data.tags %}
   {% for tag in data %}
     {% if tag.name %}
       <div class="filter value chip" data-value="{{ tag.name }}">
