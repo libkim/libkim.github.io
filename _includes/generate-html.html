@@ -11,9 +11,9 @@
       </div>
       <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
         {% if tag.filterTags %}
-          {% include generate-html.html data=tag.filterTags %}
+          {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
-          {% include generate-html.html data=tag.choiceTags %}
+          {% include generate-html.html data = tag.choiceTags %}
         {% endif %}
       </div>
     {% else %}
@@ -22,9 +22,9 @@
       </div>
       <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
         {% if tag.filterTags %}
-          {% include generate-html.html data='tag.filterTags' %}
+          {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
-          {% include generate-html.html data='tag.choiceTags' %}
+          {% include generate-html.html data = tag.choiceTags %}
         {% endif %}
       </div>
     {% endif %}
@@ -42,9 +42,9 @@
       </div>
       <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
         {% if tag.filterTags %}
-          {% include generate-html.html data=tag.filterTags %}
+          {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
-          {% include generate-html.html data=tag.choiceTags %}
+          {% include generate-html.html data = tag.choiceTags %}
         {% endif %}
       </div>
     {% else %}
@@ -53,9 +53,9 @@
       </div>
       <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
         {% if tag.filterTags %}
-          {% include generate-html.html data=tag.filterTags %}
+          {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
-          {% include generate-html.html data=tag.choiceTags %}
+          {% include generate-html.html data = tag.choiceTags %}
         {% endif %}
       </div>
     {% endif %}
