@@ -67,6 +67,8 @@
       hasValue: false
       choiceTags:
         - name: abstract
+        - name: rule of thirds
+        - name: rabatment of the rectangle
 
 - group: subject
   hasValue: false
