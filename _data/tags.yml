@@ -562,20 +562,25 @@
     - name: butterfly
 
 - group: style
-  tags:
-    - name: Studio Ghibli
-    - name: Takeshi Obata
-    - name: artstation
-    - name: behance
-    - name: pixiv
-    - name: movie poster
-    - name: long exposure
-    - name: color splash
-    - name: monochrome
-    - name: tilt-shift
-    - group: frame
-      tags:
-        - name: polaroid
+  hasValue: false
+  filterTags:
+    - group: 
+      hasValue: false
+      choiceTags: &artistOrProduction
+    - group: platform
+      hasValue: false
+      choiceTags: &platform
+        - name: artstation
+        - name: behance
+        - name: pixiv
+        - name: movie poster
+        - name: long exposure
+        - name: color splash
+        - name: monochrome
+        - name: tilt-shift
+        - group: frame
+          tags:
+            - name: polaroid
 
 - group: feature
   tags:
