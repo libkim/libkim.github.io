@@ -66,6 +66,22 @@
     - group: composition
       hasValue: false
       filterTags:
+        - group: projection
+          hasValue: false
+          choiceTags:
+            - group: orthographic
+              hasValue: true
+              choiceTags:
+                - name: isometric
+                - name: dimetric
+                - name: trimetric
+            - group: perspective
+              hasValue: false
+              choiceTags:
+                - name: 1-point perspective
+                - name: 2-point perspective
+                - name: 3-point perspective
+                - name: curvilinear perspective
         - group: color schemes
           hasValue: false
           filterTags:
@@ -607,19 +623,6 @@
     - name: uniform
     - name: cross-section
 
-- group: projection
-  tags:
-    - group: orthographic
-      tags:
-        - name: isometric
-        - name: dimetric
-        - name: trimetric
-    - group: perspective
-      tags:
-        - name: 1-point perspective
-        - name: 2-point perspective
-        - name: 3-point perspective
-        - name: curvilinear perspective
 
 
 - group: lighting
