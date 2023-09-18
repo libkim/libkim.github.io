@@ -58,6 +58,11 @@
       hasValue: false
       choiceTags:
         - name: semi-abstract
+        - group: chibi
+          hasValue: true
+          choiceTags:
+            - name: 2 heads tall
+            - name: 3 heads tall
     - group: composition
       hasValue: false
       choiceTags:
@@ -458,17 +463,20 @@
       tags:
 
 - group: technique
-  tags:
+  hasValue: false
+  choiceTags:
     - group: photography
-      before: photography
-      tags:
+      hasValue: true
+      filterTags:
         - group: device
-          tags:
+          hasValue: false
+          choiceTags:
             - name: thermal
             - name: drone
             - name: satellite
         - group: framing
-          tags:
+          hasValue: false
+          choiceTags:
             - name: central framing
         - group: camera angle
           tags:
@@ -575,11 +583,6 @@
     - name: ofuda
     - name: uniform
     - name: cross-section
-
-- group: chibi
-  tags:
-    - name: 2 heads tall
-    - name: 3 heads tall
 
 - group: projection
   tags:
