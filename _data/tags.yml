@@ -65,7 +65,22 @@
             - name: 3 heads tall
     - group: composition
       hasValue: false
-      choiceTags:
+      filterTags:
+        - group: color schemes
+          hasValue: false
+          filterTags:
+            - group: monochromatic color scheme
+              hasValue: true
+              choiceTags:
+                - name: black and white
+            - group: analogous color scheme
+              hasValue: true
+              choiceTags:
+                - name: teal and orange
+            - group: complementary color scheme
+              hasValue: true
+              choiceTags:
+
         - name: abstract
         - name: rule of thirds
         - name: rabatment of the rectangle
@@ -140,6 +155,10 @@
     - group: portrait
       hasValue: true
       filterTags:
+        - group: motive
+          hasValue: false
+          filterTags:
+            - name: butterfly
         - group: race
           hasValue: false
           choiceTags:
@@ -557,9 +576,6 @@
     - name: unreal engine
     - name: high resolution scan
 
-- group: motive
-  tags:
-    - name: butterfly
 
 - group: style
   hasValue: false
@@ -605,20 +621,6 @@
         - name: 3-point perspective
         - name: curvilinear perspective
 
-- group: color schemes
-  hasValue: false
-  filterTags:
-    - group: monochromatic color scheme
-      hasValue: true
-      choiceTags:
-        - name: black and white
-    - group: analogous color scheme
-      hasValue: true
-      choiceTags:
-        - name: teal and orange
-    - group: complementary color scheme
-      hasValue: true
-      choiceTags:
 
 - group: lighting
   tags:
