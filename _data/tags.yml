@@ -601,14 +601,23 @@
       choiceTags: &artistOrProduction
     - group: artist communities
       hasValue: false
-      choiceTags: &artistCommunities
+      choiceTags:
         - name: artstation
         - name: behance
         - name: pixiv
     - group: art movements
       hasValue: false
       choiceTags:
-        - name: movie poster
+        - name: der blaue reiter
+        - name: fauvism
+        - name: cubism
+        - name: de stijl
+        - name: surrealism
+    - group: poster
+      hasValue: false
+      choiceTags:
+        - name: film poster
+        
         - name: long exposure
         - name: color splash
         - name: monochrome
