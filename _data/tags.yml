@@ -101,6 +101,28 @@
         - name: rule of thirds
         - name: rabatment of the rectangle
 
+- group: methods of emphasis
+  hasValue: false
+  filterTags:
+    - group: contrast
+      hasValue: false
+      filterTags:
+        - name: contrast in layout
+        - name: contrast in scale
+        - name: contrast in shape
+        - name: contrast in color
+    - name: sight
+    - name: framing
+
+pattern
+Dominance/emphasis/focus
+Unity/variety/harmony
+Balance
+Contrast
+Movement/rhythm
+Local Tone
+Equalization Effect
+
 - group: subject
   hasValue: false
   choiceTags:
