@@ -114,6 +114,8 @@
     - name: sight
     - name: framing
 
+- group: point of gaze
+
 pattern
 Dominance/emphasis/focus
 Unity/variety/harmony
