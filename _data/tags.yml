@@ -596,15 +596,18 @@
 - group: style
   hasValue: false
   filterTags:
-    - group: 
+    - group: artist / production
       hasValue: false
       choiceTags: &artistOrProduction
-    - group: platform
+    - group: artist communities
       hasValue: false
-      choiceTags: &platform
+      choiceTags: &artistCommunities
         - name: artstation
         - name: behance
         - name: pixiv
+    - group: art movements
+      hasValue: false
+      choiceTags:
         - name: movie poster
         - name: long exposure
         - name: color splash
