@@ -97,30 +97,16 @@
               hasValue: true
               choiceTags:
 
-        - name: abstract
-        - name: rule of thirds
-        - name: rabatment of the rectangle
-
-- group: methods of emphasis
+- group: point of gaze
   hasValue: false
   filterTags:
-    - group: contrast
-      hasValue: false
-      filterTags:
-        - name: contrast in layout
-        - name: contrast in scale
-        - name: contrast in shape
-        - name: contrast in color
-    - name: sight
-    - name: framing
-
-- group: point of gaze
+    - name: 
+      hasValue: 
 
 pattern
 Dominance/emphasis/focus
 Unity/variety/harmony
 Balance
-Contrast
 Movement/rhythm
 Local Tone
 Equalization Effect
@@ -525,7 +511,35 @@ Equalization Effect
 
 - group: technique
   hasValue: false
-  choiceTags:
+  filterTags:
+    - group: methods of emphasis
+      hasValue: false
+      filterTags:
+        - group: contrast
+          hasValue: false
+          filterTags:
+            - name: scale contrast
+            - name: shape contrast
+            - name: color contrast
+        - group: layout
+          hasValue: false
+          choiceTags:
+            - name: central framing
+            - name: rule of thirds
+            - name: rabatment of the rectangle
+        - group: type of shot
+          hasValue: false
+          choiceTags:
+            - name: long
+            - name: full
+            - name: knee
+            - name: cowboy
+            - name: waist
+            - name: bust
+            - name: close-up
+            - name: extreme close-up
+
+    - name: sight
     - group: photography
       hasValue: true
       filterTags:
@@ -535,10 +549,7 @@ Equalization Effect
             - name: thermal
             - name: drone
             - name: satellite
-        - group: framing
-          hasValue: false
-          choiceTags:
-            - name: central framing
+        
         - group: camera angle
           tags:
             - name: eye level shot
@@ -566,17 +577,7 @@ Equalization Effect
               before: medium telephoto
               tags:
                 - name:
-        - group: type of shot
-          suffix: shot
-          tags:
-            - name: long
-            - name: full
-            - name: knee
-            - name: cowboy
-            - name: waist
-            - name: bust
-            - name: close-up
-            - name: extreme close-up
+        
         - group: headroom
           tags:
         - group: focus
@@ -588,8 +589,13 @@ Equalization Effect
               tags:
                 - name: front focus
                 - name: back focus
+
     - name: drawing
-    - name: painting
+    - group: painting
+      hasValue: true
+      filterTags:
+        - 
+      
     - name: 3D modeling
     - name: ai art
 
