@@ -88,13 +88,11 @@
 - group: purpose
   hasValue: false
   choiceTags:
-    - name: illustration
+    - name: art
     - group: poster
       hasValue: false
       choiceTags:
         - name: movie poster, film poster
-    - name: photography
-    - name: painting
     - name: reference sheet
 
 - group: subject
