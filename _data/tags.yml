@@ -85,6 +85,17 @@
                 - name: 3-point perspective
                 - name: curvilinear perspective
         
+- group: purpose
+  hasValue: false
+  choiceTags:
+    - name: illustration
+    - group: poster
+      hasValue: false
+      choiceTags:
+        - name: movie poster, film poster
+    - name: photography
+    - name: painting
+    - name: reference sheet
 
 - group: subject
   hasValue: false
