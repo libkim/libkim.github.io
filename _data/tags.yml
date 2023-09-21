@@ -97,20 +97,6 @@
               hasValue: true
               choiceTags:
 
-- group: point of gaze
-  hasValue: false
-  filterTags:
-    - name: 
-      hasValue: 
-
-pattern
-Dominance/emphasis/focus
-Unity/variety/harmony
-Balance
-Movement/rhythm
-Local Tone
-Equalization Effect
-
 - group: subject
   hasValue: false
   choiceTags:
