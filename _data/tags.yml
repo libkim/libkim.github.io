@@ -658,19 +658,20 @@
   tags:
     - name: color banding
 
-- group: foreground
-  tags:
-    - group: effect
-      tags:
-        - name: breath
-        - group: blur
-          tags:
-            - group: gaussian blur
-              tags:
-                - name: blurred face
-                - name: blurred penis
-                - name: blurred vagina
-                - name: blurred background
+- group: effect
+  hasValue: false
+  filterTags:
+    - name: breath
+    - group: blur
+      hasValue: false
+      filterTags:
+        - group: gaussian blur
+          hasValue: false
+          filterTags:
+            - name: blurred face
+            - name: blurred penis
+            - name: blurred vagina
+            - name: blurred background
             - group: motion blur
               tags:
                 - name: horizontal motion blur
