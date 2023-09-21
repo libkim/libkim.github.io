@@ -94,6 +94,7 @@
       choiceTags:
         - name: movie poster, film poster
     - name: reference sheet
+    - name: polaroid
 
 - group: subject
   hasValue: false
@@ -522,6 +523,13 @@
             - name: bust
             - name: close-up
             - name: extreme close-up
+        - group: lighting
+          hasValue: false
+          choiceTags:
+            - name: soft
+            - name: ambient
+            - name: cinematic
+            - name:
 
     - name: sight
     - group: photography
@@ -624,24 +632,11 @@
         - name: cubism
         - name: de stijl
         - name: surrealism
-    - group: poster
-      hasValue: false
-      choiceTags:
-        - name: film poster
         
         - name: long exposure
         - name: color splash
         - name: monochrome
         - name: tilt-shift
-        - group: frame
-          tags:
-            - name: polaroid
-
-- group: lighting
-  tags:
-  - name: soft
-  - name: ambient
-  - name: cinematic
 
 - group: shading
   tags:
