@@ -31,22 +31,6 @@
         - name: tall
         - name: short
 
-- group: artist / production
-  hasValue: false
-  choiceTags: &artistOrProduction
-    - group: artist
-      hasValue: false
-      choiceTags:
-        - name: Takeshi Obata
-        - name: Yoshitaka Amano
-        - name: Hiroaki Samura
-    - group: production
-      hasValue: false
-      choiceTags:
-        - name: Studio Ghibli
-        - name: 
-        - name: 
-
 - group: storytelling
   hasValue: false
   choiceTags:
@@ -599,13 +583,24 @@
     - name: unreal engine
     - name: high resolution scan
 
-
 - group: style
   hasValue: false
   filterTags:
     - group: artist / production
       hasValue: false
       choiceTags: &artistOrProduction
+        - group: artist
+          hasValue: false
+          choiceTags:
+            - name: Takeshi Obata
+            - name: Yoshitaka Amano
+            - name: Hiroaki Samura
+        - group: production
+          hasValue: false
+          choiceTags:
+            - name: Studio Ghibli
+            - name: 
+            - name: 
     - group: artist communities
       hasValue: false
       choiceTags:
@@ -632,17 +627,6 @@
         - group: frame
           tags:
             - name: polaroid
-
-- group: feature
-  tags:
-    - name: midriff
-    - name: navel
-    - name: long sleeves
-    - name: ofuda
-    - name: uniform
-    - name: cross-section
-
-
 
 - group: lighting
   tags:
