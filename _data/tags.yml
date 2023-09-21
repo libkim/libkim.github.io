@@ -47,13 +47,31 @@
         - name: 
         - name: 
 
-- group: purpose
+- group: storytelling
   hasValue: false
   choiceTags:
-    - group: representation
+    - group: camera angle
       hasValue: false
       choiceTags:
-        - name: figurative
+        - name: eye level shot
+        - name: low angle shot
+        - name: high angle shot
+        - name: overhead shot
+    - group: color schemes
+      hasValue: false
+      filterTags:
+        - group: monochromatic color scheme
+          hasValue: true
+          choiceTags:
+            - name: black and white
+        - group: analogous color scheme
+          hasValue: true
+          choiceTags:
+            - name: teal and orange
+        - group: complementary color scheme
+          hasValue: true
+          choiceTags:
+
     - group: distortion
       hasValue: false
       choiceTags:
@@ -82,20 +100,7 @@
                 - name: 2-point perspective
                 - name: 3-point perspective
                 - name: curvilinear perspective
-        - group: color schemes
-          hasValue: false
-          filterTags:
-            - group: monochromatic color scheme
-              hasValue: true
-              choiceTags:
-                - name: black and white
-            - group: analogous color scheme
-              hasValue: true
-              choiceTags:
-                - name: teal and orange
-            - group: complementary color scheme
-              hasValue: true
-              choiceTags:
+        
 
 - group: subject
   hasValue: false
@@ -536,12 +541,7 @@
             - name: drone
             - name: satellite
         
-        - group: camera angle
-          tags:
-            - name: eye level shot
-            - name: low angle shot
-            - name: high angle shot
-            - name: overhead shot
+        
         - group: type of lens
           suffix: lens
           tags:
@@ -575,15 +575,6 @@
               tags:
                 - name: front focus
                 - name: back focus
-
-    - name: drawing
-    - group: painting
-      hasValue: true
-      filterTags:
-        - 
-      
-    - name: 3D modeling
-    - name: ai art
 
 - group: utility
   tags:
