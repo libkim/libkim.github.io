@@ -490,6 +490,13 @@
                 - group: pattern
                   choiceTags:
                     - name: starry
+            - group: texture
+              hasValue: false
+              choiceTags:
+                - group: smoothness
+                  hasValue: false
+                  choiceTags:
+  
 
     - group: still life
       tags:
@@ -547,6 +554,7 @@
               choiceTags:
                 - name: warm
                 - name: cool
+            - name: ambient light, ambient occlusion
             - name: cel shading
 
     - name: sight
