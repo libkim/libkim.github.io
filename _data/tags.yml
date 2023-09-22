@@ -529,7 +529,20 @@
             - name: soft
             - name: ambient
             - name: cinematic
-            - name:
+            - name: three-point lighting
+            - name: key light
+            - name: fill light
+            - name: back light
+            - name: loop lighting
+            - name: split lighting
+            - name: low key light
+            - name: high key light
+            - name: hard
+            - group: light temperature
+              hasValue: false
+              choiceTags:
+                - name: warm
+                - name: cool
 
     - name: sight
     - group: photography
