@@ -661,6 +661,12 @@
         - name: cubism
         - name: de stijl
         - name: surrealism
+    - group: technique
+      hasValue: false
+      filterTags:
+        - name: collage
+        - name: depaysement
+        - name: frottage
         
         - name: long exposure
         - name: color splash
