@@ -543,6 +543,7 @@
               choiceTags:
                 - name: warm
                 - name: cool
+            - name: cel shading
 
     - name: sight
     - group: photography
@@ -650,10 +651,6 @@
         - name: color splash
         - name: monochrome
         - name: tilt-shift
-
-- group: shading
-  tags:
-    - name: cel shading
 
 - group: noise
   tags:
