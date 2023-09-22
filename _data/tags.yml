@@ -523,10 +523,17 @@
             - name: bust
             - name: close-up
             - name: extreme close-up
+
         - group: lighting
           hasValue: false
           choiceTags:
-            - name: soft
+            - group: quantity of light
+              hasValue: false
+              choiceTags:
+                - name: hard
+                - name: soft
+                - name: high
+                - name: low
             - name: ambient
             - name: cinematic
             - name: three-point lighting
@@ -535,9 +542,6 @@
             - name: back light
             - name: loop lighting
             - name: split lighting
-            - name: low key light
-            - name: high key light
-            - name: hard
             - group: light temperature
               hasValue: false
               choiceTags:
