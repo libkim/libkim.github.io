@@ -55,6 +55,9 @@
         - group: complementary color scheme
           hasValue: true
           choiceTags:
+        - group: triadic color scheme
+          hasValue: true
+          choiceTags:
 
     - group: distortion
       hasValue: false
