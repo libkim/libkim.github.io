@@ -570,6 +570,16 @@
             - name: thermal
             - name: drone
             - name: satellite
+        - group: exposure
+          hasValue: false
+          choiceTags:
+            - name: overexposed
+            - name: underexposed
+        - group: saturation
+          hasValue: false
+          choiceTags:
+            - name: low saturation
+            
         
         
         - group: type of lens
