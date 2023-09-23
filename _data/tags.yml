@@ -582,12 +582,15 @@
           choiceTags:
             - name: overexposed
             - name: underexposed
-        - group: colorfulness
+        - group: saturation
           hasValue: false
           choiceTags:
             - name: desaturated
             - name: saturated
         - group: brightness
+          hasValue: false
+          choiceTags:
+            - name: 
             
         
         
