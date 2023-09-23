@@ -31,16 +31,38 @@
         - name: tall
         - name: short
 
-- group: storytelling
+- group: style
   hasValue: false
-  choiceTags:
-    - group: camera angle
+  filterTags:
+    - group: artist / production
       hasValue: false
       choiceTags:
-        - name: eye level shot
-        - name: low angle shot
-        - name: high angle shot
-        - name: overhead shot
+        - group: artist
+          hasValue: false
+          choiceTags:
+            - name: Takeshi Obata
+            - name: Yoshitaka Amano
+            - name: Hiroaki Samura
+        - group: production
+          hasValue: false
+          choiceTags:
+            - name: Studio Ghibli
+            - name: 
+            - name: 
+    - group: artist communities
+      hasValue: false
+      choiceTags:
+        - name: artstation
+        - name: behance
+        - name: pixiv
+    - group: art movements
+      hasValue: false
+      choiceTags:
+        - name: der blaue reiter
+        - name: fauvism
+        - name: cubism
+        - name: de stijl
+        - name: surrealism
     - group: color schemes
       hasValue: false
       filterTags:
@@ -58,6 +80,53 @@
         - group: triadic color scheme
           hasValue: true
           choiceTags:
+    - group: technique
+      hasValue: false
+      filterTags:
+        - name: collage
+        - name: depaysement
+        - name: frottage
+    - group: exposure
+      hasValue: false
+      choiceTags:
+        - name: overexposed
+        - name: underexposed
+    - group: saturation
+      hasValue: false
+      choiceTags:
+        - name: desaturated
+        - name: saturated
+    - group: brightness
+      hasValue: false
+      choiceTags:
+        - name: 
+    - group: camera angle
+      hasValue: false
+      choiceTags:
+        - name: eye level shot
+        - name: low angle shot
+        - name: high angle shot
+        - name: overhead shot
+    - group: feature
+      hasValue: false
+      filterTags:
+        - name: color banding
+        - name: long exposure
+        - name: color splash
+        - name: monochrome
+        - name: tilt-shift
+
+- group: purpose
+  hasValue: false
+  choiceTags:
+    - name: photograph, photo
+    - name: painting
+    - name: drawing
+    - group: poster
+      hasValue: false
+      choiceTags:
+        - name: movie poster, film poster
+    - name: reference sheet
 
     - group: distortion
       hasValue: false
@@ -87,21 +156,6 @@
                 - name: 2-point perspective
                 - name: 3-point perspective
                 - name: curvilinear perspective
-        
-- group: purpose
-  hasValue: false
-  choiceTags:
-    - group: artwork
-      hasValue: true
-      choiceTags:
-        - name: painting
-        - name: photo
-    - group: poster
-      hasValue: false
-      choiceTags:
-        - name: movie poster, film poster
-    - name: reference sheet
-    - name: polaroid
 
 - group: subject
   hasValue: false
@@ -506,7 +560,6 @@
             - group: chroma
               hasValue: false
               choiceTags:
-  
 
     - group: still life
       tags:
@@ -577,20 +630,7 @@
             - name: thermal
             - name: drone
             - name: satellite
-        - group: exposure
-          hasValue: false
-          choiceTags:
-            - name: overexposed
-            - name: underexposed
-        - group: saturation
-          hasValue: false
-          choiceTags:
-            - name: desaturated
-            - name: saturated
-        - group: brightness
-          hasValue: false
-          choiceTags:
-            - name: 
+        
             
         
         
@@ -629,7 +669,8 @@
                 - name: back focus
 
 - group: utility
-  tags:
+  hasValue: false
+  filterTags:
     - name: alluring
     - name: sensual
     - name: provocative
@@ -650,54 +691,6 @@
     - name: trending on artstation
     - name: unreal engine
     - name: high resolution scan
-
-- group: style
-  hasValue: false
-  filterTags:
-    - group: artist / production
-      hasValue: false
-      choiceTags: &artistOrProduction
-        - group: artist
-          hasValue: false
-          choiceTags:
-            - name: Takeshi Obata
-            - name: Yoshitaka Amano
-            - name: Hiroaki Samura
-        - group: production
-          hasValue: false
-          choiceTags:
-            - name: Studio Ghibli
-            - name: 
-            - name: 
-    - group: artist communities
-      hasValue: false
-      choiceTags:
-        - name: artstation
-        - name: behance
-        - name: pixiv
-    - group: art movements
-      hasValue: false
-      choiceTags:
-        - name: der blaue reiter
-        - name: fauvism
-        - name: cubism
-        - name: de stijl
-        - name: surrealism
-    - group: technique
-      hasValue: false
-      filterTags:
-        - name: collage
-        - name: depaysement
-        - name: frottage
-        
-        - name: long exposure
-        - name: color splash
-        - name: monochrome
-        - name: tilt-shift
-
-- group: noise
-  tags:
-    - name: color banding
 
 - group: effect
   hasValue: false
