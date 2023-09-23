@@ -91,7 +91,11 @@
 - group: purpose
   hasValue: false
   choiceTags:
-    - name: art
+    - group: artwork
+      hasValue: true
+      choiceTags:
+        - name: painting
+        - name: photo
     - group: poster
       hasValue: false
       choiceTags:
@@ -575,10 +579,12 @@
           choiceTags:
             - name: overexposed
             - name: underexposed
-        - group: saturation
+        - group: colorfulness
           hasValue: false
           choiceTags:
-            - name: low saturation
+            - name: desaturated
+            - name: saturated
+        - group: brightness
             
         
         
