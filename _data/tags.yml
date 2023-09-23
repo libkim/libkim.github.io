@@ -503,6 +503,9 @@
                 - group: smoothness
                   hasValue: false
                   choiceTags:
+            - group: chroma
+              hasValue: false
+              choiceTags:
   
 
     - group: still life
