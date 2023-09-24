@@ -60,6 +60,7 @@
         - name: cubism
         - name: de stijl
         - name: surrealism
+        - name: semi-abstract
     - group: art technique
       hasValue: false
       filterTags:
@@ -71,6 +72,11 @@
 - group: design
   hasValue: false
   filterTags:
+    - group: layout
+      hasValue: false
+      filterTags:
+        - name: headroom
+
     - group: color schemes
       hasValue: false
       choiceTags:
@@ -131,16 +137,9 @@
       choiceTags:
         - name: movie poster, film poster
     - name: reference sheet
-
-    - group: distortion
-      hasValue: false
-      choiceTags:
-        - name: semi-abstract
-        - group: chibi
-          hasValue: true
-          choiceTags:
-            - name: 2 heads tall
-            - name: 3 heads tall
+    - name: thermal
+    - name: satellite
+            
     - group: composition
       hasValue: false
       filterTags:
@@ -337,6 +336,18 @@
         - group: body
           hasValue: false
           filterTags:
+            - group: body proportions
+              hasValue: false
+              choiceTags:
+                - name: chibi
+                - name: 2 heads tall
+                - name: 3 heads tall
+                - name: 4 heads tall
+                - name: 5 heads tall
+                - name: 6 heads tall
+                - name: 7 heads tall
+                - name: 8 heads tall
+                - name: 9 heads tall
             - name: fat
             - name: fit
             - name: elegant
@@ -623,21 +634,8 @@
                 - name: cool
             - name: ambient light, ambient occlusion
             - name: cel shading
-
-    - name: sight
-    - group: photography
-      hasValue: true
-      filterTags:
-        - group: device
-          hasValue: false
-          choiceTags:
-            - name: thermal
-            - name: drone
-            - name: satellite
-        
+            - name: sight
             
-        
-        
         - group: type of lens
           suffix: lens
           tags:
@@ -659,9 +657,7 @@
               before: medium telephoto
               tags:
                 - name:
-        
-        - group: headroom
-          tags:
+ 
         - group: focus
           tags:
             - name: deep focus
