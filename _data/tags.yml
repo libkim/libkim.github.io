@@ -34,21 +34,18 @@
 - group: style
   hasValue: false
   filterTags:
-    - group: artist / production
+    - group: artist
       hasValue: false
       choiceTags:
-        - group: artist
-          hasValue: false
-          choiceTags:
-            - name: Takeshi Obata
-            - name: Yoshitaka Amano
-            - name: Hiroaki Samura
-        - group: production
-          hasValue: false
-          choiceTags:
-            - name: Studio Ghibli
-            - name: 
-            - name: 
+        - name: Takeshi Obata
+        - name: Yoshitaka Amano
+        - name: Hiroaki Samura
+    - group: production
+      hasValue: false
+      choiceTags:
+        - name: Studio Ghibli
+        - name: GAINAX
+        - name: Trigger
     - group: artist communities
       hasValue: false
       choiceTags:
@@ -63,9 +60,20 @@
         - name: cubism
         - name: de stijl
         - name: surrealism
-    - group: color schemes
+    - group: art technique
       hasValue: false
       filterTags:
+        - name: collage
+        - name: depaysement
+        - name: frottage
+        - name: mosaic
+
+- group: design
+  hasValue: false
+  filterTags:
+    - group: color schemes
+      hasValue: false
+      choiceTags:
         - group: monochromatic color scheme
           hasValue: true
           choiceTags:
@@ -80,12 +88,8 @@
         - group: triadic color scheme
           hasValue: true
           choiceTags:
-    - group: technique
-      hasValue: false
-      filterTags:
-        - name: collage
-        - name: depaysement
-        - name: frottage
+
+    
     - group: exposure
       hasValue: false
       choiceTags:
