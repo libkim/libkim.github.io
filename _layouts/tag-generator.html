@@ -2,20 +2,21 @@
 layout: post
 ---
 
-<h3>Tags</h3>
-<div id="root-chip-box">
+<div id="referenceImageViewer">
+  <button class="select-image-button" onclick="selectImage();">Select Image</button>
+</div>
+
+<div id="tagSelector">
+  <h3>Tags</h3>
   {% include generate-html.html data = site.data.tags %}
 </div>
 
-<h3>choChip</h3>
-<div class="choice chip" data-group="fruit1" data-value="apple">Apple</div>
-<div class="choice chip" data-group="fruit1" data-value="banana">Banana</div>
-<div class="choice chip" data-group="fruit1" data-value="orange">Orange</div>
+<div id="promptContainer">
+  <h3>Prompt</h3>
+  <div class="promptViewer"></div>
+  <button onclick="downloadPrompt();">Download Prompt</button>
+</div>
 
-<h3>Prompt</h3>
-<div id="promptContainer"></div>
-
-<button onclick="downloadPrompt();">Download Prompt</button>
 
 
 <script>
