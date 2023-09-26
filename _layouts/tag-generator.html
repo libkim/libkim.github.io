@@ -55,8 +55,8 @@ chips.forEach(chip => {
 function updatePrompt() {
   const selectedChips = document.querySelectorAll(".chip.selected");
   prompt = Array.from(selectedChips).map(chip => chip.dataset.value).join(", ");
-  const promptContainer = document.getElementById("promptContainer");
-  promptContainer.textContent = prompt;
+  const promptText = document.getElementByClassName("prompt-text");
+  promptText.textContent = prompt;
 }
 
 function downloadPrompt() {
