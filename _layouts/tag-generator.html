@@ -4,19 +4,19 @@ layout: post
 
 <div id="referenceImageViewer">
   <div class="image-view">
-    <button class="remove-button" onclick="remove()";>X</button>
+    <div class="image-name"></div>
+    <button class="image-remove-button" onclick="removeImage()";>X</button>
   </div>
-  <div id="imageUploader">
-  <button class="image-upload-button" onclick="selectImage();">Select Image</button>
+  <button class="image-upload-button" onclick="uploadImage()";>Upload Image</button>
 </div>
 
 <div id="tagSelector">
-  <h3>Tags</h3>
-  {% include generate-html.html data = site.data.tags %}
+  <div class="root-chip-box">
+    {% include generate-html.html data = site.data.tags %}
+  </div>
 </div>
 
-<div id="promptViewer">
-  <h3>Prompt</h3>
+<div id="promptDownloader">
   <div class="prompt-text"></div>
   <button class="download-prompt-button" onclick="downloadPrompt();">Download Prompt</button>
 </div>
