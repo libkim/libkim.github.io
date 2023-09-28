@@ -55,10 +55,10 @@ btnUpload.on("change", function(e){
 });
 
 $(".remove-image").on("click", function(e){
-  $("#uploaded_view").removeClass("show");
-  $("#uploaded_view").find("img").remove();
-  btnOuter.removeClass("file_uploading");
-  btnOuter.removeClass("file_uploaded");
+  $(".image-view").removeClass("show");
+  $(".image-view").find("img").remove();
+  btnOuter.removeClass("file-uploading");
+  btnOuter.removeClass("file-uploaded");
 });
 
 const chips = document.querySelectorAll(".chip");
