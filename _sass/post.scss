@@ -211,6 +211,9 @@ article::after {
   background: #83ccd3;
   height: 50px;
 }
+.file-uploaded .hidden {
+  display: none;
+}
 .image-view {
   max-width: 300px;
   margin: 40px auto;
