@@ -51,6 +51,9 @@ btnUpload.on("change", function(e){
     setTimeout(function(){
       $(".image-view").append('<img src="'+uploadedFile+'" />').addClass("show");
     },3500);
+    setTimeout(function(){
+      btnOuter.addClass("hidden");
+    },4000);
   }
 });
 
@@ -59,6 +62,7 @@ $(".image-remove-button").on("click", function(e){
   $(".image-view").find("img").remove();
   btnOuter.removeClass("file-uploading");
   btnOuter.removeClass("file-uploaded");
+  btnOuter.removeClass("hidden");
 });
 
 const chips = document.querySelectorAll(".chip");
