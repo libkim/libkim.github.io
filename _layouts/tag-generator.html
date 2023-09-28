@@ -3,6 +3,7 @@ layout: post
 ---
 
 <div id="referenceImageViewer">
+  <div class="error-message"></div>
   <div class="image-view">
     <div class="image-name"></div>
     <button class="image-remove-button" onclick="removeImage()";>X</button>
@@ -39,12 +40,12 @@ var btnUpload = $("#uploadFile"), btnOuter = $(".image-upload-button-outer");
 btnUpload.on("change", function(e){
   var ext = btnUpload.val().split('.').pop().toLowerCase();
   if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1){
-    $(".error_msg").text("Not an Image...");
+    $(".error-message").text("Not an Image...");
   } else {
-    $(".error_msg").text("");
-    btnOuter.addClass("file_uploading");
+    $(".error-message").text("");
+    btnOuter.addClass("file-uploading");
     setTimeout(function(){
-      btnOuter.addClass("file_uploaded");
+      btnOuter.addClass("file-uploaded");
     },3000);
     var uploadedFile = URL.createObjectURL(e.target.files[0]);
     setTimeout(function(){
@@ -53,7 +54,7 @@ btnUpload.on("change", function(e){
   }
 });
 
-$(".file_remove").on("click", function(e){
+$(".remove-image").on("click", function(e){
   $("#uploaded_view").removeClass("show");
   $("#uploaded_view").find("img").remove();
   btnOuter.removeClass("file_uploading");
