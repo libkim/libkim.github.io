@@ -127,3 +127,125 @@ article::after {
   border-radius: 20px;
   cursor: pointer;
 }
+
+.image-upload-button-outer {
+  background: #83ccd3;
+  border-radius:30px;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  display: inline-block;
+  transition: .2s;
+  position: relative;
+  overflow: hidden;
+}
+.image-upload-button {
+  padding: 17px 30px 12px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 3;
+  white-space: nowrap;
+}
+.image-upload-button input {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 105%;
+  cursor: pointer;
+  opacity: 0;
+}
+.file-uploading {
+  width: 100%;
+  height: 10px;
+  margin-top: 20px;
+  background: #ccc;
+}
+.file-uploading .image-upload-button {
+  display: none;
+}
+.processing-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 30px;
+  background: #83ccd3;
+  transition: 3s;
+}
+.file-uploading .processing-bar {
+  width: 100%;
+}
+.success-box {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.success-box:before {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 18px;
+  border-bottom: 6px solid #fff;
+  border-right: 6px solid #fff;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  transform:rotate(45deg);
+  position: absolute;
+  left: 17px;
+  top: 10px;
+}
+.file-uploaded .success-box {
+  display: inline-block;
+}
+.file-uploaded {
+  margin-top: 0;
+  width: 50px;
+  background: #83ccd3;
+  height: 50px;
+}
+.image-view {
+  max-width: 300px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+  transition: .2s;
+  opacity: 0;
+  border: 2px solid #ddd;
+  padding: 15px;
+}
+.remove-box {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  background: #aaa;
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  right: -15px;
+  top: -15px;
+}
+.remove-box:hover {
+  background: #222;
+  transition: .2s;
+}
+.image-view img {
+  max-width: 100%;
+}
+.image-view.show {
+  opacity: 1;
+}
+.error-message {
+  text-align: center;
+  color: #f00;
+}
