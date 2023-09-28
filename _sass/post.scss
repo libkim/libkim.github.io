@@ -205,14 +205,14 @@ article::after {
 .file-uploaded .success-box {
   display: inline-block;
 }
+.file-uploaded .success-box .hidden {
+  display: none;
+}
 .file-uploaded {
   margin-top: 0;
   width: 50px;
   background: #83ccd3;
   height: 50px;
-}
-.file-uploaded .hidden {
-  display: none;
 }
 .image-view {
   max-width: 300px;
