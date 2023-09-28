@@ -7,7 +7,14 @@ layout: post
     <div class="image-name"></div>
     <button class="image-remove-button" onclick="removeImage()";>X</button>
   </div>
-  <button class="image-upload-button" onclick="uploadImage()";>Upload Image</button>
+  <div class="image-upload-button-outer">
+    <div class="image-upload-button">
+      <input id="upload-file" type="file" name="">
+      Upload Image
+    </div>
+    <div class="processing-bar"></div>
+    <div class="success-box"></div>
+  </div>
 </div>
 
 <div id="tagSelector">
