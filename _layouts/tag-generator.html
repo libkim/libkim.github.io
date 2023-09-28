@@ -10,7 +10,7 @@ layout: post
   </div>
   <div class="image-upload-button-outer">
     <div class="image-upload-button">
-      <input id="uploadFile" type="file" name="">
+      <input class="file-input-field" type="file" name="">
       Upload Image
     </div>
     <div class="processing-bar"></div>
@@ -35,7 +35,7 @@ layout: post
 
 <script>
 
-var btnUpload = $("#uploadFile"), btnOuter = $(".image-upload-button-outer");
+var btnUpload = $(".file-input-field"), btnOuter = $(".image-upload-button-outer");
 
 btnUpload.on("change", function(e){
   var ext = btnUpload.val().split('.').pop().toLowerCase();
