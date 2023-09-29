@@ -10,7 +10,6 @@ data/tags
 -> 정리
 
 layouts/tag-generator
--> image-upload-button-outer가 숨겨지면 그 자리에 image-view 띄우기
 -> display: block에서 none => addclass hiding
 -> display: none에서 block => addclass show
 -> post 들어가면 타이틀과 설명 바로 나옴 welcome~ 은 삭제
