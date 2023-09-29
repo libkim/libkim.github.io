@@ -12,6 +12,8 @@ data/tags
 layouts/tag-generator
 -> display: block에서 none => addclass hiding
 -> display: none에서 block => addclass show
--> post 들어가면 타이틀과 설명 바로 나옴 welcome~ 은 삭제
+-> post 타이틀 아래 프로젝트 설명추가
 -> 이미지 뷰 배경 색상 바꿀수 있는 기능과 비율을 알 수 있는 3×3자 래버트먼트자 기능
 -> 이미지를 보며 태그를 쓸수 있게 반반 나눠서 스크롤 적용
+
+스크롤을 맨 밑으로 내리면 휴대폰 상태바에 로고와 햄버거 메뉴 가려지는 현상
