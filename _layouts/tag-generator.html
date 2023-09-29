@@ -27,7 +27,7 @@ layout: post
 <div id="promptDownloader">
   <div class="prompt-view">
     <form>
-      <textarea name="welcomeMessage" rows="3" cols="40">
+      <textarea class="prompt-textarea" name="welcomeMessage" rows="3" cols="40">
       </textarea>
     </form>
     <div class="prompt-name"></div>
@@ -103,7 +103,7 @@ chips.forEach(chip => {
 function updatePrompt() {
   const selectedChips = document.querySelectorAll(".chip.selected");
   prompt = Array.from(selectedChips).map(chip => chip.dataset.value).join(", ");
-  const promptText = document.getElementByClassName("prompt-text");
+  const promptText = document.getElementByClassName("prompt-textarea");
   promptText.textContent = prompt;
 }
 
