@@ -49,11 +49,9 @@ btnUpload.on("change", function(e){
     },3000);
     var uploadedFile = URL.createObjectURL(e.target.files[0]);
     setTimeout(function(){
+      btnOuter.addClass("hiding");
       $(".image-view").append('<img src="'+uploadedFile+'" />').addClass("show");
     },3500);
-    setTimeout(function(){
-      btnOuter.addClass("hidden");
-    },4000);
   }
 });
 
@@ -62,7 +60,7 @@ $(".image-remove-button").on("click", function(e){
   $(".image-view").find("img").remove();
   btnOuter.removeClass("file-uploading");
   btnOuter.removeClass("file-uploaded");
-  btnOuter.removeClass("hidden");
+  btnOuter.removeClass("hiding");
 });
 
 const chips = document.querySelectorAll(".chip");
