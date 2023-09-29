@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<div id="post-container">
 <article class="post">
   <div class="post-title">
     <h3>{{ page.title }}</h3>
@@ -22,6 +23,8 @@ layout: default
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 {% endif %}
+</div>
+{% include footer.html %}
 
 <script>
   $(document).ready(function (e) {
