@@ -11,3 +11,5 @@ data/tags
 
 layout/tag-generator.html
 -> image-upload-button-outer가 숨겨지면 그 자리에 image-view 띄우기
+-> display: block에서 none => addclass ghost
+-> display: none에서 block => addclass 
