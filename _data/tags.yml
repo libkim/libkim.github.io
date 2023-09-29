@@ -75,7 +75,9 @@
     - group: layout
       hasValue: false
       filterTags:
-        - name: headroom
+        - name: head-room
+        - name: nose-room, looking-room
+        - name: lead-room
 
     - group: color schemes
       hasValue: false
