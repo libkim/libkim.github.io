@@ -596,6 +596,7 @@
           choiceTags:
             - name: central framing
             - name: rule of thirds
+            - name: rule of quarters
             - name: rabatment of the rectangle
         - group: type of shot
           hasValue: false
