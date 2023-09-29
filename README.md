@@ -9,7 +9,10 @@ posts/ani-list
 data/tags
 -> 정리
 
-layout/tag-generator.html
+layouts/tag-generator
 -> image-upload-button-outer가 숨겨지면 그 자리에 image-view 띄우기
 -> display: block에서 none => addclass hiding
 -> display: none에서 block => addclass show
+-> post 들어가면 타이틀과 설명 바로 나옴 welcome~ 은 삭제
+-> 이미지 뷰 배경 색상 바꿀수 있는 기능과 비율을 알 수 있는 3×3자 래버트먼트자 기능
+-> 이미지를 보며 태그를 쓸수 있게 반반 나눠서 스크롤 적용
