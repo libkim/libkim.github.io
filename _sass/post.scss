@@ -55,7 +55,7 @@ article::after {
 }
 
 .choice.chip {
-  display: block;
+  display: inline-block;
   margin: 4px;
   padding: 4px 8px;
   border: 2px solid #ddd;
@@ -64,7 +64,7 @@ article::after {
 }
 
 .choice.chip.selected {
-  display: block;
+  display: inline-block;
   margin: 4px;
   padding: 4px 8px;
   border: 2px solid #66c;
