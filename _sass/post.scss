@@ -44,7 +44,7 @@ article::after {
   background-color: #d5d5d5;
 }
 
-div[class$=chip] {
+[class$=chip] {
   display: inline-block;
   margin: 2px;
   padding: 4px 8px;
@@ -52,7 +52,7 @@ div[class$=chip] {
   border-radius: 20px;
   cursor: pointer;
 }
-div[class$=chip selected] {
+[class$=chip selected] {
   display: inline-block;
   margin: 2px;
   padding: 4px 8px;
@@ -60,11 +60,10 @@ div[class$=chip selected] {
   border-radius: 20px;
   cursor: pointer;
 }
-
-div[class$=chip-box] {
+[class$=chip-box] {
   display: none;
 }
-div[class$=chip-box show] {
+[class$=chip-box show] {
   display: block;
 }
 
