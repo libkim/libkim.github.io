@@ -52,7 +52,7 @@ div[class$=chip] {
   border-radius: 20px;
   cursor: pointer;
 }
-div[class$=chip].selected {
+div[class$=chip selected] {
   display: inline-block;
   margin: 2px;
   padding: 4px 8px;
@@ -64,7 +64,7 @@ div[class$=chip].selected {
 div[class$=chip-box] {
   display: none;
 }
-div[class$=chip-box].show {
+div[class$=chip-box show] {
   display: block;
 }
 
