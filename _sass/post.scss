@@ -44,13 +44,10 @@ article::after {
   background-color: #d5d5d5;
 }
 
-.root-chip-box {
-  display: block;
-}
-.branch-chip-box {
+div[class$=chip-box] {
   display: none;
 }
-.branch-chip-box.show {
+div[class$=chip-box].show {
   display: block;
 }
 
