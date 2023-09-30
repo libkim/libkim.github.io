@@ -44,29 +44,28 @@ article::after {
   background-color: #d5d5d5;
 }
 
+div[class$=chip] {
+  display: inline-block;
+  margin: 2px;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+div[class$=chip].selected {
+  display: inline-block;
+  margin: 2px;
+  padding: 4px 8px;
+  border: 1px solid #66c;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 div[class$=chip-box] {
   display: none;
 }
 div[class$=chip-box].show {
   display: block;
-}
-
-.chip {
-  display: inline-block;
-  margin: 4px;
-  padding: 4px 8px;
-  border: 2px solid #ddd;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.chip.selected {
-  display: inline-block;
-  margin: 4px;
-  padding: 4px 8px;
-  border: 2px solid #66c;
-  border-radius: 20px;
-  cursor: pointer;
 }
 
 .image-upload-button-outer {
