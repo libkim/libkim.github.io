@@ -79,7 +79,7 @@ chips.forEach(chip => {
     chip.addEventListener("click", () => {
       if (chip.classList.contains("selected")) {
         chip.classList.remove("selected");
-        detail.classList.remove("active");
+        detail.classList.remove("show");
         updatePrompt();
       } else {
         const group = document.querySelectorAll(`[data-group="${chip.dataset.group}"]`);
@@ -87,14 +87,14 @@ chips.forEach(chip => {
           chip.classList.remove("selected");
         });
         chip.classList.add("selected");
-        detail.classList.add("active");
+        detail.classList.add("show");
         updatePrompt();
       }
     });
   } else {
     chip.addEventListener("click", () => {
       chip.classList.toggle("selected");
-      detail.classList.toggle("active");
+      detail.classList.toggle("show");
       updatePrompt();
     });
   }
