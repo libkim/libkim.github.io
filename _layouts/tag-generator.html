@@ -69,12 +69,12 @@ $(".image-remove-button").on("click", function(e){
   },500);
 });
 
-const chips = document.querySelectorAll("[class$=chip]");
+const CHIPS= document.querySelectorAll("[class$=chip]");
 
 let prompt = [];
 
-chips.forEach(chip => {
-  const CHIPDETAIL = chip.nextElementSibling;
+CHIPS.forEach(chip => {
+  const CHIPBOX = chip.nextElementSibling;
   chip.addEventListener("click", () => {
     chip.classList.toggle("selected");
     CHIPDETAIL.classList.toggle("show");
