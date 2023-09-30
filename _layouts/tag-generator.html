@@ -74,10 +74,10 @@ const chips = document.querySelectorAll(".chip");
 let prompt = [];
 
 chips.forEach(chip => {
-  const detail = chip.nextElementSibling;
+  const CHIPDETAIL = chip.nextElementSibling;
   chip.addEventListener("click", () => {
     chip.classList.toggle("selected");
-    detail.classList.toggle("show");
+    CHIPDETAIL.classList.toggle("show");
     updatePrompt();
   });
 });
