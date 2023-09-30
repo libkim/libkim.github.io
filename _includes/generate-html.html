@@ -9,7 +9,7 @@
       <div class="filter value chip" data-value="{{ tag.group }}">
         {{ tag.group }}
       </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
         {% if tag.filterTags %}
           {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
@@ -20,7 +20,7 @@
       <div class="filter chip">
         {{ tag.group }}
       </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
         {% if tag.filterTags %}
           {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
@@ -40,7 +40,7 @@
       <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.group }}">
         {{ tag.group }}
       </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
         {% if tag.filterTags %}
           {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
@@ -51,7 +51,7 @@
       <div class="choice chip" data-group="{{ branch }}">
         {{ tag.group }}
       </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: "-chip-box" }}">
+      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
         {% if tag.filterTags %}
           {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
