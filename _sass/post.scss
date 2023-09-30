@@ -50,6 +50,7 @@ article::after {
   padding: 6px 10px;
   border: 1px solid #0D0D0D;
   border-radius: 20px;
+  color: #ABABAD;
   cursor: pointer;
 }
 [class$='chip selected'] {
@@ -58,8 +59,8 @@ article::after {
   padding: 6px 10px;
   border: 1px solid #0D0D0D;
   border-radius: 20px;
-  color: #fff;
   background: #0D0D0D;
+  color: #FFF;
   cursor: pointer;
 }
 [class$=chip-box] {
