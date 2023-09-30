@@ -44,14 +44,14 @@ article::after {
   background-color: #d5d5d5;
 }
 
-.chip-box {
-  display: block;
-  .sub-chip-box {
-    display: none;
-  }
-  .sub-chip-box.active {
-    display: block;
-  }
+.root-chip-box {
+  display: block;
+}
+.branch-chip-box {
+  display: none;
+}
+.branch-chip-box.show {
+  display: block;
 }
 
 .choice.chip {
