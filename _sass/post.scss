@@ -54,7 +54,7 @@ article::after {
   display: block;
 }
 
-.choice.chip {
+.chip {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
@@ -63,7 +63,7 @@ article::after {
   cursor: pointer;
 }
 
-.choice.chip.selected {
+.chip.selected {
   display: inline-block;
   margin: 4px;
   padding: 4px 8px;
