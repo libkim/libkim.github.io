@@ -48,18 +48,18 @@ article::after {
   display: inline-block;
   margin: 1px;
   padding: 6px 10px;
-  border: 1px solid #0D0D0D;
-  border-radius: 20px;
-  color: #ABABAD;
+  border: 1px solid #271000;
+  border-radius: 10px;
+  color: #4E4855;
   cursor: pointer;
 }
 [class$='chip selected'] {
   display: inline-block;
   margin: 1px;
   padding: 6px 10px;
-  border: 1px solid #0D0D0D;
-  border-radius: 20px;
-  background: #0D0D0D;
+  border: 1px solid #271000;
+  border-radius: 10px;
+  background: #271000;
   color: #FFF;
   cursor: pointer;
 }
