@@ -1,33 +1,18 @@
 {% assign data = include.data %}
 {% if data == site.data.tags %}
   {% for tag in data %}
-    {% if tag.name %}
-      <div class="filter value chip" data-value="{{ tag.name }}">
-        {{ tag.name }}
-      </div>
-    {% elsif tag.hasValue %}
-      <div class="filter value chip" data-value="{{ tag.group }}">
-        {{ tag.group }}
-      </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
-        {% if tag.filterTags %}
-          {% include generate-html.html data = tag.filterTags %}
-        {% elsif tag.choiceTags %}
-          {% include generate-html.html data = tag.choiceTags %}
-        {% endif %}
-      </div>
-    {% else %}
-      <div class="filter chip">
-        {{ tag.group }}
-      </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
-        {% if tag.filterTags %}
-          {% include generate-html.html data = tag.filterTags %}
-        {% elsif tag.choiceTags %}
-          {% include generate-html.html data = tag.choiceTags %}
-        {% endif %}
-      </div>
-    {% endif %}
+    <div class="root-chip">
+      {{ tag.group }}
+    </div>
+    <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box" }}">
+      {% if tag.filterTags %}
+        {% include generate-html.html data = tag.filterTags %}
+      {% elsif tag.choiceTags %}
+        {% include generate-html.html data = tag.choiceTags %}
+      {% else %}
+        필터 태그와 초이스 태그가 여기 들어갑니다
+      {% endif %}
+    </div>
   {% endfor %}
 {% elsif data == tag.choiceTags %}
   {% assign branch = tag.group %}
