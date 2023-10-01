@@ -45,21 +45,23 @@ article::after {
 }
 
 [class$=chip] {
-  height: 28px;
+  height: 24px;
   padding: 0 6px;
   border: 1px solid #271000;
-  border-radius: 14px;
+  border-radius: 12px;
   color: #4E4855;
   cursor: pointer;
+  transition: .2s;
 }
 [class$='chip selected'] {
-  height: 28px;
+  height: 24px;
   padding: 0 6px;
   border: 1px solid #271000;
-  border-radius: 14px;
+  border-radius: 12px;
   background: #271000;
   color: #FFF;
   cursor: pointer;
+  transition: .2s;
 }
 [class$=chip-box] {
   display: none;
@@ -69,7 +71,7 @@ article::after {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2px;
+  gap: 4px;
 }
 
 .image-upload-button-outer {
