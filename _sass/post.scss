@@ -75,14 +75,14 @@ article::after {
 }
 
 .image-upload-button-outer {
-  background: #83ccd3;
+  display: inline-block;
+  position: relative;
+  background: #271000;
   border-radius:30px;
-  text-align: center;
   height: 50px;
   width: 200px;
-  display: inline-block;
   transition: .2s;
-  position: relative;
+  text-align: center;
   overflow: hidden;
 }
 .image-upload-button {
@@ -97,7 +97,6 @@ article::after {
 }
 .image-upload-button input {
   position: absolute;
-  width: 100%;
   left: 0;
   top: 0;
   width: 100%;
@@ -121,7 +120,7 @@ article::after {
   width: 0;
   height: 100%;
   border-radius: 30px;
-  background: #83ccd3;
+  background: #4E4855;
   transition: 3s;
 }
 .file-uploading .processing-bar {
