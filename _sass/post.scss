@@ -45,10 +45,7 @@ article::after {
 }
 
 [class$=chip] {
-  display: block;
   height: 28px;
-  margin-right: 1px;
-  margin-bottom: 2px;
   padding: 0 6px;
   border: 1px solid #271000;
   border-radius: 14px;
@@ -56,10 +53,7 @@ article::after {
   cursor: pointer;
 }
 [class$='chip selected'] {
-  display: block;
   height: 28px;
-  margin-right: 1px;
-  margin-bottom: 2px;
   padding: 0 6px;
   border: 1px solid #271000;
   border-radius: 14px;
@@ -73,8 +67,9 @@ article::after {
 [class$='chip-box show'] {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2px;
 }
 
 .image-upload-button-outer {
