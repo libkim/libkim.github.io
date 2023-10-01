@@ -71,7 +71,8 @@ article::after {
   display: none;
 }
 [class$='chip-box show'] {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .image-upload-button-outer {
