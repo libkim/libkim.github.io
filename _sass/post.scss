@@ -74,12 +74,8 @@ article::after {
   cursor: pointer;
 }
 [class$=chip-box] {
-  display: none;
-}
-[class$='chip-box'] {
   display: flex;
   width: 100%;
-  padding-left: 8px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
