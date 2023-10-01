@@ -45,7 +45,7 @@ article::after {
 }
 
 [class$=chip] {
-  display: inline-block;
+  display: block;
   height: 28px;
   margin-right: 1px;
   margin-bottom: 2px;
@@ -56,7 +56,7 @@ article::after {
   cursor: pointer;
 }
 [class$='chip selected'] {
-  display: inline-block;
+  display: block;
   height: 28px;
   margin-right: 1px;
   margin-bottom: 2px;
