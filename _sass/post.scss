@@ -67,6 +67,9 @@ article::after {
 [class$='chip-box show'] {
   display: flex;
   width: 100%;
+  padding-left: 8px;
+  background: #d5d5d5;
+  background-clip: padding-box;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
