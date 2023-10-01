@@ -3,8 +3,9 @@
   {% for tag in data %}
     <div class="root-chip">
       {{ tag.group }}
-    </div><br>
+    </div>
     <div class="chip-box-wrapper">
+      <br>
       <div class="vertical-line"></div>
       <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box" }}">
         {% if tag.filterTags %}
@@ -15,7 +16,7 @@
           필터 태그와 초이스 태그가 여기 들어갑니다
         {% endif %}
       </div>
-    </div><br>
+    </div>
   {% endfor %}
 {% elsif data == tag.choiceTags %}
   {% assign branch = tag.group %}
