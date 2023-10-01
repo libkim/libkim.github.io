@@ -51,7 +51,6 @@ article::after {
   border-radius: 14px;
   color: #4E4855;
   cursor: pointer;
-  transition: .2s;
 }
 [class$='chip selected'] {
   height: 28px;
@@ -61,10 +60,10 @@ article::after {
   background: #271000;
   color: #FFF;
   cursor: pointer;
-  transition: .2s;
 }
 [class$=chip-box] {
   display: none;
+  transition: .2s;
 }
 [class$='chip-box show'] {
   display: flex;
@@ -72,6 +71,7 @@ article::after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
+  transition: .2s;
 }
 
 .image-upload-button-outer {
