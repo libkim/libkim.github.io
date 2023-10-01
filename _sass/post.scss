@@ -44,15 +44,17 @@ article::after {
   background-color: #d5d5d5;
 }
 
+
 .chip-box-wrapper {
+  display: none;
+}
+.chip-box-wrapper.show {
   display: flex;
   .vertical-line {
     width: 4px;
     background: #d5d5d5;
   }
 }
-
-
 
 [class$=chip] {
   height: 28px;
