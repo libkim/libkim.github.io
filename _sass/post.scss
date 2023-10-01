@@ -63,7 +63,6 @@ article::after {
 }
 [class$=chip-box] {
   display: none;
-  transition: .2s;
 }
 [class$='chip-box show'] {
   display: flex;
@@ -71,7 +70,6 @@ article::after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
-  transition: .2s;
 }
 
 .image-upload-button-outer {
