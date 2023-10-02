@@ -45,10 +45,10 @@ article::after {
 }
 
 
-.chip-box-wrapper {
+[class$=chip-box-wrapper] {
   display: none;
 }
-.chip-box-wrapper.show {
+[class$='chip-box-wrapper show'] {
   display: grid;
   width: 100%;
   grid-template-columns: 4px 1fr;
@@ -56,7 +56,12 @@ article::after {
     background: #d5d5d5;
   }
 }
-
+[class$=chip-box] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
 [class$=chip] {
   height: 28px;
   padding: 0 8px;
@@ -73,12 +78,6 @@ article::after {
   background: #271000;
   color: #FFF;
   cursor: pointer;
-}
-[class$=chip-box] {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
 }
 
 .image-upload-button-outer {
