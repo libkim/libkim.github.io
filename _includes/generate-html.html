@@ -18,17 +18,17 @@
     </div>
   {% endfor %}
 {% elsif data == tag.choiceTags %}
-  {% assign branch = tag.group %}
+  {% assign tagGroup = tag.group %}
   {% for tag in data %}
     {% if tag.name %}
-      <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.name }}">
+      <div class="value-choice-chip" data-group="{{ tagGroup }}" data-value="{{ tag.name }}">
         {{ tag.name }}
       </div>
     {% elsif tag.hasValue %}
-      <div class="choice value chip" data-group="{{ branch }}" data-value="{{ tag.group }}">
+      <div class="value-choice-chip" data-group="{{ tagGroup }}" data-value="{{ tag.group }}">
         {{ tag.group }}
       </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
+      <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box" }}">
         {% if tag.filterTags %}
           {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
@@ -36,10 +36,10 @@
         {% endif %}
       </div>
     {% else %}
-      <div class="choice chip" data-group="{{ branch }}">
+      <div class="choice-chip" data-group="{{ tagGroup }}">
         {{ tag.group }}
       </div>
-      <div class="{{ tag.group | replace: "/", "or" | split: " " | join: "-" | append: " branch-chip-box" }}">
+      <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box" }}">
         {% if tag.filterTags %}
           {% include generate-html.html data = tag.filterTags %}
         {% elsif tag.choiceTags %}
