@@ -24,12 +24,12 @@
       <div class="value-choice-chip" data-group="{{ tagGroup }}" data-value="{{ tag.name }}">
         {{ tag.name }}
       </div>
-    {% elsif tag.hasValue %}
+    {% else %}
       {% if tag.hasValue == true %}
         <div class="value-choice-chip" data-group="{{ tagGroup }}" data-value="{{ tag.group }}">
           {{ tag.group }}
         </div>
-      {% else %}
+      {% elsif tag.hasValue == false %}
         <div class="choice-chip" data-group="{{ tagGroup }}">
           {{ tag.group }}
         </div>
@@ -41,6 +41,38 @@
             {% include generate-html.html data = tag.filterTags %}
           {% elsif tag.choiceTags %}
             {% include generate-html.html data = tag.choiceTags %}
+          {% else %}
+            필터 태그와 초이스 태그가 여기 들어갑니다
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% elsif data == tag.filterTags %}
+  {% for tag in data %}
+    {% if tag.name %}
+      <div class="value-filter-chip" data-value="{{ tag.name }}">
+        {{ tag.name }}
+      </div>
+    {% else %}
+      {% if tag.hasValue == true %}
+        <div class="value-filter-chip" data-value="{{ tag.group }}">
+          {{ tag.group }}
+        </div>
+      {% elsif tag.hasValue == false %}
+        <div class="filter-chip" data-group="{{ tagGroup }}">
+          {{ tag.group }}
+        </div>
+      {% endif %}
+      <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box-wrapper" }}">
+        <div class="vertical-line"></div>
+        <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box" }}">
+          {% if tag.filterTags %}
+            {% include generate-html.html data = tag.filterTags %}
+          {% elsif tag.choiceTags %}
+            {% include generate-html.html data = tag.choiceTags %}
+          {% else %}
+            필터 태그와 초이스 태그가 여기 들어갑니다
           {% endif %}
         </div>
       </div>
