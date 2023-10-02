@@ -49,9 +49,9 @@ article::after {
   display: none;
 }
 .chip-box-wrapper.show {
-  display: block;
+  display: grid;
+  grid-template-columns: 4px 1fr;
   .vertical-line {
-    display: inline-block;
     width: 4px;
     background: #d5d5d5;
   }
