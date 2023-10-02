@@ -52,7 +52,6 @@ article::after {
   display: grid;
   grid-template-columns: 4px 1fr;
   .vertical-line {
-    width: 4px;
     background: #d5d5d5;
   }
 }
@@ -76,7 +75,6 @@ article::after {
 }
 [class$=chip-box] {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
