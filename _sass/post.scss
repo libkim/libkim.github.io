@@ -50,6 +50,7 @@ article::after {
 }
 .chip-box-wrapper.show {
   display: grid;
+  width: 100%;
   grid-template-columns: 4px 1fr;
   .vertical-line {
     background: #d5d5d5;
