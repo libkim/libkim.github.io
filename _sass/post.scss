@@ -45,6 +45,9 @@ article::after {
 }
 
 
+.root-chip-box:nth-child(2n) {
+  background: #D8F3DC;
+}
 [class$=chip-box-wrapper] {
   display: none;
 }
@@ -78,9 +81,6 @@ article::after {
   background: #271000;
   color: #FFF;
   cursor: pointer;
-}
-.root-chip-box:nth-child(2n) {
-  background: #D8F3DC;
 }
 
 
