@@ -51,15 +51,16 @@ article::after {
   display: grid;
   width: 100%;
   border: 1px solid #271000;
-  border-radius: 14px;
   grid-template-rows: 28px auto;
   .vertical-line {
+    border-radius: 14px 14px 0 0;
     background: #d5d5d5;
   }
 }
 [class$=chip-box] {
   display: flex;
   padding: 4px;
+  border-radius: 0 0 14px 14px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
