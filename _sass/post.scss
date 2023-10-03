@@ -44,10 +44,6 @@ article::after {
   background-color: #d5d5d5;
 }
 
-
-.root-chip-box:nth-child(2n) {
-  background: #D8F3DC;
-}
 [class$=chip-box-wrapper] {
   display: none;
 }
@@ -64,6 +60,9 @@ article::after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
+}
+[class$=chip-box]:nth-child('2n') {
+  background: #D8F3DC;
 }
 [class$=chip] {
   height: 28px;
@@ -82,7 +81,6 @@ article::after {
   color: #FFF;
   cursor: pointer;
 }
-
 
 .image-upload-button-outer {
   display: inline-block;
