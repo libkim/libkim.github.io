@@ -64,6 +64,9 @@ article::after {
 [class$=chip-box]:nth-child(2n) {
   background: #D8F3DC;
 }
+[class$=chip-box]:nth-child(2n-1) {
+  background: #fff;
+}
 [class$=chip] {
   height: 28px;
   padding: 0 8px;
