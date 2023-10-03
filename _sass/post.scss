@@ -57,15 +57,13 @@ article::after {
 }
 [class$=chip-box] {
   display: flex;
+  padding: 4px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
 }
 [class$=chip-box]:nth-child(2n) {
   background: #D8F3DC;
-}
-[class$=chip-box]:nth-child(2n-1) {
-  background: #fff;
 }
 [class$=chip] {
   height: 28px;
