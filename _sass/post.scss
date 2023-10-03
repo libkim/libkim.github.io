@@ -79,6 +79,10 @@ article::after {
   color: #FFF;
   cursor: pointer;
 }
+.root-chip-box:nth-child(2n) {
+  background: #D8F3DC;
+}
+
 
 .image-upload-button-outer {
   display: inline-block;
