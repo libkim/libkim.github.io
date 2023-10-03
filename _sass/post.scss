@@ -61,7 +61,7 @@ article::after {
   justify-content: center;
   gap: 4px;
 }
-[class$=chip-box]:nth-child('2n') {
+[class$=chip-box]:nth-child(2n) {
   background: #D8F3DC;
 }
 [class$=chip] {
