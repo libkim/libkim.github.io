@@ -12,10 +12,9 @@ html {
 }
 
 #markdown-toc {
-  counter-reset: menu;
+  counter-reset: section;
   list-style-type: none;
-  display: inline-block;
-  width: 300px;
+  width: 100%;
   li {
     display: flex;
     justify-content: flex-start;
@@ -29,18 +28,17 @@ html {
   }
   li::before {
     content: "";
-    display: block;
-    border-bottom: 1px dotted black;
+    border-bottom: 2px dotted black;
     position: relative;
-    top: 0px;
+    top: -3px;
     flex: 1 1 auto;
     order:1;
   }
   li::after {
-  counter-increment: menu;
-  content: counters(menu, ".");
-  flex: 0 0 auto;
-  order: 2;
+    counter-increment: section;
+    content: counters(section, ".");
+    flex: 0 0 auto;
+    order: 2;
   }
 }
 
