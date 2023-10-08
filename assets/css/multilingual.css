@@ -1,11 +1,13 @@
 .ml-en {
-  font-family: Ramaraja, serif;
-  font-size: 20px;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 16px;
 }
 
 .ml-ko {
-  font-family: ChosunKg;
+  font-family: Pretendard;
+  font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   /*below two lines are for baseline shift.*/
@@ -14,8 +16,9 @@
 }
 
 .ml-num {
-  font-family: Ramaraja, serif;
-  font-size: 20px;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 16px;
   /*below two lines are for baseline shift.*/
   position: relative;
@@ -23,8 +26,10 @@
 }
 
 .ml-punct {
-  font-family: Ramaraja, serif;
-  font-size: 20px;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
   /*below two lines are for baseline shift.*/
   position: relative;
   top: 0;
