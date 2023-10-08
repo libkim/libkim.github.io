@@ -38,6 +38,8 @@ html {
     counter-increment: section;
     content: counters(section, ".");
     flex: 0 0 auto;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 14px;
     order: 2;
   }
 }
