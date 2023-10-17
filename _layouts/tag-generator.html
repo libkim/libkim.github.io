@@ -69,15 +69,15 @@ $(".image-remove-button").on("click", function(e){
   },500);
 });
 
-const CHIPS= document.querySelectorAll("[class$=chip]");
+const chips= document.querySelectorAll("[class$=chip]");
 
 let prompt = [];
 
-CHIPS.forEach(chip => {
-  const CHIPBOX = chip.nextElementSibling;
+chips.forEach(chip => {
+  const chipBoxWrapper = chip.nextElementSibling;
   chip.addEventListener("click", () => {
     chip.classList.toggle("selected");
-    CHIPBOX.classList.toggle("show");
+    chipBoxWrapper.classList.toggle("show");
     updatePrompt();
   });
 });
@@ -85,8 +85,8 @@ CHIPS.forEach(chip => {
 function updatePrompt() {
   const selectedChips = document.querySelectorAll(".chip.selected");
   prompt = Array.from(selectedChips).map(chip => chip.dataset.value).join(", ");
-  const promptText = document.getElementByClassName("prompt-textarea");
-  promptText.textContent = prompt;
+  const promptTextarea = document.getElementByClassName("prompt-textarea");
+  promptTextarea.textContent = prompt;
 }
 
 function downloadPrompt() {
