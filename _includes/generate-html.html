@@ -1,9 +1,32 @@
 {% assign data = include.data %}
 {% if data == site.data.tags %}
   {% for tag in data %}
-    <div class="root-chip">
+    {% if tag.hasValue == false %}
+      <div class="chip show" data-group="root">
+        {{ tag.name }}
+      </div>
+      {% if tag.subTags == true %}
+        <div class="chip-box-wrapper">
+          <div class="chip-box-title">
+        </div>
+      
+    {% else %}
+      <div class="chip show" data-group="root" data-value="{{ tag.name }}">
+        {{ tag.name }}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+      <div class="root-chip" data-group="root" data-value="{{ tag.group }}">
       {{ tag.group }}
     </div>
+    if tag.subTags == false
+      case tag.subTagsType
+        when "choice"
+        when "filter"
+        else
+      endcase
+    else
     <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box-wrapper" }}">
       <div class="{{ tag.group | replace: " ", "-" | append: "-chip-box-title" }}">
         {{ tag.group }}
