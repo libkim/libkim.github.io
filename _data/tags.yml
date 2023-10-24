@@ -1,40 +1,41 @@
-- aliases:
-    - color: &color
-        - name: black
-        - name: white
-        - name: blonde
-        - name: silver
-        - name: brown
-        - name: red
-        - name: vermilion
-        - name: orange
-        - name: amber
-        - name: yellow
-        - name: chartreuse
-        - name: green
-        - name: teal
-        - name: blue
-        - name: violet
-        - name: purple
-        - name: magenta
-    - size: &size
-        - name: big
-        - name: small
-    - width: &width
-        - name: wide
-        - name: narrow
-    - length: &length
-        - name: long
-        - name: medium
-        - name: short
-    - height: &height
-        - name: tall
-        - name: short
+default:
+  - color: &color
+    - name: black
+    - name: white
+    - name: blonde
+    - name: silver
+    - name: brown
+    - name: red
+    - name: vermilion
+    - name: orange
+    - name: amber
+    - name: yellow
+    - name: chartreuse
+    - name: green
+    - name: teal
+    - name: blue
+    - name: violet
+    - name: purple
+    - name: magenta
+  - size: &size
+    - name: big
+    - name: small
+  - width: &width
+    - name: wide
+    - name: narrow
+  - length: &length
+    - name: short
+    - name: medium
+    - name: long
+  - height: &height
+    - name: short
+    - name: tall
 
-- group: style
-  hasValue: false
-  filterTags:
-    - group: artist
+main:
+  - group: style
+    hasValue: false
+    filterTags:
+      - group: artist
       hasValue: false
       choiceTags:
         - name: Takeshi Obata
