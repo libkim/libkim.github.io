@@ -1,5 +1,5 @@
 default:
-  - color: &color
+  color: &color
     - name: black
     - name: white
     - name: blonde
@@ -17,17 +17,17 @@ default:
     - name: violet
     - name: purple
     - name: magenta
-  - size: &size
+  size: &size
     - name: big
     - name: small
-  - width: &width
+  width: &width
     - name: wide
     - name: narrow
-  - length: &length
+  length: &length
     - name: short
     - name: medium
     - name: long
-  - height: &height
+  height: &height
     - name: short
     - name: tall
 
