@@ -18,11 +18,11 @@ default:
     - name: purple
     - name: magenta
   size: &size
-    - name: big
     - name: small
+    - name: big
   width: &width
-    - name: wide
     - name: narrow
+    - name: wide
   length: &length
     - name: short
     - name: medium
@@ -31,13 +31,13 @@ default:
     - name: short
     - name: tall
 
-main:
-  - group: style
+tagPool:
+  - name: style
     hasValue: false
-    filterTags:
-      - group: artist
-      hasValue: false
-      choiceTags:
+    multipleDetailedTagPool:
+      - name: artist
+        hasValue: false
+        singledetailedTagpool:
         - name: Takeshi Obata
         - name: Yoshitaka Amano
         - name: Hiroaki Samura
