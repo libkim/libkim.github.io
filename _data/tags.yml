@@ -34,14 +34,14 @@ default:
 tagPool:
   - name: style
     hasValue: false
-    multipleDetailedTagPool:
+    uniqueSubtagPool:
       - name: artist
         hasValue: false
-        singledetailedTagpool:
+        subtagPool:
         - name: Takeshi Obata
         - name: Yoshitaka Amano
         - name: Hiroaki Samura
-    - group: production
+  - name: production
       hasValue: false
       choiceTags:
         - name: Studio Ghibli
