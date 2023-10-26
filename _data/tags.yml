@@ -610,19 +610,30 @@ tags:
       tags:
 
 - name: technique
-  hasValue: falseisMECE:
+  hasValue: false
+  isMECE: false
   tags:
+    - name: photography #카메라 연출을 통해 스토리를 비주얼로 변환
+      hasValue: false
+      isMECE:
+      tags:
+        - name: contrast
+          hasValue: false
+          isMECE:
+          tags:
     - name: methods of emphasis
       hasValue: falseisMECE:
       tags:
         - name: contrast
-          hasValue: falseisMECE:
+          hasValue: false
+          isMECE:
           tags:
             - name: scale contrast
             - name: shape contrast
             - name: color contrast
-        - name: layout
-          hasValue: falseisMECE:
+        - name: position of subject
+          hasValue: false
+          isMECE: true
           tags:
             - name: central framing
             - name: rule of thirds
