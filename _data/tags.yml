@@ -67,6 +67,14 @@ tags:
         - name: de stijl
         - name: surrealism
         - name: semi-abstract
+        - name: renaissance
+          hasValue: true
+          isMECE: true
+          tags:
+            - name: cangiante
+            - name: chiaroscuro
+            - name: sfumato
+            - name: unione
     - name: art technique
       hasValue: false
       isMECE:
