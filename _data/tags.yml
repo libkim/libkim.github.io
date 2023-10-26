@@ -149,15 +149,17 @@ tags:
         - name: tilt-shift
 
 - name: purpose
-  hasValue: falseisMECE:
+  hasValue: false
+  isMECE: false
   tags:
     - name: photograph, photo
     - name: painting
     - name: drawing
     - name: poster
-      hasValue: falseisMECE:
+      hasValue: true
+      isMECE: false
       tags:
-        - name: movie poster, film poster
+        - name: movie poster
     - name: reference sheet
     - name: thermal
     - name: satellite
