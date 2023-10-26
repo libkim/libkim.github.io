@@ -635,18 +635,23 @@ tags:
           hasValue: false
           isMECE: true
           tags:
-            - name: variable position
-            - name: absolute position
-            - name: according to aspect ratio 
+            - name: fixed position
               hasValue: false
-              isMECE: false
+              isMECE: true
               tags:
-                - name: 
-                - name: rule of thirds
-                - name: rule of quarters
+                - name: central framing
+            - name: variable position
+              hasValue: false
+              isMECE: true
+              tags:
+                - name: according to equal parts
+                  hasValue: false
+                  isMECE: false
+                  tags:
+                    - name: rule of thirds
+                    - name: rule of quarters
                 
                 - name: rabatment of the rectangle
-                        - name: central framing
 
         - name: type of shot
           hasValue: falseisMECE:
