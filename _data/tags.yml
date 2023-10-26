@@ -640,17 +640,12 @@ tags:
               isMECE: true
               tags:
                 - name: central framing
+                - name: rule of thirds
+                - name: rule of quarters
             - name: variable position
               hasValue: false
               isMECE: true
               tags:
-                - name: according to equal parts
-                  hasValue: false
-                  isMECE: false
-                  tags:
-                    - name: rule of thirds
-                    - name: rule of quarters
-                
                 - name: rabatment of the rectangle
 
         - name: type of shot
