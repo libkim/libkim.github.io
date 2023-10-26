@@ -183,27 +183,32 @@ tags:
                 - name: curvilinear perspective
 
 - name: subject
-  hasValue: falseisMECE:
+  hasValue: false
+  isMECE: true
   tags:
     - name: landscape
-      hasValue: trueisMECE:
-      tags: &landscape
+      hasValue: true
+      isMECE: false
+      tags:
         - name: season
-          hasValue: falseisMECE:
+          hasValue: false
+          isMECE: false
           tags:
             - name: spring
             - name: summer
             - name: autumn
             - name: winter
         - name: time
-          hasValue: falseisMECE:
+          hasValue: false
+          isMECE: false
           tags:
             - name: morning
             - name: afternoon
             - name: evening
             - name: night
         - name: weather
-          hasValue: falseisMECE:
+          hasValue: false
+          isMECE: false
           tags:
             - name: clear
             - name: cloudy
@@ -211,20 +216,28 @@ tags:
             - name: raining
             - name: snowing
         - name: place
-          hasValue: falseisMECE:
+          hasValue: false
+          isMECE: true
           tags:
             - name: indoor
-              hasValue: trueisMECE:
+              hasValue: true
+              isMECE: true
               tags:
-                - name: bath
                 - name: classroom
                 - name: bathroom
                 - name: kitchen
                 - name: library
                 - name: prison
                 - name: pool
+                - name: bed
+                - name: on the futon
+                - name: office
+                - name: train
+                - name: dirty room
+                - name: dark room
             - name: outdoor
-              hasValue: trueisMECE:
+              hasValue: true
+              isMECE: true
               tags:
                 - name: sky
                 - name: sea
@@ -241,16 +254,11 @@ tags:
                 - name: hotel
                 - name: love hotel
                 - name: factory
-                - name: inside An Airplane
-                - name: office
-                - name: bed
                 - name: train
-                - name: on the futon
-                - name: dirty room
-                - name: dark room
                 - name: on stage
     - name: portrait
-      hasValue: trueisMECE:
+      hasValue: true
+      isMECE:
       tags:
         - name: motive
           hasValue: falseisMECE:
