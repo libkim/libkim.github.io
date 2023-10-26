@@ -635,14 +635,14 @@ tags:
           hasValue: false
           isMECE: true
           tags:
-            - name: fixed position
+            - name: central framing
+            - name: according to aspect ratio
               hasValue: false
               isMECE: true
               tags:
-                - name: central framing
                 - name: rule of thirds
                 - name: rule of quarters
-            - name: variable position
+            - name: rectangular framing
               hasValue: false
               isMECE: true
               tags:
