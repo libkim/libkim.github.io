@@ -631,22 +631,18 @@ tags:
             - name: scale contrast
             - name: shape contrast
             - name: color contrast
-        - name: position of subject #피사체의 위치
+        - name: placement of subject #피사체의 배치
           hasValue: false
           isMECE: true
           tags:
             - name: central framing
-            - name: according to aspect ratio
+            - name: grid
               hasValue: false
               isMECE: true
               tags:
                 - name: rule of thirds
                 - name: rule of quarters
-            - name: rectangular framing
-              hasValue: false
-              isMECE: true
-              tags:
-                - name: rabatment of the rectangle
+            - name: rabatment of the rectangle
 
         - name: type of shot
           hasValue: falseisMECE:
