@@ -31,172 +31,183 @@ default:
     - name: short
     - name: tall
 
-tagPool:
+tags:
   - name: style
     hasValue: false
-    uniqueSubtagPool:
+    isMECE: false
+    tags:
       - name: artist
         hasValue: false
-        subtagPool:
-        - name: Takeshi Obata
-        - name: Yoshitaka Amano
-        - name: Hiroaki Samura
-  - name: production
+        isMECE: true
+        tags:
+          - name: Takeshi Obata
+          - name: Yoshitaka Amano
+          - name: Hiroaki Samura
+      - name: production
+        hasValue: false
+        isMECE: true
+        tags:
+          - name: Studio Ghibli
+          - name: GAINAX
+          - name: Trigger
+      - name: artist communities
+        hasValue: falseisMECE:
+        isMECE: true
+        tags:
+          - name: artstation
+          - name: behance
+          - name: pixiv
+    - name: art movements
       hasValue: false
-      choiceTags:
-        - name: Studio Ghibli
-        - name: GAINAX
-        - name: Trigger
-    - group: artist communities
-      hasValue: false
-      choiceTags:
-        - name: artstation
-        - name: behance
-        - name: pixiv
-    - group: art movements
-      hasValue: false
-      choiceTags:
+      isMECE:
+      tags:
         - name: der blaue reiter
         - name: fauvism
         - name: cubism
         - name: de stijl
         - name: surrealism
         - name: semi-abstract
-    - group: art technique
+    - name: art technique
       hasValue: false
-      filterTags:
+      isMECE:
+      tags:
         - name: collage
         - name: depaysement
         - name: frottage
         - name: mosaic
 
-- group: design
-  hasValue: false
-  filterTags:
-    - group: layout
+- name: design
+  hasValue: falseisMECE:
+  tags:
+    - name: layout
       hasValue: false
-      filterTags:
+      isMECE:
+      tags:
         - name: head-room
         - name: nose-room, looking-room
         - name: lead-room
 
-    - group: color schemes
-      hasValue: false
-      choiceTags:
-        - group: monochromatic color scheme
+    - name: color schemes
+      hasValue: falseisMECE:
+      tags:
+        - name: monochromatic color scheme
           hasValue: true
-          choiceTags:
+          isMECE:
+          tags:
             - name: black and white
-        - group: analogous color scheme
+        - name: analogous color scheme
           hasValue: true
-          choiceTags:
+          isMECE:
+          tags:
             - name: teal and orange
-        - group: complementary color scheme
+        - name: complementary color scheme
           hasValue: true
-          choiceTags:
-        - group: triadic color scheme
+          isMECE:
+          tags:
+        - name: triadic color scheme
           hasValue: true
-          choiceTags:
+          isMECE:
+          tags:
 
     
-    - group: exposure
-      hasValue: false
-      choiceTags:
+    - name: exposure
+      hasValue: falseisMECE:
+      tags:
         - name: overexposed
         - name: underexposed
-    - group: saturation
-      hasValue: false
-      choiceTags:
+    - name: saturation
+      hasValue: falseisMECE:
+      tags:
         - name: desaturated
         - name: saturated
-    - group: brightness
-      hasValue: false
-      choiceTags:
+    - name: brightness
+      hasValue: falseisMECE:
+      tags:
         - name: 
-    - group: camera angle
-      hasValue: false
-      choiceTags:
+    - name: camera angle
+      hasValue: falseisMECE:
+      tags:
         - name: eye level shot
         - name: low angle shot
         - name: high angle shot
         - name: overhead shot
-    - group: feature
-      hasValue: false
-      filterTags:
+    - name: feature
+      hasValue: falseisMECE:
+      tags:
         - name: color banding
         - name: long exposure
         - name: color splash
         - name: monochrome
         - name: tilt-shift
 
-- group: purpose
-  hasValue: false
-  choiceTags:
+- name: purpose
+  hasValue: falseisMECE:
+  tags:
     - name: photograph, photo
     - name: painting
     - name: drawing
-    - group: poster
-      hasValue: false
-      choiceTags:
+    - name: poster
+      hasValue: falseisMECE:
+      tags:
         - name: movie poster, film poster
     - name: reference sheet
     - name: thermal
     - name: satellite
             
-    - group: composition
-      hasValue: false
-      filterTags:
-        - group: projection
-          hasValue: false
-          choiceTags:
-            - group: orthographic
-              hasValue: true
-              choiceTags:
+    - name: composition
+      hasValue: falseisMECE:
+      tags:
+        - name: projection
+          hasValue: falseisMECE:
+          tags:
+            - name: orthographic
+              hasValue: trueisMECE:
+              tags:
                 - name: isometric
                 - name: dimetric
                 - name: trimetric
-            - group: perspective
-              hasValue: false
-              choiceTags:
+            - name: perspective
+              hasValue: falseisMECE:
+              tags:
                 - name: 1-point perspective
                 - name: 2-point perspective
                 - name: 3-point perspective
                 - name: curvilinear perspective
 
-- group: subject
-  hasValue: false
-  choiceTags:
-    - group: landscape
-      hasValue: true
-      filterTags: &landscape
-        - group: season
-          hasValue: false
-          choiceTags:
+- name: subject
+  hasValue: falseisMECE:
+  tags:
+    - name: landscape
+      hasValue: trueisMECE:
+      tags: &landscape
+        - name: season
+          hasValue: falseisMECE:
+          tags:
             - name: spring
             - name: summer
             - name: autumn
             - name: winter
-        - group: time
-          hasValue: false
-          choiceTags:
+        - name: time
+          hasValue: falseisMECE:
+          tags:
             - name: morning
             - name: afternoon
             - name: evening
             - name: night
-        - group: weather
-          hasValue: false
-          choiceTags:
+        - name: weather
+          hasValue: falseisMECE:
+          tags:
             - name: clear
             - name: cloudy
             - name: foggy
             - name: raining
             - name: snowing
-        - group: place
-          hasValue: false
-          choiceTags:
-            - group: indoor
-              hasValue: true
-              choiceTags:
+        - name: place
+          hasValue: falseisMECE:
+          tags:
+            - name: indoor
+              hasValue: trueisMECE:
+              tags:
                 - name: bath
                 - name: classroom
                 - name: bathroom
@@ -204,9 +215,9 @@ tagPool:
                 - name: library
                 - name: prison
                 - name: pool
-            - group: outdoor
-              hasValue: true
-              choiceTags:
+            - name: outdoor
+              hasValue: trueisMECE:
+              tags:
                 - name: sky
                 - name: sea
                 - name: mountain
@@ -230,33 +241,33 @@ tagPool:
                 - name: dirty room
                 - name: dark room
                 - name: on stage
-    - group: portrait
-      hasValue: true
-      filterTags:
-        - group: motive
-          hasValue: false
-          filterTags:
+    - name: portrait
+      hasValue: trueisMECE:
+      tags:
+        - name: motive
+          hasValue: falseisMECE:
+          tags:
             - name: butterfly
-        - group: race
-          hasValue: false
-          choiceTags:
+        - name: race
+          hasValue: falseisMECE:
+          tags:
             - name: necromancer
             - name: human
             - name: dragon
             - name: ghost
             - name: 
-        - group: gender
-          hasValue: false
-          choiceTags:
+        - name: gender
+          hasValue: falseisMECE:
+          tags:
             - name: girl
             - name: boy
             - name: man
             - name: woman
             - name: guy
             - name: lady
-        - group: age
-          hasValue: false
-          choiceTags:
+        - name: age
+          hasValue: falseisMECE:
+          tags:
             - name: infant
             - name: child
             - name: teen
@@ -264,42 +275,42 @@ tagPool:
             - name: young adult
             - name: middle age
             - name: old
-        - group: height
-          hasValue: false
-          choiceTags:
+        - name: height
+          hasValue: falseisMECE:
+          tags:
             - name: tall
             - name: short
-        - group: skin
-          hasValue: false
-          choiceTags:
+        - name: skin
+          hasValue: falseisMECE:
+          tags:
             - name: white
             - name: black
-        - group: hair
-          hasValue: false
-          filterTags:
-            - group: hair color
-              hasValue: false
-              choiceTags: *color
-            - group: hair length
-              hasValue: false
-              choiceTags: *length
-            - group: hairstyles
-              hasValue: false
-              filterTags:
+        - name: hair
+          hasValue: falseisMECE:
+          tags:
+            - name: hair color
+              hasValue: falseisMECE:
+              tags: *color
+            - name: hair length
+              hasValue: falseisMECE:
+              tags: *length
+            - name: hairstyles
+              hasValue: falseisMECE:
+              tags:
                 - name: half up
                 - name: braid
                 - name: blunt bang
                 - name: straight
                 - name: curly
                 - name: pony tail
-        - group: face
-          hasValue: false
-          choiceTags:
+        - name: face
+          hasValue: falseisMECE:
+          tags:
             - name: cute
             - name: sexy
-        - group: expression
-          hasValue: false
-          choiceTags:
+        - name: expression
+          hasValue: falseisMECE:
+          tags:
             - name: happy
             - name: sad
             - name: angry
@@ -318,30 +329,30 @@ tagPool:
             - name: shocked
             - name: anxious
             - name: shy
-        - group: eyes
-          hasValue: false
-          filterTags:
-            - group: eye color
-              hasValue: false
-              choiceTags:
-            - group: eyelash lengths
-              hasValue: false
-              choiceTags:
-        - group: gazes
-          hasValue: false
-          choiceTags:
+        - name: eyes
+          hasValue: falseisMECE:
+          tags:
+            - name: eye color
+              hasValue: falseisMECE:
+              tags:
+            - name: eyelash lengths
+              hasValue: falseisMECE:
+              tags:
+        - name: gazes
+          hasValue: falseisMECE:
+          tags:
             - name: looking at viewer
-        - group: mouth
-          hasValue: false
-          choiceTags:
+        - name: mouth
+          hasValue: falseisMECE:
+          tags:
             - name: open mouth
             - name: closed mouth
-        - group: body
-          hasValue: false
-          filterTags:
-            - group: body proportions
-              hasValue: false
-              choiceTags:
+        - name: body
+          hasValue: falseisMECE:
+          tags:
+            - name: body proportions
+              hasValue: falseisMECE:
+              tags:
                 - name: chibi
                 - name: 2 heads tall
                 - name: 3 heads tall
@@ -395,31 +406,31 @@ tagPool:
             - name: top-heavy
             - name: triangular
             - name: wasp-waisted
-        - group: nail
-          hasValue: false
-          filterTags:
-            - group: nail length
-              hasValue: false
-              choiceTags: *length
-            - group: nail shape
-              hasValue: false
-              choiceTags:
+        - name: nail
+          hasValue: falseisMECE:
+          tags:
+            - name: nail length
+              hasValue: falseisMECE:
+              tags: *length
+            - name: nail shape
+              hasValue: falseisMECE:
+              tags:
                 - name: square
                 - name: coffin
                 - name: stiletto
                 - name: round
-        - group: tattoo
-          hasValue: true
-          filterTags:
+        - name: tattoo
+          hasValue: trueisMECE:
+          tags:
             - name: new school
             - name: lettering
             - name: irezumi
-        - group: headwear
-          hasValue: false
-          choiceTags:
+        - name: headwear
+          hasValue: falseisMECE:
+          tags:
             - name: baseball cap
             - name: beret
-        - group: neckwear
+        - name: neckwear
           tags:
             - name: choker
             - name: clerical collar
@@ -427,7 +438,7 @@ tagPool:
             - name: necktie
             - name: scarf
             - name: neckerchief
-        - group: top
+        - name: top
           tags:
             - name: blouse
             - name: dress shirt
@@ -459,18 +470,18 @@ tagPool:
             - name: blouse
             - name: blouse
             - name: blouse
-        - group: bottom
+        - name: bottom
           tags:
-            - group: trouser
+            - name: trouser
               tags:
-            - group: skirt
+            - name: skirt
               tags:
                 - name: a-line
                 - name: ballerina
                 - name: denim
                 - name: pencil
                 - name: rah-rah
-        - group: underwear
+        - name: underwear
           tags:
             - name: g-string
             - name: crotchless panty
@@ -479,7 +490,7 @@ tagPool:
             - name: undershirt
             - name: lingerie
             - name: diaper
-        - group: outerwear
+        - name: outerwear
           tags:
             - name: apron
             - name: 
@@ -488,7 +499,7 @@ tagPool:
             - name: 
             - name:
             - name:
-        - group: legwear
+        - name: legwear
           tags:
             - name: socks
             - name: high socks
@@ -497,24 +508,24 @@ tagPool:
             - name: thigh high socks
             - name: stocking
             - name: thigh strap
-        - group: footwear
+        - name: footwear
           tags:
             - name: barefoot
             - name: boots
-        - group: accessories
+        - name: accessories
           tags:
             - name: hairband
             - name: garter
             - name: gloves
             - name: apron
             - name: belt
-            - group: eyewear
+            - name: eyewear
             - name: sashes
             - name: scarf
             - name: lanyard
             - name: piercing
             - name: ring
-        - group: position
+        - name: position
           tags:
             - name: all-fours
             - name: standing
@@ -523,7 +534,7 @@ tagPool:
             - name: lying on back
             - name: sitting
             - name: squatting
-            - group: sex position
+            - name: sex position
               tags:
                 - name: missionary
                 - name: doggy style
@@ -537,7 +548,7 @@ tagPool:
                 - name: scissor
                 - name: full nelson
 
-            - group: action
+            - name: action
               tags:
                 - name: all-fours
                 - name: standing
@@ -548,62 +559,62 @@ tagPool:
                 - name: cooking
                 - name: spread legs
 
-            - group: gesture
+            - name: gesture
               tags:
                 - name: heart hands
 
-            - group: props
-              hasValue: false
-              filterTags:
+            - name: props
+              hasValue: falseisMECE:
+              tags:
                 - name: color
                 - name: angel statue
                 - name: cup
                 - name: bread
                 - name: cheese
 
-            - group: background
-              hasValue: false
-              choiceTags:
-                - group: color
-                - group: gradation
-                - group: pattern
-                  choiceTags:
+            - name: background
+              hasValue: falseisMECE:
+              tags:
+                - name: color
+                - name: gradation
+                - name: pattern
+                  tags:
                     - name: starry
-            - group: texture
-              hasValue: false
-              choiceTags:
-                - group: smoothness
-                  hasValue: false
-                  choiceTags:
-            - group: chroma
-              hasValue: false
-              choiceTags:
+            - name: texture
+              hasValue: falseisMECE:
+              tags:
+                - name: smoothness
+                  hasValue: falseisMECE:
+                  tags:
+            - name: chroma
+              hasValue: falseisMECE:
+              tags:
 
-    - group: still life
+    - name: still life
       tags:
 
-- group: technique
-  hasValue: false
-  filterTags:
-    - group: methods of emphasis
-      hasValue: false
-      filterTags:
-        - group: contrast
-          hasValue: false
-          filterTags:
+- name: technique
+  hasValue: falseisMECE:
+  tags:
+    - name: methods of emphasis
+      hasValue: falseisMECE:
+      tags:
+        - name: contrast
+          hasValue: falseisMECE:
+          tags:
             - name: scale contrast
             - name: shape contrast
             - name: color contrast
-        - group: layout
-          hasValue: false
-          choiceTags:
+        - name: layout
+          hasValue: falseisMECE:
+          tags:
             - name: central framing
             - name: rule of thirds
             - name: rule of quarters
             - name: rabatment of the rectangle
-        - group: type of shot
-          hasValue: false
-          choiceTags:
+        - name: type of shot
+          hasValue: falseisMECE:
+          tags:
             - name: long
             - name: full
             - name: knee
@@ -613,12 +624,12 @@ tagPool:
             - name: close-up
             - name: extreme close-up
 
-        - group: lighting
-          hasValue: false
-          choiceTags:
-            - group: quantity of light
-              hasValue: false
-              choiceTags:
+        - name: lighting
+          hasValue: falseisMECE:
+          tags:
+            - name: quantity of light
+              hasValue: falseisMECE:
+              tags:
                 - name: hard
                 - name: soft
                 - name: high
@@ -631,50 +642,50 @@ tagPool:
             - name: back light
             - name: loop lighting
             - name: split lighting
-            - group: light temperature
-              hasValue: false
-              choiceTags:
+            - name: light temperature
+              hasValue: falseisMECE:
+              tags:
                 - name: warm
                 - name: cool
             - name: ambient light, ambient occlusion
             - name: cel shading
             - name: sight
             
-        - group: type of lens
+        - name: type of lens
           suffix: lens
           tags:
-            - group: wide-angle
+            - name: wide-angle
               before: wide-angle
               tags:
                 - name: 20mm
                 - name: 28mm
-            - group: standard
+            - name: standard
               tags:
                 - name: 
                 - name: 
-            - group: short telephoto
+            - name: short telephoto
               before: short telephoto
               tags:
                 - name: 85mm
                 - name: 100mm
-            - group: medium telephoto
+            - name: medium telephoto
               before: medium telephoto
               tags:
                 - name:
  
-        - group: focus
+        - name: focus
           tags:
             - name: deep focus
             - name: soft focus
             - name: out of focus
-            - group: selective focus
+            - name: selective focus
               tags:
                 - name: front focus
                 - name: back focus
 
-- group: utility
-  hasValue: false
-  filterTags:
+- name: utility
+  hasValue: falseisMECE:
+  tags:
     - name: alluring
     - name: sensual
     - name: provocative
@@ -682,7 +693,7 @@ tagPool:
     - name: cozy
     - name: cute
 
-- group: fidelity
+- name: fidelity
   tags:
     - name: masterpiece
     - name: realistic
@@ -696,25 +707,25 @@ tagPool:
     - name: unreal engine
     - name: high resolution scan
 
-- group: effect
-  hasValue: false
-  filterTags:
+- name: effect
+  hasValue: falseisMECE:
+  tags:
     - name: breath
-    - group: blur
-      hasValue: false
-      filterTags:
-        - group: gaussian blur
-          hasValue: false
-          filterTags:
+    - name: blur
+      hasValue: falseisMECE:
+      tags:
+        - name: gaussian blur
+          hasValue: falseisMECE:
+          tags:
             - name: blurred face
             - name: blurred penis
             - name: blurred vagina
             - name: blurred background
-            - group: motion blur
+            - name: motion blur
               tags:
                 - name: horizontal motion blur
                 - name: vertical motion blur
-    - group: bug
+    - name: bug
       tags:
         - name: butterfly
         - name: 
