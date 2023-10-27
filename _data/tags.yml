@@ -633,6 +633,17 @@ tags:
             - name: scale contrast
             - name: shape contrast
             - name: color contrast
+        - name: #화면 분할
+          hasValue: false
+          isMECE:
+          tags:
+        - name: contrast
+          hasValue: false
+          isMECE:
+          tags:
+            - name: scale contrast
+            - name: shape contrast
+            - name: color contrast
         - name: placement of subject #피사체의 배치
           hasValue: false
           isMECE: true
