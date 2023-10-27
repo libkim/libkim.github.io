@@ -637,14 +637,18 @@ tags:
           hasValue: false
           isMECE: true
           tags:
-            - name: central framing
-            - name: grid
+            - name: central framing #화면 중앙에 배치
+            - name: #그리드를 따라 배치
               hasValue: false
               isMECE: true
               tags:
                 - name: rule of thirds
                 - name: rule of quarters
-            - name: rabatment of the rectangle
+            - name: #기하학적 분할에 따라 배치
+              hasValue: false
+              isMECE: false
+              tags:
+                - name: rabatment of the rectangle
 
         - name: type of shot
           hasValue: falseisMECE:
