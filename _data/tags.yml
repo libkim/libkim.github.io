@@ -679,14 +679,14 @@ tags:
 
         - name: cinematic lighting
           hasValue: true
-          isMECE: 
+          isMECE: false
           tags:
-            - name: quantity of light
+            - name: diffusion of light
               hasValue: false
               isMECE: true
               tags:
-                - name: soft
-                - name: hard
+                - name: soft light
+                - name: hard light
                 - name: low
                 - name: high
             - name: types of light
