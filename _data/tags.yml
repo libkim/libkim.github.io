@@ -677,18 +677,21 @@ tags:
           hasValue: true
           isMECE: 
           tags:
-            - name: quantity of light types of light
+            - name: quantity of light
               hasValue: false
               isMECE: true
               tags:
-                - name: natural light
-                - name: ambient light
                 - name: soft
                 - name: hard
                 - name: low
                 - name: high
-            - name: ambient
-            - name: cinematic
+            - name: types of light
+              hasValue: false
+              isMECE: false
+              tags:
+                - name: natural light
+                - name: ambient light
+                - name: practical light
             - name: three-point lighting
             - name: key light
             - name: fill light
