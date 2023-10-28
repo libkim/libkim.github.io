@@ -666,7 +666,8 @@ tags:
                 - name: rabatment of the rectangle
 
         - name: type of shot
-          hasValue: falseisMECE:
+          hasValue: false
+          isMECE: true
           tags:
             - name: long
             - name: full
@@ -681,14 +682,6 @@ tags:
           hasValue: true
           isMECE: false
           tags:
-            - name: diffusion of light
-              hasValue: false
-              isMECE: true
-              tags:
-                - name: soft light
-                - name: hard light
-                - name: low
-                - name: high
             - name: types of light
               hasValue: false
               isMECE: false
@@ -696,10 +689,25 @@ tags:
                 - name: natural light
                 - name: ambient light
                 - name: practical light
-            - name: three-point lighting
-            - name: key light
-            - name: fill light
-            - name: back light
+                - name: three-point lighting
+                  hasValue: false
+                  isMECE: false
+                  tags:
+                    - name: key light
+                    - name: fill light
+                    - name: back light
+            - name: softness of light
+              hasValue: false
+              isMECE: true
+              tags:
+                - name: soft light
+                - name: hard light
+                
+                - name: low
+                - name: high
+                
+
+                
             - name: loop lighting
             - name: split lighting
             - name: light temperature
@@ -707,7 +715,7 @@ tags:
               tags:
                 - name: warm
                 - name: cool
-            - name: ambient light, ambient occlusion
+            - name: ambient occlusion
             - name: cel shading
             - name: sight
             
