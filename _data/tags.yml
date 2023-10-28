@@ -673,16 +673,20 @@ tags:
             - name: close-up
             - name: extreme close-up
 
-        - name: lighting
-          hasValue: falseisMECE:
+        - name: cinematic lighting
+          hasValue: true
+          isMECE: 
           tags:
-            - name: quantity of light
-              hasValue: falseisMECE:
+            - name: quantity of light types of light
+              hasValue: false
+              isMECE: true
               tags:
-                - name: hard
+                - name: natural light
+                - name: ambient light
                 - name: soft
-                - name: high
+                - name: hard
                 - name: low
+                - name: high
             - name: ambient
             - name: cinematic
             - name: three-point lighting
