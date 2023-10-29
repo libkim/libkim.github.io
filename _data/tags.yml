@@ -679,7 +679,6 @@ tags:
             - name: extreme close-up
 
         - name: cinematic lighting
-          hasValue: true
           isMECE: false
           tags:
             - name: types of light
