@@ -696,7 +696,7 @@ tags:
                     - name: back light
             - group: softness of light
               isMECE: true
-              children:
+              tags:
                 - name: soft light
                 - name: hard light
                 
