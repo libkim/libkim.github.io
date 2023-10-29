@@ -694,9 +694,9 @@ tags:
                     - name: key light
                     - name: fill light
                     - name: back light
-            - category: softness of light
+            - group: softness of light
               isMECE: true
-              items:
+              children:
                 - name: soft light
                 - name: hard light
                 
