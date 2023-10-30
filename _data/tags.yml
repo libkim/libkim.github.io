@@ -282,15 +282,14 @@ isMECE:
                 - name: train
                 - name: on stage
     - name: portrait
-      hasValue: true
-      isMECE:
+      isMECE: false
       subTags:
-        - name: motive
-      isMECE:
+        - category: motive
+          isMECE: false
           subTags:
             - name: butterfly
-        - name: race
-      isMECE:
+        - category: race
+          isMECE: true
           subTags:
             - name: necromancer
             - name: human
@@ -306,8 +305,8 @@ isMECE:
             - name: woman
             - name: guy
             - name: lady
-        - name: age
-      isMECE:
+        - category: age
+          isMECE: true
           subTags:
             - name: infant
             - name: child
@@ -316,27 +315,26 @@ isMECE:
             - name: young adult
             - name: middle age
             - name: old
-        - name: height
-      isMECE:
+        - category: height
+          isMECE: 
           subTags:
-            - name: tall
-            - name: short
-        - name: skin
-      isMECE:
+
+        - category: skin
+          isMECE:
           subTags:
             - name: white
             - name: black
-        - name: hair
-      isMECE:
+        - category: hair
+          isMECE: false
           subTags:
-            - name: hair color
-          isMECE:
+            - category: hair color
+              isMECE: true
               subTags: *color
-            - name: hair length
-          isMECE:
+            - category: hair length
+              isMECE: true
               subTags: *length
-            - name: hairstyles
-          isMECE:
+            - category: hairstyles
+              isMECE: true
               subTags:
                 - name: half up
                 - name: braid
@@ -344,13 +342,13 @@ isMECE:
                 - name: straight
                 - name: curly
                 - name: pony tail
-        - name: face
-      isMECE:
+        - category: face
+          isMECE: false
           subTags:
             - name: cute
             - name: sexy
-        - name: expression
-      isMECE:
+        - category: expression
+          isMECE: true
           subTags:
             - name: happy
             - name: sad
@@ -448,11 +446,11 @@ isMECE:
             - name: top-heavy
             - name: triangular
             - name: wasp-waisted
-        - name: nail
-      isMECE:
+        - category: nail
+          isMECE:
           subTags:
             - name: nail length
-          isMECE:
+              isMECE:
               subTags: *length
             - name: nail shape
           isMECE:
