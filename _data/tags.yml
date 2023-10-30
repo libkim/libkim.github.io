@@ -1,6 +1,7 @@
 # input 값만 쓰도록 한다.
 # 예를 들어 태그에 입사광이 있고 반사재질의 옷을 입은 피사체가 있다면 반사광이 형성되는 것은 당연하다.
 # 반사광 태그를 만들 필요가 있을까?
+# 필요한 것 우선
 
 default:
   color: &color
@@ -77,17 +78,16 @@ rootTags:
             - name: chiaroscuro
             - name: sfumato
             - name: unione
-    - name: art technique
-  
-      isMECE:
+    - category: art technique
+      isMECE: true
       subTags:
         - name: collage
         - name: depaysement
         - name: frottage
         - name: mosaic
 
-- name: design
-isMECE:
+- category: design
+  isMECE: false
   subTags:
     - name: layout
   
@@ -437,7 +437,7 @@ isMECE:
                 - name: stiletto
                 - name: round
         - name: tattoo
-          hasValue: trueisMECE:
+          isMECE:
           subTags:
             - name: new school
             - name: lettering
@@ -616,11 +616,10 @@ isMECE:
       isMECE:
       subTags:
         - name: contrast
-      
           isMECE:
           subTags:
     - name: methods of emphasis
-  isMECE:
+      isMECE:
       subTags:
         - name: contrast
       
@@ -652,7 +651,6 @@ isMECE:
                 - name: rule of thirds
                 - name: rule of quarters
             - name: #기하학적 분할에 따라 배치
-          
               isMECE: false
               subTags:
                 - name: rabatment of the rectangle
@@ -707,27 +705,13 @@ isMECE:
             - name: cel shading
             - name: sight
             
-        - name: type of lens
-          suffix: lens
+        - category: type of lens
+          isMECE: true
           subTags:
             - name: wide-angle
-              before: wide-angle
-              subTags:
-                - name: 20mm
-                - name: 28mm
             - name: standard
-              subTags:
-                - name: 
-                - name: 
             - name: short telephoto
-              before: short telephoto
-              subTags:
-                - name: 85mm
-                - name: 100mm
             - name: medium telephoto
-              before: medium telephoto
-              subTags:
-                - name:
  
         - name: focus
           subTags:
