@@ -711,8 +711,8 @@ isMECE:
                 - name: rembrandt Lighting
                 - name: split lighting
                 
-            - name: light temperature
-          isMECE:
+            - category: light temperature
+              isMECE: true
               subTags:
                 - name: warm
                 - name: cool
@@ -729,11 +729,13 @@ isMECE:
             - name: medium telephoto
  
         - category: focus
+          isMECE: true
           subTags:
             - name: deep focus
             - name: soft focus
             - name: out of focus
-            - name: selective focus
+            - category: selective focus
+              isMECE: true
               subTags:
                 - name: front focus
                 - name: back focus
