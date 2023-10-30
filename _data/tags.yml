@@ -89,8 +89,33 @@ rootTags:
 - category: design
   isMECE: false
   subTags:
+    - name: character design
+      isMECE: false
+      subTags:
+        - category: color schemes
+          isMECE: false
+          subTags:
+            - category: base color
+              isMECE: true
+              subTags:
+              
+            - category: secondary color
+              isMECE: true
+              subTags:
+              
+            - category: accent color
+              isMECE: true
+              subTags:
+
+        - category: color of line
+          isMECE: true
+          subTags:
+
+
+
+      
     - name: layout
-  
+
       isMECE:
       subTags:
         - name: head-room
@@ -612,7 +637,7 @@ isMECE:
 - category: technique
   isMECE: false
   subTags:
-    - name: photography #카메라 연출을 통해 스토리를 비주얼로 변환
+    - name: photography
       isMECE:
       subTags:
         - name: contrast
