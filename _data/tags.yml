@@ -302,8 +302,8 @@ isMECE:
             - name: dragon
             - name: ghost
             - name: 
-        - name: gender
-      isMECE:
+        - category: gender
+          isMECE:
           subTags:
             - name: girl
             - name: boy
