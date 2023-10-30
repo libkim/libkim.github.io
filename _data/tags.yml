@@ -35,36 +35,34 @@ default:
     - name: short
     - name: tall
 
-tags:
-  - name: style
-    hasValue: false
+rootTags:
+  - category: style
     isMECE: false
-    tags:
+    subTags:
       - name: artist
-        hasValue: false
         isMECE: true
-        tags:
+        subTags:
           - name: Takeshi Obata
           - name: Yoshitaka Amano
           - name: Hiroaki Samura
       - name: production
-        hasValue: false
+    
         isMECE: true
-        tags:
+        subTags:
           - name: Studio Ghibli
           - name: GAINAX
           - name: Trigger
       - name: artist communities
-        hasValue: falseisMECE:
+    isMECE:
         isMECE: true
-        tags:
+        subTags:
           - name: artstation
           - name: behance
           - name: pixiv
     - name: art movements
-      hasValue: false
+  
       isMECE:
-      tags:
+      subTags:
         - name: der blaue reiter
         - name: fauvism
         - name: cubism
@@ -74,78 +72,78 @@ tags:
         - name: renaissance
           hasValue: true
           isMECE: true
-          tags:
+          subTags:
             - name: cangiante
             - name: chiaroscuro
             - name: sfumato
             - name: unione
     - name: art technique
-      hasValue: false
+  
       isMECE:
-      tags:
+      subTags:
         - name: collage
         - name: depaysement
         - name: frottage
         - name: mosaic
 
 - name: design
-  hasValue: falseisMECE:
-  tags:
+isMECE:
+  subTags:
     - name: layout
-      hasValue: false
+  
       isMECE:
-      tags:
+      subTags:
         - name: head-room
         - name: nose-room, looking-room
         - name: lead-room
 
     - name: color schemes
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: monochromatic color scheme
           hasValue: true
           isMECE:
-          tags:
+          subTags:
             - name: black and white
         - name: analogous color scheme
           hasValue: true
           isMECE:
-          tags:
+          subTags:
             - name: teal and orange
         - name: complementary color scheme
           hasValue: true
           isMECE:
-          tags:
+          subTags:
         - name: triadic color scheme
           hasValue: true
           isMECE:
-          tags:
+          subTags:
 
     
     - name: exposure
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: overexposed
         - name: underexposed
     - name: saturation
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: desaturated
         - name: saturated
     - name: brightness
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: 
     - name: camera angle
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: eye level shot
         - name: low angle shot
         - name: high angle shot
         - name: overhead shot
     - name: feature
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: color banding
         - name: long exposure
         - name: color splash
@@ -153,82 +151,82 @@ tags:
         - name: tilt-shift
 
 - name: purpose
-  hasValue: false
+
   isMECE: false
-  tags:
+  subTags:
     - name: photograph, photo
     - name: painting
     - name: drawing
     - name: poster
       hasValue: true
       isMECE: false
-      tags:
+      subTags:
         - name: movie poster
     - name: reference sheet
     - name: thermal
     - name: satellite
             
     - name: composition
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: projection
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: orthographic
-              hasValue: trueisMECE:
-              tags:
+isMECE:
+              subTags:
                 - name: isometric
                 - name: dimetric
                 - name: trimetric
             - name: perspective
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
                 - name: 1-point perspective
                 - name: 2-point perspective
                 - name: 3-point perspective
                 - name: curvilinear perspective
 
 - name: subject
-  hasValue: false
+
   isMECE: true
-  tags:
+  subTags:
     - name: landscape
       hasValue: true
       isMECE: false
-      tags:
+      subTags:
         - name: season
-          hasValue: false
+      
           isMECE: false
-          tags:
+          subTags:
             - name: spring
             - name: summer
             - name: autumn
             - name: winter
         - name: time
-          hasValue: false
+      
           isMECE: false
-          tags:
+          subTags:
             - name: morning
             - name: afternoon
             - name: evening
             - name: night
         - name: weather
-          hasValue: false
+      
           isMECE: false
-          tags:
+          subTags:
             - name: clear
             - name: cloudy
             - name: foggy
             - name: raining
             - name: snowing
         - name: place
-          hasValue: false
+      
           isMECE: true
-          tags:
+          subTags:
             - name: indoor
-              hasValue: true
+
               isMECE: true
-              tags:
+              subTags:
                 - name: classroom
                 - name: bathroom
                 - name: kitchen
@@ -242,9 +240,9 @@ tags:
                 - name: dirty room
                 - name: dark room
             - name: outdoor
-              hasValue: true
+
               isMECE: true
-              tags:
+              subTags:
                 - name: sky
                 - name: sea
                 - name: mountain
@@ -265,22 +263,22 @@ tags:
     - name: portrait
       hasValue: true
       isMECE:
-      tags:
+      subTags:
         - name: motive
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: butterfly
         - name: race
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: necromancer
             - name: human
             - name: dragon
             - name: ghost
             - name: 
         - name: gender
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: girl
             - name: boy
             - name: man
@@ -288,8 +286,8 @@ tags:
             - name: guy
             - name: lady
         - name: age
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: infant
             - name: child
             - name: teen
@@ -298,27 +296,27 @@ tags:
             - name: middle age
             - name: old
         - name: height
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: tall
             - name: short
         - name: skin
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: white
             - name: black
         - name: hair
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: hair color
-              hasValue: falseisMECE:
-              tags: *color
+          isMECE:
+              subTags: *color
             - name: hair length
-              hasValue: falseisMECE:
-              tags: *length
+          isMECE:
+              subTags: *length
             - name: hairstyles
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
                 - name: half up
                 - name: braid
                 - name: blunt bang
@@ -326,13 +324,13 @@ tags:
                 - name: curly
                 - name: pony tail
         - name: face
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: cute
             - name: sexy
         - name: expression
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: happy
             - name: sad
             - name: angry
@@ -352,29 +350,29 @@ tags:
             - name: anxious
             - name: shy
         - name: eyes
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: eye color
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
             - name: eyelash lengths
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
         - name: gazes
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: looking at viewer
         - name: mouth
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: open mouth
             - name: closed mouth
         - name: body
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: body proportions
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
                 - name: chibi
                 - name: 2 heads tall
                 - name: 3 heads tall
@@ -429,31 +427,31 @@ tags:
             - name: triangular
             - name: wasp-waisted
         - name: nail
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: nail length
-              hasValue: falseisMECE:
-              tags: *length
+          isMECE:
+              subTags: *length
             - name: nail shape
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
                 - name: square
                 - name: coffin
                 - name: stiletto
                 - name: round
         - name: tattoo
           hasValue: trueisMECE:
-          tags:
+          subTags:
             - name: new school
             - name: lettering
             - name: irezumi
         - name: headwear
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: baseball cap
             - name: beret
         - name: neckwear
-          tags:
+          subTags:
             - name: choker
             - name: clerical collar
             - name: neckwarmer
@@ -461,7 +459,7 @@ tags:
             - name: scarf
             - name: neckerchief
         - name: top
-          tags:
+          subTags:
             - name: blouse
             - name: dress shirt
             - name: hoodie
@@ -493,18 +491,18 @@ tags:
             - name: blouse
             - name: blouse
         - name: bottom
-          tags:
+          subTags:
             - name: trouser
-              tags:
+              subTags:
             - name: skirt
-              tags:
+              subTags:
                 - name: a-line
                 - name: ballerina
                 - name: denim
                 - name: pencil
                 - name: rah-rah
         - name: underwear
-          tags:
+          subTags:
             - name: g-string
             - name: crotchless panty
             - name: bra
@@ -513,7 +511,7 @@ tags:
             - name: lingerie
             - name: diaper
         - name: outerwear
-          tags:
+          subTags:
             - name: apron
             - name: 
             - name:
@@ -522,7 +520,7 @@ tags:
             - name:
             - name:
         - name: legwear
-          tags:
+          subTags:
             - name: socks
             - name: high socks
             - name: knee socks
@@ -531,11 +529,11 @@ tags:
             - name: stocking
             - name: thigh strap
         - name: footwear
-          tags:
+          subTags:
             - name: barefoot
             - name: boots
         - name: accessories
-          tags:
+          subTags:
             - name: hairband
             - name: garter
             - name: gloves
@@ -548,7 +546,7 @@ tags:
             - name: piercing
             - name: ring
         - name: position
-          tags:
+          subTags:
             - name: all-fours
             - name: standing
             - name: kneeling
@@ -557,7 +555,7 @@ tags:
             - name: sitting
             - name: squatting
             - name: sex position
-              tags:
+              subTags:
                 - name: missionary
                 - name: doggy style
                 - name: cowgirl
@@ -571,7 +569,7 @@ tags:
                 - name: full nelson
 
             - name: action
-              tags:
+              subTags:
                 - name: all-fours
                 - name: standing
                 - name: kneeling
@@ -582,93 +580,89 @@ tags:
                 - name: spread legs
 
             - name: gesture
-              tags:
+              subTags:
                 - name: heart hands
 
-            - name: props
-              hasValue: falseisMECE:
-              tags:
+            - category: props
+              isMECE: false
+              subTags:
                 - name: color
                 - name: angel statue
                 - name: cup
                 - name: bread
                 - name: cheese
-
-            - name: background
-              hasValue: falseisMECE:
-              tags:
+            - category: background
+              isMECE: true
+              subTags:
                 - name: color
                 - name: gradation
                 - name: pattern
-                  tags:
+                  subTags:
                     - name: starry
-            - name: texture
-              hasValue: falseisMECE:
-              tags:
+                - category: texture
+                  isMECE:
+                  subTags:
                 - name: smoothness
-                  hasValue: falseisMECE:
-                  tags:
+              isMECE:
+                  subTags:
             - name: chroma
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
 
     - name: still life
-      tags:
+      subTags:
 
-- name: technique
-  hasValue: false
+- category: technique
   isMECE: false
-  tags:
+  subTags:
     - name: photography #카메라 연출을 통해 스토리를 비주얼로 변환
-      hasValue: false
       isMECE:
-      tags:
+      subTags:
         - name: contrast
-          hasValue: false
+      
           isMECE:
-          tags:
+          subTags:
     - name: methods of emphasis
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: contrast
-          hasValue: false
+      
           isMECE:
-          tags:
+          subTags:
             - name: scale contrast
             - name: shape contrast
             - name: color contrast
         - name: #화면 분할
-          hasValue: false
+      
           isMECE:
-          tags:
+          subTags:
         - name: contrast
-          hasValue: false
+      
           isMECE:
-          tags:
+          subTags:
             - name: scale contrast
             - name: shape contrast
             - name: color contrast
         - name: placement of subject #피사체의 배치
-          hasValue: false
+      
           isMECE: true
-          tags:
+          subTags:
             - name: central framing #화면 중앙에 배치
             - name: #그리드를 따라 배치
-              hasValue: false
+          
               isMECE: true
-              tags:
+              subTags:
                 - name: rule of thirds
                 - name: rule of quarters
             - name: #기하학적 분할에 따라 배치
-              hasValue: false
+          
               isMECE: false
-              tags:
+              subTags:
                 - name: rabatment of the rectangle
 
-        - name: type of shot
-          hasValue: false
+        - category: type of shot
           isMECE: true
-          tags:
+          subTags:
             - name: long
             - name: full
             - name: knee
@@ -678,25 +672,25 @@ tags:
             - name: close-up
             - name: extreme close-up
 
-        - value: cinematic lighting
+        - name: cinematic lighting
           isMECE: false
-          tags:
+          subsubTags:
             - name: types of light
               isMECE: false
-              tags:
+              subTags:
                 - name: natural light
                 - name: ambient light
                 - name: practical light
                 - name: three-point lighting
-                  hasValue: false
+              
                   isMECE: false
-                  tags:
+                  subTags:
                     - name: key light
                     - name: fill light
                     - name: back light
             - group: softness of light
               isMECE: true
-              tags:
+              subTags:
                 - name: soft light
                 - name: hard light
                 
@@ -708,8 +702,8 @@ tags:
             - name: loop lighting
             - name: split lighting
             - name: light temperature
-              hasValue: falseisMECE:
-              tags:
+          isMECE:
+              subTags:
                 - name: warm
                 - name: cool
             - name: ambient occlusion
@@ -718,39 +712,39 @@ tags:
             
         - name: type of lens
           suffix: lens
-          tags:
+          subTags:
             - name: wide-angle
               before: wide-angle
-              tags:
+              subTags:
                 - name: 20mm
                 - name: 28mm
             - name: standard
-              tags:
+              subTags:
                 - name: 
                 - name: 
             - name: short telephoto
               before: short telephoto
-              tags:
+              subTags:
                 - name: 85mm
                 - name: 100mm
             - name: medium telephoto
               before: medium telephoto
-              tags:
+              subTags:
                 - name:
  
         - name: focus
-          tags:
+          subTags:
             - name: deep focus
             - name: soft focus
             - name: out of focus
             - name: selective focus
-              tags:
+              subTags:
                 - name: front focus
                 - name: back focus
 
-- name: utility
-  hasValue: falseisMECE:
-  tags:
+- category: utility
+  isMECE: false
+  subTags:
     - name: alluring
     - name: sensual
     - name: provocative
@@ -758,8 +752,9 @@ tags:
     - name: cozy
     - name: cute
 
-- name: fidelity
-  tags:
+- category: fidelity
+  isMECE: false
+  subTags:
     - name: masterpiece
     - name: realistic
     - name: HDR
@@ -773,24 +768,24 @@ tags:
     - name: high resolution scan
 
 - name: effect
-  hasValue: falseisMECE:
-  tags:
+isMECE:
+  subTags:
     - name: breath
     - name: blur
-      hasValue: falseisMECE:
-      tags:
+  isMECE:
+      subTags:
         - name: gaussian blur
-          hasValue: falseisMECE:
-          tags:
+      isMECE:
+          subTags:
             - name: blurred face
             - name: blurred penis
             - name: blurred vagina
             - name: blurred background
             - name: motion blur
-              tags:
+              subTags:
                 - name: horizontal motion blur
                 - name: vertical motion blur
     - name: bug
-      tags:
+      subTags:
         - name: butterfly
         - name: 
