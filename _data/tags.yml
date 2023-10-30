@@ -640,32 +640,7 @@ isMECE:
     - name: photography
       isMECE:
       subTags:
-        - name: contrast
-          isMECE:
-          subTags:
-    - name: methods of emphasis
-      isMECE:
-      subTags:
-        - name: contrast
-      
-          isMECE:
-          subTags:
-            - name: scale contrast
-            - name: shape contrast
-            - name: color contrast
-        - name: #화면 분할
-      
-          isMECE:
-          subTags:
-        - name: contrast
-      
-          isMECE:
-          subTags:
-            - name: scale contrast
-            - name: shape contrast
-            - name: color contrast
         - name: placement of subject #피사체의 배치
-      
           isMECE: true
           subTags:
             - name: central framing #화면 중앙에 배치
