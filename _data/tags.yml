@@ -171,8 +171,7 @@ rootTags:
         - name: monochrome
         - name: tilt-shift
 
-- name: purpose
-
+- category: purpose
   isMECE: false
   subTags:
     - name: photograph, photo
@@ -371,14 +370,15 @@ isMECE:
             - name: shocked
             - name: anxious
             - name: shy
-        - name: eyes
-      isMECE:
+        - category: eyes
+          isMECE: false
           subTags:
-            - name: eye color
-          isMECE:
+            - category: eyes color
+              isMECE: true
               subTags:
-            - name: eyelash lengths
-          isMECE:
+
+            - category: eyelash lengths
+              isMECE: 
               subTags:
         - name: gazes
       isMECE:
