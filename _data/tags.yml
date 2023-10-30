@@ -186,16 +186,13 @@ isMECE:
                 - name: 3-point perspective
                 - name: curvilinear perspective
 
-- name: subject
-
+- category: subject
   isMECE: true
   subTags:
     - name: landscape
-      hasValue: true
       isMECE: false
       subTags:
         - name: season
-      
           isMECE: false
           subTags:
             - name: spring
