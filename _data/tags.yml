@@ -468,11 +468,12 @@ isMECE:
             - name: lettering
             - name: irezumi
         - name: headwear
-      isMECE:
+          isMECE: true
           subTags:
             - name: baseball cap
             - name: beret
         - name: neckwear
+          isMECE: true
           subTags:
             - name: choker
             - name: clerical collar
@@ -480,7 +481,8 @@ isMECE:
             - name: necktie
             - name: scarf
             - name: neckerchief
-        - name: top
+        - category: top
+          isMECE: true
           subTags:
             - name: blouse
             - name: dress shirt
@@ -512,11 +514,13 @@ isMECE:
             - name: blouse
             - name: blouse
             - name: blouse
-        - name: bottom
+        - category: bottom
+          isMECE: true
           subTags:
             - name: trouser
               subTags:
             - name: skirt
+              isMECE: true
               subTags:
                 - name: a-line
                 - name: ballerina
@@ -524,6 +528,7 @@ isMECE:
                 - name: pencil
                 - name: rah-rah
         - name: underwear
+          isMECE: true
           subTags:
             - name: g-string
             - name: crotchless panty
@@ -533,6 +538,7 @@ isMECE:
             - name: lingerie
             - name: diaper
         - name: outerwear
+          isMECE: true
           subTags:
             - name: apron
             - name: 
@@ -542,6 +548,7 @@ isMECE:
             - name:
             - name:
         - name: legwear
+          isMECE: true
           subTags:
             - name: socks
             - name: high socks
@@ -681,21 +688,25 @@ isMECE:
                   isMECE: false
                   subTags:
                     - name: key light
+                      isMECE: true
+                      subTags:
+                        - name: low-key lighting
+                        - name: high-key lighting
                     - name: fill light
                     - name: back light
-            - group: softness of light
+            - category: softness of light
               isMECE: true
               subTags:
                 - name: soft light
                 - name: hard light
+            - category: types of lighting
+              isMECE: true
+              subTags:
+                - name: butterfly lighting
+                - name: loop lighting
+                - name: rembrandt Lighting
+                - name: split lighting
                 
-                - name: low
-                - name: high
-                
-
-                
-            - name: loop lighting
-            - name: split lighting
             - name: light temperature
           isMECE:
               subTags:
@@ -713,7 +724,7 @@ isMECE:
             - name: short telephoto
             - name: medium telephoto
  
-        - name: focus
+        - category: focus
           subTags:
             - name: deep focus
             - name: soft focus
