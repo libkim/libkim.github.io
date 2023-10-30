@@ -209,78 +209,71 @@ isMECE:
 - category: environment
   isMECE: false
   subTags:
-
+    - category: season
+      isMECE: true
+      subTags:
+        - name: spring
+        - name: summer
+        - name: autumn
+        - name: winter
+    - category: time
+      isMECE: true
+      subTags:
+        - name: morning
+        - name: afternoon
+        - name: evening
+        - name: night
+    - category: weather
+      isMECE: true
+      subTags:
+        - name: clear
+        - name: cloudy
+        - name: foggy
+        - name: raining
+        - name: snowing
+    - category: place
+      isMECE: true
+      subTags:
+        - name: indoor
+          isMECE: true
+          subTags:
+            - name: classroom
+            - name: bathroom
+            - name: kitchen
+            - name: library
+            - name: prison
+            - name: pool
+            - name: bed
+            - name: on the futon
+            - name: office
+            - name: train
+            - name: dirty room
+            - name: dark room
+        - name: outdoor
+          isMECE: true
+          subTags:
+            - name: sky
+            - name: sea
+            - name: mountain
+            - name: beach
+            - name: castle
+            - name: ruins
+            - name: church
+            - name: forest
+            - name: flower field
+            - name: park
+            - name: shrine
+            - name: hospital
+            - name: hotel
+            - name: love hotel
+            - name: factory
+            - name: train
+            - name: on stage
+        
 - category: subject
   isMECE: true
   subTags:
     - name: landscape
-      isMECE: false
-      subTags:
-        - name: season
-          isMECE: false
-          subTags:
-            - name: spring
-            - name: summer
-            - name: autumn
-            - name: winter
-        - name: time
-      
-          isMECE: false
-          subTags:
-            - name: morning
-            - name: afternoon
-            - name: evening
-            - name: night
-        - name: weather
-      
-          isMECE: false
-          subTags:
-            - name: clear
-            - name: cloudy
-            - name: foggy
-            - name: raining
-            - name: snowing
-        - name: place
-      
-          isMECE: true
-          subTags:
-            - name: indoor
-
-              isMECE: true
-              subTags:
-                - name: classroom
-                - name: bathroom
-                - name: kitchen
-                - name: library
-                - name: prison
-                - name: pool
-                - name: bed
-                - name: on the futon
-                - name: office
-                - name: train
-                - name: dirty room
-                - name: dark room
-            - name: outdoor
-
-              isMECE: true
-              subTags:
-                - name: sky
-                - name: sea
-                - name: mountain
-                - name: beach
-                - name: castle
-                - name: ruins
-                - name: church
-                - name: forest
-                - name: flower field
-                - name: park
-                - name: shrine
-                - name: hospital
-                - name: hotel
-                - name: love hotel
-                - name: factory
-                - name: train
-                - name: on stage
     - name: portrait
       isMECE: false
       subTags:
