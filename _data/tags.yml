@@ -671,8 +671,8 @@ isMECE:
 
         - name: cinematic lighting
           isMECE: false
-          subsubTags:
-            - name: types of light
+          subTags:
+            - category: types of light
               isMECE: false
               subTags:
                 - name: natural light
