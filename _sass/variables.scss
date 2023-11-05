@@ -5,14 +5,15 @@ $another-sec-color: #a2a2a2;
 $accent-color: #ebebeb;
 
 // Breakpoints
-$smartphone-width: 480px;
-$tablet-width: 768px;
+$mobile-portrait-width: 480px;
+$mobile-landscape-width: 768px;
 $laptop-width: 1024px;
 $desktop-width: 1200px;
 
 // margin
-$smartphone-min-margin: 5px;
-$desktop-min-margin: 14px;
+$moblie-portrait-min-margin: 12px;
+$moblie-l-min-margin: 14px;
+$desktop-min-margin: 24px;
 
 
 $smartphone-column-size: 10vw;
