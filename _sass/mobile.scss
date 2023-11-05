@@ -1,12 +1,12 @@
-@media all and (min-width: calc($laptop-width + 1px)) and (max-width: $desktop-width) {
+@media all and (min-width: $desktop-min-width) and (max-width: auto) {
 
 }
 
-@media all and (min-width: calc($tablet-width + 1px)) and (max-width: $laptop-width) {
+@media all and (min-width: $tablet-min-width) and (max-width: calc($desktop-min-width - 1px)) {
 
 }
 
-@media all and (min-width: calc($smartphone-width + 1px)) and (max-width: $tablet-width) {
+@media all and (min-width: $mobile-landscape-min-width) and (max-width: calc($tablet-min-width - 1px)) {
   ::-webkit-scrollbar {
     height: 3px;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@media all and (max-width: $smartphone-width) {
+@media all and (min-width: $mobile-portrait-min-width) and (max-width: calc($mobile-landscape-min-width - 1px)) {
   html {
     font-size: 62.5%;
   }
