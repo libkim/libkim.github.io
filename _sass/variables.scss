@@ -4,21 +4,29 @@ $secondary-color: #000000;
 $another-sec-color: #a2a2a2;
 $accent-color: #ebebeb;
 
-// Size
-$container-size: 1320px;
-$margin-size: 20px;
-$gutter-size: 40px;
-$column-size: 70px;
-
 // Breakpoints
 $smartphone-width: 480px;
 $tablet-width: 768px;
 $laptop-width: 1024px;
 $desktop-width: 1200px;
 
+// margin
+$smartphone-min-margin: 5px;
+$desktop-min-margin: 14px;
 
-$smartphone-margin-size: 5vw;
+
 $smartphone-column-size: 10vw;
 $smartphone-gutter-size: 5vw;
+
+// Size
+$container-size: 1320px;
+$margin-size: 20px;
+$gutter-size: 40px;
+$column-size: 70px;
+
+
+
+
+
 
 
