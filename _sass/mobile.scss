@@ -23,6 +23,7 @@
   body {
     width: 100vw;
     height: auto;
+    min-padding: $moblie-portrait-min-padding;
     padding: 5vw;
     display: flex;
     flex-direction: column;
