@@ -1,35 +1,9 @@
-<nav>
-  <div class="title">
-      <p><a href="{{ site.url }}">{{ site.title }}</a></p>
-  </div>
-  <div id="hamburger">
-    <div id="overlay"></div>
-    <button id="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
-    <div class="pages">
-      <ul>
-        {% for item in site.data.pages.pages %}
-          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <div id="navbar">
-    <div class="pages">
-      <ul>
-        {% for item in site.data.pages.pages %}
-          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div id="social">
-      <ul>
-        {% for item in site.data.social.social %}
-          <li><a href="{{ item.link }}" target="_blank"><i class="fab fa-{{ item.icon }}" aria-hidden="true"></i></a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="logo">
+  <p><a href="{{ site.url }}">{{ site.title }}</a></p>
+</div>
+<div class="menu">
+  
+</div>
 
 <script>
 function toggleMenu() {
