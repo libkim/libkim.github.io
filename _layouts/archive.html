@@ -3,9 +3,8 @@ layout: default
 ---
 
 <header>
-
+  {% include header.html %}
 </header>
-
 {% assign postsByDate = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}
 {% for year in postsByDate %}
   <h2 class = "archive-date" id = "date-{{post.date | date: "%B %Y"}}">{{ year.name }}</h2>
@@ -16,5 +15,5 @@ layout: default
     </ul>
 {% endfor %}
 <footer>
-
+  {% include footer.html %}
 </footer>
