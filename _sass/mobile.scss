@@ -23,8 +23,7 @@
   body {
     width: 100vw;
     height: auto;
-    min-padding: $moblie-portrait-min-padding;
-    padding: 5vw;
+    padding: max(5vw, $moblie-portrait-min-padding);
     display: flex;
     flex-direction: column;
   }
@@ -94,8 +93,10 @@
     }
   }
 
-  nav {
-    .title {
+nav {
+  display: flex;
+  justify-content: space-between;
+    .logo {
       position: fixed;
       top: 5vw;
       left: 5vw;
