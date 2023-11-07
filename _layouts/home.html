@@ -2,7 +2,9 @@
 layout: default
 ---
 
-{% include header.html %}
+<header>
+  {% include header.html %}
+</header>
 <div id="post-container">
   {% for post in paginator.posts %}
     <article class="post">
@@ -56,4 +58,6 @@ layout: default
     {% endif %}
   </div>
 </div>
-{% include footer.html %}
+<footer>
+  {% include footer.html %}
+</footer>
