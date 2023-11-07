@@ -1,12 +1,12 @@
 <header>
-  {% include nav.html %}
-  {% if page.title != "404" %}
-    <div class="description">
+  <nav>
+    {% include nav.html %}
+  </nav>
+  <div class="description">
+    {% if page.title != "404" %}
       <h3>{{ site.description }}</h3>
-    </div>
-  {% else %}
-    <div class="description">
+    {% else %}
       <h3>404 Not Found</h3>
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
 </header>
