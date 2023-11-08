@@ -3,21 +3,21 @@ layout: default
 ---
 
 <header>
-  {% include header.html %}
+  <nav>
+    {% include nav.html %}
+  </nav>
 </header>
-<div class="post-container">
-  <article class="post">
-    <div class="post-title">
-      <h3>{{ page.title }}</h3>
-    </div>
-    <div class="post-info">
-      <p>{{ page.date | date_to_string }}</p>
-    </div>
-    <div class="post-text">
-      {{ content }}
-    </div>
-  </article>
-</div>
+<article class="post">
+  <div class="post-title">
+    <h3>{{ page.title }}</h3>
+  </div>
+  <div class="post-info">
+    <p>{{ page.date | date_to_string }}</p>
+  </div>
+  <div class="post-text">
+    {{ content }}
+  </div>
+</article>
 <footer>
   {% include footer.html %}
 </footer>
