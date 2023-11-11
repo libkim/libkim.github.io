@@ -1,5 +1,5 @@
 ---
-layout: default
-title: DB
-permalink: /database
+layout: project
+title: Ani List
+permalink: /ani-list
 ---
