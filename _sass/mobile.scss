@@ -173,4 +173,15 @@ nav {
     height: 1px;
     background-color: $accent-color;
   }
+  .continue-reading {
+    a {
+      color: $another-sec-color;
+      text-decoration: none;
+      font-style: italic;
+      font-size: 0.96rem;
+    }
+    a:hover {
+      color: black;
+    }
+  }
 }
