@@ -17,15 +17,10 @@
 }
 
 @media all and (min-width: $mobile-portrait-min-width) and (max-width: calc($mobile-landscape-min-width - 1px)) {
-  html {
-    font-size: 62.5%;
-  }
   body {
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     height: auto;
-    padding: max(5vw, $moblie-portrait-min-padding);
-    display: flex;
-    flex-direction: column;
+    padding: 12px;
   }
   header {
     width: 100%;
