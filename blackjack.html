@@ -3,3 +3,610 @@ layout: project
 title: Blackjack
 permalink: /blackjack
 ---
+
+<style>
+.card {
+  opacity: 5%;
+}
+#viewer {
+  position: relative;
+  width: 100%;
+  height: 55vw;
+  display: flex;
+}
+#startBtn {
+  display: none;
+}
+#startBtn.active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: block;
+}
+#turn {
+  display: none;
+}
+#turn.active {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  display: block;
+}
+#player1BtnCon, #player2BtnCon {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px 0;
+}
+#player2BtnCon {
+  background-color: red;
+}
+#player1Buttons, #player2Buttons {
+  display: none;
+}
+#player1Buttons.active, #player2Buttons.active {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#player1BoardCon, #player2BoardCon {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#player2BoardCon {
+  background-color: blue;
+}
+#player1Result, #player2Result {
+  display: none;
+}
+#player1Result.active {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  display: block;
+}
+#player2Result.active {
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  display: block;
+}
+#player1Board, #player2Board {
+  width: 100%;
+  max-width: 234px;
+  height: auto;
+  transform: translate(0, 25%);
+  z-index: 5;
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px 3px;
+}
+#player2Board {
+  background-color: orange;
+}
+#player1Board div img, #player2Board div img {
+  width: 36px;
+  height: 51px;
+  object-fit: cover;
+}
+#player1BoardValue, #player2BoardValue {
+  display: none;
+}
+#player1BoardValue.active {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  transform: translate(-50%, 50%);
+  z-index: 6;
+  display: block;
+}
+#player2BoardValue.active {
+  position: absolute;
+  bottom: 10%;
+  left: 65%;
+  transform: translate(-50%, 50%);
+  z-index: 6;
+  display: block;
+}
+</style>
+
+<div id="viewer">
+  <div id="startBtn" class="active">
+    <button type="button" onclick="start()">게임시작</button>
+  </div>
+  <div id="turn">
+    턴 0
+  </div>
+  <div id="player1BtnCon">
+    <div id="player1HitBtn">
+      <button type="button" onclick="hit(1)">히트</button>
+    </div>
+    <div id="player1StayBtn">
+      <button type="button" onclick="stay(1)">스테이</button>
+    </div>
+  </div>
+  <div id="player1BoardCon">
+    <div id="player1Result">
+      결과
+    </div>
+    <div id="player1Board">
+      <div id="player1Card0">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player1Card1">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player1Card2">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player1Card3">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player1Card4">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player1Card5">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+    </div>
+    <div id="player1BoardValue">
+      a + 0
+    </div>
+  </div>
+  <div id="player2BoardCon">
+    <div id="player2Result">
+      결과
+    </div>
+    <div id="player2Board">
+      <div id="player2Card0">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player2Card1">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player2Card2">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player2Card3">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player2Card4">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div id="player2Card5">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+      <div class="card">
+        <img src="/assets/img/cards/void.jpeg">
+      </div>
+    </div>
+    <div id="player2BoardValue">
+      b + 0
+    </div>
+  </div>
+  <div id="player2BtnCon">
+    <div id="player2Buttons">
+      <button type="button" onclick="hit(2)">히트</button>
+      <button type="button" onclick="stay(2)">스테이</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let turnCount = 0;
+let isPlayer1First = true;
+let isPlayer1Stay = false;
+let isPlayer2Stay = false;
+let isPlayer1Bust = false;
+let isPlayer2Bust = false;
+let isPlayer1Full = false;
+let isPlayer2Full = false;
+let player1BoardValue = "? + 0";
+let player2BoardValue = "? + 0";
+let player1StayValue = 0;
+let player2StayValue = 0;
+let player1HitValue = 0;
+let player2HitValue = 0;
+let player1FullValue = 0;
+let player2FullValue = 0;
+
+const deck = [
+  'sA', 's2', 's3', 's4', 's5', 's6',
+  's7', 's8', 's9', 'sX', 'sJ', 'sQ',
+  'sK', 'dA', 'd2', 'd3', 'd4', 'd5',
+  'd6', 'd7', 'd8', 'd9', 'dX', 'dJ',
+  'dQ', 'dK', 'cA', 'c2', 'c3', 'c4',
+  'c5', 'c6', 'c7', 'c8', 'c9', 'cX',
+  'cJ', 'cQ', 'cK', 'hA', 'h2', 'h3',
+  'h4', 'h5', 'h6', 'h7', 'h8', 'h9',
+  'hX', 'hJ', 'hQ', 'hK'
+];
+const player1Cards = [
+  'void', 'void', 'void',
+  'void', 'void', 'void'
+];
+const player2Cards = [
+  'void', 'void', 'void',
+  'void', 'void', 'void'
+];
+const player1Nums = [
+  0, 0, 0, 0, 0, 0
+];
+const player2Nums = [
+  0, 0, 0, 0, 0, 0
+];
+
+function activateStartBtn() {
+  const element = document.getElementById("startBtn");
+  element.classList.add("active");
+}
+function deactivateStartBtn() {
+  const element = document.getElementById("startBtn");
+  element.classList.remove("active");
+}
+function activateTurn() {
+  const element = document.getElementById("turn");
+  element.classList.add("active");
+}
+function deactivateTurn() {
+  const element = document.getElementById("turn");
+  element.classList.remove("active");
+}
+function updateTurn() {
+  document.getElementById("turn").innerText = "턴 " + turnCount;
+}
+function activateButton(p, button) {
+  if (p == 1) {
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player1HitBtn");
+        element.classList.add("active");
+        break;
+      case 'stay':
+        const element = document.getElementById("player1StayBtn");
+        element.classList.add("active");
+        break;
+      case 'pass':
+        const element = document.getElementById("player1PassBtn");
+        element.classList.add("active");
+        break;
+      default:
+        const elements = document.querySelectorAll("#player1BtnCon div");
+        elements.forEach(element => {
+          element.classList.add("active");
+        });
+        break;
+    }
+  } else {
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player2HitBtn");
+        element.classList.add("active");
+        break;
+      case 'stay':
+        const element = document.getElementById("player2StayBtn");
+        element.classList.add("active");
+        break;
+      case 'pass':
+        const element = document.getElementById("player2PassBtn");
+        element.classList.add("active");
+        break;
+      default:
+        const elements = document.querySelectorAll("#player2BtnCon div");
+        elements.forEach(element => {
+          element.classList.add("active");
+        });
+        break;
+    }
+  }
+}
+function deactivateButton(p, button) {
+  if (p == 1) {
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player1HitBtn");
+        element.classList.remove("active");
+        break;
+      case 'stay':
+        const element = document.getElementById("player1StayBtn");
+        element.classList.remove("active");
+        break;
+      case 'pass':
+        const element = document.getElementById("player1PassBtn");
+        element.classList.remove("active");
+        break;
+      default:
+        const elements = document.querySelectorAll("#player1BtnCon div");
+        elements.forEach(element => {
+          element.classList.remove("active");
+        });
+        break;
+    }
+  } else {
+    switch (button) {
+      case 'hit':
+        const element = document.getElementById("player2HitBtn");
+        element.classList.remove("active");
+        break;
+      case 'stay':
+        const element = document.getElementById("player2StayBtn");
+        element.classList.remove("active");
+        break;
+      case 'pass':
+        const element = document.getElementById("player2PassBtn");
+        element.classList.remove("active");
+        break;
+      default:
+        const elements = document.querySelectorAll("#player2BtnCon div");
+        elements.forEach(element => {
+          element.classList.remove("active");
+        });
+        break;
+    }
+  }
+}
+function resultText(p) {
+  if (isPlayer1Stay && isPlayer2Stay) {
+    if (player1StayValue > player2StayValue) {
+      switch (p) {
+        case 1:
+          return "승";
+          break;
+        case 2:
+          return "패";
+          break;
+      }
+    } else if (player1StayValue < player2StayValue) {
+      switch (p) {
+        case 1:
+          return "패";
+          break;
+        case 2:
+          return "승";
+          break;
+      }
+    } else {
+      return "무";
+    }
+  } else if (isPlayer1Stay && isPlayer2Bust) {
+    switch (p) {
+      case 1:
+        return "승";
+        break;
+      case 2:
+        return "패";
+        break;
+    }
+  } else if (isPlayer1Bust && isPlayer2Stay) {
+    switch (p) {
+      case 1:
+        return "패";
+        break;
+      case 2:
+        return "승";
+        break;
+    }
+  } else if (isPlayer1Bust && isPlayer2Bust) {
+    return "무";
+  } else if (isPlayer1Full && isPlayer2Full) {
+    if (player1FullValue > player2FullValue) {
+      switch (p) {
+        case 1:
+          return "승";
+          break;
+        case 2:
+          return "패";
+          break;
+      }
+    } else if (player1FullValue < player2FullValue) {
+      switch (p) {
+        case 1:
+          return "패";
+          break;
+        case 2:
+          return "승";
+          break;
+      }
+    } else {
+      return "무";
+    }
+  } else if (isPlayer1Full && isPlayer2Bust) {
+
+}
+function deactivateResults() {
+  const element0 = document.getElementById("player1Result");
+  element0.classList.remove("active");
+  const element1 = document.getElementById("player2Result");
+  element1.classList.remove("active");
+}
+function updateResults() {
+  const element0 = document.getElementById("player1Result");
+  element0.innerText = "승";
+  const element1 = document.getElementById("player2Result");
+  element1.innerText = "승";
+}
+function updateBoards() {
+  for (let i = 0; i < 6; i++) {
+    const element0 = document.querySelector(`#player1Card${i} img`);
+    element0.src = "/assets/img/cards/" + player1Cards[i] + ".jpeg";
+    const element1 = document.querySelector(`#player2Card${i} img`);
+    element1.src = "/assets/img/cards/" + player2Cards[i] + ".jpeg";
+  }
+}
+function activateBoardValues() {
+  const element0 = document.getElementById("player1BoardValue");
+  element0.classList.add("active");
+  const element1 = document.getElementById("player2BoardValue");
+  element1.classList.add("active");
+}
+function deactivateBoardValues() {
+  const element0 = document.getElementById("player1BoardValue");
+  element0.classList.remove("active");
+  const element1 = document.getElementById("player2BoardValue");
+  element1.classList.remove("active");
+}
+function updateBoardValues() {
+  const element0 = document.getElementById("player1BoardValue");
+  element0.innerText = "a + " + player1NumsSum - player1Nums[0];
+  const element1 = document.getElementById("player2BoardValue");
+  element1.innerText = "b + " + player2NumsSum - player2Nums[0];
+}
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+function whatIsNum(i) {
+  case 'A':
+    return 1;
+    break;
+  case '2':
+    return 2;
+    break;
+  case '3':
+    return 3;
+    break;
+  case '4':
+    return 4;
+    break;
+  case '5':
+    return 5;
+    break;
+  case '6':
+    return 6;
+    break;
+  case '7':
+    return 7;
+    break;
+  case '8':
+    return 8;
+    break;
+  case '9':
+    return 9;
+    break;
+  case 'X'
+    return 10;
+    break;
+  case 'J'
+    return 10;
+    break;
+  case 'Q'
+    return 10;
+    break;
+  case 'K'
+    return 10;
+    break;
+  default
+    return 0;
+    break;
+}
+function sumNums() {
+  player1NumsSum = player1Nums[0] + player1Nums[1] + player1Nums[2] + player1Nums[3] + player1Nums[4] + player1Nums[5];
+  player2NumsSum = player2Nums[0] + player2Nums[1] + player2Nums[2] + player2Nums[3] + player2Nums[4] + player2Nums[5];
+}
+function deal() {
+  player1Card[0] = pop(deck);
+  player1Nums[0] = whatIsNum(player1Cards[0][1]);
+  player2Card[0] = pop(deck);
+  player2Nums[0] = whatIsNum(player2Cards[0][1]);
+  player1Card[1] = pop(deck);
+  player1Nums[1] = whatIsNum(player1Cards[1][1]);
+  player2Card[1] = pop(deck);
+  player2Nums[1] = whatIsNum(player2Cards[1][1]);
+  sumNums();
+}
+function hit(p) {
+  if (p == 1) {
+    if (isPlayer1First) {
+      player1Card[turnCount / 2 + 1.5] = pop(deck);
+      player1Nums[turnCount / 2 + 1.5] = whatIsNum(player1Cards[turnCount / 2 + 1.5][1]);
+      sumNums();
+      checkBust(1);
+      updateButtons();
+    } else {
+      player1Card[turnCount / 2 + 1] = pop(deck);
+      player1Nums[turnCount / 2 + 1] = whatIsNum(player1Cards[turnCount / 2 + 1][1]);
+      sumNums();
+      checkBust(1);
+      updateButtons();
+    }
+  } else {
+    if (isPlayer1First) {
+      player2Card[turnCount / 2 + 1] = pop(deck);
+      player2Nums[turnCount / 2 + 1] = whatIsNum(player2Cards[turnCount / 2 + 1][1]);
+      sumNums();
+      checkBust(2);
+      updateButtons();
+    } else {
+      player2Card[turnCount / 2 + 1.5] = pop(deck);
+      player2Nums[turnCount / 2 + 1.5] = whatIsNum(player2Cards[turnCount / 2 + 1.5][1]);
+      sumNums();
+      checkBust(2);
+      updateButtons();
+    }
+  }
+}
+function start() {
+  deactivateStartBtn();
+  activateTurn();
+  activateButtons();
+  activateResults();
+  activateBoardValues();
+  turnCount++;
+  updateTurn();
+  shuffle(deck);
+  deal();
+  updateBoards();
+  updateBoardValues();
+}
+</script>
