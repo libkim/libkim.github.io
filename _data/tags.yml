@@ -82,7 +82,7 @@ rootTags:
           - name: frottage
           - name: mosaic
 
-- category: design
+- category: character design
   isMECE: false
   subTags:
     - name: character design
@@ -752,15 +752,13 @@ isMECE:
     - name: unreal engine
     - name: high resolution scan
 
-- name: effect
-isMECE:
+- category: effect
+  isMECE:
   subTags:
     - name: breath
     - name: blur
-  isMECE:
-      subTags:
         - name: gaussian blur
-      isMECE:
+          isMECE: false
           subTags:
             - name: blurred face
             - name: blurred penis
