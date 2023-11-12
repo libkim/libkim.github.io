@@ -94,82 +94,32 @@ rootTags:
             - category: base color
               isMECE: true
               subTags:
-              
             - category: secondary color
               isMECE: true
               subTags:
-              
             - category: accent color
               isMECE: true
               subTags:
-
         - category: color of line
           isMECE: true
           subTags:
 
+- name: camera angle
+  isMECE:
+  subTags:
+    - name: eye level shot
+    - name: low angle shot
+    - name: high angle shot
+    - name: overhead shot
 
-
-      
-    - name: layout
-
-      isMECE:
-      subTags:
-        - name: head-room
-        - name: nose-room, looking-room
-        - name: lead-room
-
-    - name: color schemes
+- name: feature
   isMECE:
-      subTags:
-        - name: monochromatic color scheme
-          hasValue: true
-          isMECE:
-          subTags:
-            - name: black and white
-        - name: analogous color scheme
-          hasValue: true
-          isMECE:
-          subTags:
-            - name: teal and orange
-        - name: complementary color scheme
-          hasValue: true
-          isMECE:
-          subTags:
-        - name: triadic color scheme
-          hasValue: true
-          isMECE:
-          subTags:
-
-    
-    - name: exposure
-  isMECE:
-      subTags:
-        - name: overexposed
-        - name: underexposed
-    - name: saturation
-  isMECE:
-      subTags:
-        - name: desaturated
-        - name: saturated
-    - name: brightness
-  isMECE:
-      subTags:
-        - name: 
-    - name: camera angle
-  isMECE:
-      subTags:
-        - name: eye level shot
-        - name: low angle shot
-        - name: high angle shot
-        - name: overhead shot
-    - name: feature
-  isMECE:
-      subTags:
-        - name: color banding
-        - name: long exposure
-        - name: color splash
-        - name: monochrome
-        - name: tilt-shift
+  subTags:
+    - name: color banding
+    - name: long exposure
+    - name: color splash
+    - name: monochrome
+    - name: tilt-shift
 
 - category: purpose
   isMECE: false
@@ -178,7 +128,6 @@ rootTags:
     - name: painting
     - name: drawing
     - name: poster
-      hasValue: true
       isMECE: false
       subTags:
         - name: movie poster
