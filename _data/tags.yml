@@ -553,6 +553,144 @@ isMECE:
                 - name: heart hands
 
 
+- class: top
+  slot:
+    - name: category
+      type: instance
+      cardinality: single
+      facets: &top-category
+    - name: body length
+      type: symbol
+      cardinality: single
+      facets:
+        - value: normal
+    - name: sleeve length
+      type: symbol
+      cardinality: single
+      facets:
+        - value: long-sleeve
+    - name: neckline
+      type: symbol
+      cardinality: single
+      facets:
+        - value: shirt-collar
+    - name: fit
+      type: symbol
+      cardinality: single
+      facets:
+        - value: normal
+    - name: texture
+      type: symbol
+      cardinality: single
+      facets:
+        - value: polyester
+    - name: print
+      type: symbol
+      cardinality: single
+      facets:
+        - value: solid
+    - name: stylye
+      type: symbol
+      cardinality: single
+      facets:
+        - value: casual
+    - name: color
+      type: symbol
+      cardinality: multiple
+      facets: &color
+
+- class: bottom
+  slot:
+    - name: category
+      type: instance
+      cardinality: single
+      facets: &bottom-category
+    - name: body length
+      type: symbol
+      cardinality: single
+      facets:
+        - value: kneelength
+    - name: shape
+      type: symbol
+      cardinality: single
+      facets:
+        - value: h-line
+    - name: texture
+      type: symbol
+      cardinality: single
+      facets:
+        - value: polyester
+        - value: wool
+    - name: print
+      type: symbol
+      cardinality: single
+      facets:
+        - value: solid
+        - value: check
+    - name: stylye
+      type: symbol
+      cardinality: single
+      facets:
+        - value: casual
+    - name: color
+      type: symbol
+      cardinality: multiple
+      facets: &color
+
+- class: shoes
+  slot:
+    - name: category
+      type: instance
+      cardinality: single
+      facets: &shoes-category
+    - name: toe type
+      type: symbol
+      cardinality: single
+      facets:
+        - value: almond-toe
+    - name: heel shape
+      type: symbol
+      cardinality: single
+      facets:
+        - value: stiletto
+    - name: heel height
+      type: symbol
+      cardinality: single
+      facets:
+        - value: high(7~)
+    - name: sole type
+      type: symbol
+      cardinality: single
+      facets:
+        - value: platform
+    - name: texture
+      type: symbol
+      cardinality: single
+      facets:
+        - value: polyester
+        - value: wool
+        - value: leather
+    - name: print
+      type: symbol
+      cardinality: single
+      facets:
+        - value: solid
+        - value: check
+    - name: stylye
+      type: symbol
+      cardinality: single
+      facets:
+        - value: casual
+    - name: color
+      type: symbol
+      cardinality: multiple
+      facets: &color
+    - name: detail
+      type: symbol
+      cardinality: multiple
+      facets: 
+        - value: lace-up
+
 - class: grape
   slot:
     - name: variety
