@@ -598,29 +598,39 @@ isMECE:
       type: symbol
       cardinality: multiple
       facets: &color
+      
+sub-class:
+  - name: bottom
+    property:
+      - name: category
+        type: instance
+        cardinality: single
+        facets: &bottom-category
+      - name: body length
+        cardinality: single
+        facets:
+          - value: kneelength
+      - name: shape
+        cardinality: single
+        facets:
+          - value: h-line
+      - name: texture
+        cardinality: single
+        facets: 
+          - value: cotton
+          - value: linen
+          - value: wool
+          - value: fur
+          - value: tweed
+          - value: denim
+          - value: polyester
+          - value: spandex
+          - value: rubber
+          - value: metallic fiber
+          - value: carbon fiber
+          - value: leather
 
-- class: bottom
-  slot:
-    - name: category
-      type: instance
-      cardinality: single
-      facets: &bottom-category
-    - name: body length
-      type: symbol
-      cardinality: single
-      facets:
-        - value: kneelength
-    - name: shape
-      type: symbol
-      cardinality: single
-      facets:
-        - value: h-line
-    - name: texture
-      type: symbol
-      cardinality: single
-      facets:
-        - value: polyester
-        - value: wool
+
     - name: print
       type: symbol
       cardinality: single
