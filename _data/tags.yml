@@ -602,18 +602,7 @@ isMECE:
 sub-class:
   - name: bottom
     property:
-      - name: category
-        type: instance
-        cardinality: single
-        facets: &bottom-category
-      - name: body length
-        cardinality: single
-        facets:
-          - value: kneelength
-      - name: shape
-        cardinality: single
-        facets:
-          - value: h-line
+
       - name: texture
         cardinality: single
         facets: 
@@ -629,7 +618,42 @@ sub-class:
           - value: metallic fiber
           - value: carbon fiber
           - value: leather
+    sub-class:
+      - name: pants
+        property:
+          - name: length
+            cardinality: single
+            facets:
+              - value: short shorts
+              - value: shorts
+              - value: jamaica
+              - value: bermuda
+              - value: pedal pushers
+              - value: clam digger
+              - value: cropped pants
+              - value: classic length
 
+      - name: skirt
+        property:
+          - name: length
+            cardinality: single
+            facets:
+              - value: mini
+              - value: above the knee
+              - value: knee length
+              - value: cocktail
+              - value: midi
+              - value: maxi
+              - value: floor length
+          - name: shape
+            cardinality: single
+            facets:
+              - value: h-line
+              - name: a-line
+              - name: ballerina
+              - name: denim
+              - name: pencil
+              - name: rah-rah
 
     - name: print
       type: symbol
