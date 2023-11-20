@@ -1,6 +1,58 @@
 {% assign data = include.data %}
-{% if data == site.data.tags %}
-  {% for tag in data %}
+{% if data == site.data.digital-art-ontology.classes %}
+  <div id="tree-wrapper">
+    <ul class="tree">
+      <li class="root">
+        <ul>
+          {% for class in data %}
+            {% if class.sub-classes %}
+              <li class="line">&nbsp;</li>
+              <li class="folder-close">
+                <img class="trigger" border="0" src="./img/spacer.gif" style="float: left;">
+                <a data-parents="root" data-value="{{ class.name }}" class="text">{{ class.name }}</a>
+                <ul>
+                  {% include generate-html.html data = class.sub-classes parent = {{ class.name }} %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="line">&nbsp;</li>
+              <li class="document">
+                <a data-parents="root" data-value="{{ class.name }}" class="text">{{ class.name }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+          <li class="line">&nbsp;</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+{% else %}
+  {% for class in data %}
+    {% if class.sub-classes %}
+      <li class="line">&nbsp;</li>
+      <li class="folder-close">
+        <img class="trigger" border="0" src="./img/spacer.gif" style="float: left;">
+        <a data-parents="{{ include.parent }}" data-value="{{ class.name }}+a" class="text">{{ class.name }}</a>
+        <ul>
+          {% include generate-html.html data = class.sub-classes %}
+        </ul>
+      </li>
+    {% else %}
+      <li class="line">&nbsp;</li>
+      <li class="document">
+        <a data-parents="{{ include.parent }}" data-value="{{ class.name }}+a" class="text">{{ class.name }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+
+
+  {% for class in data %}
+    {{ tag.name }}
+
+
     {% if tag.hasValue == false %}
       <div class="chip show" data-group="root">
         {{ tag.name }}
