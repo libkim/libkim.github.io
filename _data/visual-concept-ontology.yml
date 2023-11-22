@@ -50,69 +50,63 @@ default:
             facets:
               - name: female
               - name: male
-        - category: age
-          isMECE: true
-          subTags:
-            - name: infant
-            - name: child
-            - name: teen
-            - name: college age
-            - name: young adult
-            - name: middle age
-            - name: old
-        - category: height
-          isMECE: 
-          subTags:
-
-        - category: skin
-          isMECE:
-          subTags:
-            - name: white
-            - name: black
-        - category: hair
-          isMECE: false
-          subTags:
-            - category: hair color
-              isMECE: true
-              subTags: *color
-            - category: hair length
-              isMECE: true
-              subTags: *length
-            - category: hairstyles
-              isMECE: true
-              subTags:
-                - name: half up
-                - name: braid
-                - name: blunt bang
-                - name: straight
-                - name: curly
-                - name: pony tail
-        - category: face
-          isMECE: false
-          subTags:
-            - name: cute
-            - name: sexy
-        - category: expression
-          isMECE: true
-          subTags:
-            - name: happy
-            - name: sad
-            - name: angry
-            - name: exhausted
-            - name: confused
-            - name: bored
-            - name: guilty
-            - name: ecstatic
-            - name: suspicious
-            - name: frustrated
-            - name: confident
-            - name: embarrassed
-            - name: disgusted
-            - name: lonely
-            - name: surprised
-            - name: shocked
-            - name: anxious
-            - name: shy
+          - name: age
+            cardinality: single
+            facets:
+              - name: infant
+              - name: child
+              - name: teen
+              - name: college age
+              - name: young adult
+              - name: middle age
+              - name: old
+          - name: height
+            cardinality: single
+            facets:
+          - name: skin color
+            cardinality: single
+            facets: *color
+          - name: hair color
+            cardinality: single
+            facets: *color
+          - name: hair length
+            cardinality: single
+            facets: *length
+          - name: hairstyles
+            cardinality: single
+            facets:
+              - name: half up
+              - name: braid
+              - name: blunt bang
+              - name: straight
+              - name: curly
+              - name: pony tail
+          - name: face
+            cardinality: multiple
+            facets:
+              - name: cute
+              - name: sexy
+          - name: expression
+            cardinality: single
+            facets:
+              - name: happy
+              - name: sad
+              - name: angry
+              - name: exhausted
+              - name: confused
+              - name: bored
+              - name: guilty
+              - name: ecstatic
+              - name: suspicious
+              - name: frustrated
+              - name: confident
+              - name: embarrassed
+              - name: disgusted
+              - name: lonely
+              - name: surprised
+              - name: shocked
+              - name: anxious
+              - name: shy
         - category: eyes
           isMECE: false
           subTags:
