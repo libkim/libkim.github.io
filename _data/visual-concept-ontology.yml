@@ -1,6 +1,5 @@
 default:
-  - name: color
-    facets: &color
+  - facets: &color
       - name: black
       - name: white
       - name: blonde
@@ -18,20 +17,19 @@ default:
       - name: violet
       - name: purple
       - name: magenta
-  - name: size
-    facets: &size
-    - name: small
-    - name: big
-  width: &width
-    - name: narrow
-    - name: wide
-  length: &length
-    - name: short
-    - name: medium
-    - name: long
-  height: &height
-    - name: short
-    - name: tall
+  - facets: &size
+      - name: small
+      - name: big
+  - facets: &width
+      - name: narrow
+      - name: wide
+  - facets: &length
+      - name: short
+      - name: medium
+      - name: long
+  - facets: &height
+      - name: short
+      - name: tall
 
 classes:
   - name: painting
