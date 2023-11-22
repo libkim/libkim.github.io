@@ -1,28 +1,25 @@
-# input 값만 쓰도록 한다.
-# 예를 들어 태그에 입사광이 있고 반사재질의 옷을 입은 피사체가 있다면 반사광이 형성되는 것은 당연하다.
-# 반사광 태그를 만들 필요가 있을까?
-# 필요한 것 우선
-
 default:
-  color: &color
-    - name: black
-    - name: white
-    - name: blonde
-    - name: silver
-    - name: brown
-    - name: red
-    - name: vermilion
-    - name: orange
-    - name: amber
-    - name: yellow
-    - name: chartreuse
-    - name: green
-    - name: teal
-    - name: blue
-    - name: violet
-    - name: purple
-    - name: magenta
-  size: &size
+  - name: color
+    facets: &color
+      - name: black
+      - name: white
+      - name: blonde
+      - name: silver
+      - name: brown
+      - name: red
+      - name: vermilion
+      - name: orange
+      - name: amber
+      - name: yellow
+      - name: chartreuse
+      - name: green
+      - name: teal
+      - name: blue
+      - name: violet
+      - name: purple
+      - name: magenta
+  - name: size
+    facets: &size
     - name: small
     - name: big
   width: &width
