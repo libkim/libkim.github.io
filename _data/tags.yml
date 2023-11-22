@@ -36,31 +36,18 @@ default:
     - name: short
     - name: tall
 
-rootTags:
-  - category: style
-    isMECE: false
-    subTags:
-      - category: artist
-        isMECE: true
-        subTags:
+classes:
+  - name: painting
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
           - name: Takeshi Obata
           - name: Yoshitaka Amano
           - name: Hiroaki Samura
-      - category: production
-        isMECE: true
-        subTags:
-          - name: Studio Ghibli
-          - name: GAINAX
-          - name: Trigger
-      - category: artist communities
-        isMECE: true
-        subTags:
-          - name: artstation
-          - name: behance
-          - name: pixiv
-      - cartegory: art movements
-        isMECE: true
-        subTags:
+      - name: art movements
+        cardinality: single
+        facets:
           - name: der blaue reiter
           - name: fauvism
           - name: cubism
@@ -68,19 +55,27 @@ rootTags:
           - name: surrealism
           - name: semi-abstract
           - name: renaissance
-            isMECE: true
-            subTags:
-              - name: cangiante
-              - name: chiaroscuro
-              - name: sfumato
-              - name: unione
-      - category: art technique
+  - name: digital painting
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
+      - name: 
+
+property:
+  - name: style
+    isMECE: false
+    subTags:
+      - category: artist
         isMECE: true
         subTags:
-          - name: collage
-          - name: depaysement
-          - name: frottage
-          - name: mosaic
+          
+      - category: production
+        isMECE: true
+        subTags:
+          - name: Studio Ghibli
+          - name: GAINAX
+          - name: Trigger
 
 - category: character design
   isMECE: false
