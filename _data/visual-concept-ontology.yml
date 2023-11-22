@@ -30,196 +30,26 @@ default:
   - facets: &height
       - name: short
       - name: tall
-
-classes:
-  - name: painting
-    properties:
-      - name: artist
-        cardinality: single
-        facets:
-          - name: Takeshi Obata
-          - name: Yoshitaka Amano
-          - name: Hiroaki Samura
-      - name: art movements
-        cardinality: single
-        facets:
-          - name: der blaue reiter
-          - name: fauvism
-          - name: cubism
-          - name: de stijl
-          - name: surrealism
-          - name: semi-abstract
-          - name: renaissance
-          
-  - name: digital painting
-    properties:
-      - name: artist
-        cardinality: single
-        facets:
-      - name: production
-        cardinality: single
-        facets:
-          - name: Studio Ghibli
-          - name: GAINAX
-          - name: Trigger
-          
-  - name: photograph, photo
-    properties:
-      - name: artist
-        cardinality: single
-        facets:
-
-  - name: character design
-    properties:
-      - name: artist
-        cardinality: single
-        facets:
-      - name: base color
-        cardinality: single
-        facets: *color
-      - name: secondary color
-        cardinality: single
-        facets: *color
-      - name: accent color
-        cardinality: single
-        facets: *color
-
-  - name: reference sheet
-    properties:
-      - name: artist
-        cardinality: single
-        facets:
-
-properties:
-  - name: camera angle
-    cardinality: single
-    facets:
-      - name: eye level shot
-      - name: low angle shot
-      - name: high angle shot
-      - name: overhead shot
-
-- name: feature
-  isMECE:
-  subTags:
-    - name: color banding
-    - name: long exposure
-    - name: color splash
-    - name: monochrome
-    - name: tilt-shift
-
-    - name: composition
-  isMECE:
-      subTags:
-        - name: projection
-      isMECE:
-          subTags:
-            - name: orthographic
-isMECE:
-              subTags:
-                - name: isometric
-                - name: dimetric
-                - name: trimetric
-            - name: perspective
-          isMECE:
-              subTags:
-                - name: 1-point perspective
-                - name: 2-point perspective
-                - name: 3-point perspective
-                - name: curvilinear perspective
-
-- category: environment
-  isMECE: false
-  subTags:
-    - category: season
-      isMECE: true
-      subTags:
-        - name: spring
-        - name: summer
-        - name: autumn
-        - name: winter
-    - category: time
-      isMECE: true
-      subTags:
-        - name: morning
-        - name: afternoon
-        - name: evening
-        - name: night
-    - category: weather
-      isMECE: true
-      subTags:
-        - name: clear
-        - name: cloudy
-        - name: foggy
-        - name: raining
-        - name: snowing
-    - category: place
-      isMECE: true
-      subTags:
-        - name: indoor
-          isMECE: true
-          subTags:
-            - name: classroom
-            - name: bathroom
-            - name: kitchen
-            - name: library
-            - name: prison
-            - name: pool
-            - name: bed
-            - name: on the futon
-            - name: office
-            - name: train
-            - name: dirty room
-            - name: dark room
-        - name: outdoor
-          isMECE: true
-          subTags:
-            - name: sky
-            - name: sea
-            - name: mountain
-            - name: beach
-            - name: castle
-            - name: ruins
-            - name: church
-            - name: forest
-            - name: flower field
-            - name: park
-            - name: shrine
-            - name: hospital
-            - name: hotel
-            - name: love hotel
-            - name: factory
-            - name: train
-            - name: on stage
-        
-- category: subject
-  isMECE: true
-  subTags:
-    - name: landscape
-    - name: portrait
-      isMECE: false
-      subTags:
-        - category: motive
-          isMECE: false
-          subTags:
-            - name: butterfly
-        - category: race
-          isMECE: true
-          subTags:
-            - name: necromancer
-            - name: human
-            - name: dragon
-            - name: ghost
-            - name: 
-        - category: gender
-          isMECE:
-          subTags:
-            - name: girl
-            - name: boy
-            - name: man
-            - name: woman
-            - name: guy
-            - name: lady
+  - facets: &subject
+      - name: landscape
+      - name: portrait
+        isMECE: false
+        properties:
+          - name: motive
+            cardinality: multiple
+            facets:
+          - name: race
+            cardinality: single
+            facets:
+              - name: necromancer
+              - name: human
+              - name: dragon
+              - name: ghost
+          - name: gender
+            cardinality: single
+            facets:
+              - name: female
+              - name: male
         - category: age
           isMECE: true
           subTags:
@@ -524,6 +354,174 @@ isMECE:
             - name: gesture
               subTags:
                 - name: heart hands
+
+classes:
+  - name: painting
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
+          - name: Takeshi Obata
+          - name: Yoshitaka Amano
+          - name: Hiroaki Samura
+      - name: art movements
+        cardinality: single
+        facets:
+          - name: der blaue reiter
+          - name: fauvism
+          - name: cubism
+          - name: de stijl
+          - name: surrealism
+          - name: semi-abstract
+          - name: renaissance
+          
+  - name: digital painting
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
+      - name: production
+        cardinality: single
+        facets:
+          - name: Studio Ghibli
+          - name: GAINAX
+          - name: Trigger
+      - name: subject
+        cardinality: single
+        facets:
+          - name: Studio Ghibli
+          - name: GAINAX
+          - name: Trigger
+          
+  - name: photograph, photo
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
+
+  - name: character design
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
+      - name: base color
+        cardinality: single
+        facets: *color
+      - name: secondary color
+        cardinality: single
+        facets: *color
+      - name: accent color
+        cardinality: single
+        facets: *color
+
+  - name: reference sheet
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
+
+properties:
+  - name: camera angle
+    cardinality: single
+    facets:
+      - name: eye level shot
+      - name: low angle shot
+      - name: high angle shot
+      - name: overhead shot
+
+- name: feature
+  isMECE:
+  subTags:
+    - name: color banding
+    - name: long exposure
+    - name: color splash
+    - name: monochrome
+    - name: tilt-shift
+
+    - name: composition
+  isMECE:
+      subTags:
+        - name: projection
+      isMECE:
+          subTags:
+            - name: orthographic
+isMECE:
+              subTags:
+                - name: isometric
+                - name: dimetric
+                - name: trimetric
+            - name: perspective
+          isMECE:
+              subTags:
+                - name: 1-point perspective
+                - name: 2-point perspective
+                - name: 3-point perspective
+                - name: curvilinear perspective
+
+- category: environment
+  isMECE: false
+  subTags:
+    - category: season
+      isMECE: true
+      subTags:
+        - name: spring
+        - name: summer
+        - name: autumn
+        - name: winter
+    - category: time
+      isMECE: true
+      subTags:
+        - name: morning
+        - name: afternoon
+        - name: evening
+        - name: night
+    - category: weather
+      isMECE: true
+      subTags:
+        - name: clear
+        - name: cloudy
+        - name: foggy
+        - name: raining
+        - name: snowing
+    - category: place
+      isMECE: true
+      subTags:
+        - name: indoor
+          isMECE: true
+          subTags:
+            - name: classroom
+            - name: bathroom
+            - name: kitchen
+            - name: library
+            - name: prison
+            - name: pool
+            - name: bed
+            - name: on the futon
+            - name: office
+            - name: train
+            - name: dirty room
+            - name: dark room
+        - name: outdoor
+          isMECE: true
+          subTags:
+            - name: sky
+            - name: sea
+            - name: mountain
+            - name: beach
+            - name: castle
+            - name: ruins
+            - name: church
+            - name: forest
+            - name: flower field
+            - name: park
+            - name: shrine
+            - name: hospital
+            - name: hotel
+            - name: love hotel
+            - name: factory
+            - name: train
+            - name: on stage
+
 
 
 - class: top
