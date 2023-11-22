@@ -55,52 +55,41 @@ classes:
       - name: artist
         cardinality: single
         facets:
-      - name: 
-
-property:
-  - name: style
-    isMECE: false
-    subTags:
-      - category: artist
-        isMECE: true
-        subTags:
-          
-      - category: production
-        isMECE: true
-        subTags:
+      - name: production
+        cardinality: single
+        facets:
           - name: Studio Ghibli
           - name: GAINAX
           - name: Trigger
+  - name: photograph, photo
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
 
-- category: character design
-  isMECE: false
-  subTags:
-    - name: character design
-      isMECE: false
-      subTags:
-        - category: color schemes
-          isMECE: false
-          subTags:
-            - category: base color
-              isMECE: true
-              subTags:
-            - category: secondary color
-              isMECE: true
-              subTags:
-            - category: accent color
-              isMECE: true
-              subTags:
-        - category: color of line
-          isMECE: true
-          subTags:
+  - name: character design
+    properties:
+      - name: artist
+        cardinality: single
+        facets:
+      - name: base color
+        cardinality: single
+        facets: *color
+      - name: secondary color
+        cardinality: single
+        facets: *color
+      - name: accent color
+        cardinality: single
+        facets: *color
 
-- name: camera angle
-  isMECE:
-  subTags:
-    - name: eye level shot
-    - name: low angle shot
-    - name: high angle shot
-    - name: overhead shot
+properties:
+  - name: camera angle
+    cardinality: single
+    facets:
+      - name: eye level shot
+      - name: low angle shot
+      - name: high angle shot
+      - name: overhead shot
 
 - name: feature
   isMECE:
@@ -114,8 +103,8 @@ property:
 - category: purpose
   isMECE: false
   subTags:
-    - name: photograph, photo
-    - name: painting
+    
+
     - name: drawing
     - name: poster
       isMECE: false
