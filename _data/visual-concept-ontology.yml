@@ -30,26 +30,19 @@ default:
   - facets: &height
       - name: short
       - name: tall
-  - facets: &subject
-      - name: landscape
-      - name: portrait
-        isMECE: false
-        properties:
-          - name: motive
-            cardinality: multiple
-            facets:
-          - name: race
-            cardinality: single
-            facets:
-              - name: necromancer
-              - name: human
-              - name: dragon
-              - name: ghost
-          - name: gender
-            cardinality: single
-            facets:
-              - name: female
-              - name: male
+  - properties: &character
+      - name: race
+        cardinality: single
+        facets:
+          - name: necromancer
+          - name: human
+          - name: dragon
+          - name: ghost
+      - name: gender
+        cardinality: single
+        facets:
+          - name: female
+          - name: male
           - name: age
             cardinality: single
             facets:
@@ -452,69 +445,61 @@ isMECE:
                 - name: 3-point perspective
                 - name: curvilinear perspective
 
-- category: environment
-  isMECE: false
-  subTags:
-    - category: season
-      isMECE: true
-      subTags:
+- properties:
+    - name: season
+      cardinality: single
+      facets:
         - name: spring
         - name: summer
         - name: autumn
         - name: winter
-    - category: time
-      isMECE: true
-      subTags:
+    - name: time
+      cardinality: single
+      facets:
         - name: morning
         - name: afternoon
         - name: evening
         - name: night
-    - category: weather
-      isMECE: true
-      subTags:
+    - name: weather
+      cardinality: single
+      facets:
         - name: clear
         - name: cloudy
         - name: foggy
         - name: raining
         - name: snowing
-    - category: place
-      isMECE: true
-      subTags:
-        - name: indoor
-          isMECE: true
-          subTags:
-            - name: classroom
-            - name: bathroom
-            - name: kitchen
-            - name: library
-            - name: prison
-            - name: pool
-            - name: bed
-            - name: on the futon
-            - name: office
-            - name: train
-            - name: dirty room
-            - name: dark room
-        - name: outdoor
-          isMECE: true
-          subTags:
-            - name: sky
-            - name: sea
-            - name: mountain
-            - name: beach
-            - name: castle
-            - name: ruins
-            - name: church
-            - name: forest
-            - name: flower field
-            - name: park
-            - name: shrine
-            - name: hospital
-            - name: hotel
-            - name: love hotel
-            - name: factory
-            - name: train
-            - name: on stage
+    - name: place
+      cardinality: single
+      facets:
+        - name: inside the classroom
+        - name: inside the bathroom
+        - name: inside the kitchen
+        - name: inside the library
+        - name: inside the prison
+        - name: inside the pool
+        - name: on the bed
+        - name: on the futon
+        - name: inside the office
+        - name: train
+        - name: dirty room
+        - name: dark room
+        - name: sky
+        - name: sea
+        - name: mountain
+        - name: beach
+        - name: castle
+        - name: ruins
+        - name: inside the church
+        - name: forest
+        - name: flower field
+        - name: park
+        - name: shrine
+        - name: inside the hospital
+        - name: inside the hotel
+        - name: inside the love hotel
+        - name: factory
+        - name: train
+        - name: on stage
 
 
 
