@@ -30,6 +30,42 @@ default:
   - facets: &height
       - name: short
       - name: tall
+  - sub-classes: &landscape
+      - name: indoor
+        cardinality: single
+        properties:
+          - name: inside the classroom
+          - name: inside the bathroom
+          - name: inside the kitchen
+          - name: inside the library
+          - name: inside the prison
+          - name: inside the pool
+      - name: outdoor
+        cardinality: single
+        properties:
+      - name: on the bed
+      - name: on the futon
+      - name: inside the office
+      - name: train
+      - name: dirty room
+      - name: dark room
+      - name: sky
+      - name: sea
+      - name: mountain
+      - name: beach
+      - name: castle
+      - name: ruins
+      - name: inside the church
+      - name: forest
+      - name: flower field
+      - name: park
+      - name: shrine
+        - name: inside the hospital
+        - name: inside the hotel
+        - name: inside the love hotel
+        - name: factory
+        - name: train
+        - name: on stage
   - properties: &character
       - name: race
         cardinality: single
@@ -385,6 +421,9 @@ classes:
       - name: artist
         cardinality: single
         facets:
+    sub-classes:
+      - name: artist
+        properties:
 
   - name: character design
     properties:
