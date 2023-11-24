@@ -60,7 +60,7 @@ default:
           - name: park
           - name: shrine
 
-  - sub-classes: &character
+  - properties: &character
       - name: race
         cardinality: single
         facets:
@@ -73,85 +73,84 @@ default:
         facets:
           - name: female
           - name: male
-          - name: age
+      - name: age
+        cardinality: single
+        facets:
+          - name: infant
+          - name: child
+          - name: teen
+          - name: college age
+          - name: young adult
+          - name: middle age
+          - name: old
+      - name: height
+        cardinality: single
+        facets:
+      - name: skin color
+        cardinality: single
+        facets: *color
+      - name: hair color
+        cardinality: single
+        facets: *color
+      - name: hair length
+        cardinality: single
+        facets: *length
+      - name: hairstyles
+        cardinality: single
+        facets:
+          - name: half up
+          - name: braid
+          - name: blunt bang
+          - name: straight
+          - name: curly
+          - name: pony tail
+      - name: face
+        cardinality: multiple
+        facets:
+          - name: cute
+          - name: sexy
+      - name: expression
+        cardinality: single
+        facets:
+          - name: happy
+          - name: sad
+          - name: angry
+          - name: exhausted
+          - name: confused
+          - name: bored
+          - name: guilty
+          - name: ecstatic
+          - name: suspicious
+          - name: frustrated
+          - name: confident
+          - name: embarrassed
+          - name: disgusted
+          - name: lonely
+          - name: surprised
+          - name: shocked
+          - name: anxious
+          - name: shy
+      - name: eyes
+        cardinality: single
+        facets:
+          - name: eyes color
             cardinality: single
             facets:
-              - name: infant
-              - name: child
-              - name: teen
-              - name: college age
-              - name: young adult
-              - name: middle age
-              - name: old
-          - name: height
+          - name: eyelash lengths
             cardinality: single
             facets:
-          - name: skin color
-            cardinality: single
-            facets: *color
-          - name: hair color
-            cardinality: single
-            facets: *color
-          - name: hair length
-            cardinality: single
-            facets: *length
-          - name: hairstyles
-            cardinality: single
-            facets:
-              - name: half up
-              - name: braid
-              - name: blunt bang
-              - name: straight
-              - name: curly
-              - name: pony tail
-          - name: face
-            cardinality: multiple
-            facets:
-              - name: cute
-              - name: sexy
-          - name: expression
-            cardinality: single
-            facets:
-              - name: happy
-              - name: sad
-              - name: angry
-              - name: exhausted
-              - name: confused
-              - name: bored
-              - name: guilty
-              - name: ecstatic
-              - name: suspicious
-              - name: frustrated
-              - name: confident
-              - name: embarrassed
-              - name: disgusted
-              - name: lonely
-              - name: surprised
-              - name: shocked
-              - name: anxious
-              - name: shy
-        - category: eyes
-          isMECE: false
-          subTags:
-            - category: eyes color
-              isMECE: true
-              subTags:
-
-            - category: eyelash lengths
-              isMECE: 
-              subTags:
-        - name: gazes
-      isMECE:
-          subTags:
-            - name: looking at viewer
-        - name: mouth
-      isMECE:
-          subTags:
-            - name: open mouth
-            - name: closed mouth
-        - name: body
-      isMECE:
-          subTags:
+      - name: gazes
+        cardinality: single
+        facets:
+          - name: looking at viewer
+      - name: mouth
+        cardinality: single
+        facets:
+          - name: open mouth
+          - name: closed mouth
+      - name: body
+        cardinality: single
+        facets:
             - name: body proportions
           isMECE:
               subTags:
@@ -503,36 +502,7 @@ isMECE:
         - name: snowing
     - name: place
       cardinality: single
-      facets:
-        - name: inside the classroom
-        - name: inside the bathroom
-        - name: inside the kitchen
-        - name: inside the library
-        - name: inside the prison
-        - name: inside the pool
-        - name: on the bed
-        - name: on the futon
-        - name: inside the office
-        - name: train
-        - name: dirty room
-        - name: dark room
-        - name: sky
-        - name: sea
-        - name: mountain
-        - name: beach
-        - name: castle
-        - name: ruins
-        - name: inside the church
-        - name: forest
-        - name: flower field
-        - name: park
-        - name: shrine
-        - name: inside the hospital
-        - name: inside the hotel
-        - name: inside the love hotel
-        - name: factory
-        - name: train
-        - name: on stage
+      facets: *landscape
 
 
 
