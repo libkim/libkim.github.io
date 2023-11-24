@@ -40,33 +40,27 @@ default:
           - name: inside the library
           - name: inside the prison
           - name: inside the pool
+          - name: inside the office
+          - name: inside the room
+          - name: inside the train
+          - name: inside the hospital
+          - name: inside the hotel
+          - name: inside the love hotel
+          - name: inside the church
       - name: outdoor
         cardinality: single
         properties:
-      - name: on the bed
-      - name: on the futon
-      - name: inside the office
-      - name: train
-      - name: dirty room
-      - name: dark room
-      - name: sky
-      - name: sea
-      - name: mountain
-      - name: beach
-      - name: castle
-      - name: ruins
-      - name: inside the church
-      - name: forest
-      - name: flower field
-      - name: park
-      - name: shrine
-        - name: inside the hospital
-        - name: inside the hotel
-        - name: inside the love hotel
-        - name: factory
-        - name: train
-        - name: on stage
-  - properties: &character
+          - name: sea
+          - name: mountain
+          - name: beach
+          - name: castle
+          - name: ruins
+          - name: forest
+          - name: flower field
+          - name: park
+          - name: shrine
+
+  - sub-classes: &character
       - name: race
         cardinality: single
         facets:
