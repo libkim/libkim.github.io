@@ -17,19 +17,24 @@ default:
       - name: violet
       - name: purple
       - name: magenta
+
   - facets: &size
       - name: small
       - name: big
+
   - facets: &width
       - name: narrow
       - name: wide
+
   - facets: &length
       - name: short
       - name: medium
       - name: long
+
   - facets: &height
       - name: short
       - name: tall
+
   - sub-classes: &landscape
       - name: indoor
         cardinality: single
@@ -47,6 +52,7 @@ default:
           - name: inside the hotel
           - name: inside the love hotel
           - name: inside the church
+
       - name: outdoor
         cardinality: single
         properties:
@@ -152,8 +158,8 @@ default:
         cardinality: single
         facets:
             - name: body proportions
-          isMECE:
-              subTags:
+          cardinality:
+              facets:
                 - name: chibi
                 - name: 2 heads tall
                 - name: 3 heads tall
@@ -208,32 +214,32 @@ default:
             - name: triangular
             - name: wasp-waisted
         - category: nail
-          isMECE:
-          subTags:
+          cardinality:
+          facets:
             - name: nail length
-              isMECE:
-              subTags: *length
+              cardinality:
+              facets: *length
             - name: nail shape
-          isMECE:
-              subTags:
+          cardinality:
+              facets:
                 - name: square
                 - name: coffin
                 - name: stiletto
                 - name: round
         - name: tattoo
-          isMECE:
-          subTags:
+          cardinality:
+          facets:
             - name: new school
             - name: lettering
             - name: irezumi
         - name: headwear
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: baseball cap
             - name: beret
         - name: neckwear
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: choker
             - name: clerical collar
             - name: neckwarmer
@@ -241,8 +247,8 @@ default:
             - name: scarf
             - name: neckerchief
         - category: top
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: blouse
             - name: dress shirt
             - name: hoodie
@@ -274,21 +280,21 @@ default:
             - name: blouse
             - name: blouse
         - category: bottom
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: trouser
-              subTags:
+              facets:
             - name: skirt
-              isMECE: true
-              subTags:
+              cardinality: single
+              facets:
                 - name: a-line
                 - name: ballerina
                 - name: denim
                 - name: pencil
                 - name: rah-rah
         - name: underwear
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: g-string
             - name: crotchless panty
             - name: bra
@@ -297,8 +303,8 @@ default:
             - name: lingerie
             - name: diaper
         - name: outerwear
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: apron
             - name: 
             - name:
@@ -307,8 +313,8 @@ default:
             - name:
             - name:
         - name: legwear
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: socks
             - name: high socks
             - name: knee socks
@@ -317,11 +323,11 @@ default:
             - name: stocking
             - name: thigh strap
         - name: footwear
-          subTags:
+          facets:
             - name: barefoot
             - name: boots
         - name: accessories
-          subTags:
+          facets:
             - name: hairband
             - name: garter
             - name: gloves
@@ -334,7 +340,7 @@ default:
             - name: piercing
             - name: ring
         - name: position
-          subTags:
+          facets:
             - name: all-fours
             - name: standing
             - name: kneeling
@@ -343,7 +349,7 @@ default:
             - name: sitting
             - name: squatting
             - name: sex position
-              subTags:
+              facets:
                 - name: missionary
                 - name: doggy style
                 - name: cowgirl
@@ -357,7 +363,7 @@ default:
                 - name: full nelson
 
             - name: action
-              subTags:
+              facets:
                 - name: all-fours
                 - name: standing
                 - name: kneeling
@@ -368,7 +374,7 @@ default:
                 - name: spread legs
 
             - name: gesture
-              subTags:
+              facets:
                 - name: heart hands
 
 classes:
@@ -449,8 +455,8 @@ properties:
       - name: overhead shot
 
 - name: feature
-  isMECE:
-  subTags:
+  cardinality:
+  facets:
     - name: color banding
     - name: long exposure
     - name: color splash
@@ -458,20 +464,20 @@ properties:
     - name: tilt-shift
 
     - name: composition
-  isMECE:
-      subTags:
+  cardinality:
+      facets:
         - name: projection
-      isMECE:
-          subTags:
+      cardinality:
+          facets:
             - name: orthographic
-isMECE:
-              subTags:
+cardinality:
+              facets:
                 - name: isometric
                 - name: dimetric
                 - name: trimetric
             - name: perspective
-          isMECE:
-              subTags:
+          cardinality:
+              facets:
                 - name: 1-point perspective
                 - name: 2-point perspective
                 - name: 3-point perspective
@@ -689,57 +695,57 @@ sub-class:
         - class: Blaufränkisch
 
             - class: prop
-              isMECE: false
+              cardinality: multiple
               subclass:
                 - individual: statue
                 - name: cup
                 - name: bread
                 - name: cheese
             - category: background
-              isMECE: true
-              subTags:
+              cardinality: single
+              facets:
                 - name: color
                 - name: gradation
                 - name: pattern
-                  subTags:
+                  facets:
                     - name: starry
                 - category: texture
-                  isMECE:
-                  subTags:
+                  cardinality:
+                  facets:
                 - name: smoothness
-              isMECE:
-                  subTags:
+              cardinality:
+                  facets:
             - name: chroma
-          isMECE:
-              subTags:
+          cardinality:
+              facets:
 
     - name: still life
-      subTags:
+      facets:
 
 - category: technique
-  isMECE: false
-  subTags:
+  cardinality: multiple
+  facets:
     - name: photography
-      isMECE:
-      subTags:
+      cardinality:
+      facets:
         - name: placement of subject #피사체의 배치
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: central framing #화면 중앙에 배치
             - name: #그리드를 따라 배치
           
-              isMECE: true
-              subTags:
+              cardinality: single
+              facets:
                 - name: rule of thirds
                 - name: rule of quarters
             - name: #기하학적 분할에 따라 배치
-              isMECE: false
-              subTags:
+              cardinality: multiple
+              facets:
                 - name: rabatment of the rectangle
 
         - category: type of shot
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: long
             - name: full
             - name: knee
@@ -750,41 +756,41 @@ sub-class:
             - name: extreme close-up
 
         - name: cinematic lighting
-          isMECE: false
-          subTags:
+          cardinality: multiple
+          facets:
             - category: types of light
-              isMECE: false
-              subTags:
+              cardinality: multiple
+              facets:
                 - name: natural light
                 - name: ambient light
                 - name: practical light
                 - name: three-point lighting
               
-                  isMECE: false
-                  subTags:
+                  cardinality: multiple
+                  facets:
                     - name: key light
-                      isMECE: true
-                      subTags:
+                      cardinality: single
+                      facets:
                         - name: low-key lighting
                         - name: high-key lighting
                     - name: fill light
                     - name: back light
             - category: softness of light
-              isMECE: true
-              subTags:
+              cardinality: single
+              facets:
                 - name: soft light
                 - name: hard light
             - category: types of lighting
-              isMECE: true
-              subTags:
+              cardinality: single
+              facets:
                 - name: butterfly lighting
                 - name: loop lighting
                 - name: rembrandt Lighting
                 - name: split lighting
                 
             - category: light temperature
-              isMECE: true
-              subTags:
+              cardinality: single
+              facets:
                 - name: warm
                 - name: cool
             - name: ambient occlusion
@@ -792,28 +798,28 @@ sub-class:
             - name: sight
             
         - slot: lens
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: wide-angle
             - name: standard
             - name: short telephoto
             - name: medium telephoto
  
         - category: focus
-          isMECE: true
-          subTags:
+          cardinality: single
+          facets:
             - name: deep focus
             - name: soft focus
             - name: out of focus
             - category: selective focus
-              isMECE: true
-              subTags:
+              cardinality: single
+              facets:
                 - name: front focus
                 - name: back focus
 
 - category: utility
-  isMECE: false
-  subTags:
+  cardinality: multiple
+  facets:
     - name: alluring
     - name: sensual
     - name: provocative
@@ -822,8 +828,8 @@ sub-class:
     - name: cute
 
 - category: fidelity
-  isMECE: false
-  subTags:
+  cardinality: multiple
+  facets:
     - name: masterpiece
     - name: realistic
     - name: HDR
@@ -837,22 +843,22 @@ sub-class:
     - name: high resolution scan
 
 - category: effect
-  isMECE:
-  subTags:
+  cardinality:
+  facets:
     - name: breath
     - name: blur
         - name: gaussian blur
-          isMECE: false
-          subTags:
+          cardinality: multiple
+          facets:
             - name: blurred face
             - name: blurred penis
             - name: blurred vagina
             - name: blurred background
             - name: motion blur
-              subTags:
+              facets:
                 - name: horizontal motion blur
                 - name: vertical motion blur
     - name: bug
-      subTags:
+      facets:
         - name: butterfly
         - name: 
