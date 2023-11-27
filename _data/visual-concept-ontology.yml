@@ -35,7 +35,9 @@ default:
       - name: short
       - name: tall
 
-  - sub-classes: &landscape
+
+
+  - sub-classes: &place
       - name: indoor
         cardinality: single
         properties:
@@ -376,6 +378,8 @@ default:
             - name: gesture
               facets:
                 - name: heart hands
+
+
 
 classes:
   - name: painting
@@ -841,6 +845,7 @@ sub-class:
     - name: trending on artstation
     - name: unreal engine
     - name: high resolution scan
+    - name: scenery
 
 - category: effect
   cardinality:
