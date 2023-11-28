@@ -1,5 +1,5 @@
 pages:
   - {name: '립', url: '/about'}
-  - {name: '아크', url: '/archive'}
-  - {name: '시리얼라이즈드', url: '/serialized'}
-  - {name: 'DB', url: '/database'}
+  - {name: '태그생성기', url: '/tag-generator'}
+  - {name: '블랙잭', url: '/blackjack'}
+  - {name: '애니리스트', url: '/ani-list'}
