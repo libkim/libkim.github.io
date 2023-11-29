@@ -25,11 +25,3 @@ date-under-post:
 #Use MathJAX
 mathjax:
   active: true
-
-#Show related posts based on categories
-related-posts:
-  active: false
-  title:
-
-#Comments
-comments: false
