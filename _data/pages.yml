@@ -1,5 +1,13 @@
 pages:
-  - {name: '립', url: '/about'}
-  - {name: '태그생성기', url: '/tag-generator'}
-  - {name: '블랙잭', url: '/blackjack'}
-  - {name: '애니리스트', url: '/ani-list'}
+  - name: About
+    url: about.html
+  - name: Archive
+    url: archive.html
+  - name: Contact
+    url: contact.html
+  - name: Image Tagging
+    url: image-tagging.html
+  - name: Blackjack
+    url: blackjack.html
+  - name: Ani List
+    url: ani-list.html
