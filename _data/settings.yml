@@ -1,7 +1,17 @@
+#Google Analytics
+analytics-id: #leave blank to not use Analytics
+
 #Subtitle
 subtitle:
-  active: true
-  text: 엎질러진글들의도서관
+  active: false
+  text:
+  
+#Subtitle
+nav:
+  pages:
+    active: true
+  social:
+    active: false
 
 #Featured images in homepage
 featured-img:
@@ -11,14 +21,18 @@ featured-img:
 categories:
   active: true
 
+#Show date and read time under the post title
+date-under-post:
+  active: false
+
 #Use MathJAX
 mathjax:
   active: true
 
 #Show related posts based on categories
 related-posts:
-  active: true
-  title: 'You May Also Enjoy'
+  active: false
+  title:
 
 #Comments
-comments: true
+comments: false
