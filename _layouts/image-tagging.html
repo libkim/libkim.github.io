@@ -1,0 +1,108 @@
+---
+layout: project
+---
+
+{{ content }}
+
+<div id="referenceImageViewer">
+  <div class="error-message"></div>
+  <div class="image-view">
+    <div class="image-name"></div>
+    <div class="image-remove-button">㐅</div>
+  </div>
+  <div class="image-upload-button-outer">
+    <div class="image-upload-button">
+      <input class="file-input-field" type="file" name="">
+      Upload Image
+    </div>
+    <div class="processing-bar"></div>
+    <div class="success-box"></div>
+  </div>
+</div>
+
+<div id="tagSelector">
+  <div class="root-chip-box">
+    {% include generate-html.html data = site.data.tags %}
+  </div>
+</div>
+
+<div id="promptDownloader">
+  <div class="prompt-view">
+    <form>
+      <textarea class="prompt-textarea" name="welcomeMessage" rows="3" cols="40">
+      </textarea>
+    </form>
+    <div class="prompt-name"></div>
+  </div>
+  <button class="prompt-download-button" onclick="downloadPrompt();">Download Prompt</button>
+</div>
+
+
+
+<script>
+
+var btnUpload = $(".file-input-field"), btnOuter = $(".image-upload-button-outer");
+
+btnUpload.on("change", function(e){
+  var ext = btnUpload.val().split('.').pop().toLowerCase();
+  if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1){
+    $(".error-message").text("Not an Image...");
+  } else {
+    $(".error-message").text("");
+    btnOuter.addClass("file-uploading");
+    setTimeout(function(){
+      btnOuter.addClass("file-uploaded");
+    },3000);
+    var uploadedFile = URL.createObjectURL(e.target.files[0]);
+    setTimeout(function(){
+      btnOuter.addClass("hiding");
+      $(".image-view").append('<img src="'+uploadedFile+'" />').addClass("show");
+    },3500);
+  }
+});
+
+$(".image-remove-button").on("click", function(e){
+  $(".image-view").removeClass("show");
+  $(".image-view").find("img").remove();
+  btnOuter.removeClass("hiding");
+  setTimeout(function(){
+    btnOuter.removeClass("file-uploading");
+    btnOuter.removeClass("file-uploaded");
+  },500);
+});
+
+const chips = document.querySelectorAll("[class$=chip]");
+
+let prompt = [];
+
+chips.forEach(chip => {
+  const chipBoxWrapper = chip.nextElementSibling;
+  chip.addEventListener("click", () => {
+    chip.classList.toggle("selected");
+    chipBoxWrapper.classList.toggle("show");
+    updatePrompt();
+  });
+});
+
+function updatePrompt() {
+  const selectedChips = document.querySelectorAll(".chip.selected");
+  prompt = Array.from(selectedChips).map(chip => chip.dataset.value).join(", ");
+  const promptTextarea = document.getElementByClassName("prompt-textarea");
+  promptTextarea.textContent = prompt;
+}
+
+function downloadPrompt() {
+  const blob = new Blob([prompt], {type: "text/plain;charset=utf-8"});
+  const filename = "tags.txt";
+  if (window.navigator.msSaveOrOpenBlob) {
+    window.navigator.msSaveBlob(blob, filename);
+  } else {
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    link.click();
+    URL.revokeObjectURL(link.href);
+  }
+}
+
+</script>
