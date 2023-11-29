@@ -1,14 +1,14 @@
 #Site settings
-title: 金 立
-en-title: Lib Kim
-description: Welcome to spilledNotesLibrary.
+title: 金立圖書館
+en-title: Lib Kim Library
+description: Welcome to Lib Kim Library.
 url: 'https://libkim.github.io/'
 baseurl:
 permalink: '/:year/:month/:day/:title'
 
 #Manifest
-manifest_name: 金 立 — Lib Kim
-manifest_short_name: Lib Kim
+manifest_name: 金Lib. — Lib Kim Library
+manifest_short_name: 金Lib.
 manifest_lang: en
 manifest_background_color: white
 manifest_display: standalone
