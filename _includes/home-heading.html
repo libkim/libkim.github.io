@@ -1,7 +1,11 @@
-<div class="typing-target">
+<div id="typing-target">
   어서오세요. 김립도서관입니다.
 </div>
 
 <script>
-  TypeHangul.type('.typing-target');
+  var $target = document.querySelector('#typing-target');
+  $target.addEventListener('th.beforeType', function () {
+    $target.scrollLeft += 100;
+  });
+  TypeHangul.type('#typing-target');
 </script>
