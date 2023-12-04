@@ -89,13 +89,6 @@
   .right {
     text-align: right;
   }
-  .typing-target {
-    margin-top: 12px;
-    padding-top: 12px;
-    width: 100%;
-    height: 156px;
-    background-color: #BBDEFB;
-  }
   #typing-target::after {
     content: "|";
     animation: caret .8s infinite;
