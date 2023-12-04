@@ -93,6 +93,10 @@
     overflow-x: scroll;
     background-color: #BBDEFB;
   }
+  #typing-target::after {
+    content: "|";
+    animation: caret .8s infinite;
+}
   main {
     width: 100%;
     height: auto;
