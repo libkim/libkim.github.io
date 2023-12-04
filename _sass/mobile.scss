@@ -96,7 +96,12 @@
   #typing-target::after {
     content: "|";
     animation: caret .8s infinite;
-}
+  }
+  @keyframes caret {
+    50% {
+      opacity: 0;
+    }
+  }
   main {
     width: 100%;
     height: auto;
