@@ -83,10 +83,10 @@
     width: 100%;
     height: auto;
     margin: 12px 0;
-    font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 64px;
     line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
     background-color: #BBDEFB;
   }
   .right {
@@ -108,20 +108,20 @@
   .post-title {
     width: 100%;
     height: auto;
-    background-color: #BBDEFB;
-    font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 64px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #BBDEFB;
   }
   .post-info {
-    margin-top: 12px;
     width: 100%;
     height: auto;
+    margin: 12px 0;
+    background-color: #BBDEFB;
     p {
       font-family: 'Raleway', sans-serif;
       font-size: 1.8rem;
       line-height: 1.4em;
-      color: $another-sec-color;
     }
   }
   footer {
