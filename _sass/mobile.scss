@@ -86,17 +86,11 @@
     font-size: 4rem;
     line-height: 1.5;
   }
+  .center {
+    text-align: center;
+  }
   .right {
     text-align: right;
-  }
-  #typing-target::after {
-    content: "|";
-    animation: caret .8s infinite;
-  }
-  @keyframes caret {
-    50% {
-      opacity: 0;
-    }
   }
   main {
     width: 100%;
