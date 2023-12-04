@@ -108,10 +108,12 @@
   .post-title {
     width: 100%;
     height: auto;
-    font-weight: 500;
-    font-size: 64px;
-    font-family: 'Raleway', sans-serif;
     background-color: #BBDEFB;
+    h3 {
+      font-weight: 500;
+      font-size: 64px;
+      font-family: 'Raleway', sans-serif;
+    }
   }
   .post-datetime {
     width: 100%;
@@ -119,7 +121,6 @@
     margin: 8px 0;
     background-color: #BBDEFB;
     p {
-      font-family: 'Raleway', sans-serif;
       font-size: 1.8rem;
       line-height: 1.4em;
     }
