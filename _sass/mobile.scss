@@ -97,38 +97,28 @@
   .post-container {
     width: 100%;
     height: auto;
-    .post {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      .post-title {
-        margin-top: 5vw;
-        width: 72vw;
-        height: auto;
-        display: flex;
-        align-items: center;
-        background-color: #BBDEFB;
-        h3 {
-          width: 100%;
-          height: auto;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 500;
-          font-size: 4rem;
-          word-break: break-all;
-        }
-      }
-      .post-info {
-        margin-top: 5vw;
-        width: 18vw;
-        height: auto;
-        p {
-          font-family: 'Raleway', sans-serif;
-          font-size: 1.8rem;
-          line-height: 1.4em;
-          color: $another-sec-color;
-        }
-      }
+  }
+  .post {
+    width: 100%;
+    height: auto;
+  }
+  .post-title {
+    width: 100%;
+    height: auto;
+    background-color: #BBDEFB;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+  }
+  .post-info {
+    margin-top: 12px;
+    width: 100%;
+    height: auto;
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8rem;
+      line-height: 1.4em;
+      color: $another-sec-color;
     }
   }
   footer {
