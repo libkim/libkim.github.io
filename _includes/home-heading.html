@@ -1,12 +1,16 @@
-<div id="typing-target">
-  어서오세요.<br>
-  김립도서관<br>
+<div class="typing-target">
+  어서오세요.
+</div>
+<div class="typing-target">
+  김립도서관
+</div>
+<div class="typing-target">
   입니다.
 </div>
 
 <script>
-  var $target = document.querySelector('#typing-target');
-  $target.addEventListener('th.beforeType', function () {
+  var $target = document.querySelector('.typing-target');
+  $target.addEventListener('th.afterType', function () {
     $target.scrollLeft += 100;
   });
   TypeHangul.type('#typing-target');
