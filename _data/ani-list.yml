@@ -1013,6 +1013,11 @@
 - title: 呪術廻戦
   ko-title: 주술회전
   debut: 2020-10
+  follow-ups:
+    - title: 呪術廻戦 第２期
+      ko-title: 주술회전 2기
+      debut: 2023-10
+      eps-watched: 1
   movies:
     - title: 劇場版 呪術廻戦 0
       ko-title: 극장판 주술회전 0
