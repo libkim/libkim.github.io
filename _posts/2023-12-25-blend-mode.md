@@ -1,7 +1,7 @@
 |Blend Mode|식|
 |---|---|
 |Darken|$R'=\min(R'_B, R'_F)$|
-|Multiply|$R'=R'_B\times R'_F|
+|Multiply|$R'=R'_B\times R'_F$|
 |Color Burn|$R'=\frac{R'_B+R'_F−1}{R'_F}$|
 |Linear Burn|$R'=\max(0, R'_B+R'_F−1)$|
 |Subtract|$R'=\max(0, R'_B-R'_F)$|강해짐|||||
