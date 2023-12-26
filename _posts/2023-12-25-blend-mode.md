@@ -5,13 +5,12 @@
 |Color Burn|$R'=\frac{R'_B+R'_F−1}{R'_F}$|강해짐|||||
 |Linear Burn|$R'=\max(0, R'_B+R'_F−1)$|강해짐|||||
 |Subtract|$R'=\max(0, R'_B-R'_F)$|강해짐|||||
-
-Lighten|$\max(R'_B, R'_F)$|강해짐|
-Screen|$1-(1-R'_B)\times (1-R'_F)$|그대로|
-Color Dodge|$R'=\frac{R'_B}{1-R'_F}$|강해짐
-Linear Dodge|$R'=R'_B+R'_F$|강해짐
-더하기||강해짐
+|Lighten|$\max(R'_B, R'_F)$|강해짐|
+|Screen|$1-(1-R'_B)\times (1-R'_F)$|그대로|
+|Color Dodge|$R'=\frac{R'_B}{1-R'_F}$|강해짐|
+|Linear Dodge|$R'=R'_B+R'_F$|강해짐|
+|더하기||강해짐
 발광 더하기||강해짐
-Overlay||그대로
+|Overlay|$if(R'_B<0.5)$|그대로|
 소프트라이트||그대로
 하드라이트||그대로
