@@ -1,3 +1,8 @@
+---
+title: Blend Mode
+layout: post
+---
+
 |Blend Mode|식|
 |---|---|
 |Darken|$R'=\min(R'_B, R'_F)$|
@@ -11,10 +16,6 @@
 |Linear Dodge|$R'=R'_B+R'_F$|
 |더하기| |
 |발광 더하기| |
-|Overlay|
-$R'=\begin{cases}
-2\times R'_B\times R'_F, \; if\; R'_B{<}0.5\\
-2\times R'_B\times R'_F, \; if\; R'_B\geq 0
-\end{cases}$|
+|Overlay|$R'=\begin{cases} 2\times R'_B\times R'_F, \; if\; R'_B{<}0.5\\ 2\times R'_B\times R'_F, \; if\; R'_B\geq 0\end{cases}$|
 |소프트라이트| |
 |하드라이트| |
