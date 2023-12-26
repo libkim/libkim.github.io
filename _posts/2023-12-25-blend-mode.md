@@ -6,10 +6,10 @@
 |Linear Burn|$R'=\max(0, R'_B+R'_F−1)$|강해짐|||||
 |Subtract|$R'=\max(0, R'_B-R'_F)$|강해짐|||||
 
-비교(밝음)||강해짐|
-스크린||그대로|
-색상 닷지||강해짐
-발광 닷지||강해짐
+Lighten|$\max(R'_B, R'_F)$|강해짐|
+Screen|$1-(1-R'_B)\times (1-R'_F)$|그대로|
+Color Dodge|$R'=\frac{R'_B}{1-R'_F}$|강해짐
+Linear Dodge|$R'=R'_B+R'_F$|강해짐
 더하기||강해짐
 발광 더하기||강해짐
 Overlay||그대로
