@@ -16,6 +16,6 @@ layout: post
 |Linear Dodge|$R'=R'_B+R'_F$|
 |더하기| |
 |발광 더하기| |
-|Overlay|$$K=\begin{cases} -1 & \if\, t\leq 0 \\ 1 & \text{if }t>0 \end{cases}$$|
+|Overlay|$$R' = \begin{cases*} -1 & if $t \leq 0$ \\ 1 & if $t > 0$ \end{cases*}$$|
 |소프트라이트| |
 |하드라이트| |
