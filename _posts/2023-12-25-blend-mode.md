@@ -11,6 +11,6 @@
 |Linear Dodge|$R'=R'_B+R'_F$|강해짐|
 |더하기||강해짐
 발광 더하기||강해짐
-|Overlay|$if(R'_B<0.5)$|그대로|
+|Overlay|$R'=\begin{R'_B<0.5} 2\times R'_B\times R'_F$|그대로|
 소프트라이트||그대로
 하드라이트||그대로
