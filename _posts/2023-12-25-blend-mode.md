@@ -13,12 +13,8 @@
 |발광 더하기||
 |Overlay|
 $R'=\begin{cases}
-2\times R'_B\times R'_F, \; if\; R'_B<0.5\\
+2\times R'_B\times R'_F, \; if\; R'_B{<}0.5\\
 2\times R'_B\times R'_F, \; if\; R'_B\geq 0
 \end{cases}$|
-|소프트라이트|$x'_i=
-\begin{cases}
-{x_i^\lambda - 1 \over \lambda},\quad \;if\;\lambda \ne 0\\
-log(x_i) ,  \; otherise
-\end{cases}$|
+|소프트라이트||
 |하드라이트||
