@@ -11,8 +11,8 @@ layout: post
 |Linear Burn|$$R'=\max(0, R'_B+R'_F−1)$$|
 |Subtract|$R'=\max(0, R'_B-R'_F)$|
 |Lighten|$$\max(B, F)$$|
-|Screen|$$\begin{align} 1-(1-B)\,(1-F) \\ (1-B)\,F+B \end{align}$$|
-|Color Dodge|$$\begin{align} \frac{B}{1-F} \\ -\frac{B}{F-1} \end{align}$$|
+|Screen|$$1-(1-B)\,(1-F)=(1-B)\,F+B$$|
+|Color Dodge|$$\frac{B}{1-F}=-\frac{B}{F-1}$$|
 |Linear Dodge(Add)|$$B+F$$|
 |발광 더하기| |
 |Overlay|$$R'=\begin{cases} -1 & \text{if }t \leq 0 \\ 1 & \text{if }t > 0 \end{cases}$$|
