@@ -88,3 +88,10 @@ mjx-container [size="s"] {
 mjx-script [size="s"] {
   font-size: 70.7% !important;
 }
+mjx-frac {
+  mjx-num {
+    mjx-mrow :not(:first-child) {
+      margin-left: .222em;
+    }
+  }
+}
