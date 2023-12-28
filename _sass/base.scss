@@ -78,6 +78,14 @@
   }
 }
 
-.mathJax {
-  line-height: 60px;
+.MJX-TEX {
+  margin: 12px 0;
+}
+
+mjx-container [size="s"] {
+  font-size: inherit;
+}
+
+mjx-script [size="s"] {
+  font-size: 70.7%;
 }
