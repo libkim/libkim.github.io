@@ -3,13 +3,13 @@ title: Blend Mode
 layout: post
 ---
 
-|Blend Mode|식|
+|Blend Mode|방정식|
 |---|---|
-|Darken|$$R'=\min(R'_B, R'_F)$$|
-|Multiply|$$R'=R'_B\times R'_F$$|
-|Color Burn|$$R'=\frac{R'_B+R'_F−1}{R'_F}$$|
-|Linear Burn|$$R'=\max(0, R'_B+R'_F−1)$$|
-|Subtract|$R'=\max(0, R'_B-R'_F)$|
+|Darken|$${O}=\min({B},{F})$$|
+|Multiply|$${O}={B}\times{F}$$|
+|Color Burn|$${O}=\frac{B+F−1}{F}$$|
+|Linear Burn|$${O}=\max(0,{B+F−1})$$|
+|Subtract|$${O}=\max(0,{B-F})$$|
 |Lighten|$$\max(B, F)$$|
 |Screen|$$1-(1-B)\,(1-F)=(1-B)\,F+B$$|
 |Color Dodge|$$\frac{B}{1-F}=-\frac{B}{F-1}$$|
