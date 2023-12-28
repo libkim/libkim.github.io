@@ -94,4 +94,15 @@ mjx-frac {
       margin-left: .222em;
     }
   }
+  mjx-dbox {
+    mjx-dtable {
+      mjx-row {
+        mjx-den {
+          mjx-mrow :not(:first-child) {
+            margin-left: .222em;
+          }
+        }
+      }
+    }
+  }
 }
