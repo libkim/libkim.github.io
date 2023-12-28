@@ -10,8 +10,8 @@ layout: post
 |Color Burn|$${O}=\frac{B+F−1}{F}$$|
 |Linear Burn|$${O}=\max(0,{B+F−1})$$|
 |Subtract|$${O}=\max(0,{B-F})$$|
-|Lighten|$$\max(B, F)$$|
-|Screen|$$1-(1-B)\,(1-F)=(1-B)\,F+B$$|
+|Lighten|$${O}=\max({B},{F})$$|
+|Screen|$${O}=1-({1-B})\,({1-F})=({1-B})\,({F+B})$$|
 |Color Dodge|$$\frac{B}{1-F}=-\frac{B}{F-1}$$|
 |Linear Dodge(Add)|$$B+F$$|
 |발광 더하기| |
