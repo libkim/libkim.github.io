@@ -7,7 +7,7 @@ layout: post
 |---|---|---|
 |Darken|$${O}=\min({B},{F})$$|$${0}\leq{O}\leq{1}$$|
 |Multiply|$${O}={B}\times{F}$$|$${0}\leq{O}\leq{1}$$|
-|Color Burn|$${O}=\begin{cases}\max\left({0},\frac{B+F−1}{F}\right)&\text{if}\,{F}\neq{0}\\\max({0},{B+F−1})&\text{if}\,{F}={0}\end{cases}$$|$${0}\leq{O}\leq{1}$$|
+|Color Burn|$${O}=\begin{cases}\max\bigg({0},\frac{B+F−1}{F}\bigg)&\text{if}\;{F}\neq{0}\\\max({0},{B+F−1})&\text{if}\;{F}={0}\end{cases}$$|$${0}\leq{O}\leq{1}$$|
 |Linear Burn|$${O}=\max({0},{B+F−1})$$|
 |Subtract|$${O}=\max(0,{B-F})$$|
 |Lighten|$${O}=\max({B},{F})$$|
