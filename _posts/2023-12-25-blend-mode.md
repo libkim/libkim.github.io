@@ -13,7 +13,7 @@ layout: post
 |Lighten|$${O}=\max({B},{F})$$|$${0}\leq{O}\leq{1}$$|
 |Screen|$${O}=1-({1-B})\,({1-F})={B}+{F}-{B}\times{F}$$|$${0}\leq{O}\leq{1}$$|
 |Color Dodge|$${O}=\begin{cases}\frac{B}{1-F}&{F}\neq{1}\\{1}&{F}={1}\end{cases}$$|$${0}\leq{O}\leq{1}$$|
-|Linear Dodge(Add)|$$\min({1},{O}={B}+{F})$$|$${0}\leq{O}\leq{1}$$|
+|Linear Dodge(Add)|$$\min({1},{O}={B}+{F})$$|![Linear Dodge(Add)](/assets/img/desmos-graph.png)|
 |Linear Dodge(Add)(Light Emission)|$${O_P}={B}\times{B_A}+{F}\times{F_A}$$|
 |Overlay|$${O}=\begin{cases}{2}\times{B}\times{F}&{0}\leq{B}\lt{0.5}\\{F}&{B}={0.5}\\1-2\,({1-B})\,({1-F})=({1-B})\,{2F+2}\,({B-1})&{0.5}<{B}\leq{1}\end{cases}$$|
 |Soft Light|$${O}=\begin{cases}{1}-({1-B})\,({1}-({F-0.5}))&{0.5}<{F}\leq{1}\\{B}{F+0.5}&{0}\leq{F}\leq{0.5}\end{cases}$$|
