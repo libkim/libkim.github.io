@@ -10,7 +10,7 @@ layout: post
 |Color Burn|$${O}=\begin{cases}\max\bigg({0},\frac{B+F−1}{F}\bigg)&{F}\neq{0}\\\max({0},{B+F−1})&{F}={0}\end{cases}$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
 |Linear Burn|$${O}=\max({0},{B+F−1})$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
 |Subtract|$${O}=\max(0,{B-F})$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
-|Lighten|$${O}=\max({B},{F})$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
+|Lighten|$${O}=\max({B},{F})$$|![Lighten](/assets/img/lighten.png){: width="120" height="120"}|
 |Screen|$${O}=1-({1-B})\,({1-F})={B}+{F}-{B}\times{F}$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
 |Color Dodge|$${O}=\begin{cases}\frac{B}{1-F}&{F}\neq{1}\\{1}&{F}={1}\end{cases}$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
 |Linear Dodge(Add)|$$\min({1},{O}={B}+{F})$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
