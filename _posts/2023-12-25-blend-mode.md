@@ -5,8 +5,8 @@ layout: post
 
 |Blend Mode|방정식|치역|
 |---|---|---|
-|Darken|$${O}=\min({B},{F})$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
-|Multiply|$${O}={B}\times{F}$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
+|Darken|$${O}=\min({B},{F})$$|![Darken](/assets/img/darken.png){: width="120" height="120"}|
+|Multiply|$${O}={B}\times{F}$$|![Multiply](/assets/img/multiply.png){: width="120" height="120"}|
 |Color Burn|$${O}=\begin{cases}\max\bigg({0},\frac{B+F−1}{F}\bigg)&{F}\neq{0}\\\max({0},{B+F−1})&{F}={0}\end{cases}$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
 |Linear Burn|$${O}=\max({0},{B+F−1})$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
 |Subtract|$${O}=\max(0,{B-F})$$|![Linear Dodge(Add)](/assets/img/linear-dodge.png){: width="120" height="120"}|
