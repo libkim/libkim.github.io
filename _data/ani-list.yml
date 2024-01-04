@@ -1017,7 +1017,6 @@
     - title: 呪術廻戦 第２期
       ko-title: 주술회전 2기
       debut: 2023-10
-      eps-watched: 1
   movies:
     - title: 劇場版 呪術廻戦 0
       ko-title: 극장판 주술회전 0
@@ -1058,14 +1057,13 @@
 - title: 葬送のフリーレン
   ko-title: 장송의 프리렌
   premiered: Fall 2023
-  last-watched-eps: 16
+  last-watched-ep: 16
 
 - title: 薬屋のひとりごと
   ko-title: 약사의 혼잣말
   premiered: Fall 2023
-  last-watched-eps: 2
+  last-watched-ep: 12
 
 - title: 君のことが大大大大大好きな100人の彼女
   ko-title: 너를 너무너무너무너무 좋아하는 100명의 그녀
   premiered: Fall 2023
-  last-watched-eps: 2
