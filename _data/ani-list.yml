@@ -410,7 +410,7 @@
   type: TVA
 
 - title: K
-  koreantitle: K
+  ko-title: K
   debut: 2012-10
 
 - title: 천원돌파 그렌라간
@@ -983,7 +983,6 @@
 - title: 暗殺教室
   ko-title: 암살 교실
   debut: 2013-12
-  eps-watched: 16
 
 - title: ハイキュー!!
   ko-title: 하이큐!!
@@ -1062,13 +1061,18 @@
 - title: 葬送のフリーレン
   ko-title: 장송의 프리렌
   premiered: Fall 2023
-  last-watched-ep: 17
+  last-watched-ep: 20
 
 - title: 薬屋のひとりごと
   ko-title: 약사의 혼잣말
   premiered: Fall 2023
-  last-watched-ep: 13
+  last-watched-ep: 16
 
 - title: 君のことが大大大大大好きな100人の彼女
   ko-title: 너를 너무너무너무너무 좋아하는 100명의 그녀
   premiered: Fall 2023
+
+- title: 暁のヨナ
+  ko-title: 새벽의 연화
+  premiered: 2014-10
+  bookmark: 2
