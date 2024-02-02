@@ -1,438 +1,597 @@
 - title: エア・ギア
   ko-title: 에어 기어
-  type: TVA
-  episodes: 25
-  Debut: Apr 5, 2006 to Sep 27, 2006
+  premiered: 2006-04
   follow-ups:
     - title: エア・ギア 黒の羽と眠りの森 -Break on the sky-
       ko-title: 에어 기어 검은 날개와 잠자는 숲 -Break on the sky-
       type: OVA
       episodes: 3
-      Debut: Nov 17, 2010 to Jun 17, 2011
+      premiered: Nov 17, 2010 to Jun 17, 2011
 
 - title: PandoraHearts
   ko-title: 판도라하츠
-  type: TVA
-  episodes: 25
-  Debut: Apr 3, 2009 to Sep 25, 2009
+  premiered: 2009-04
+  follow-ups:
 
 - title: 化物語
   ko-title: 괴물 이야기
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
   episodes: 15
-  eps-watched: 15
-  Debut: Jul 3, 2009 to Jun 25, 2010
+  bookmark: 15
+  premiered: Jul 3, 2009 to Jun 25, 2010
   movies:
     - title: 傷物語〈Ⅰ鉄血篇〉
       ko-title: 상처 이야기
-      debut: 2016-01
+      premiered: 2016-01
     - title: 傷物語〈Ⅱ熱血篇〉
       ko-title: 상처 이야기
-      debut: 2016-08
+      premiered: 2016-08
     - title: 傷物語〈Ⅲ冷血篇〉
       ko-title: 상처 이야기
-      debut: 2017-01
+      premiered: 2017-01
     
 - title: 瀬戸の花嫁
   ko-title: 세토의 신부
-  type: TVA
+  premiered: 2000-00
+  follow-ups:
   episodes: 26
   
-  Debut: Apr 2, 2007 to Oct 1, 2007
+  premiered: Apr 2, 2007 to Oct 1, 2007
   follow-ups:
     - title: 瀬戸の花嫁OVA
       ko-title: 세토의 신부 OVA
-      debut:
+      premiered:
 
 - title: ハウルの動く城
   ko-title: 하울의 움직이는 성
-  debut: 2004-11
+  premiered: 2004-11
 
 - title: 我が家のお稲荷さま。
   ko-title: 우리 집의 여우 신령님.
-  type: TVA
-  episodes: 24
-  
-  Debut: Apr 7, 2008 to Sep 15, 2008
+  premiered: 2008-04
+  follow-ups:
 
 - title: バカとテストと召喚獣
   ko-title: 바보와 시험과 소환수
-  debut: 2010-01
+  premiered: 2010-01
 
 - title: スライム倒して300年、知らないうちにレベルMAXになってました
   ko-title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
-  debut: 2021-04
+  premiered: 2021-04
 
 - title: Vivy -Fluorite Eye's Song-
   ko-title: 비비 -플로라이트 아이즈 송-
-  debut: 2021-04
+  premiered: 2021-04
 
 - title: アイドールズ！
   ko-title: 아이돌즈!
-  debut: 2021-01
+  premiered: 2021-01
 
 - title: 蜘蛛ですが、なにか？
   ko-title: 거미입니다만, 문제라도?
-  debut: 2021-01
+  premiered: 2021-01
 
 - title: To LOVEる -とらぶる-
   ko-title: 투러브루
-  debut:
+  premiered:
 
 - title: NARUTO -ナルト-
   ko-title: 나루토
 
 - title: デュラララ!!
   ko-title: 듀라라라!!
-  debut: 2010-01
+  premiered: 2010-01
 
 - title: 夏目友人帳
   ko-title: 나츠메 우인장
-  debut: 2008-07
+  premiered: 2008-07
   follow-ups:
     - title: 続 夏目友人帳
       ko-title: 속 나츠메 우인장
-      debut: 2009-01
+      premiered: 2009-01
     - title: 夏目友人帳 参
       ko-title: 나츠메 우인장 삼
-      debut: 2011-07
+      premiered: 2011-07
     - title: 夏目友人帳 肆
       ko-title: 나츠메 우인장 사
-      debut: 2012-01
+      premiered: 2012-01
     - title: 夏目友人帳 伍
       ko-title: 나츠메 우인장 오
-      debut: 2016-10
+      premiered: 2016-10
     - title: 夏目友人帳 陸
       ko-title: 나츠메 우인장 육
-      debut: 2017-04
+      premiered: 2017-04
   movies:
     - title: 劇場版 夏目友人帳 ～うつせみに結ぶ～
       ko-title:
-      debut: 2018-10
+      premiered: 2018-10
 
 - title: 
   ko-title: 크게 들어올려서
-  debut:
+  premiered:
 
 - title: 너에게 닿기를
   ko-title:
-  debut:
+  premiered:
 
 - title: 토라도라!
   ko-title:
-  debut:
+  premiered:
 
 - title: 러브★콤
   ko-title:
-  debut:
+  premiered:
 
 - title: 우리들이 있었다
   ko-title:
-  debut:
+  premiered:
 
 - title: 나는 친구가 적다
   ko-title:
-  debut:
+  premiered:
 
-- title: 케이온!
-  ko-title:
-  debut:
+- title: けいおん！
+  ko-title: 케이온!
+  premiered: 2009-04
+  follow-ups:
 
 - title: 스즈미야 하루히의 우울
   ko-title:
-  debut:
+  premiered:
 
 - title: 내 여동생이 이렇게 귀여울 리가 없어
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 신만이 아는 세계
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: C
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 마법소녀 마도카☆마기카
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 안녕 절망 선생
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 미나미가
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 銀魂
   ko-title: 은혼
-  debut: 2006-04
+  premiered: 2006-04
   follow-ups:
     - title: 銀魂’
       ko-title: 은혼’
-      debut: 2011-04
+      premiered: 2011-04
     - title: 銀魂’延長戦
       ko-title: 은혼’ 연장전
-      debut: 2012-10
+      premiered: 2012-10
     - title: 銀魂ﾟ
       ko-title: 은혼ﾟ
-      debut: 2015-04
+      premiered: 2015-04
     - title: 銀魂.
       ko-title: 은혼.
-      debut: 2017-01
+      premiered: 2017-01
   movies:
 
 - title: 카노콘
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 팬티 & 스타킹 with 가터벨트
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 소울 이터
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 도서관 전쟁
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 전파녀와 청춘남
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 오오카미 상과 7명의 동료
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 드래곤 크라이시스!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 칸나기
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 워킹!!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 절대소년
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 쓰르라미 울 적에
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 흑집사
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 클라나드
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 오늘의 5학년 2반
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 일상
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 그래도 마을은 돌아간다
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 럭키스타
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 프린세스 러버!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 마리아 홀릭
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 동쪽의 에덴
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 카타나가타리
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 첫사랑 한정
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 나나
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 딸기 100%
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: ONE PIECE
   ko-title: 원피스
-  debut: 1999-10
+  premiered: 1999-10
   follow-ups:
 
 - title: 鋼の錬金術師
   ko-title: 강철의 연금술사
-  debut: 2003-10
+  premiered: 2003-10
   follow-ups:
     - title: 鋼の錬金術師 FULLMETAL ALCHEMIST
       ko-title: 강철의 연금술사 FULLMETAL ALCHEMIST
-      debut: 2009-04
+      premiered: 2009-04
   movies:
 
 - title: 요스가노소라
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 하늘 가는대로
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 바쿠만.
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: DEATH NOTE
   ko-title: 데스노트
-  debut: 2006-10
+  premiered: 2006-10
 
 - title: 테가미바치
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 페어리테일
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 성검의 블랙스미스
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 하늘의 소리
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 개그만화 보기 좋은 날
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 엔젤 비트!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: B형 H계
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 키스x시스
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아라카와 언더 더 브리지
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 넉 장 반 신화대계
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아마가미SS
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 세기말 오컬트 학원
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 해파리 공주
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: これはゾンビですか？
   ko-title: 이것은 좀비입니까?
-  debut: 2011-01
+  premiered: 2011-01
 
 - title: Steins;Gate
   ko-title: 슈타인즈;게이트
-  debut: 2011-04
+  premiered: 2011-04
   follow-ups:
     - title: Steins;Gate 0
       ko-title: 슈타인즈;게이트 0
-      debut: 2018-04
+      premiered: 2018-04
 
 - title: 꽃이 피는 첫걸음
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 그날 본 꽃의 이름을 우리는 아직 모른다.
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 로보틱스 노츠
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 청의 엑소시스트
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 소프테니
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 헨제미
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 모시도라
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 유루유리
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 토끼 드롭
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아이돌 마스터
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 하느님의 메모장
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 타마유라
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 페르소나
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 길티 크라운
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 도시락 전쟁
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 그 여름에서 기다릴게
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 어나더
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 남자 고교생의 일상
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 블랙 록 슈터
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 이누x보쿠SS
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 백곰 카페
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 빙과
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 산카레아
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 교향시편 에우레카 세븐
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 여기저기
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 하트 커넥트
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 옆자리 괴물군
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: K
   ko-title: K
-  debut: 2012-10
+  premiered: 2012-10
 
 - title: 천원돌파 그렌라간
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 경계의 저편
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 돌아가는 핑드럼
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 잔잔한 내일로부터
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 킬라킬
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아이우라
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 프리!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: GATCHAMAN CROWDS
   ko-title: 갓챠맨 크라우즈
@@ -443,631 +602,949 @@
       premiered: Summer 2015
 
 - title: 네가 있는 마을
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: NHK에 어서오세요!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 전뇌 코일
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 니세코이
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 월간순정 노자키 군
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 노부나가 콘체르토
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 일곱 개의 대죄
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 남편이 무슨 말을 하는지 알수가 없는 건
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 4월은 너의 거짓말
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 시원찮은 그녀의 육성방법
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 혈계전선
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 사무라이 참프루
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 벡
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 그 남자 그 여자의 사정
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 신세기 에반게리온
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 루팡 3세
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아오하라이드
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 내 이야기!!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 괴짜가족
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 제로의 사역마
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 샬롯
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 원펀맨
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 츠리타마
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 오소마츠 상
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 그리자이아의 과실
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 언덕길의 아폴론
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아베노바시 마법상점가
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 바질리스크~코우가 인법첩~
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: GOLDEN BOY 떠돌이 공부 자식
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 'Re: 제로부터 시작하는 이세계 생활'
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 유리쿠마 아라시
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 이 사람이 나의 주인님
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 오란고교 호스트부
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 노 게임 노 라이프
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 초시공요새 마크로스
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 블렌드S
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 코바야시네 메이드래곤
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 우폿테!!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 디트로이트 메탈 시티
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 제멋대로 카이조
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 20면상의 딸
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아이들의 시간
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 프리크리
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 쇼와 겐로쿠 라쿠고 심중
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 누나가 왔다
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 레이튼 미스터리 탐정사
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 名探偵コナン
   ko-title: 명탐정 코난
-  debut: 1996-01
+  premiered: 1996-01
 
 - title: 크레용 신짱
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 오타쿠에게 사랑은 어려워
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 시리얼 익스페리먼츠 레인
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 핑퐁 THE ANIMATION
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 울려라! 유포니엄
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 벛꽃 Trick
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 유유시키
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 단치가이
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아즈망가 대왕
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 우리들의
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 나만이 없는 거리
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 여름의 폭풍!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 그랑블루
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 넷충의 스스메
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 학생회 임원들
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 째깍째깍
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 잔향의 테러
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 현시연
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: ハチミツとクローバー
   ko-title: 허니와 클로버
-  debut: 2005-04
-  eps-watched: 4
+  premiered: 2005-04
+  bookmark: 4
 
 - title: 황야의 코토부키 비행대
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 퀄리디아 코드
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 오컬틱 나인
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 이능배틀은 일상계 속에서
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 프린세스 프린시플
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 전파적 그녀
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 쿠레나이
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 하이바네 연맹
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 미확인으로 진행형
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 연애 라보
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 에로망가선생
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아이마이미
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: M3~그 검은 강철~
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 쇼 바이 록!!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 모든 것이 F가 된다
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 중2병이라도 사랑이 하고 싶어
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: SSSS.그리드맨
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 우사카메
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 모색하라! 부활동거리
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 사무라이 플라멩코
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 칭송받는 자
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 심심한 칠드런
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 레이디x버틀러!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 거친 계절의 소녀들이여
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 덤벨 몇 킬로까지 들 수 있어?
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 바카노!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 염염의 소방대
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 여고생의 낭비
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 노부나가의 시노비
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 키이타로 소년의 요괴그림일기
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 변변찮은 마술강사와 금기교전
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 알바뛰는 마왕님!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 치토세 겟츄!!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 繰繰れ！コックリさん
   ko-title: 나와라! 코쿠리 상
-  debut: 2014-10
+  premiered: 2014-10
 
 - title: School Days
   ko-title: 스쿨 데이즈
-  debut: 2007-07
+  premiered: 2007-07
 
 - title: SHIROBAKO
   ko-title: 시로바코
-  debut: 2014-10
-  eps-watched: 1
+  premiered: 2014-10
+  bookmark: 1
 
 - title: ACCA13区監察課
   ko-title: ACCA 13구 감찰과
-  debut: 2017-01
+  premiered: 2017-01
 
 - title: GJ부
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 노부나가 선생의 어린 아내
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 집보는 에비츄
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 아빠 말좀 들어라
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 괭이갈매기 울적에
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 식극의 소마
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 훌라잉
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 월영
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 유정천 가족
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 도로헤도로
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 취성의 가르간티아
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 보노보노
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 걸즈 브라보
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 전희절창 심포기어
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: BPS
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 삼자삼엽
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 소녀들은 황야에서
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 쿠로즈카
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 웃는 세일즈맨
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 전슬라
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 이누가미양
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 리틀 위치 아카데미아
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 블리치
-  type: TVA
-  eps-watched: 156
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
+  bookmark: 156
 
 - title: 시구루이
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 어쨌든 귀여워
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 노을빛으로 물드는 언덕
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 정령환상기
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 여신 기숙사의 사감군
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 서니 보이
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 마법과 고교의 열등생
-  eps-watched: 17
+  bookmark: 17
 
 - title: 쟈히 님은 기죽지 않아!
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 길모퉁이 마족
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 호리 상과 미야무라 군
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 약캐 토모자키
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 무직선생
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 파도여 들어다오
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 정령의 수호자
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 빙쵸탄
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 딸기 마시마로
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 목소리로 일하자
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 쿄소기가
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 방패용사의 성공담
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 사이키쿠스오의 재난
-  eps-watched: 12
+  bookmark: 12
 
 - title: 어그레시브 레츠코
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 마오유우
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 기생수
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: BNA
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 고식
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: ログ・ホライズン
   follow-ups:
     - title: ログ・ホライズン（2期）
     - title: ログ・ホライズン 円卓崩壊
-      eps-watched: 0
+      bookmark: 0
 
 - title: 狼と香辛料
   ko-title: 늑대와 향신료
-  debut: 2008-01
-  eps-watched: 10
+  premiered: 2008-01
+  bookmark: 10
 
 - title: 수염을 깎다
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 빨간머리 앤
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 흔해빠진 직업으로
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 망상대리인
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 데미쨩
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 잘린머리 사이클
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 어서오세요 실력지상주의
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 무장소녀 마키아벨리즘
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 언고
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 악마의 리들
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 다이쇼 소녀 전래동화
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 錆喰いビスコ
   ko-title: 녹을 먹는 비스코
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 변경의 팔라딘
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 무채한
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 스파이 패밀리
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: 서번트 서비스
-  type: TVA
+  ko-title:
+  premiered: 2000-00
+  follow-ups:
 
 - title: サマータイムレンダ
   ko-title: 서머타임 렌더
-  eps-watched: 5
+  bookmark: 5
 
 - title: ぼっち・ざ・ろっく！
   ko-title: 외톨이 더 록!
-  debut: 2022-10
+  premiered: 2022-10
 
 - title: いなり、こんこん、恋いろは。
   ko-title: 이나리, 콩콩, 사랑의 첫걸음.
-  debut: 2014-01
-  eps-watched: 1
+  premiered: 2014-01
+  bookmark: 1
 
 - title: ブルーピリオド
   ko-title: 블루 피리어드
-  debut: 2021-10
+  premiered: 2021-10
 
 - title: 暗殺教室
   ko-title: 암살 교실
-  debut: 2013-12
+  premiered: 2013-12
 
 - title: ハイキュー!!
   ko-title: 하이큐!!
-  debut: 2014-04
+  premiered: 2014-04
   follow-ups:
     - title: ハイキュー!! セカンドシーズン
       ko-title: 하이큐!! 세컨드 시즌
-      debut: 2015-10
-      eps-watched: 1
+      premiered: 2015-10
+      bookmark: 1
     - ko-title: 하이큐!! 카라스마고교 VS 시라토리자와학원고교
     - title: ハイキュー!! TO THE TOP
       ko-title: 하이큐!! TO THE TOP
 
 - title: ネトゲの嫁は女の子じゃないと思った?
   ko-title: 온라인 게임의 신부는 여자아이가 아니라고 생각한 거야?
-  debut: 2016-04
-  eps-watched: 8
+  premiered: 2016-04
+  bookmark: 8
 
 - title: ソウナンですか？
   ko-title: 조난입니까?
-  debut: 2019-07
-  eps-watched: 1
+  premiered: 2019-07
+  bookmark: 1
 
 - title: 最強陰陽師の異世界転生記
   ko-title: 최강 음양사의 이세계 전생기
-  debut: 2023-01
+  premiered: 2023-01
 
 - title: すずめの戸締まり
   ko-title: 스즈메의 문단속
-  debut: 2022-11
+  premiered: 2022-11
 
 - title: 呪術廻戦
   ko-title: 주술회전
-  debut: 2020-10
+  premiered: 2020-10
   follow-ups:
     - title: 呪術廻戦 第２期
       ko-title: 주술회전 2기
-      debut: 2023-10
+      premiered: 2023-10
   movies:
     - title: 劇場版 呪術廻戦 0
       ko-title: 극장판 주술회전 0
-      debut: 2021-12
+      premiered: 2021-12
 
 - title: 환영을 달리는 태양
-  eps-watched: 1
+  bookmark: 1
 
 - title: のんのんびより
   ko-title: 논논비요리
-  debut: 2013-10
+  premiered: 2013-10
   follow-ups:
     - title: のんのんびより のんすとっぷ
       ko-title: 논논비요리 리피트
-      debut: 2015-07
+      premiered: 2015-07
     - title: のんのんびより のんすとっぷ
       ko-title: 논논비요리 논스톱
-      debut: 2021-01
+      premiered: 2021-01
   movies:
     - title: 劇場版 のんのんびより ばけーしょん
       ko-title: 극장판 논논비요리 베케이션
-      debut: 2018-08
+      premiered: 2018-08
 
 - title: イエスタデイをうたって
   ko-title: 예스터데이를 불러줘
-  debut: 2020-04
+  premiered: 2020-04
 
 - title: 【推しの子】
   ko-title: 【최애의 아이】
-  debut: 2023-04
-  eps-watched: 6
+  premiered: 2023-04
+  bookmark: 6
 
 - title: その時、カノジョは。
   ko-title: 그때, 그녀는.
-  debut: 2018-10
-  eps-watched: 3
+  premiered: 2018-10
+  bookmark: 3
 
 - title: 葬送のフリーレン
   ko-title: 장송의 프리렌
   premiered: Fall 2023
-  last-watched-ep: 20
+  bookmark: 20
 
 - title: 薬屋のひとりごと
   ko-title: 약사의 혼잣말
   premiered: Fall 2023
-  last-watched-ep: 16
+  bookmark: 16
 
 - title: 君のことが大大大大大好きな100人の彼女
   ko-title: 너를 너무너무너무너무 좋아하는 100명의 그녀
