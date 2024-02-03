@@ -31,11 +31,12 @@ for tid in tids:
 
   if soup.select_one('#main > h1 > span'):
     soup.select_one('#main > h1 > span').decompose()
+    soup.select_one('#main > h1 > a').decompose()
   ani['title'] = soup.select_one(
     '#main > h1'
   ).get_text()
   ani['ko-title'] = None
-  premiered = str(soup.select_one('#tidContainer > div.tidTabContentLayout > div.tidSidebar > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-child(3) > td'))
+  premiered = soup.select_one('#tidContainer > div.tidTabContentLayout > div.tidSidebar > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-child(3) > td').get_text()
   ani['premiered'] = premiered.split('～')[0]
   ani['bookmark'] = None
   ani['follow-ups'] = follow_ups
