@@ -21,7 +21,7 @@ for tid in tids:
   follow_ups_path = soup.select(
     '#tid_summary > div:nth-child(2) > ul'
   ).find_all('li')
-  for path in follow_ups_path
+  for path in follow_ups_path:
     follow_up = {}
     follow_up['title'] = path.find('a').get_text()
     follow_up['ko-title'] = None
