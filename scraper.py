@@ -18,9 +18,9 @@ for tid in tids:
   ani = {}
   follow_ups = []
   
-  follow_ups_path = soup.select(
-    '#tid_summary > div:nth-child(2) > ul'
-  ).find_all('li')
+  follow_ups_path = soup.find_all(
+    '#tid_summary > div:nth-child(2) > ul > li'
+  )
   for path in follow_ups_path:
     follow_up = {}
     follow_up['title'] = path.find('a').get_text()
