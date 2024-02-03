@@ -35,8 +35,8 @@ for tid in tids:
     '#main > h1'
   ).get_text(strip=True)
   ani['ko-title'] = None
-  ani['premiered'] = soup.select_one(
-    '#tidContainer > div:nth-child(2) > div:nth-child(1) > div > table:nth-child(1) > tbody > tr > td > table > tbody > tr:nth-child(3) > td'
+  ani['premiered'] = soup.find(
+    'div', class_='title', string="基本情報"
   ).get_text()
   ani['bookmark'] = None
   ani['follow-ups'] = follow_ups
