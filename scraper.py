@@ -34,7 +34,7 @@ for tid in tids:
     soup.select_one('#main > h1 > a').decompose()
   ani['title'] = soup.select_one(
     '#main > h1'
-  ).get_text()
+  ).get_text(strip=True)
   ani['ko-title'] = None
   ani['premiered'] = soup.select_one(
     '#main > #tidContainer > div.tidTabContentLayout > div.tidSidebar.secondary > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-of-type(3) > td'
