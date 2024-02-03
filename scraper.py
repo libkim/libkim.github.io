@@ -36,7 +36,7 @@ for tid in tids:
     '#main > h1'
   ).get_text(strip=True)
   ani['ko-title'] = None
-  ani['premiered'] = soup.find_all('#tidContainer > div.tidTabContentLayout > div.tidSidebar.secondary > div > table.section.basic > tbody > tr > td > table > tbody > tr')[2].text
+  ani['premiered'] = soup.find_all('#tidContainer > div.tidTabContentLayout > div.tidSidebar secondary > div > table.section basic > tbody > tr > td > table > tbody > tr')[2].text
   ani['bookmark'] = None
   ani['follow-ups'] = follow_ups
   ani_list.append(ani)
