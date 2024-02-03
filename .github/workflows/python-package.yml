@@ -1,6 +1,3 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
 name: Ani List Scraper
 
 on:
@@ -26,17 +23,22 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+        architecture: 'x64'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
+        pip install -r requirements.txt
+    - name: Run Scraper with python
       run: |
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
+        python "Scraper.py"
+    - name: Commits
       run: |
-        pytest
+        git config --local user.email "libkimh@gmail.com"
+        git config --local user.name "Auto_Scraping_Name" # 커밋에 포함될 이름
+        git add ani-list.json
+        git commit -m "Auto - Update data with Scraping" # 커밋 메세지
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        branch: 'master'
+        github_token: $
