@@ -10,9 +10,8 @@ tids = [1597, 3380, 6793]
 ani_list = []
 
 for tid in tids:
-  req = requests.get(f'https://cal.syoboi.jp/tid/{tid}')
-  req.encoding = None
-  html = req.content
+  url = f'https://cal.syoboi.jp/tid/{tid}'
+  html = requests.get(url).text
   soup = BeautifulSoup(html, 'html.parser')
   
   ani = {}
@@ -36,7 +35,9 @@ for tid in tids:
     '#main > h1'
   ).get_text(strip=True)
   ani['ko-title'] = None
-  ani['premiered'] = soup.find('#tidContainer > .tidTabContentLayout > .tidSidebar > div > .section > tbody > tr > td > table > tbody > tr:nth-of-type(3) > td').text
+  ani['premiered'] = soup.select_one(
+    '#tidContainer > div.tidTabContentLayout > div.tidSidebar.secondary > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-of-type(3) > td'
+  ).get_text()
   ani['bookmark'] = None
   ani['follow-ups'] = follow_ups
   ani_list.append(ani)
