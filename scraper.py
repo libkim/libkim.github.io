@@ -10,7 +10,7 @@ tids = [1597, 3380, 6793]
 ani_list = []
 
 for tid in tids:
-  url = f'https://cal.syoboi.jp/tid/{tid}'
+  url = f'https://cal.syoboi.jp/tid/{tid}/summary'
   headers = {
     'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
   }
@@ -39,7 +39,7 @@ for tid in tids:
   ).get_text(strip=True)
   ani['ko-title'] = None
   ani['premiered'] = soup.select_one(
-    '#main > h1'
+    '#tidContainer > div.tidTabContentLayout > div.tidSidebar > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-child(3) > td'
   ).get_text()
   ani['bookmark'] = None
   ani['follow-ups'] = follow_ups
