@@ -29,11 +29,11 @@ for tid in tids:
     follow_up['bookmark'] = None
     follow_ups.append(follow_up)
 
-  ani['title'] = soup.select(
+  ani['title'] = soup.find(
     '#main > h1'
-  ).text
+  ).get_text()
   ani['ko-title'] = None
-  ani['premiered'] = soup.select(
+  ani['premiered'] = soup.find(
     '#tidContainer > div.tidTabContentLayout > div.tidSidebar > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-child(3) > td'
   ).get_text().split('～')[0]
   ani['bookmark'] = None
