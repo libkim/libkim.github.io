@@ -31,7 +31,7 @@ for tid in tids:
 
   ani['title'] = soup.select(
     '#main > h1'
-  ).get_text()
+  ).text
   ani['ko-title'] = None
   ani['premiered'] = soup.select(
     '#tidContainer > div.tidTabContentLayout > div.tidSidebar > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-child(3) > td'
