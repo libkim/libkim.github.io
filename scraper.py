@@ -29,7 +29,7 @@ for tid in tids:
     follow_up['bookmark'] = None
     follow_ups.append(follow_up)
 
-  ani['title'] = soup.select(
+  ani['title'] = soup.select_one(
     '#main > h1'
   ).find('span').decompose().get_text()
   ani['ko-title'] = None
