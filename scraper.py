@@ -11,8 +11,11 @@ ani_list = []
 
 for tid in tids:
   url = f'https://cal.syoboi.jp/tid/{tid}'
-  html = requests.get(url).text
-  soup = BeautifulSoup(html, 'html.parser')
+  headers = {
+    'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
+  }
+  html = requests.get(url, headers = headers)
+  soup = BeautifulSoup(html.text, 'html.parser')
   
   ani = {}
   follow_ups = []
