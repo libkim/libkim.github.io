@@ -37,7 +37,7 @@ for tid in tids:
   ani['ko-title'] = None
   ani['premiered'] = soup.find(
     'table', class_='data'
-  ).select_one('tbody > tr:nth-of-type(3) > td').get_text()
+  ).get_text()
   ani['bookmark'] = None
   ani['follow-ups'] = follow_ups
   ani_list.append(ani)
