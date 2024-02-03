@@ -37,7 +37,7 @@ for tid in tids:
   ).get_text()
   ani['ko-title'] = None
   ani['premiered'] = soup.select_one(
-    '#tidContainer > .tidTabContentLayout > .tidSidebar > div > .section.basic > tbody > tr > td > table > tbody > tr:nth-of-type(3)'
+    '#tidContainer > .tidTabContentLayout > .tidSidebar > div > .section.basic > tbody > tr > td > table > tbody'
   ).get_text()
   ani['bookmark'] = None
   ani['follow-ups'] = follow_ups
