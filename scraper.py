@@ -29,9 +29,9 @@ for tid in tids:
     follow_up['bookmark'] = None
     follow_ups.append(follow_up)
 
-  ani['title'] = soup.find(
+  ani['title'] = soup.select(
     '#main > h1'
-  ).get_text()
+  ).find('span').decompose().get_text()
   ani['ko-title'] = None
   ani['premiered'] = soup.find(
     '#tidContainer > div.tidTabContentLayout > div.tidSidebar > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-child(3) > td'
