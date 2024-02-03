@@ -34,7 +34,7 @@ for tid in tids:
     '#main > h1'
   ).get_text()
   ani['ko-title'] = None
-  ani['premiered'] = soup.find(
+  ani['premiered'] = soup.select_one(
     '#tidContainer > div.tidTabContentLayout > div.tidSidebar > div > table.section.basic > tbody > tr > td > table > tbody > tr:nth-child(3) > td'
   ).get_text().split('～')[0]
   ani['bookmark'] = None
