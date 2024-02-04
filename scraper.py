@@ -42,5 +42,5 @@ for tid in tids:
   ani['follow-ups'] = follow_ups
   ani_list.append(ani)
 
-with open(os.path.join(BASE_DIR, 'ani-list.json'), 'w+',encoding='utf-8') as json_file:
-    json.dump(ani_list, json_file, ensure_ascii = False, indent='\t')
+with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w+',encoding='utf-8') as file:
+    yaml.dump(ani_list, file, ensure_ascii = False, indent='\t')
