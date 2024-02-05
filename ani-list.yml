@@ -1,15 +1,24 @@
-- bookmark: null
-  follow-ups: []
+- &id002
+  title: たまゆら
   ko-title: null
-  premiered: 2009-4
-  title: けいおん！
-- bookmark: null
-  follow-ups: []
-  ko-title: null
-  premiered: 2014-4
-  title: ハイキュー!!
-- bookmark: null
-  follow-ups: []
-  ko-title: null
-  premiered: 2023-10
-  title: 薬屋のひとりごと
+  premiered: 2010-9
+  bookmark: null
+  follow-ups:
+  - &id001
+    title: たまゆら～hitotose～
+    ko-title: null
+    premiered: '2011年10月 '
+    bookmark: null
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+  - *id001
+- *id002
+- *id002
+- *id002
