@@ -23,9 +23,9 @@ for tid in tids:
   ).find_all('li')
   for path in follow_ups_path:
     if path.select_one('a'):
-      follow_up['title'] = path.select_one('a').get_text()
+      follow_up['title'] = path.select_one('a').extract().get_text()
       follow_up['ko-title'] = None
-      follow_up['premiered'] = path.select_one('a').decompose().get_text()
+      follow_up['premiered'] = path.get_text()
       follow_up['bookmark'] = None
       follow_ups.append(follow_up)
 
