@@ -10,35 +10,34 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.9", "3.10", "3.11"]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-        architecture: 'x64'
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run Scraper with python
-      run: |
-        python "scraper.py"
-    - name: Commits
-      run: |
-        git config --local user.email "libkimh@gmail.com"
-        git config --local user.name "Auto_Scraping_Name" # 커밋에 포함될 이름.
-        git add ani-list.yml
-        git commit -m "Auto - Update data with Scraping" # 커밋 메세지
-    - name: Push
-      uses: ad-m/github-push-action@master
-      with:
-        branch: 'master'
-        github_token: $
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: Run Scraper with python
+        run: |
+          python "scraper.py"
+          
+      - name: Commits
+        run: |
+          git config --local user.name "GitHub Action"
+          git config --local user.email "libkimh@gmail.com"
+          git add ani-list.yml
+          git commit -m "Update ani-list.yml"
+          
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          branch: 'master'
+          github_token: $
