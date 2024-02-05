@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-from ruamel.yaml import RoundTripLoader, RoundTripDumper, load, dump
+import yaml
 import os
 import sys
 
