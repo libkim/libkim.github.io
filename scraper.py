@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import json
 import yaml
 import os
 import sys
@@ -44,4 +43,4 @@ for tid in tids:
   ani_list.append(ani)
 
 with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w', encoding='utf-8') as file:
-  yaml.dump(ani_list, file)
+  yaml.dump(ani_list, file, default_flow_style=False)
