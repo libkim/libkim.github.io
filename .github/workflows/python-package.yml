@@ -31,8 +31,11 @@ jobs:
           
       - name: Commits
         run: |
+          rm -rf .git/
+          git init
           git config --local user.name "GitHub Action"
           git config --local user.email "libkimh@gmail.com"
           git add ani-list.yml
           git commit -m "Update ani-list.yml"
-          git pull origin master
+          git remote add origin https://github.com/libkim/libkim.github.io.git
+          git push -f origin master
