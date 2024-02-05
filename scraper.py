@@ -6,7 +6,7 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-tids = [1597, 3380, 6793]
+tids = [1597, 3380, 6793, 2003]
 ani_list = []
 
 for tid in tids:
@@ -17,14 +17,14 @@ for tid in tids:
   ani = {}
   follow_ups = []
   
-  follow_ups_path = soup.find_all(
-    '#tid_summary > div:nth-child(2) > ul > li'
-  )
+  follow_ups_path = soup.find(
+    'ul', class_='tidList'
+  ).find_all('li')
   for path in follow_ups_path:
     follow_up = {}
-    follow_up['title'] = path.find('a').get_text()
+    follow_up['title'] = path.select_one('a').get_text()
     follow_up['ko-title'] = None
-    follow_up['premiered'] = path.find('a').decompose().get_text()
+    follow_up['premiered'] = path.select_one('a').decompose().get_text()
     follow_up['bookmark'] = None
     follow_ups.append(follow_up)
 
@@ -43,4 +43,4 @@ for tid in tids:
   ani_list.append(ani)
 
 with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w', encoding='utf-8') as file:
-  yaml.dump(ani_list, file, default_flow_style=False, allow_unicode=True)
+  yaml.dump(ani_list, file, default_flow_style=False, sort_keys=False, allow_unicode=True)
