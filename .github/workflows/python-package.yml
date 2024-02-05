@@ -35,9 +35,4 @@ jobs:
           git config --local user.email "libkimh@gmail.com"
           git add ani-list.yml
           git commit -m "Update ani-list.yml"
-          
-      - name: Push
-        uses: ad-m/github-push-action@master
-        with:
-          branch: 'master'
-          github_token: $
+          git pull origin master
