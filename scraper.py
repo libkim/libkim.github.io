@@ -7,26 +7,27 @@ import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 tids = [1597, 3380, 6793, 2003]
+
 ani_list = []
+ani = {}
+follow_ups = []
+follow_up = {}
 
 for tid in tids:
   url = f'https://cal.syoboi.jp/tid/{tid}/summary'
   html = requests.get(url)
   soup = BeautifulSoup(html.text, 'html.parser')
-  
-  ani = {}
-  follow_ups = []
-  
+
   follow_ups_path = soup.find(
     'ul', class_='tidList'
   ).find_all('li')
   for path in follow_ups_path:
-    follow_up = {}
-    follow_up['title'] = path.select_one('a').get_text()
-    follow_up['ko-title'] = None
-    follow_up['premiered'] = path.select_one('a').decompose().get_text()
-    follow_up['bookmark'] = None
-    follow_ups.append(follow_up)
+    if path.select_one('a'):
+      follow_up['title'] = path.select_one('a').get_text()
+      follow_up['ko-title'] = None
+      follow_up['premiered'] = path.select_one('a').decompose().get_text()
+      follow_up['bookmark'] = None
+      follow_ups.append(follow_up)
 
   if soup.select_one('#main > h1 > span'):
     soup.select_one('#main > h1 > span').decompose()
