@@ -11,14 +11,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.x
+          python-version: 3.9
           
       - name: Install dependencies
         run: |
@@ -31,11 +30,13 @@ jobs:
           
       - name: Commits
         run: |
-          rm -rf .git/
-          git init
           git config --local user.name "GitHub Action"
           git config --local user.email "libkimh@gmail.com"
           git add ani-list.yml
           git commit -m "Update ani-list.yml"
-          git remote add origin https://github.com/libkim/libkim.github.io.git
-          git push -f origin master
+          
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          branch: 'master'
+          github_token: $
