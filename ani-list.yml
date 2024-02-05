@@ -1,24 +1,64 @@
-- &id002
-  title: たまゆら
+- title: けいおん！
+  ko-title: null
+  premiered: 2009-4
+  bookmark: null
+  follow-ups:
+  - title: 映画けいおん！
+    ko-title: null
+    premiered: '2011年12月 '
+    bookmark: null
+  - title: けいおん!!
+    ko-title: null
+    premiered: '2010年04月 '
+    bookmark: null
+- title: ハイキュー!!
+  ko-title: null
+  premiered: 2014-4
+  bookmark: null
+  follow-ups:
+  - title: 劇場版ハイキュー!! ゴミ捨て場の決戦
+    ko-title: null
+    premiered: '2024年02月 '
+    bookmark: null
+  - title: ハイキュー!! TO THE TOP(第2クール)
+    ko-title: null
+    premiered: '2020年10月 '
+    bookmark: null
+  - title: ハイキュー!! TO THE TOP
+    ko-title: null
+    premiered: '2020年01月 '
+    bookmark: null
+  - title: ハイキュー!! 烏野高校VS白鳥沢学園高校
+    ko-title: null
+    premiered: '2016年10月 '
+    bookmark: null
+  - title: ハイキュー!! セカンドシーズン
+    ko-title: null
+    premiered: '2015年10月 '
+    bookmark: null
+- title: 薬屋のひとりごと
+  ko-title: null
+  premiered: 2023-10
+  bookmark: null
+  follow-ups: []
+- title: たまゆら
   ko-title: null
   premiered: 2010-9
   bookmark: null
   follow-ups:
-  - &id001
-    title: たまゆら～hitotose～
+  - title: たまゆら～卒業写真～
+    ko-title: null
+    premiered: '2015年04月 '
+    bookmark: null
+  - title: たまゆら～もあぐれっしぶ～
+    ko-title: null
+    premiered: '2013年07月 '
+    bookmark: null
+  - title: たまゆらじお～もあぐれっしぶ～
+    ko-title: null
+    premiered: '2013年07月 '
+    bookmark: null
+  - title: たまゆら～hitotose～
     ko-title: null
     premiered: '2011年10月 '
     bookmark: null
-  - *id001
-  - *id001
-  - *id001
-  - *id001
-  - *id001
-  - *id001
-  - *id001
-  - *id001
-  - *id001
-  - *id001
-- *id002
-- *id002
-- *id002
