@@ -44,4 +44,4 @@ for tid in tids:
   ani_list.append(ani)
 
 with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w') as file:
-    yaml.dump(ani_list, file)
+  yaml.dump(ani_list, file)
