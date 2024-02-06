@@ -6,7 +6,7 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-tids = [1597, 3380, 6793, 2003]
+tids = [1597, 3380, 6793, 2003, 6309]
 ani_list = []
 
 for tid in tids:
