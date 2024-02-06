@@ -17,7 +17,7 @@ for ani in ani_list:
       url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
       html = requests.get(url)
       soup = BeautifulSoup(html.text, 'html.parser')
-      ani['tid'] = soup.find('a', text=f"{ani['title']}")['href'].split('/')[2]
+      ani['tid'] = int(soup.find('a', text=f"{ani['title']}")['href'].split('/')[2])
     else:
       ani['tid'] = None
       
@@ -47,7 +47,7 @@ for ani in ani_list:
     for path in follow_ups_path:
       updated_follow_up = {}
       if path.select_one('a'):
-        updated_follow_up['tid'] = path.select_one('a')['href'].split('/')[2]
+        updated_follow_up['tid'] = int(path.select_one('a')['href'].split('/')[2])
         updated_follow_up['title'] = path.select_one('a').extract().get_text()
         updated_follow_up['ko-title'] = next((follow_up.get('ko-title') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
         updated_follow_up['premiered'] = path.get_text()
