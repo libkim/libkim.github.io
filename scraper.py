@@ -8,23 +8,23 @@ ani_list = []
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(BASE_DIR, 'ani-list.yml') as file:
+with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   ani_list = yaml.load(file, Loader=yaml.FullLoader)
 
 for ani in ani_list:
   if not ani['tid']:
     if ani['title']:
-      url = f'https://cal.syoboi.jp/find?kw={ani['title']}'
+      url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
       html = requests.get(url)
       soup = BeautifulSoup(html.text, 'html.parser')
-      ani['tid'] = soup.find('a', text=f'{ani['title']}')['href'].split('/')[1]
+      ani['tid'] = soup.find('a', text=f"{ani['title']}")['href'].split('/')[1]
     else:
       ani['tid'] = None
       
   if ani['tid']:
     updated_follow_ups = []
     
-    url = f'https://cal.syoboi.jp/tid/{ani['tid']}/summary'
+    url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
     html = requests.get(url)
     soup = BeautifulSoup(html.text, 'html.parser')
     
