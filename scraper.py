@@ -13,7 +13,7 @@ with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
 
 for ani in ani_list:
   if not 'tid' in ani:
-    if 'title' in ani && ani['title'] != None:
+    if 'title' in ani and ani['title'] != None:
       url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
       html = requests.get(url)
       soup = BeautifulSoup(html.text, 'html.parser')
