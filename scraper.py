@@ -12,7 +12,7 @@ with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   ani_list = yaml.load(file, Loader=yaml.FullLoader)
 
 for ani in ani_list:
-  if not ani['tid']:
+  if not 'tid' in ani:
     if ani['title']:
       url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
       html = requests.get(url)
@@ -33,12 +33,12 @@ for ani in ani_list:
       soup.select_one('#main > h1 > a').decompose()
     ani['title'] = soup.select_one('#main > h1').get_text(strip=True)
     
-    if not ani['ko-title']:
+    if not 'ko-title' in ani:
       ani['ko-title'] = None
       
     ani['premiered'] = soup.find('table', class_='data').find_all('tr')[2].select_one('td').get_text().split('～')[0]
     
-    if not ani['bookmark']:
+    if not 'bookmark' in ani:
       ani['bookmark'] = None
 
     follow_ups_path = soup.find(
