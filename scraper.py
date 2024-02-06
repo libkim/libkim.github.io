@@ -4,44 +4,57 @@ import yaml
 import os
 import sys
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-tids = [1597, 3380, 6793, 2003, 6309]
 ani_list = []
 
-for tid in tids:
-  url = f'https://cal.syoboi.jp/tid/{tid}/summary'
-  html = requests.get(url)
-  soup = BeautifulSoup(html.text, 'html.parser')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-  ani = {}
-  follow_ups = []
-  
-  follow_ups_path = soup.find(
-    'ul', class_='tidList'
-  ).find_all('li')
-  for path in follow_ups_path:
-    follow_up = {}
-    if path.select_one('a'):
-      follow_up['title'] = path.select_one('a').extract().get_text()
-      follow_up['ko-title'] = None
-      follow_up['premiered'] = path.get_text()
-      follow_up['bookmark'] = None
-      follow_ups.append(follow_up)
+with open(os.path.join(BASE_DIR, 'ani-list.yml') as file:
+  ani_list = yaml.load(file, Loader=yaml.FullLoader)
 
-  if soup.select_one('#main > h1 > span'):
-    soup.select_one('#main > h1 > span').decompose()
-    soup.select_one('#main > h1 > a').decompose()
-  ani['title'] = soup.select_one(
-    '#main > h1'
-  ).get_text(strip=True)
-  ani['ko-title'] = None
-  ani['premiered'] = soup.find(
-    'table', class_='data'
-  ).find_all('tr')[2].select_one('td').get_text().split('～')[0]
-  ani['bookmark'] = None
-  ani['follow-ups'] = follow_ups
-  ani_list.append(ani)
+for ani in ani_list:
+  if not ani['tid']:
+    if ani['title']:
+      url = f'https://cal.syoboi.jp/find?kw={ani['title']}'
+      html = requests.get(url)
+      soup = BeautifulSoup(html.text, 'html.parser')
+      ani['tid'] = soup.find('a', text=f'{ani['title']}')['href'].split('/')[1]
+    else:
+      ani['tid'] = None
+      
+  if ani['tid']:
+    updated_follow_ups = []
+    
+    url = f'https://cal.syoboi.jp/tid/{ani['tid']}/summary'
+    html = requests.get(url)
+    soup = BeautifulSoup(html.text, 'html.parser')
+    
+    if soup.select_one('#main > h1 > span'):
+      soup.select_one('#main > h1 > span').decompose()
+      soup.select_one('#main > h1 > a').decompose()
+    ani['title'] = soup.select_one('#main > h1').get_text(strip=True)
+    
+    if not ani['ko-title']:
+      ani['ko-title'] = None
+      
+    ani['premiered'] = soup.find('table', class_='data').find_all('tr')[2].select_one('td').get_text().split('～')[0]
+    
+    if not ani['bookmark']:
+      ani['bookmark'] = None
+
+    follow_ups_path = soup.find(
+      'ul', class_='tidList'
+    ).find_all('li')
+    for path in follow_ups_path:
+      updated_follow_up = {}
+      if path.select_one('a'):
+        updated_follow_up['tid'] = path.select_one('a')['href'].split('/')[1]
+        updated_follow_up['title'] = path.select_one('a').extract().get_text()
+        updated_follow_up['ko-title'] = (follow_up for follow_up in ani['follow-ups'] if follow_up['title'] == updated_follow_up['title'])['ko-title']
+        updated_follow_up['premiered'] = path.get_text()
+        updated_follow_up['bookmark'] = (follow_up for follow_up in ani['follow-ups'] if follow_up['title'] == updated_follow_up['title'])['bookmark']
+        updated_follow_ups.append(updated_follow_up)
+        
+    ani['follow-ups'] = updated_follow_ups
 
 with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w', encoding='utf-8') as file:
   yaml.dump(ani_list, file, default_flow_style=False, sort_keys=False, allow_unicode=True)
