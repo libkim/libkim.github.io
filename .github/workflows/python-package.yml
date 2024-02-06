@@ -1,8 +1,6 @@
 name: Ani List Scraper
 
 on:
-  schedule:
-    - cron: '0 17 * * 1'
   push:
     branches: [ "master" ]
   pull_request:
