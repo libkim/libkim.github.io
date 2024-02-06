@@ -3,12 +3,12 @@
   premiered: 2009-4
   bookmark: null
   follow-ups:
-  - tid: '2336'
+  - tid: 2336
     title: 映画けいおん！
     ko-title: 영화 케이온!
     premiered: '2011年12月 '
     bookmark: null
-  - tid: '1882'
+  - tid: 1882
     title: けいおん!!
     ko-title: null
     premiered: '2010年04月 '
@@ -19,27 +19,27 @@
   premiered: 2014-4
   bookmark: null
   follow-ups:
-  - tid: '6977'
+  - tid: 6977
     title: 劇場版ハイキュー!! ゴミ捨て場の決戦
     ko-title: null
     premiered: '2024年02月 '
     bookmark: null
-  - tid: '5782'
+  - tid: 5782
     title: ハイキュー!! TO THE TOP(第2クール)
     ko-title: null
     premiered: '2020年10月 '
     bookmark: null
-  - tid: '5558'
+  - tid: 5558
     title: ハイキュー!! TO THE TOP
     ko-title: null
     premiered: '2020年01月 '
     bookmark: null
-  - tid: '4315'
+  - tid: 4315
     title: ハイキュー!! 烏野高校VS白鳥沢学園高校
     ko-title: null
     premiered: '2016年10月 '
     bookmark: null
-  - tid: '3920'
+  - tid: 3920
     title: ハイキュー!! セカンドシーズン
     ko-title: null
     premiered: '2015年10月 '
@@ -56,22 +56,22 @@
   premiered: 2010-9
   bookmark: null
   follow-ups:
-  - tid: '3876'
+  - tid: 3876
     title: たまゆら～卒業写真～
     ko-title: null
     premiered: '2015年04月 '
     bookmark: null
-  - tid: '3020'
+  - tid: 3020
     title: たまゆら～もあぐれっしぶ～
     ko-title: null
     premiered: '2013年07月 '
     bookmark: null
-  - tid: '3124'
+  - tid: 3124
     title: たまゆらじお～もあぐれっしぶ～
     ko-title: null
     premiered: '2013年07月 '
     bookmark: null
-  - tid: '2263'
+  - tid: 2263
     title: たまゆら～hitotose～
     ko-title: null
     premiered: '2011年10月 '
@@ -82,17 +82,17 @@
   premiered: 2022-4
   bookmark: null
   follow-ups:
-  - tid: '6947'
+  - tid: 6947
     title: '劇場版 SPY×FAMILY CODE: White'
     ko-title: null
     premiered: '2023年12月 '
     bookmark: null
-  - tid: '6858'
+  - tid: 6858
     title: SPY×FAMILY Season 2
     ko-title: null
     premiered: '2023年10月 '
     bookmark: null
-  - tid: '6451'
+  - tid: 6451
     title: SPY×FAMILY(第2クール)
     ko-title: null
     premiered: '2022年10月 '
