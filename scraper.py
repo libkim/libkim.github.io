@@ -49,9 +49,9 @@ for ani in ani_list:
       if path.select_one('a'):
         updated_follow_up['tid'] = path.select_one('a')['href'].split('/')[1]
         updated_follow_up['title'] = path.select_one('a').extract().get_text()
-        updated_follow_up['ko-title'] = (follow_up for follow_up in ani['follow-ups'] if follow_up['title'] == updated_follow_up['title'])['ko-title']
+        updated_follow_up['ko-title'] = next((follow_up.get('ko-title') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
         updated_follow_up['premiered'] = path.get_text()
-        updated_follow_up['bookmark'] = (follow_up for follow_up in ani['follow-ups'] if follow_up['title'] == updated_follow_up['title'])['bookmark']
+        updated_follow_up['bookmark'] = next((follow_up.get('bookmark') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
         updated_follow_ups.append(updated_follow_up)
         
     ani['follow-ups'] = updated_follow_ups
