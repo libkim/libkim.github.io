@@ -12,24 +12,27 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   ani_list = yaml.load(file, Loader=yaml.FullLoader)
 
+def create_tid():
+  if 'title' in ani:
+    url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
+    html = requests.get(url)
+    soup = BeautifulSoup(html.text, 'html.parser')
+    ani['tid'] = int(soup.find('a', text=f"{ani['title']}")['href'].split('/')[2])
+
 for ani in ani_list:
   key_order = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
-  
+
   if not 'tid' in ani:
-    if 'title' in ani and ani['title'] != None:
-      url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
-      html = requests.get(url)
-      soup = BeautifulSoup(html.text, 'html.parser')
-      ani['tid'] = int(soup.find('a', text=f"{ani['title']}")['href'].split('/')[2])
-    else:
-      ani['tid'] = None
-      
-  if ani['tid'] != None:
-    updated_follow_ups = []
-    
+    create_tid()
+  else if 'tid' in ani and type(ani['tid']) != 'int':
+    create_tid()
+  
+  if 'tid' in ani:
     url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
     html = requests.get(url)
     soup = BeautifulSoup(html.text, 'html.parser')
+    
+    updated_follow_ups = []
     
     if soup.select_one('#main > h1 > span'):
       soup.select_one('#main > h1 > span').decompose()
