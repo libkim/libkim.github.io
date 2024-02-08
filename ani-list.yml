@@ -111,9 +111,28 @@
   bookmark: 32
   follow-ups:
   - tid: 2068
-    title: レイトン教授と永遠の歌
-    ko-title: nul
-    premiered: 
-    bookmark: nul
-- tid: 우아
+    title: レイトン教授と永遠の歌姫 THE ETERNAL DIVA
+    ko-title: null
+    premiered: '2009年12月 '
+    bookmark: null
+- tid: 1898
   title: 荒川アンダー ザ ブリッジ
+  ko-title: null
+  premiered: 2010-4
+  bookmark: null
+  follow-ups:
+  - tid: 3277
+    title: 荒川アンダー ザ ブリッジ THE MOVIE
+    ko-title: null
+    premiered: '2012年02月 '
+    bookmark: null
+  - tid: 2224
+    title: 荒川アンダー ザ ブリッジ(実写版)
+    ko-title: null
+    premiered: '2011年07月 '
+    bookmark: null
+  - tid: 2019
+    title: 荒川アンダー ザ ブリッジ×ブリッジ
+    ko-title: null
+    premiered: '2010年10月 '
+    bookmark: null
