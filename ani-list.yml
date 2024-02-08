@@ -1,4 +1,4 @@
-- tid: '1597'
+- tid: 1597
   title: けいおん！
   ko-title: 케이온!
   premiered: 2009-4
@@ -14,7 +14,7 @@
     ko-title: null
     premiered: '2010年04月 '
     bookmark: null
-- tid: '3380'
+- tid: 3380
   title: ハイキュー!!
   ko-title: null
   premiered: 2014-4
@@ -45,13 +45,13 @@
     ko-title: null
     premiered: '2015年10月 '
     bookmark: null
-- tid: '6793'
+- tid: 6793
   title: 薬屋のひとりごと
   ko-title: null
   premiered: 2023-10
   bookmark: null
   follow-ups: []
-- tid: '2003'
+- tid: 2003
   title: たまゆら
   ko-title: null
   premiered: 2010-9
@@ -77,7 +77,7 @@
     ko-title: null
     premiered: '2011年10月 '
     bookmark: null
-- tid: '6309'
+- tid: 6309
   title: SPY×FAMILY
   ko-title: null
   premiered: 2022-4
