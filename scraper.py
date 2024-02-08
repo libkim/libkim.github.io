@@ -24,7 +24,7 @@ for ani in ani_list:
 
   if not 'tid' in ani:
     create_tid()
-  else if 'tid' in ani and type(ani['tid']) != 'int':
+  elif 'tid' in ani and type(ani['tid']) != 'int':
     create_tid()
   
   if 'tid' in ani:
