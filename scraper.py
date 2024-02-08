@@ -8,9 +8,7 @@ ani_list = []
 updated_ani_list = []
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
-  ani_list = yaml.load(file, Loader=yaml.FullLoader)
+KEY_ORDER = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
 
 def create_tid():
   if 'title' in ani:
@@ -19,12 +17,13 @@ def create_tid():
     soup = BeautifulSoup(html.text, 'html.parser')
     ani['tid'] = int(soup.find('a', text=f"{ani['title']}")['href'].split('/')[2])
 
-for ani in ani_list:
-  key_order = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
+with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
+  ani_list = yaml.load(file, Loader=yaml.FullLoader)
 
-  if not 'tid' in ani:
+for ani in ani_list:
+  if not 'tid' in ani: # 키가 없거나 값이 없으면
     create_tid()
-  elif 'tid' in ani and type(ani['tid']) != 'int':
+  elif 'tid' in ani and type(ani['tid']) != 'int': # 값이 있지만 값이 정수가 아니면
     create_tid()
   
   if 'tid' in ani:
@@ -37,19 +36,17 @@ for ani in ani_list:
     if soup.select_one('#main > h1 > span'):
       soup.select_one('#main > h1 > span').decompose()
       soup.select_one('#main > h1 > a').decompose()
-    ani['title'] = soup.select_one('#main > h1').get_text(strip=True)
+    ani['title'] = soup.select_one('#main > h1').get_text(strip=True) # 무조건 다시 생성
     
-    if not 'ko-title' in ani:
+    if not 'ko-title' in ani: # 키가 없거나 값이 없으면
       ani['ko-title'] = None
       
-    ani['premiered'] = soup.find('table', class_='data').find_all('tr')[2].select_one('td').get_text().split('～')[0]
+    ani['premiered'] = soup.find('table', class_='data').find_all('tr')[2].select_one('td').get_text().split('～')[0] # 무조건 다시 생성
     
-    if not 'bookmark' in ani:
+    if not 'bookmark' in ani: # 키가 없거나 값이 없으면
       ani['bookmark'] = None
 
-    follow_ups_path = soup.find(
-      'ul', class_='tidList'
-    ).find_all('li')
+    follow_ups_path = soup.find('ul', class_='tidList').find_all('li')
     for path in follow_ups_path:
       updated_follow_up = {}
       if path.select_one('a'):
@@ -61,7 +58,10 @@ for ani in ani_list:
         updated_follow_ups.append(updated_follow_up)
     ani['follow-ups'] = updated_follow_ups
 
-  index_map = {key: index for index, key in enumerate(key_order)}
+  if not 'follow-ups' in ani:
+    del ani['follow-ups']
+    
+  index_map = {key: index for index, key in enumerate(KEY_ORDER)}
   sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
   updated_ani_list.append(sorted_ani)
 
