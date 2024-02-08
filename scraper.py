@@ -5,7 +5,6 @@ import os
 import sys
 
 ani_list = []
-key_order = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -23,6 +22,7 @@ for ani in ani_list:
       ani['tid'] = None
       
   if ani['tid'] != None:
+    key_order = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
     updated_follow_ups = []
     
     url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
