@@ -5,6 +5,7 @@ import os
 import sys
 
 ani_list = []
+key_order = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -53,8 +54,9 @@ for ani in ani_list:
         updated_follow_up['premiered'] = path.get_text()
         updated_follow_up['bookmark'] = next((follow_up.get('bookmark') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
         updated_follow_ups.append(updated_follow_up)
-        
     ani['follow-ups'] = updated_follow_ups
+
+    dict(sorted(ani.items(), key=lambda k: key_order.index(k[0])))
 
 with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w', encoding='utf-8') as file:
   yaml.dump(ani_list, file, default_flow_style=False, sort_keys=False, allow_unicode=True)
