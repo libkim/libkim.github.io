@@ -5,6 +5,7 @@ import os
 import sys
 
 ani_list = []
+updated_ani_list = []
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -12,6 +13,8 @@ with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   ani_list = yaml.load(file, Loader=yaml.FullLoader)
 
 for ani in ani_list:
+  key_order = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
+  
   if not 'tid' in ani:
     if 'title' in ani and ani['title'] != None:
       url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
@@ -22,7 +25,6 @@ for ani in ani_list:
       ani['tid'] = None
       
   if ani['tid'] != None:
-    key_order = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
     updated_follow_ups = []
     
     url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
@@ -56,7 +58,9 @@ for ani in ani_list:
         updated_follow_ups.append(updated_follow_up)
     ani['follow-ups'] = updated_follow_ups
 
-    dict(sorted(ani.items(), key=lambda k: key_order.index(k[0])))
+  index_map = {key: index for index, key in enumerate(key_order)}
+  sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
+  updated_ani_list.append(sorted_ani)
 
 with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w', encoding='utf-8') as file:
-  yaml.dump(ani_list, file, default_flow_style=False, sort_keys=False, allow_unicode=True)
+  yaml.dump(updated_ani_list, file, default_flow_style=False, sort_keys=False, allow_unicode=True)
