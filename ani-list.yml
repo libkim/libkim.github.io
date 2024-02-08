@@ -111,7 +111,9 @@
   bookmark: 32
   follow-ups:
   - tid: 2068
-    title: レイトン教授と永遠の歌姫 THE ETERNAL DIVA
-    ko-title: null
-    premiered: '2009年12月 '
-    bookmark: null
+    title: レイトン教授と永遠の歌
+    ko-title: nul
+    premiered: 
+    bookmark: nul
+- tid: 우아
+  title: 荒川アンダー ザ ブリッジ
