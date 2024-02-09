@@ -21,9 +21,7 @@ with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   ani_list = yaml.load(file, Loader=yaml.FullLoader)
 
 for ani in ani_list:
-  if not 'tid' in ani: # 키가 없거나 값이 없으면
-    create_tid()
-  elif 'tid' in ani and type(ani['tid']) != 'int': # 값이 있지만 값이 정수가 아니면
+  if not 'tid' in ani or ani['tid'] == None or type(ani['tid']) != 'int': # 키가 없거나 키는 있지만 값이 없거나 값이 있지만 값이 정수가 아니면
     create_tid()
   
   if 'tid' in ani:
