@@ -62,5 +62,5 @@ for ani in ani_list:
   updated_ani_list.append(sorted_ani)
 
 with open('ani-list.yml', 'wb') as file:
-  yaml.indent(sequence=4)
+  yaml.indent(sequence=2, offset=2)
   yaml.dump(ani_list, file)
