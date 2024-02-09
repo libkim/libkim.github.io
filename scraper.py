@@ -66,6 +66,6 @@ for ani in ani_list:
   sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
   updated_ani_list.append(sorted_ani)
 
-with open('ani-list.yml', 'wb') as file:
-  yaml.indent(sequence=4, offset=2)
-  yaml.dump(ani_list, file, transform=strip_leading_double_space)
+with open('ani-list.yml', 'w') as file:
+    yaml.indent(sequence=4, offset=2)
+    yaml.dump(ani_list, file, transform=strip_leading_double_space)
