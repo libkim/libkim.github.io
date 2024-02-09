@@ -68,4 +68,4 @@ for ani in ani_list:
 
 with open('ani-list.yml', 'wb') as file:
   yaml.indent(sequence=4, offset=2)
-  yaml.dump(ani_list, file)
+  yaml.dump(ani_list, file, transform=strip_leading_double_space)
