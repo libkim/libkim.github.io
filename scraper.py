@@ -17,6 +17,11 @@ def create_tid():
     soup = BeautifulSoup(html.text, 'html.parser')
     ani['tid'] = int(soup.find('a', text=f"{ani['title']}")['href'].split('/')[2])
 
+def strip_leading_double_space(stream):
+  if stream.startswith("  "):
+    stream = stream[2:]
+    return stream.replace("\n  ", "\n")
+
 yaml = YAML()
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   ani_list = yaml.load(file)
@@ -37,12 +42,12 @@ for ani in ani_list:
       soup.select_one('#main > h1 > a').decompose()
     ani['title'] = soup.select_one('#main > h1').get_text(strip=True) # 무조건 다시 생성
     
-    if not 'ko-title' in ani: # 키가 없거나 값이 없으면
+    if not 'ko-title' in ani: # 키가 없으면
       ani['ko-title'] = None
       
     ani['premiered'] = soup.find('table', class_='data').find_all('tr')[2].select_one('td').get_text().split('～')[0] # 무조건 다시 생성
     
-    if not 'bookmark' in ani: # 키가 없거나 값이 없으면
+    if not 'bookmark' in ani: # 키가 없으면
       ani['bookmark'] = None
 
     follow_ups_path = soup.find('ul', class_='tidList').find_all('li')
@@ -62,5 +67,5 @@ for ani in ani_list:
   updated_ani_list.append(sorted_ani)
 
 with open('ani-list.yml', 'wb') as file:
-  yaml.indent(sequence=2, offset=2)
+  yaml.indent(sequence=4, offset=2)
   yaml.dump(ani_list, file)
