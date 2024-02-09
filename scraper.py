@@ -1,8 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-import yaml
 import os
 import sys
+import yaml
+
+class MyDumper(yaml.Dumper):
+  def increase_indent(self, flow=False, indentless=False):
+  return super(MyDumper, self).increase_indent(flow, False)
 
 ani_list = []
 updated_ani_list = []
@@ -56,9 +60,6 @@ for ani in ani_list:
         updated_follow_ups.append(updated_follow_up)
     ani['follow-ups'] = updated_follow_ups
 
-  if 'follow-ups' in ani and ani['follow-ups'] == []:
-    del ani['follow-ups']
-    
   index_map = {key: index for index, key in enumerate(KEY_ORDER)}
   sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
   updated_ani_list.append(sorted_ani)
