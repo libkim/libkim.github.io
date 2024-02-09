@@ -20,7 +20,7 @@ def create_tid():
 def strip_leading_double_space(stream):
   if stream.startswith("  "):
     stream = stream[2:]
-    return stream.replace("\n  ", "\n")
+    return "".join([s[2:] if s.startswith("  ") else s for s in stream.splitlines(True)])
 
 yaml = YAML()
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
