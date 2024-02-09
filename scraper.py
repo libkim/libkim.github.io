@@ -6,7 +6,7 @@ import yaml
 
 class MyDumper(yaml.Dumper):
   def increase_indent(self, flow=False, indentless=False):
-  return super(MyDumper, self).increase_indent(flow, False)
+    return super(MyDumper, self).increase_indent(flow, False)
 
 ani_list = []
 updated_ani_list = []
