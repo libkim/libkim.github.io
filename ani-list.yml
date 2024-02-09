@@ -109,16 +109,16 @@
   premiered: 2023-9
   bookmark:
   follow-ups: []
-- tid: 4886
-  title: レイトン ミステリー探偵社～カトリーのナゾトキファイル～
+- tid: 2068
+  title: レイトン教授と永遠の歌姫 THE ETERNAL DIVA
   ko-title:
-  premiered: レイトン ミステリー探偵社
+  premiered: レイトン教授と永遠の歌姫
   bookmark: 32
   follow-ups:
-    - tid: 2068
-      title: レイトン教授と永遠の歌姫 THE ETERNAL DIVA
+    - tid: 4886
+      title: レイトン ミステリー探偵社～カトリーのナゾトキファイル～
       ko-title:
-      premiered: '2009年12月 '
+      premiered: '2018年04月 '
       bookmark:
 - tid: 1898
   title: 荒川アンダー ザ ブリッジ
