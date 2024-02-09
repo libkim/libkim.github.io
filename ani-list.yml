@@ -141,5 +141,39 @@
       ko-title:
       premiered: '2010年10月 '
       bookmark:
-- tid: 6828
+- tid: 3542
   ko-title: 일곱개의 대죄
+  title: 七つの大罪
+  premiered: 2014-10
+  bookmark:
+  follow-ups:
+    - tid: 6828
+      title: 七つの大罪 黙示録の四騎士
+      ko-title:
+      premiered: '2023年10月 '
+      bookmark:
+    - tid: 5861
+      title: 七つの大罪 憤怒の審判
+      ko-title:
+      premiered: '2021年01月 '
+      bookmark:
+    - tid: 5456
+      title: 七つの大罪 神々の逆鱗
+      ko-title:
+      premiered: '2019年10月 '
+      bookmark:
+    - tid: 4813
+      title: 七つの大罪 戒めの復活
+      ko-title:
+      premiered: '2018年01月 '
+      bookmark:
+    - tid: 4277
+      title: 七つの大罪 聖戦の予兆
+      ko-title:
+      premiered: '2016年08月 '
+      bookmark:
+    - tid: 4802
+      title: 七つの大罪 -外伝- バンデット・バン
+      ko-title:
+      premiered: '2015年06月 '
+      bookmark:
