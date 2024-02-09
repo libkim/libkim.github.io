@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import sys
-import yaml
+from ruamel.yaml import YAML
 
 class MyDumper(yaml.Dumper):
   def increase_indent(self, flow=False, indentless=False):
@@ -21,8 +21,9 @@ def create_tid():
     soup = BeautifulSoup(html.text, 'html.parser')
     ani['tid'] = int(soup.find('a', text=f"{ani['title']}")['href'].split('/')[2])
 
+yaml = YAML()
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
-  ani_list = yaml.load(file, Loader=yaml.FullLoader)
+  ani_list = yaml.load(file)
 
 for ani in ani_list:
   if not 'tid' in ani or ani['tid'] == None or type(ani['tid']) != 'int': # 키가 없거나 키는 있지만 값이 없거나 값이 있지만 값이 정수가 아니면
@@ -64,5 +65,5 @@ for ani in ani_list:
   sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
   updated_ani_list.append(sorted_ani)
 
-with open(os.path.join(BASE_DIR, 'ani-list.yml'), 'w', encoding='utf-8') as file:
-  yaml.dump(updated_ani_list, file, default_flow_style=False, sort_keys=False, allow_unicode=True)
+with open('ani-list.yml', 'wb') as file:
+  yaml.dump(ani_list, file)
