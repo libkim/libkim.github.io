@@ -56,7 +56,7 @@ for ani in ani_list:
         updated_follow_ups.append(updated_follow_up)
     ani['follow-ups'] = updated_follow_ups
 
-  if not 'follow-ups' in ani:
+  if 'follow-ups' in ani and ani['follow-ups'] == []:
     del ani['follow-ups']
     
   index_map = {key: index for index, key in enumerate(KEY_ORDER)}
