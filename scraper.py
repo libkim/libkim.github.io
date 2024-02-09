@@ -34,7 +34,15 @@ for ani in ani_list:
     url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
     html = requests.get(url)
     soup = BeautifulSoup(html.text, 'html.parser')
-    
+    follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
+
+    if follow_up_paths != [] and follow_up_paths[-1].select_one('a'):
+      ani['tid'] = int(follow_up_paths[-1].select_one('a')['href'].split('/')[2])
+      url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
+      html = requests.get(url)
+      soup = BeautifulSoup(html.text, 'html.parser')
+      follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
+
     updated_follow_ups = []
     
     if soup.select_one('#main > h1 > span'):
@@ -50,8 +58,7 @@ for ani in ani_list:
     if not 'bookmark' in ani: # 키가 없으면
       ani['bookmark'] = None
 
-    follow_ups_path = soup.find('ul', class_='tidList').find_all('li')
-    for path in follow_ups_path:
+    for path in follow_up_paths:
       updated_follow_up = {}
       if path.select_one('a'):
         updated_follow_up['tid'] = int(path.select_one('a')['href'].split('/')[2])
