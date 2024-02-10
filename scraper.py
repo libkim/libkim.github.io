@@ -54,7 +54,7 @@ for ani in ani_list:
     if not 'ko-title' in ani: # 키가 없으면
       ani['ko-title'] = None
       
-    premiered = soup.find('table', class_='data').find_all('tr')[2].select_one('td').string.split('～')[0].split('-') # 무조건 다시 생성
+    premiered = soup.find('th', text='放送期間').parent.select_one('td').string.split('～')[0].split('-') # 무조건 다시 생성
     ani['premiered'] = premiered[1]
 
     if not 'bookmark' in ani: # 키가 없으면
