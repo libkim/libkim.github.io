@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import datetime
 import os
 import sys
 from ruamel.yaml import YAML
@@ -16,7 +15,7 @@ def create_tid():
     url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
     html = requests.get(url)
     soup = BeautifulSoup(html.text, 'html.parser')
-    ani['tid'] = int(soup.find('a', text=f"{ani['title']}")['href'].split('/')[2])
+    ani['tid'] = int(soup.find('a', string=f"{ani['title']}")['href'].split('/')[2])
 
 def strip_leading_double_space(stream):
   if stream.startswith("  "):
@@ -54,7 +53,7 @@ for ani in ani_list:
     if not 'ko-title' in ani: # 키가 없으면
       ani['ko-title'] = None
       
-    premiered = soup.find('th', text='放送期間').parent.select_one('td').string.split('～')[0].split('-') # 무조건 다시 생성
+    premiered = soup.find('th', string='放送期間').parent.select_one('td').get_text().split('～')[0].split('-') # 무조건 다시 생성
     ani['premiered'] = premiered[0] + '-' + premiered[1].zfill(2)
 
     if not 'bookmark' in ani: # 키가 없으면
