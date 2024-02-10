@@ -55,7 +55,7 @@ for ani in ani_list:
       ani['ko-title'] = None
       
     premiered = soup.find('table', class_='data').find_all('tr')[2].select_one('td').string.split('～')[0].split('-') # 무조건 다시 생성
-    ani['premiered'] = premiered[0] + '-' + premiered[1].zfill(2)
+    ani['premiered'] = premiered[0]
 
     if not 'bookmark' in ani: # 키가 없으면
       ani['bookmark'] = None
