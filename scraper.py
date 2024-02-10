@@ -53,8 +53,9 @@ for ani in ani_list:
     if not 'ko-title' in ani: # 키가 없으면
       ani['ko-title'] = None
       
-    ani['premiered'] = soup.find('table', class_='data').find_all('tr')[2].select_one('td').get_text().split('～')[0] # 무조건 다시 생성
-    
+    premiered = soup.find('table', class_='data').find_all('tr')[2].select_one('td').get_text().split('～')[0] # 무조건 다시 생성
+    ani['premiered'] == datetime.datetime.strptime(premiered, '%Y-%m')
+
     if not 'bookmark' in ani: # 키가 없으면
       ani['bookmark'] = None
 
