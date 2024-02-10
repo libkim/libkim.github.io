@@ -1,7 +1,7 @@
 - tid: 1597
   title: けいおん！
   ko-title: 케이온!
-  premiered: '4'
+  premiered: 2009-04
   bookmark:
   follow-ups:
     - tid: 2336
@@ -17,7 +17,7 @@
 - tid: 3380
   title: ハイキュー!!
   ko-title:
-  premiered: '4'
+  premiered: 2014-04
   bookmark:
   follow-ups:
     - tid: 6977
@@ -53,13 +53,13 @@
 - tid: 6793
   title: 薬屋のひとりごと
   ko-title:
-  premiered: '10'
+  premiered: 2023-10
   bookmark:
   follow-ups: []
 - tid: 2003
   title: たまゆら
   ko-title:
-  premiered: '9'
+  premiered: 2010-09
   bookmark:
   follow-ups:
     - tid: 3876
@@ -85,7 +85,7 @@
 - tid: 6309
   title: SPY×FAMILY
   ko-title:
-  premiered: '4'
+  premiered: 2022-04
   bookmark:
   follow-ups:
     - tid: 6947
@@ -106,13 +106,13 @@
 - tid: 6776
   title: 葬送のフリーレン
   ko-title: 장송의 프리렌
-  premiered: '9'
+  premiered: 2023-09
   bookmark:
   follow-ups: []
 - tid: 2068
   title: レイトン教授と永遠の歌姫 THE ETERNAL DIVA
   ko-title:
-  premiered: '12'
+  premiered: 2009-12
   bookmark: 32
   follow-ups:
     - tid: 4886
@@ -123,7 +123,7 @@
 - tid: 1898
   title: 荒川アンダー ザ ブリッジ
   ko-title:
-  premiered: '4'
+  premiered: 2010-04
   bookmark:
   follow-ups:
     - tid: 3277
@@ -144,7 +144,7 @@
 - tid: 3542
   ko-title: 일곱개의 대죄
   title: 七つの大罪
-  premiered: '10'
+  premiered: 2014-10
   bookmark:
   follow-ups:
     - tid: 6828
