@@ -69,7 +69,7 @@ for ani in ani_list:
         updated_follow_up['premiered'] = path.get_text()
         updated_follow_up['bookmark'] = next((follow_up.get('bookmark') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
         updated_follow_ups.append(updated_follow_up)
-    sorted(updated_follow_ups, key=itemgetter('tid')
+    sorted(updated_follow_ups, key=itemgetter('tid'))
     ani['follow-ups'] = updated_follow_ups
     
   index_map = {key: index for index, key in enumerate(KEY_ORDER)}
