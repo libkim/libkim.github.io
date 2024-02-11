@@ -66,7 +66,7 @@ for ani in ani_list:
         updated_follow_up['tid'] = int(path.select_one('a')['href'].split('/')[2])
         updated_follow_up['title'] = path.select_one('a').extract().get_text()
         updated_follow_up['ko-title'] = next((follow_up.get('ko-title') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
-        updated_follow_up['premiered'] = path.get_text()
+        updated_follow_up['premiered'] = path.get_text(strip=True).replace('月','').replace('年','-')
         updated_follow_up['bookmark'] = next((follow_up.get('bookmark') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
         updated_follow_ups.append(updated_follow_up)
     ani['follow-ups'] = sorted(updated_follow_ups, key=itemgetter('tid'))
