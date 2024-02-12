@@ -16,10 +16,13 @@ def strip_leading_double_space(stream):
   return stream.replace("\n  ", "\n")
   
 def create_tid():
-  url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
-  html = requests.get(url)
-  soup = BeautifulSoup(html.text, 'html.parser')
-  ani['tid'] = int(soup.find('a', string=f"{ani['title']}")['href'].split('/')[2])
+  try:
+    url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
+    html = requests.get(url)
+    soup = BeautifulSoup(html.text, 'html.parser')
+    ani['tid'] = int(soup.find('a', string=f"{ani['title']}")['href'].split('/')[2])
+  except:
+    ani['tid'] = f"{ani['title']}의 tid 검색 결과가 없습니다."
 
 yaml = YAML()
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
