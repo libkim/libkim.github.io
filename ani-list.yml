@@ -142,8 +142,8 @@
       premiered: 2012-02
       bookmark:
 - tid: 3542
-  ko-title: 일곱개의 대죄
   title: 七つの大罪
+  ko-title: 일곱개의 대죄
   premiered: 2014-10
   bookmark:
   follow-ups:
@@ -177,122 +177,122 @@
       ko-title:
       premiered: 2023-10
       bookmark:
-- title: エア・ギア
+- tid: 866
+  title: エア・ギア
   ko-title: 에어·기어
-  tid: 866
-- title: PandoraHearts
+- tid: 1593
+  title: PandoraHearts
   ko-title: 판도라하츠
-  tid: 1593
-- title: 化物語
+- tid: 1685
+  title: 化物語
   ko-title: 괴물이야기
-  tid: 1685
-- title: 瀬戸の花嫁
+- tid: 1130
+  title: 瀬戸の花嫁
   ko-title: 세토의 신부
-  tid: 1130
-- title: 我が家のお稲荷さま。
+- tid: 1351
+  title: 我が家のお稲荷さま。
   ko-title: 우리집의 여우 신령님.
-  tid: 1351
-- title: バカとテストと召喚獣
+- tid: 1795
+  title: バカとテストと召喚獣
   ko-title: 바보와 시험과 소환수
-  tid: 1795
-- title: スライム倒して300年、知らないうちにレベルMAXになってました
+- tid: 5935
+  title: スライム倒して300年、知らないうちにレベルMAXになってました
   ko-title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
-  tid: 5935
-- title: Vivy -Fluorite Eye's Song-
+- tid: 5982
+  title: Vivy -Fluorite Eye's Song-
   ko-title: 비비 -플로라이트 아이즈 송-
-  tid: 5982
-- title: アイドールズ！
+- tid: 5879
+  title: アイドールズ！
   ko-title: 아이돌즈!
-  tid: 5879
-- title: 蜘蛛ですが、なにか？
+- tid: 5839
+  title: 蜘蛛ですが、なにか？
   ko-title: 거미입니다만, 문제라도?
-  tid: 5839
-- title: To LOVEる -とらぶる-
+- tid: 1352
+  title: To LOVEる -とらぶる-
   ko-title: To LOVE루 -트러블-
-  tid: 1352
-- title: NARUTO -ナルト-
+- tid: 210
+  title: NARUTO -ナルト-
   ko-title: 나루토
-  tid: 210
-- title: デュラララ!!
+- tid: 1802
+  title: デュラララ!!
   ko-title: 듀라라라!!
-  tid: 1802
-- title: 夏目友人帳
+- tid: 1414
+  title: 夏目友人帳
   ko-title: 나츠메 우인장
-  tid: 1414
-- title: おおきく振りかぶって
+- tid: 1113
+  title: おおきく振りかぶって
   ko-title: 크게 와인드업해서
-  tid: 1113
-- title: 君に届け
+- tid: 1720
+  title: 君に届け
   ko-title: 너에게 닿기를
-  tid: 1720
-- title: とらドラ！
+- tid: 1471
+  title: とらドラ！
   ko-title: 토라도라!
-  tid: 1471
-- title: ラブ★コン
+- tid: 1114
+  title: ラブ★コン
   ko-title: 러브★콤
-  tid: 1114
-- title: 僕等がいた
+- tid: 926
+  title: 僕等がいた
   ko-title: 우리들이 있었다
-  tid: 926
-- title: 僕は友達が少ない
+- tid: 2270
+  title: 僕は友達が少ない
   ko-title: 나는 친구가 적다
-  tid: 2270
-- title: けいおん!
+- tid: けいおん!의 tid 검색 결과가 없습니다.
+  title: けいおん!
   ko-title: 케이온!
-  tid: けいおん!의 tid 검색 결과가 없습니다.
-- title: 涼宮ハルヒの憂鬱
+- tid: 840
+  title: 涼宮ハルヒの憂鬱
   ko-title: 스즈미야 하루히의 우울
-  tid: 840
-- title: 俺の妹がこんなに可愛いわけがない
+- tid: 2034
+  title: 俺の妹がこんなに可愛いわけがない
   ko-title: 내 여동생이 이렇게 귀여울 리가 없어
-  tid: 2034
-- title: 神のみぞ知るセカイ
+- tid: 2040
+  title: 神のみぞ知るセカイ
   ko-title: 신만이 아는 세계
-  tid: 2040
-- title: C
-  tid: C의 tid 검색 결과가 없습니다.
-- title: 魔法少女まどか☆マギカ
+- tid: C의 tid 검색 결과가 없습니다.
+  title: C
+- tid: 2077
+  title: 魔法少女まどか☆マギカ
   ko-title: 마법소녀 마도카☆마기카
-  tid: 2077
-- title: さよなら絶望先生
+- tid: 1191
+  title: さよなら絶望先生
   ko-title: 안녕 절망선생
-  tid: 1191
-- title: みなみけ
+- tid: 1249
+  title: みなみけ
   ko-title: 미나미가
-  tid: 1249
-- title: 銀魂
+- tid: 853
+  title: 銀魂
   ko-title: 은혼
-  tid: 853
-- title: かのこん
+- tid: 1350
+  title: かのこん
   ko-title: 카노콘
-  tid: 1350
-- title: パンティ&ストッキングwithガーターベルト
+- tid: 2041
+  title: パンティ&ストッキングwithガーターベルト
   ko-title: 팬티&스타킹with가터벨트
-  tid: 2041
-- title: ソウルイーター
+- tid: ソウルイーター의 tid 검색 결과가 없습니다.
+  title: ソウルイーター
   ko-title: 소울 이터
-  tid: ソウルイーター의 tid 검색 결과가 없습니다.
-- title: 図書館戦争
+- tid: 1344
+  title: 図書館戦争
   ko-title: 도서관 전쟁
-  tid: 1344
-- title: 電波女と青春男
+- tid: 2137
+  title: 電波女と青春男
   ko-title: 전파녀와 청춘남
-  tid: 2137
-- title: オオカミさんと七人の仲間たち
+- tid: 1956
+  title: オオカミさんと七人の仲間たち
   ko-title: 오오카미 상과 7명의 동료들
-  tid: 1956
-- title: ドラゴンクライシス!
+- tid: ドラゴンクライシス!의 tid 검색 결과가 없습니다.
+  title: ドラゴンクライシス!
   ko-title: 드래곤 크라이시스!
-  tid: ドラゴンクライシス!의 tid 검색 결과가 없습니다.
-- title: かんなぎ
+- tid: 1486
+  title: かんなぎ
   ko-title: 칸나기
-  tid: 1486
-- title: WORKING!!
+- tid: 1885
+  title: WORKING!!
   ko-title: 워킹!!
-  tid: 1885
-- title: 絶対少年
+- tid: 606
+  title: 絶対少年
   ko-title: 절대소년
-  tid: 606
-- title: ひぐらしのなく頃に
+- tid: 705
+  title: ひぐらしのなく頃に
   ko-title: 쓰르라미 울 적에
-  tid: 705
