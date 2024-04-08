@@ -4,16 +4,16 @@ from bs4 import BeautifulSoup
 from ruamel.yaml import YAML
 from operator import itemgetter
 
-ani_list = []
-updated_ani_list = []
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 KEY_ORDER = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
 
+ani_list = []
+updated_ani_list = []
+
 def strip_leading_double_space(stream):
   if stream.startswith("  "):
-    stream = stream[2:]
-  return stream.replace("\n  ", "\n")
+    stream = stream[2:] #스페이싱 앞에 2개씩 제거
+  return stream.replace("\n  ", "\n") # ??
   
 def create_tid():
   try:
@@ -23,7 +23,6 @@ def create_tid():
     ani['tid'] = int(soup.find('a', string=f"{ani['title']}")['href'].split('/')[2])
   except:
     ani['tid'] = f"{ani['title']}의 tid 검색 결과가 없습니다."
-  return;
 
 yaml = YAML()
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
@@ -79,4 +78,4 @@ for ani in ani_list:
 
 with open('ani-list.yml', 'w') as file:
     yaml.indent(sequence=4, offset=2)
-    yaml.dump(ani_list, file, transform=strip_leading_double_space)
+    yaml.dump(updated_ani_list, file, transform=strip_leading_double_space)
