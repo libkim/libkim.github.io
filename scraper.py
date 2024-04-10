@@ -15,33 +15,31 @@ def strip_leading_double_space(stream):
     stream = stream[2:] #스페이싱 앞에 2개씩 제거
   return stream.replace("\n  ", "\n") # ??
   
-def create_tid():
+def create_tid(title):
   try:
-    url = f"https://cal.syoboi.jp/find?kw={ani['title']}"
-    html = requests.get(url)
+    html = requests.get(f"https://cal.syoboi.jp/find?kw={title}")
     soup = BeautifulSoup(html.text, 'html.parser')
-    ani['tid'] = int(soup.find('a', string=f"{ani['title']}")['href'].split('/')[2])
+    tid = int(soup.find('a', string=f"{title}")['href'].split('/')[2])
+    return tid
   except:
-    ani['tid'] = f"{ani['title']}의 tid 검색 결과가 없습니다."
+    return f"{title}의 tid 검색 결과가 없습니다."
 
-yaml = YAML()
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
+  yaml = YAML()
   ani_list = yaml.load(file)
 
 for ani in ani_list:
-  if not 'tid' in ani or type(ani['tid']) != 'int' and 'title' in ani: # 키가 없거나 키는 있지만 값이 정수가 아니면, 타이틀이 존재하면
-    create_tid()
+  if not 'tid' in ani and 'title' in ani:
+    ani['tid'] = create_tid(ani['title'])
   
   if 'tid' in ani and type(ani['tid']) == 'int':
-    url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
-    html = requests.get(url)
+    html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
     soup = BeautifulSoup(html.text, 'html.parser')
     follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
 
     if follow_up_paths != [] and follow_up_paths[-1].select_one('a'):
       ani['tid'] = int(follow_up_paths[-1].select_one('a')['href'].split('/')[2])
-      url = f"https://cal.syoboi.jp/tid/{ani['tid']}/summary"
-      html = requests.get(url)
+      html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
       soup = BeautifulSoup(html.text, 'html.parser')
       follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
 
@@ -77,5 +75,6 @@ for ani in ani_list:
   updated_ani_list.append(sorted_ani)
 
 with open('ani-list.yml', 'w') as file:
-    yaml.indent(sequence=4, offset=2)
-    yaml.dump(updated_ani_list, file, transform=strip_leading_double_space)
+  yaml = YAML()
+  yaml.indent(sequence=4, offset=2)
+  yaml.dump(updated_ani_list, file, transform=strip_leading_double_space)
