@@ -79,12 +79,12 @@ for ani in ani_list:
     print(ani['follow-ups'])
     
   # end if 'tid' in ani and type(ani['tid']) == 'int':
-# end for ani in ani_list:
 
-# 정렬 후 저장
-index_map = {key: index for index, key in enumerate(KEY_ORDER)}
-sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
-updated_ani_list.append(sorted_ani)
+  # 정렬 후 저장
+  index_map = {key: index for index, key in enumerate(KEY_ORDER)}
+  sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
+  updated_ani_list.append(sorted_ani)
+# end for ani in ani_list:
 
 with open('ani-list.yml', 'w') as file:
   yaml = YAML()
