@@ -30,6 +30,8 @@ with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
 print(ani_list)
 
 for ani in ani_list:
+  print(ani)
+  
   if not 'tid' in ani and 'title' in ani:
     ani['tid'] = create_tid(ani['title'])
   
@@ -49,6 +51,7 @@ for ani in ani_list:
       soup.select_one('#main > h1 > span').decompose()
       soup.select_one('#main > h1 > a').decompose()
     ani['title'] = soup.select_one('#main > h1').get_text(strip=True) # 무조건 다시 생성
+    print(ani['title'])
 
     # ko-title 업데이트
     if not 'ko-title' in ani:
