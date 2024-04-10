@@ -27,24 +27,25 @@ def create_tid(title):
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   yaml = YAML()
   ani_list = yaml.load(file)
-print(ani_list)
+  print(ani_list)
 
 for ani in ani_list:
-  print(ani)
-  
   if not 'tid' in ani and 'title' in ani:
     ani['tid'] = create_tid(ani['title'])
+    print(ani['tid'])
   
   if 'tid' in ani and type(ani['tid']) == 'int':
     html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
     soup = BeautifulSoup(html.text, 'html.parser')
     follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
+    print(follow_up_paths)
 
     if follow_up_paths != [] and follow_up_paths[-1].select_one('a'):
       ani['tid'] = int(follow_up_paths[-1].select_one('a')['href'].split('/')[2])
       html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
       soup = BeautifulSoup(html.text, 'html.parser')
       follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
+      print(follow_up_paths)
 
     # title 업데이트
     if soup.select_one('#main > h1 > span'):
@@ -94,4 +95,4 @@ with open('ani-list.yml', 'w') as file:
   yaml = YAML()
   yaml.indent(sequence=4, offset=2)
   yaml.dump(updated_ani_list, file, transform=strip_leading_double_space)
-print(updated_ani_list)
+  print(updated_ani_list)
