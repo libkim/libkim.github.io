@@ -27,6 +27,7 @@ def create_tid(title):
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   yaml = YAML()
   ani_list = yaml.load(file)
+print(ani_list)
 
 for ani in ani_list:
   if not 'tid' in ani and 'title' in ani:
@@ -90,3 +91,4 @@ with open('ani-list.yml', 'w') as file:
   yaml = YAML()
   yaml.indent(sequence=4, offset=2)
   yaml.dump(updated_ani_list, file, transform=strip_leading_double_space)
+print(updated_ani_list)
