@@ -20,6 +20,11 @@
   premiered: 2014-04
   bookmark:
   follow-ups:
+    - tid: 6981
+      title: ハイキュー!! 終わりと始まり
+      ko-title:
+      premiered: 2015-07
+      bookmark:
     - tid: 3920
       title: ハイキュー!! セカンドシーズン
       ko-title:
@@ -44,11 +49,6 @@
       title: 劇場版ハイキュー!! ゴミ捨て場の決戦
       ko-title:
       premiered: 2024-02
-      bookmark:
-    - tid: 6981
-      title: ハイキュー!! 終わりと始まり
-      ko-title:
-      premiered: 2015-07
       bookmark:
 - tid: 6793
   title: 薬屋のひとりごと
@@ -147,15 +147,15 @@
   premiered: 2014-10
   bookmark:
   follow-ups:
-    - tid: 4277
-      title: 七つの大罪 聖戦の予兆
-      ko-title:
-      premiered: 2016-08
-      bookmark:
     - tid: 4802
       title: 七つの大罪 -外伝- バンデット・バン
       ko-title:
       premiered: 2015-06
+      bookmark:
+    - tid: 4277
+      title: 七つの大罪 聖戦の予兆
+      ko-title:
+      premiered: 2016-08
       bookmark:
     - tid: 4813
       title: 七つの大罪 戒めの復活
@@ -180,120 +180,663 @@
 - tid: 866
   title: エア・ギア
   ko-title: 에어·기어
+  premiered: 2006-04
+  bookmark:
+  follow-ups: []
 - tid: 1593
   title: PandoraHearts
   ko-title: 판도라하츠
+  premiered: 2009-04
+  bookmark:
+  follow-ups: []
 - tid: 1685
   title: 化物語
   ko-title: 괴물이야기
+  premiered: 2009-07
+  bookmark:
+  follow-ups:
+    - tid: 2396
+      title: 偽物語
+      ko-title:
+      premiered: 2012-01
+      bookmark:
+    - tid: 2840
+      title: 猫物語(黒)
+      ko-title:
+      premiered: 2012-12
+      bookmark:
+    - tid: 3012
+      title: <物語>シリーズ セカンドシーズン
+      ko-title:
+      premiered: 2013-07
+      bookmark:
+    - tid: 3581
+      title: 憑物語
+      ko-title:
+      premiered: 2014-12
+      bookmark:
+    - tid: 3898
+      title: 終物語
+      ko-title:
+      premiered: 2015-10
+      bookmark:
+    - tid: 4407
+      title: 傷物語
+      ko-title:
+      premiered: 2016-01
+      bookmark:
+    - tid: 4997
+      title: 暦物語
+      ko-title:
+      premiered: 2016-01
+      bookmark:
+    - tid: 5292
+      title: 続・終物語
+      ko-title:
+      premiered: 2018-11
+      bookmark:
 - tid: 1130
   title: 瀬戸の花嫁
   ko-title: 세토의 신부
+  premiered: 2007-04
+  bookmark:
+  follow-ups:
+    - tid: 1514
+      title: 瀬戸の花嫁OVA
+      ko-title:
+      premiered: 2008-11
+      bookmark:
 - tid: 1351
   title: 我が家のお稲荷さま。
   ko-title: 우리집의 여우 신령님.
+  premiered: 2008-04
+  bookmark:
+  follow-ups: []
 - tid: 1795
   title: バカとテストと召喚獣
   ko-title: 바보와 시험과 소환수
+  premiered: 2010-01
+  bookmark:
+  follow-ups:
+    - tid: 2145
+      title: バカとテストと召喚獣～祭～
+      ko-title:
+      premiered: 2011-02
+      bookmark:
+    - tid: 2205
+      title: バカとテストと召喚獣にっ！
+      ko-title:
+      premiered: 2011-07
+      bookmark:
 - tid: 5935
   title: スライム倒して300年、知らないうちにレベルMAXになってました
   ko-title: 슬라임을 잡으며 300년, 모르는 사이에 레벨 MAX가 되어 있었습니다
+  premiered: 2021-04
+  bookmark:
+  follow-ups: []
 - tid: 5982
   title: Vivy -Fluorite Eye's Song-
   ko-title: 비비 -플로라이트 아이즈 송-
+  premiered: 2021-04
+  bookmark:
+  follow-ups: []
 - tid: 5879
   title: アイドールズ！
   ko-title: 아이돌즈!
+  premiered: 2021-01
+  bookmark:
+  follow-ups: []
 - tid: 5839
   title: 蜘蛛ですが、なにか？
   ko-title: 거미입니다만, 문제라도?
+  premiered: 2021-01
+  bookmark:
+  follow-ups: []
 - tid: 1352
   title: To LOVEる -とらぶる-
   ko-title: To LOVE루 -트러블-
-- tid: 210
-  title: NARUTO -ナルト-
+  premiered: 2008-04
+  bookmark:
+  follow-ups:
+    - tid: 2033
+      title: もっとTo LOVEる -とらぶる-
+      ko-title:
+      premiered: 2010-10
+      bookmark:
+    - tid: 2705
+      title: To LOVEる -とらぶる- ダークネス
+      ko-title:
+      premiered: 2012-10
+      bookmark:
+    - tid: 3796
+      title: To LOVEる -とらぶる- ダークネス 2nd
+      ko-title:
+      premiered: 2015-07
+      bookmark:
+- tid: 6798
+  title: NARUTO -ナルト-(2023)
   ko-title: 나루토
-- tid: 1802
-  title: デュラララ!!
+  premiered: '-00'
+  bookmark:
+  follow-ups:
+    - tid: 701
+      title: 劇場版NARUTO
+      ko-title:
+      premiered: ''
+      bookmark:
+    - tid: 210
+      title: NARUTO -ナルト-
+      ko-title:
+      premiered: 2002-10
+      bookmark:
+    - tid: 3197
+      title: 劇場版NARUTO -ナルト- 大活劇！雪姫忍法帖だってばよ!!
+      ko-title:
+      premiered: 2004-08
+      bookmark:
+    - tid: 2660
+      title: 劇場版NARUTO -ナルト- 大激突！幻の地底遺跡だってばよ
+      ko-title:
+      premiered: 2005-08
+      bookmark:
+    - tid: 1106
+      title: NARUTO -ナルト- 疾風伝
+      ko-title:
+      premiered: 2007-02
+      bookmark:
+    - tid: 1833
+      title: 劇場版 NARUTO -ナルト- 疾風伝 絆
+      ko-title:
+      premiered: 2008-08
+      bookmark:
+    - tid: 2100
+      title: 劇場版 NARUTO -ナルト- 疾風伝 火の意志を継ぐ者
+      ko-title:
+      premiered: 2009-08
+      bookmark:
+    - tid: 2690
+      title: 劇場版 NARUTO -ナルト- 疾風伝 ザ・ロストタワー
+      ko-title:
+      premiered: 2010-07
+      bookmark:
+    - tid: 2649
+      title: 劇場版 NARUTO -ナルト- ブラッド・プリズン
+      ko-title:
+      premiered: 2011-07
+      bookmark:
+    - tid: 2513
+      title: NARUTO -ナルト- SD ロック・リーの青春フルパワー忍伝
+      ko-title:
+      premiered: 2012-04
+      bookmark:
+    - tid: 2646
+      title: 劇場版NARUTO -ナルト- ロード・トゥ・ニンジャ
+      ko-title:
+      premiered: 2012-07
+      bookmark:
+    - tid: 4451
+      title: BORUTO -NARUTO THE MOVIE-
+      ko-title:
+      premiered: 2015-08
+      bookmark:
+    - tid: 4546
+      title: BORUTO-ボルト- NARUTO NEXT GENERATIONS
+      ko-title:
+      premiered: 2017-04
+      bookmark:
+- tid: 590
+  title: BACCANO!
   ko-title: 듀라라라!!
+  premiered: 2007-07
+  bookmark:
+  follow-ups:
+    - tid: 1802
+      title: デュラララ!!
+      ko-title:
+      premiered: 2010-01
+      bookmark:
 - tid: 1414
   title: 夏目友人帳
   ko-title: 나츠메 우인장
+  premiered: 2008-07
+  bookmark:
+  follow-ups:
+    - tid: 1522
+      title: 続 夏目友人帳
+      ko-title:
+      premiered: 2009-01
+      bookmark:
+    - tid: 2211
+      title: 夏目友人帳 参
+      ko-title:
+      premiered: 2011-07
+      bookmark:
+    - tid: 2367
+      title: 夏目友人帳 肆
+      ko-title:
+      premiered: 2012-01
+      bookmark:
+    - tid: 3664
+      title: 夏目友人帳 ニャンコ先生とはじめてのおつかい
+      ko-title:
+      premiered: 2013-09
+      bookmark:
+    - tid: 3665
+      title: 夏目友人帳 いつかゆきのひに
+      ko-title:
+      premiered: 2014-02
+      bookmark:
+    - tid: 4300
+      title: 夏目友人帳 伍
+      ko-title:
+      premiered: 2016-10
+      bookmark:
+    - tid: 4517
+      title: 夏目友人帳 陸
+      ko-title:
+      premiered: 2017-04
+      bookmark:
+    - tid: 5078
+      title: 劇場版 夏目友人帳 ～うつせみに結ぶ～
+      ko-title:
+      premiered: 2018-09
+      bookmark:
+    - tid: 6164
+      title: 夏目友人帳 石起こしと怪しき来訪者
+      ko-title:
+      premiered: 2021-01
+      bookmark:
 - tid: 1113
   title: おおきく振りかぶって
   ko-title: 크게 와인드업해서
+  premiered: 2007-04
+  bookmark:
+  follow-ups:
+    - tid: 1892
+      title: おおきく振りかぶって～夏の大会編～
+      ko-title:
+      premiered: 2010-04
+      bookmark:
 - tid: 1720
   title: 君に届け
   ko-title: 너에게 닿기를
+  premiered: 2009-10
+  bookmark:
+  follow-ups:
+    - tid: 3009
+      title: 映画 君に届け
+      ko-title:
+      premiered: 2010-09
+      bookmark:
+    - tid: 2069
+      title: 君に届け 2ND SEASON
+      ko-title:
+      premiered: 2011-01
+      bookmark:
+    - tid: 6878
+      title: 君に届け(実写ドラマ版)
+      ko-title:
+      premiered: 2023-03
+      bookmark:
 - tid: 1471
   title: とらドラ！
   ko-title: 토라도라!
+  premiered: 2008-10
+  bookmark:
+  follow-ups: []
 - tid: 1114
   title: ラブ★コン
   ko-title: 러브★콤
+  premiered: 2007-04
+  bookmark:
+  follow-ups: []
 - tid: 926
   title: 僕等がいた
   ko-title: 우리들이 있었다
+  premiered: 2006-07
+  bookmark:
+  follow-ups: []
 - tid: 2270
   title: 僕は友達が少ない
   ko-title: 나는 친구가 적다
+  premiered: 2011-10
+  bookmark:
+  follow-ups:
+    - tid: 2817
+      title: 僕は友達が少ないNEXT
+      ko-title:
+      premiered: 2013-01
+      bookmark:
 - tid: けいおん!의 tid 검색 결과가 없습니다.
   title: けいおん!
   ko-title: 케이온!
 - tid: 840
   title: 涼宮ハルヒの憂鬱
   ko-title: 스즈미야 하루히의 우울
+  premiered: 2006-04
+  bookmark:
+  follow-ups:
+    - tid: 1567
+      title: 涼宮ハルヒちゃんの憂鬱
+      ko-title:
+      premiered: 2009-02
+      bookmark:
+    - tid: 1580
+      title: にょろーん☆ちゅるやさん
+      ko-title:
+      premiered: 2009-02
+      bookmark:
+    - tid: 1639
+      title: 涼宮ハルヒの憂鬱(新)
+      ko-title:
+      premiered: 2009-04
+      bookmark:
+    - tid: 2185
+      title: 涼宮ハルヒの消失
+      ko-title:
+      premiered: 2010-02
+      bookmark:
+    - tid: 3673
+      title: 長門有希ちゃんの消失
+      ko-title:
+      premiered: 2015-04
+      bookmark:
 - tid: 2034
   title: 俺の妹がこんなに可愛いわけがない
   ko-title: 내 여동생이 이렇게 귀여울 리가 없어
+  premiered: 2010-10
+  bookmark:
+  follow-ups:
+    - tid: 2702
+      title: 俺の妹がこんなに可愛いわけがない(TRUE ROUTEスペシャル版)
+      ko-title:
+      premiered: 2012-10
+      bookmark:
+    - tid: 2916
+      title: 俺の妹がこんなに可愛いわけがない。(2期)
+      ko-title:
+      premiered: 2013-04
+      bookmark:
 - tid: 2040
   title: 神のみぞ知るセカイ
   ko-title: 신만이 아는 세계
+  premiered: 2010-10
+  bookmark:
+  follow-ups:
+    - tid: 2139
+      title: 神のみぞ知るセカイII
+      ko-title:
+      premiered: 2011-04
+      bookmark:
+    - tid: 5495
+      title: 神のみぞ知るセカイ 4人とアイドル
+      ko-title:
+      premiered: 2011-09
+      bookmark:
+    - tid: 5496
+      title: 神のみぞ知るセカイ 天理篇
+      ko-title:
+      premiered: 2012-10
+      bookmark:
+    - tid: 3183
+      title: マジカル☆スター かのん100%
+      ko-title:
+      premiered: 2013-06
+      bookmark:
+    - tid: 3027
+      title: 神のみぞ知るセカイ 女神篇
+      ko-title:
+      premiered: 2013-07
+      bookmark:
 - tid: C의 tid 검색 결과가 없습니다.
   title: C
 - tid: 2077
   title: 魔法少女まどか☆マギカ
   ko-title: 마법소녀 마도카☆마기카
+  premiered: 2011-01
+  bookmark:
+  follow-ups:
+    - tid: 3216
+      title: 劇場版 魔法少女まどか☆マギカ
+      ko-title:
+      premiered: 2012-10
+      bookmark:
+    - tid: 5516
+      title: マギアレコード 魔法少女まどか☆マギカ外伝
+      ko-title:
+      premiered: 2020-01
+      bookmark:
+    - tid: 6074
+      title: マギアレコード 魔法少女まどか☆マギカ外伝 2nd SEASON -覚醒前夜-
+      ko-title:
+      premiered: 2021-07
+      bookmark:
+    - tid: 6324
+      title: マギアレコード 魔法少女まどか☆マギカ外伝 Final SEASON -浅き夢の暁-
+      ko-title:
+      premiered: 2022-04
+      bookmark:
 - tid: 1191
   title: さよなら絶望先生
   ko-title: 안녕 절망선생
+  premiered: 2007-07
+  bookmark:
+  follow-ups:
+    - tid: 1298
+      title: 俗・さよなら絶望先生
+      ko-title:
+      premiered: 2008-01
+      bookmark:
+    - tid: 1677
+      title: 懺・さよなら絶望先生
+      ko-title:
+      premiered: 2009-07
+      bookmark:
 - tid: 1249
   title: みなみけ
   ko-title: 미나미가
+  premiered: 2007-10
+  bookmark:
+  follow-ups:
+    - tid: 1311
+      title: みなみけ～おかわり～
+      ko-title:
+      premiered: 2008-01
+      bookmark:
+    - tid: 1538
+      title: みなみけ おかえり
+      ko-title:
+      premiered: 2009-01
+      bookmark:
+    - tid: 2821
+      title: みなみけ ただいま
+      ko-title:
+      premiered: 2013-01
+      bookmark:
 - tid: 853
   title: 銀魂
   ko-title: 은혼
+  premiered: 2006-04
+  bookmark:
+  follow-ups:
+    - tid: 2186
+      title: 劇場版銀魂 新訳紅桜篇
+      ko-title:
+      premiered: 2010-04
+      bookmark:
+    - tid: 2172
+      title: 銀魂(第2期)
+      ko-title:
+      premiered: 2011-04
+      bookmark:
+    - tid: 2762
+      title: 銀魂(第3期)
+      ko-title:
+      premiered: 2012-10
+      bookmark:
+    - tid: 5893
+      title: 劇場版 銀魂 完結篇 万事屋よ永遠なれ
+      ko-title:
+      premiered: 2013-07
+      bookmark:
+    - tid: 3747
+      title: 銀魂゜
+      ko-title:
+      premiered: 2015-04
+      bookmark:
+    - tid: 4437
+      title: 銀魂.
+      ko-title:
+      premiered: 2017-01
+      bookmark:
+    - tid: 4722
+      title: 銀魂. (ポロリ篇／銀ノ魂篇)
+      ko-title:
+      premiered: 2017-10
+      bookmark:
+    - tid: 5007
+      title: 銀魂. (銀ノ魂篇 後半戦)
+      ko-title:
+      premiered: 2018-07
+      bookmark:
+    - tid: 5909
+      title: 銀魂 THE FINAL
+      ko-title:
+      premiered: 2021-01
+      bookmark:
 - tid: 1350
   title: かのこん
   ko-title: 카노콘
+  premiered: 2008-04
+  bookmark:
+  follow-ups:
+    - tid: 1708
+      title: かのこん ～真夏の大謝肉祭～
+      ko-title:
+      premiered: 2009-10
+      bookmark:
 - tid: 2041
   title: パンティ&ストッキングwithガーターベルト
   ko-title: 팬티&스타킹with가터벨트
+  premiered: 2010-10
+  bookmark:
+  follow-ups: []
 - tid: ソウルイーター의 tid 검색 결과가 없습니다.
   title: ソウルイーター
   ko-title: 소울 이터
 - tid: 1344
   title: 図書館戦争
   ko-title: 도서관 전쟁
+  premiered: 2008-04
+  bookmark:
+  follow-ups:
+    - tid: 3003
+      title: 図書館戦争 革命のつばさ
+      ko-title:
+      premiered: 2012-06
+      bookmark:
 - tid: 2137
   title: 電波女と青春男
   ko-title: 전파녀와 청춘남
+  premiered: 2011-04
+  bookmark:
+  follow-ups: []
 - tid: 1956
   title: オオカミさんと七人の仲間たち
   ko-title: 오오카미 상과 7명의 동료들
+  premiered: 2010-07
+  bookmark:
+  follow-ups: []
 - tid: ドラゴンクライシス!의 tid 검색 결과가 없습니다.
   title: ドラゴンクライシス!
   ko-title: 드래곤 크라이시스!
 - tid: 1486
   title: かんなぎ
   ko-title: 칸나기
+  premiered: 2008-10
+  bookmark:
+  follow-ups: []
 - tid: 1885
   title: WORKING!!
   ko-title: 워킹!!
+  premiered: 2010-04
+  bookmark:
+  follow-ups:
+    - tid: 2249
+      title: WORKING'!!
+      ko-title:
+      premiered: 2011-10
+      bookmark:
+    - tid: 3797
+      title: WORKING!!!
+      ko-title:
+      premiered: 2015-07
+      bookmark:
+    - tid: 4285
+      title: WWW.WORKING!!
+      ko-title:
+      premiered: 2016-10
+      bookmark:
 - tid: 606
   title: 絶対少年
   ko-title: 절대소년
+  premiered: 2005-05
+  bookmark:
+  follow-ups: []
 - tid: 705
   title: ひぐらしのなく頃に
   ko-title: 쓰르라미 울 적에
-- tid: 4251
+  premiered: 2006-04
+  bookmark:
+  follow-ups:
+    - tid: 1174
+      title: ひぐらしのなく頃に解
+      ko-title:
+      premiered: 2007-07
+      bookmark:
+    - tid: 1947
+      title: ひぐらしのなく頃に礼
+      ko-title:
+      premiered: 2009-02
+      bookmark:
+    - tid: 2547
+      title: ひぐらしのなく頃に煌
+      ko-title:
+      premiered: 2011-07
+      bookmark:
+    - tid: 5757
+      title: ひぐらしのなく頃に業
+      ko-title:
+      premiered: 2020-10
+      bookmark:
+    - tid: 6037
+      title: ひぐらしのなく頃に卒
+      ko-title:
+      premiered: 2021-07
+      bookmark:
+- tid: 3688
+  title: SHOW BY ROCK!!
+  ko-title:
+  premiered: 2015-04
+  bookmark:
+  follow-ups:
+    - tid: 4251
+      title: SHOW BY ROCK!! しょ～と!!
+      ko-title:
+      premiered: 2016-07
+      bookmark:
+    - tid: 4296
+      title: SHOW BY ROCK!!#
+      ko-title:
+      premiered: 2016-10
+      bookmark:
+    - tid: 5526
+      title: SHOW BY ROCK!!ましゅまいれっしゅ!!
+      ko-title:
+      premiered: 2020-01
+      bookmark:
+    - tid: 5850
+      title: SHOW BY ROCK!!STARS!!
+      ko-title:
+      premiered: 2021-01
+      bookmark:
