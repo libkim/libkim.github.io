@@ -34,7 +34,7 @@ for ani in ani_list:
     ani['tid'] = create_tid(ani['title'])
     print(ani['tid'])
   
-  if 'tid' in ani and type(ani['tid']) == 'int':
+  if 'tid' in ani and isinstance(ani['tid'], int):
     html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
     soup = BeautifulSoup(html.text, 'html.parser')
     follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
