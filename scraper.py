@@ -80,19 +80,18 @@ for ani in ani_list:
         updated_follow_up['premiered'] = path.get_text(strip=True).replace('月','').replace('年','-')
         updated_follow_up['bookmark'] = next((follow_up.get('bookmark') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
         updated_follow_ups.append(updated_follow_up)
-    ani['follow-ups'] = sorted(updated_follow_ups, key=itemgetter('premiered'))
+    ani['follow-ups'] = sorted(updated_follow_ups, key=itemgetter('tid'))
     print(ani['follow-ups'])
-    
   # end if 'tid' in ani and type(ani['tid']) == 'int':
 
   # 정렬 후 저장
   index_map = {key: index for index, key in enumerate(KEY_ORDER)}
   sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
   updated_ani_list.append(sorted_ani)
+  sorted_ani_list = sorted(updated_ani_list, key=itemgetter('tid'))
 # end for ani in ani_list:
 
 with open('ani-list.yml', 'w') as file:
   yaml = YAML()
   yaml.indent(sequence=4, offset=2)
-  yaml.dump(updated_ani_list, file, transform=strip_leading_double_space)
-  print(updated_ani_list)
+  yaml.dump(sorted_ani_list, file, transform=strip_leading_double_space)
