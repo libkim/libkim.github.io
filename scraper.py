@@ -30,12 +30,12 @@ with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   ani_list = yaml.load(file)
 
 for ani in ani_list:
-  if not 'tid' in ani and 'title' in ani:
-    ani['tid'] = search_tid(ani['title'])
-    print(ani['tid'])
-  
-  if 'tid' in ani:
+  if not 'tid' in ani:
+    if 'title' in ani:
+      ani['tid'] = search_tid(ani['title'])
+  else:
     if not isinstance(ani['tid'], int):
+      print(f"잘못된 tid '{ani['tid']}' 제거")
       ani['tid'] = None
     else:
       html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
