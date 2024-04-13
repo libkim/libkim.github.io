@@ -50,6 +50,7 @@ for ani in ani_list:
       follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
       print(follow_up_paths)
 
+      # 시리즈의 첫 작품의 주소가 아닐 때 첫 작품의 주소로 이동
       if follow_up_paths != [] and follow_up_paths[-1].select_one('a'):
         ani['tid'] = int(follow_up_paths[-1].select_one('a')['href'].split('/')[2])
         html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
@@ -58,9 +59,10 @@ for ani in ani_list:
         print(follow_up_paths)
 
       # title 업데이트 / 무조건 다시 생성
-      if soup.select_one('#main > h1 > span'):
-        soup.select_one('#main > h1 > span').decompose()
-        soup.select_one('#main > h1 > a').decompose()
+      if soup.select_one('#main > h1'):
+        if soup.select_one('#main > h1 > span'):
+          soup.select_one('#main > h1 > span').decompose()
+          soup.select_one('#main > h1 > a').decompose()
         ani['title'] = soup.select_one('#main > h1').get_text(strip=True)
       else:
         print(f"{ani['tid']}의 'title' 찾을 수 없음.")
@@ -106,8 +108,7 @@ for ani in ani_list:
 print('반복문 종료')
 
 # tid 순으로 업데이트 리스트 정렬 후 완성 리스트에 추가
-sort(update_ani_list, key=itemgetter('tid'))
-completed_ani_list += update_ani_list
+completed_ani_list += sorted(update_ani_list, key=itemgetter('tid'))
 
 print('tid 순으로 업데이트 리스트 정렬 후 완성 리스트에 추가')
 
