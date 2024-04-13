@@ -22,7 +22,7 @@ def search_tid(title):
     tid = int(soup.find('a', string=f"{title}")['href'].split('/')[2])
     return tid
   except:
-    print(f'{title}의 'tid' 찾을 수 없음.')
+    print(f"{title}의 'tid' 찾을 수 없음.")
     return None
 
 with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
@@ -68,7 +68,7 @@ for ani in ani_list:
         premiered = soup.find('th', string='放送期間').parent.select_one('td').get_text().split('～')[0].split('-')
         ani['premiered'] = premiered[0] + '-' + premiered[1].zfill(2)
       else:
-        print(f'{ani['tid']}의 'premiered' 찾을 수 없음.')
+        print(f"{ani['tid']}의 'premiered' 찾을 수 없음.")
         ani['premiered'] = None
 
       # bookmark 업데이트
