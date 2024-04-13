@@ -96,15 +96,20 @@ for ani in ani_list:
           updated_follow_up['bookmark'] = next((follow_up.get('bookmark') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
           updated_follow_ups.append(updated_follow_up)
       ani['follow-ups'] = sorted(updated_follow_ups, key=itemgetter('tid'))
+      print('follow-ups 업데이트 종료')
 
       # 키 순으로 ani 정렬 후 업데이트 리스트에 추가
       index_map = {key: index for index, key in enumerate(KEY_ORDER)}
       sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
       update_ani_list.append(sorted_ani)
 
+print('반복문 종료')
+
 # tid 순으로 업데이트 리스트 정렬 후 완성 리스트에 추가
 sort(update_ani_list, key=itemgetter('tid'))
 completed_ani_list += update_ani_list
+
+print('tid 순으로 업데이트 리스트 정렬 후 완성 리스트에 추가')
 
 with open('ani-list.yml', 'w') as file:
   yaml = YAML()
