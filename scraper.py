@@ -8,7 +8,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 KEY_ORDER = ['tid', 'title', 'ko-title', 'premiered', 'bookmark', 'follow-ups']
 
 ani_list = []
-updated_ani_list = []
+update_ani_list = []
+completed_ani_list = []
 
 def strip_leading_double_space(stream):
   if stream.startswith("  "):
@@ -29,6 +30,7 @@ with open(os.path.join(BASE_DIR, 'ani-list.yml')) as file:
   yaml = YAML()
   ani_list = yaml.load(file)
 
+# 반복문 시작
 for ani in ani_list:
   if not 'tid' in ani:
     if 'title' in ani:
@@ -37,6 +39,11 @@ for ani in ani_list:
     if not isinstance(ani['tid'], int):
       print(f"잘못된 tid '{ani['tid']}' 제거")
       ani['tid'] = None
+      
+      # 키 순으로 ani 정렬 후 완성 리스트에 추가
+      index_map = {key: index for index, key in enumerate(KEY_ORDER)}
+      sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
+      completed_ani_list.append(sorted_ani)
     else:
       html = requests.get(f"https://cal.syoboi.jp/tid/{ani['tid']}/summary")
       soup = BeautifulSoup(html.text, 'html.parser')
@@ -50,12 +57,14 @@ for ani in ani_list:
         follow_up_paths = soup.find('ul', class_='tidList').find_all('li')
         print(follow_up_paths)
 
-      # title 업데이트
+      # title 업데이트 / 무조건 다시 생성
       if soup.select_one('#main > h1 > span'):
         soup.select_one('#main > h1 > span').decompose()
         soup.select_one('#main > h1 > a').decompose()
-      ani['title'] = soup.select_one('#main > h1').get_text(strip=True) # 무조건 다시 생성
-      print(ani['title'])
+        ani['title'] = soup.select_one('#main > h1').get_text(strip=True)
+      else:
+        print(f"{ani['tid']}의 'title' 찾을 수 없음.")
+        ani['title'] = None
       
       # ko-title 업데이트
       if not 'ko-title' in ani:
@@ -87,17 +96,17 @@ for ani in ani_list:
           updated_follow_up['bookmark'] = next((follow_up.get('bookmark') for follow_up in ani.get('follow-ups', []) if follow_up['title'] == updated_follow_up['title']), None)
           updated_follow_ups.append(updated_follow_up)
       ani['follow-ups'] = sorted(updated_follow_ups, key=itemgetter('tid'))
-      print(ani['follow-ups'])
-  # end if 'tid' in ani
 
-  # 정렬 후 저장
-  index_map = {key: index for index, key in enumerate(KEY_ORDER)}
-  sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
-  updated_ani_list.append(sorted_ani)
-  sorted_ani_list = sorted(updated_ani_list, key=itemgetter('tid'))
-# end for ani in ani_list:
+      # 키 순으로 ani 정렬 후 업데이트 리스트에 추가
+      index_map = {key: index for index, key in enumerate(KEY_ORDER)}
+      sorted_ani = dict(sorted(ani.items(), key=lambda k: index_map[k[0]]))
+      update_ani_list.append(sorted_ani)
+
+# tid 순으로 업데이트 리스트 정렬 후 완성 리스트에 추가
+sort(update_ani_list, key=itemgetter('tid'))
+completed_ani_list += update_ani_list
 
 with open('ani-list.yml', 'w') as file:
   yaml = YAML()
   yaml.indent(sequence=4, offset=2)
-  yaml.dump(sorted_ani_list, file, transform=strip_leading_double_space)
+  yaml.dump(completed_ani_list, file, transform=strip_leading_double_space)
