@@ -1,3 +1,8 @@
+---
+title: 부동소수의 저장 표현
+layout: post
+---
+
 ![IEEE-754](/assets/img/clippings/IEEE-754.webp){: height="200"}
 
 전기전자공학자협회(IEEE)에서는 부동소수를 저장하는 표준(IEEE 754)을 제공.
