@@ -8,7 +8,23 @@ layout: post
 2. 객체 지향 프로그래밍 언어
 3. 동적 타입 언어
 4. 자동 메모리 관리
-5. 
+5. print() 자동 줄바꿈
+6. \# 한 줄 주석, '''여러 줄 주석'''
+
+|False|None|True|and|as|assert|
+|---|---|---|---|---|---|
+|async|await|break|class|continue|def|
+|del|elif|else|except|finally|for|
+|from|global|if|import|in|is|
+|lambda|nonlocal|not|or|pass|raise|
+|return|try|while|with|yield||
+
+7. 형식 지정자  
+   '{}{}{}'.format(a, b, c)
+   '{0:d}{1:d}{2:f}'.format(a, b, c)
+   '%d%d%f' % (a, b, c)
+   f'{a}{b}{c}'
+   
 5-1. num1 = 42  
      num2 = 0b101010  
      num3 = 0o52  
