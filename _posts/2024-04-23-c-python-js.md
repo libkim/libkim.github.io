@@ -1,17 +1,22 @@
+---
+title: 프로그래밍 언어 차이
+layout: post
+---
+
 파이썬
 1. 인터프리트 방식
 2. 객체 지향 프로그래밍 언어
 3. 동적 타입 언어
 4. 자동 메모리 관리
 5. 
-5-1. num1 = 42
-     num2 = 0b101010
-     num3 = 0o52
-     num4 = 0x2a
-5-2. str1 = "\"How are you?\"\n\"I'm fine.\""
-     str2 = '"How are you?"\n"I\'m fine."'
-     str3 = '''"How are you?"
-       "I\'m fine."'''
+5-1. num1 = 42  
+     num2 = 0b101010  
+     num3 = 0o52  
+     num4 = 0x2a  
+5-2. str1 = "\"How are you?\"\n\"I'm fine.\""  
+     str2 = '"How are you?"\n"I\'m fine."'  
+     str3 = '''"How are you?"  
+       "I\'m fine."'''  
 5-3. numbers = [[1, 3, 5], [2, 4]]
      odd_list1 = numbers[0]
      odd_list2 = numbers[0][0:3]
