@@ -19,12 +19,12 @@ layout: post
 |lambda|nonlocal|not|or|pass|raise|
 |return|try|while|with|yield||
 
-7. 형식 지정자  
+7. 형식 지정자  {% raw %}
    '{}{}{}'.format(a, b, c)
    '{0:d}{1:d}{2:f}'.format(a, b, c)
    '%d%d%f' % (a, b, c)
    f'{a}{b}{c}'
-   
+   {% endraw %}
 5-1. num1 = 42  
      num2 = 0b101010  
      num3 = 0o52  
@@ -57,7 +57,7 @@ C
      int num3 = 052;
      int num4 = 0x2a;
 5-2. char *str = "\"How are you?\"\n\"I'm fine.\"";
-5-3. int numbers[2][3] = {{1, 3, 5}, {2, 4, 0}};
+5-3. int numbers[2][3] = {% raw %}{{1, 3, 5}, {2, 4, 0}};{% endraw %}
      int odd_list[3] = {numbers[0][0], numbers[0][1], numbers[0][2]};
 5-4. int num1, num2;
      printf("첫 번째 정수 입력 >> ");
