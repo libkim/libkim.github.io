@@ -1,21 +1,20 @@
 ---
-layout: default
 title: Home
 ---
 
-<header>
-  <nav>
-    {% include nav.html %}
-  </nav>
-  <div class="home-heading">
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include nav.html %}
+  <header>
     {% include home-heading.html %}
-  </div>
-</header>
-<main>
-  <div class="post-container">
+  </header>
+  <main>
     {% include post-container.html %}
-  </div>
-</main>
-<footer>
+  </main>
   {% include footer.html %}
-</footer>
+</body>
+</html>
