@@ -338,9 +338,9 @@ header {
 #markdown-toc:hover {
   transform: rotate(0);
   li {
-    color: $secondary-color;
+    color: blue;
     a:link {
-      color: $secondary-color;
+      color: blue;
     }
   }
   li::after {
