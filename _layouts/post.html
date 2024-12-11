@@ -1,14 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
     {% include head.html %}
-  </head>
   <body>
-    <header>
-      <nav>
-        {% include nav.html %}
-      </nav>
-    </header>
+    {% include nav.html %}
     <main>
       <article class="post">
         <div class="post-title">
@@ -22,10 +16,7 @@
         </div>
       </article>
     </main>
-    <footer>
-      {% include footer.html %}
-    </footer>
-    
+    {% include footer.html %}
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <script>
