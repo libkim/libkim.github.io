@@ -1,11 +1,281 @@
-* {
-  list-style: none;
-  text-decoration: none;
-  border-collapse: collapse;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+body {
+  padding-right: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+header {
+  height: 432px;
+  padding: 0 1rem;
+  color: #6c757d;
+  background-color: rgba(0,0,0,.03);
+}
+
+#practiceSongCardHeader {
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: #6c757d;
+}
+
+#practiceSongCardBody {
+  background-color: rgba(0,0,0,.03);
+}
+
+#practiceSongCardFooter {
+  height: 288px;
+  padding: 0 1rem;
+  border-top: 0;
+  text-align: center;
+  color: #6c757d;
+  background-color: rgba(0,0,0,.03);
+}
+
+.h1 .material-symbols-rounded {
+  font-size: calc(1.375rem + 1.5vw);
+  color: #6c757d;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 20;
+}
+
+        .material-symbols-rounded {
+            font-size: 1.25rem;
+        }
+
+        .link .material-symbols-rounded {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 500,
+                'GRAD' 0,
+                'opsz' 20;
+            vertical-align: text-top;
+        }
+
+        .carousel-control-prev .material-symbols-rounded,
+        .carousel-control-next .material-symbols-rounded {
+            font-size: 1.5rem;
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 20;
+        }
+
+        .accordion-header .material-symbols-rounded {
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 20;
+        }
+        
+        .plus {
+            padding-top: 0.25rem;
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+        button {
+            font-weight: inherit;
+        }
+
+        #practiceSong {
+            border: 0;
+        }
+
+        #searchBy {
+            width: 4rem;
+            border: 1px solid #ced4da;
+            border-right: 0;
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+            text-align: center;
+        }
+
+        #query {
+            border-left: 0;
+        }
+
+        .card-header {
+            padding: .75rem 1.75rem;
+        }
+
+        .icon-button {
+            padding: 0;
+            border: 0;
+            line-height: 0;
+        }
+
+        .card-footer {
+            padding: 0;
+            background-color: initial;
+        }
+
+        .song-card-body {
+            padding: .75rem 0;
+        }
+
+        .no {
+            font-weight: 600;
+        }
+
+        .youtube {
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            cursor: pointer;
+        }
+        .api {
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            color: #6c757d;
+            cursor: pointer;
+        }
+        
+        .api:hover {
+            color: #6c757d;
+        }
+
+        .accordion-button {
+            padding: .5rem 1rem;
+            --bs-gutter-x: 0;
+            font-size: inherit;
+            text-align: center;
+            background-color: initial;
+        }
+
+        .accordion-button:not(.collapsed) {
+            box-shadow: initial;
+            color: #0d6efd;
+        }
+
+        .accordion-button:focus {
+            z-index: initial;
+            border-color: initial;
+            outline: initial;
+            box-shadow: initial;
+        }
+
+        .accordion-button::after {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin-left: 0;
+            content: "arrow_forward_ios";
+            font-size: 1.5rem;
+            font-family: 'Material Symbols Rounded';
+            vertical-align: middle;
+            background-image: initial;
+            transform: rotate(90deg);
+        }
+        .accordion-button:not(.collapsed)::after {
+            font-size: 1.5rem;
+            font-family: 'Material Symbols Rounded';
+            vertical-align: middle;
+            background-image: initial;
+            transform: rotate(-90deg);
+        }
+
+        .accordion-item {
+            background-color: initial;
+            border: initial;
+        }
+
+        .accordion-header {
+            font-weight: 600;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            width: auto;
+            padding: 0 .5rem;
+            padding-top: .25rem;
+            color: #dedad6;
+        }
+
+        .carousel-control-prev {
+            display: none;
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            background-image: initial;
+        }
+
+        .btn-group>.btn-group:not(:first-child),
+        .btn-group>.btn:not(:first-child) {
+            border-left: 0;
+        }
+
+        .modal-title {
+            font-weight: 600;
+        }
+
+        .text-container {
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+
+            span {
+                display: inline-block;
+            }
+
+            .animate {
+                position: relative;
+                animation: leftright 3s infinite alternate ease-in-out;
+            }
+        }
+        .modal-dialog-scrollable .modal-body {
+            overflow-x: hidden;
+        }
+
+        .btn-group-vertical>.btn-group:not(:first-child), .btn-group-vertical>.btn:not(:first-child) {
+            margin-top: 0;
+        }
+
+        @keyframes leftright {
+            0%,
+            20% {
+                transform: translateX(0%);
+                left: 0%;
+            }
+
+            80%,
+            100% {
+                transform: translateX(-100%);
+                left: 100%;
+            }
+        }
+
 
 #markdown-toc {
   counter-reset: section;
