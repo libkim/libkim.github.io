@@ -1,33 +1,39 @@
-<div class="nav">
-  <div class="logo">
-    <svg width="156" height="48" viewBox="0 0 156 48">
-      <text class="logo-text" x="0" y="38" textLength="156">
-        金立圖書館
-      </text>
-    </svg>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <div class="logo">
+        <svg width="156" height="48" viewBox="0 0 156 48">
+          <text class="logo-text" x="0" y="38" textLength="156">
+            金立圖書館
+          </text>
+        </svg>
+      </div>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://libkim.github.io/ani-list">Ani List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://libkim.github.io/image-tagging">Image Tagging</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://libkim.github.io/blackjack">Blackjack</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
   </div>
-  <div class="menu">
-    <ul class="menu-items">
-      <li class="menu-item">Home</li>
-      <li class="menu-item">Ani List</li>
-      <li class="menu-item">Image Tagging</li>
-      <li class="menu-item">Blackjack</li>
-    </ul>
-  </div>
-  <div class="hamburger-button">
-    <svg width="36" height="48" viewBox="0 0 36 48">
-      <text class="button-text" x="0" y="38" textLength="36">
-        ︙
-      </text>
-    </svg>
-  </div>
-</div>
-
-<script>
-  function toggleMenu() {
-    const overlay = document.getElementById("overlay");
-    const pages = document.querySelector("#hamburger .pages");
-    overlay.classList.toggle("open");
-    pages.classList.toggle("open");
-  }
-</script>
+</nav>
