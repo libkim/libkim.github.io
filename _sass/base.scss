@@ -276,6 +276,20 @@ header {
             }
         }
 
+.diagonal-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.line-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
 
 #markdown-toc {
   counter-reset: section;
