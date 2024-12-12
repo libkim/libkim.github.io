@@ -291,6 +291,12 @@ header {
   height: 100vh;
 }
 
+.logo-text {
+  font-size: 1.5rem;
+  font-family: 'ChosunKm';
+  vertical-align: middle;
+}
+
 #markdown-toc {
   counter-reset: section;
   list-style-type: none;
