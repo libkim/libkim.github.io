@@ -1,12 +1,7 @@
-<header>
-  <nav>
-    {% include nav.html %}
-  </nav>
-  <div class="description">
-    {% if page.title != "404" %}
-      <h3>{{ site.description }}</h3>
-    {% else %}
-      <h3>404 Not Found</h3>
-    {% endif %}
-  </div>
+<header class="d-flex flex-row align-items-center">
+  {% if page.title != "404" %}
+    <h1 style="font-size: 4rem;">PRACTICE SONGS</h1>
+  {% else %}
+    <h1 style="font-size: 4rem;">404 Not Found</h1>
+  {% endif %}
 </header>
