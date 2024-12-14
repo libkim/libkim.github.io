@@ -1,4 +1,47 @@
-<footer>
-  <p>© {{ 'now' | date: "%Y" }} libkim.</p>
+<footer class="card">
+  <div class="card-footer d-flex flex-row justify-content-center align-items-center" id="practiceSongCardFooter">
+    <div class="link">
+      © {{ 'now' | date: "%Y" }} libkim.
+    </div>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('search-button').addEventListener('click', function() {
+      fetch('/_data/posts.json')
+        .then(response => response.json())
+        .then(posts => {
+          const query = document.getElementById('search-input').value.replace(/[^\w\s가-힣一-龠ぁ-んァ-ン]/g, "").toLowerCase();
+          const resultsContainer = document.getElementById('results-container');
+          resultsContainer.innerHTML = '';
+
+          if (query.length > 0) {
+            const results = posts.filter(post => {
+              const title = post.title.replace(/[^\w\s가-힣一-龠ぁ-んァ-ン]/g, "").toLowerCase();
+              const content = post.content.replace(/[^\w\s가-힣一-龠ぁ-んァ-ン]/g, "").toLowerCase();
+              return title.includes(query) || content.includes(query);
+            });
+
+            if (results.length > 0) {
+              results.forEach(post => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = post.url;
+                a.textContent = post.title;
+                li.appendChild(a);
+                resultsContainer.appendChild(li);
+              });
+            } else {
+              resultsContainer.innerHTML = '<li>No results found</li>';
+            }
+          } else {
+            resultsContainer.innerHTML = '<li>올바른 검색어를 입력해주세요.</li>';
+          }
+        })
+        .catch(error => console.error('Error loading JSON file:', error));
+    });
+  });
+</script>

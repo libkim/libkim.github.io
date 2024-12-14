@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Grid</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 두 개의 열로 설정 */
+            grid-auto-rows: minmax(100px, auto); /* 행의 높이 설정 */
+            gap: 10px;
+            justify-content: center; /* 가운데 정렬 */
+        }
+        .post {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .post:nth-child(odd) {
+            order: 1; /* 홀수 번째 포스트는 첫 번째 열에 배치 */
+        }
+        .post:nth-child(even) {
+            order: -1; /* 짝수 번째 포스트는 두 번째 열에 배치 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post-grid">
+            <div class="post">포스트 1</div>
+            <div class="post">포스트 2</div>
+            <div class="post">포스트 3</div>
+            <div class="post">포스트 4</div>
+            <div class="post">포스트 5</div>
+            <div class="post">포스트 6</div>
+            <!-- 추가 포스트 -->
+        </div>
+    </div>
+</body>
+</html>

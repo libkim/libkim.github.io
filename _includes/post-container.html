@@ -1,37 +1,68 @@
-<div class="post-container">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <div class="post-title">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      </div>
-      <div class="post-datetime">
-        <p>
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
-        </p>
-      </div>
-      <div class="post-thumbnail">
-        {% if post.image %}
-          <a href="{{ post.url }}"><img src="{{ post.image }}"/></a>
-        {% endif %}
-        {% if post.gif %}
-          <a href="{{ post.url }}">{% include gif.html file = post.gif %}</a>
-        {% endif %}
-      </div>
-      <div class="post-text-preview">
-        <p>
+<div class="container d-flex flex-wrap-reverse container-sm container-md container-lg container-xl container-xxl">
+  {% for post in paginator.posts reversed %}
+    <div class="post-thumbnail rounded">
+      {% if post.image %}
+        <a href="{{ post.url }}"><img src="{{ post.image }}" class="card-img image-effect"/></a>
+      {% endif %}
+
+      {% if post.gif %}
+        <a href="{{ post.url }}">{% include gif.html file = post.gif %}</a>
+      {% endif %}
+
+      <div>
+        <p class="card-title"><b><span class="d-inline ps-1 pe-1 rounded" style="background-color: white;">{{ post.title }}</span></b></p>
+        <br>
+        <p class="card-text ps-1 pe-1 rounded" style="background-color: white;">
           {% if post.customexcerpt %}
-            {{ post.customexcerpt | strip_html | truncatewords:50 }}
+            <span class="d-inline rounded" style="background-color: white;">{{ post.customexcerpt | strip_html | truncatewords:20 }}</span>
           {% else %}
-            {{ post.content | strip_html | truncatewords:50 }}
+            <span class="d-inline rounded" style="background-color: white;">{{ post.content | strip_html | truncatewords:20 }}</span>
           {% endif %}
-          <span class="continue-reading">
-            <a href="{{ post.url | relative_url }}">Continue reading...</a>
-          </span>
         </p>
       </div>
-    </article>
-  {% endfor %}
-  
+    </div>
+    {% endfor %}
+</div>
+
+<div class="card" id="practiceSong">
+  <div class="card-header d-flex flex-row justify-content-between align-items-center" id="practiceSongCardHeader">
+      <div>
+          <h1>Posts&nbsp;</h1>
+      </div>
+      <button type="button" class="btn icon-button" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <div class="h1">
+              <span class="material-symbols-rounded">add_circle</span>
+          </div>
+      </button>
+  </div>
+  <div class="card-body" id="practiceSongCardBody">
+      <div class="d-flex flex-wrap justify-content-end">
+          {% for post in paginator.posts %}
+          <div class="card" style="width: 194px; height: 194px;">
+            {% if post.image %}
+            <a href="{{ post.url }}"><img src="{{ post.image }}" class="card-img"/></a>
+            {% endif %}
+            {% if post.gif %}
+            <a href="{{ post.url }}">{% include gif.html file = post.gif %}</a>
+            {% endif %}
+            <div class="card-img-overlay overflow-auto">
+              <h5 class="card-title"><span class="d-inline ps-1 pe-1 text-bg-light rounded">{{ post.title }}</span></h5>
+              <p class="card-text">
+                {% if post.customexcerpt %}
+                  <span class="d-inline ps-1 pe-1 text-bg-light rounded">{{ post.customexcerpt | strip_html | truncatewords:50 }}</span>
+                {% else %}
+                  <span class="d-inline ps-1 pe-1 text-bg-light rounded">{{ post.content | strip_html | truncatewords:50 }}</span>
+                {% endif %}
+              </p>
+              <p class="card-text">{{ post.date | date_to_string }}</p>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+</div>
+
+<div class="post-container">
   <!-- Pagination links -->
   <div class="paginator">
     {% if paginator.total_pages > 1 %}

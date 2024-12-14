@@ -3,7 +3,6 @@ title: 金立圖書館
 en-title: Lib Kim Library
 description: Welcome to Lib Kim Library.
 url: 'https://libkim.github.io/'
-baseurl:
 permalink: '/:year/:month/:day/:title'
 
 #Manifest
@@ -20,7 +19,7 @@ plugins:
   - jekyll-sitemap
 
 # Pagination
-paginate: 3
+paginate: 10
 paginate_path: '/page:num/'
 
 # SEO
