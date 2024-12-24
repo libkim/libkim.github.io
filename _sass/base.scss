@@ -32,27 +32,13 @@ header {
   height: 432px;
   padding: 0 1rem;
   color: #6c757d;
-  background-color: rgba(0,0,0,.03);
 }
 
-#practiceSongCardHeader {
-  padding-bottom: 0;
-  border-bottom: 0;
-  color: #6c757d;
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-#practiceSongCardBody {
-  background-color: rgba(0,0,0,.03);
-}
-
-#practiceSongCardFooter {
-  height: 288px;
-  padding: 0 1rem;
-  border-top: 0;
-  text-align: center;
-  color: #6c757d;
-  background-color: rgba(0,0,0,.03);
-}
 
 .h1 .material-symbols-rounded {
   font-size: calc(1.375rem + 1.5vw);
@@ -65,39 +51,12 @@ header {
 }
 
 .post-thumbnail {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   width: 200px;
   height: 200px;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  padding: 8px;
-  background-color: #f1f1e6;
-  background: radial-gradient(
-    circle, 
-    #235857 5%, 
-    rgba(35, 88, 87, 0) 10%, 
-    rgba(255, 0, 0, 0.9) 15%, 
-    rgba(255, 165, 0, 0.7) 20%, 
-    rgba(35, 88, 87, 0) 25%, 
-    rgba(0, 128, 0, 0.8) 30%, 
-    rgba(0, 0, 255, 0.6) 35%, 
-    rgba(35, 88, 87, 0) 40%, 
-    rgba(75, 0, 130, 0.5) 45%, 
-    rgba(238, 130, 238, 0.3) 50%, 
-    rgba(35, 88, 87, 0) 55%, 
-    rgba(255, 255, 0, 0.4) 60%, 
-    rgba(0, 255, 255, 0.2) 65%, 
-    rgba(35, 88, 87, 0) 70%, 
-    rgba(255, 192, 203, 0.7) 75%, 
-    rgba(255, 105, 180, 0.5) 80%, 
-    rgba(35, 88, 87, 0) 85%, 
-    rgba(128, 0, 128, 0.6) 90%, 
-    rgba(255, 20, 147, 0.4) 95%, 
-    rgba(35, 88, 87, 0) 100%
-), 
-url('https://www.transparenttextures.com/patterns/noise.png');
-background-blend-mode: overlay;
-
+  margin-right: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
 }
 
         .material-symbols-rounded {
@@ -160,19 +119,10 @@ background-blend-mode: overlay;
             border-left: 0;
         }
 
-        .card-header {
-            padding: .75rem 1.75rem;
-        }
-
         .icon-button {
             padding: 0;
             border: 0;
             line-height: 0;
-        }
-
-        .card-footer {
-            padding: 0;
-            background-color: initial;
         }
 
         .song-card-body {
