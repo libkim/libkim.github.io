@@ -17,6 +17,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - webrick
 
 # Pagination
 paginate: 10
@@ -60,3 +61,5 @@ kramdown:
 sass:
   style: compressed
   sourcemap: never
+
+
