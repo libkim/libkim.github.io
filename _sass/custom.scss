@@ -1,31 +1,26 @@
 @media (min-width: 576px) {
   .container, .container-sm {
-      max-width: 568px; // 184*3 + 4*4
+      max-width: 396px; // 184*2 + 4*1 + 24
   }
 }
 @media (min-width: 768px) {
   .container, .container-md, .container-sm {
-      max-width: 756px; // 184*4 + 4*5
+      max-width: 584px; // 184*3 + 4*2 + 24
   }
 }
 @media (min-width: 992px) {
   .container, .container-lg, .container-md, .container-sm {
-      max-width: 944px; // 184*5 + 4*6
+      max-width: 772px; // 184*4 + 4*3 + 24
   }
 }
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
-      max-width: 1132px; // 184*6 + 4*7
-  }
-}
-@media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1320px; // 184*7 + 4*8
+      max-width: 1148px; // 184*6 + 4*5 + 24
   }
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  padding-left: unset;
-  padding-right: 4px;
+  padding-left: 8px;
+  padding-right: 12px;
   padding-bottom: 4px;
 }
