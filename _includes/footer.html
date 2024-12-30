@@ -45,3 +45,91 @@
     });
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var postsPerPage = 6;
+    var totalPages = 1;
+    var currentPage = 1;
+
+    function updatePostsPerPage() {
+      var width = window.innerWidth;
+      var data = [
+        {% for post in site.posts %}
+        {
+          "title": "{{ post.title | replace: '\', '' | replace: '"', '\"' }}",
+          "url": "{{ site.baseurl }}{{ post.url }}",
+          "date": "{{ post.date }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+      var upstairsPosts = document.querySelector(".upstairs-posts");
+      var downstairsPosts = document.querySelector(".downstairs-posts");
+      var pageNumber = document.querySelector(".page-number");
+
+      upstairsPosts.innerHTML = '';
+      downstairsPosts.innerHTML = '';
+
+      if (width < 576) { 
+        postsPerPage = 6;
+        totalPages = Math.ceil(data.length / postsPerPage);
+        currentPage = totalPages;
+
+        var start = (currentPage - 1) * postsPerPage;
+        var end = start + postsPerPage;
+
+        data.slice(start, end).forEach(post => {
+          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+        });
+        pageNumber.textContent = `${currentPage} / ${totalPages}`;
+      } else if (width < 992) {
+        postsPerPage = 9;
+        totalPages = Math.ceil(data.length / postsPerPage);
+        currentPage = totalPages;
+
+        var start = (currentPage - 1) * postsPerPage;
+        var end = start + postsPerPage;
+
+        data.slice(start, end).forEach(post => {
+          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+        });
+        pageNumber.textContent = `${currentPage} / ${totalPages}`;
+      } else if (width < 1400) {
+        postsPerPage = 10;
+        totalPages = Math.ceil(data.length / postsPerPage);
+        currentPage = totalPages;
+
+        var start = (currentPage - 1) * postsPerPage;
+        var breakpoint = start + 8;
+        var end = breakpoint + 2;
+
+        data.slice(start, breakpoint).forEach(post => {
+          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+        });
+        data.slice(breakpoint, end).forEach(post => {
+          downstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+        });
+        pageNumber.textContent = `${currentPage} / ${totalPages}`;
+      } else {
+        postsPerPage = 12;
+        totalPages = Math.ceil(data.length / postsPerPage);
+        currentPage = totalPages;
+
+        var start = (currentPage - 1) * postsPerPage;
+        var breakpoint = start + 6;
+        var end = breakpoint + 6;
+
+        data.slice(start, breakpoint).forEach(post => {
+          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+        });
+        data.slice(breakpoint, end).forEach(post => {
+          downstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+        });
+        pageNumber.textContent = `${currentPage} / ${totalPages}`;
+      }
+    }
+
+    window.addEventListener("resize", updatePostsPerPage);
+    updatePostsPerPage();
+  });
+</script>
