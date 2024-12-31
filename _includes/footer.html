@@ -55,7 +55,7 @@
     function updatePostsPerPage() {
       var width = window.innerWidth;
       var data = [
-        {% for post in site.posts %}
+        {% for post in site.posts reversed %}
         {
           "title": "{{ post.title | replace: '\', '' | replace: '"', '\"' }}",
           "url": "{{ site.baseurl }}{{ post.url }}",
@@ -78,9 +78,12 @@
         var start = (currentPage - 1) * postsPerPage;
         var end = start + postsPerPage;
 
-        data.slice(start, end).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
+        data.slice(start, end).forEach((post, index) => {
+          var gridRowStart = Math.ceil((6 - index) / 2);
+          var gridRowEnd = gridRowStart + 1;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail" style="grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${post.title}<a></div>`;
         });
+
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       } else if (width < 992) {
         postsPerPage = 9;
@@ -90,9 +93,12 @@
         var start = (currentPage - 1) * postsPerPage;
         var end = start + postsPerPage;
 
-        data.slice(start, end).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
+        data.slice(start, end).forEach((post, index) => {
+          var gridRowStart = Math.ceil((9 - index) / 3);
+          var gridRowEnd = gridRowStart + 1;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail" style="grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${post.title}<a></div>`;
         });
+
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       } else if (width < 1400) {
         postsPerPage = 10;
@@ -100,15 +106,18 @@
         currentPage = totalPages;
 
         var start = (currentPage - 1) * postsPerPage;
-        var breakpoint = start + 8;
-        var end = breakpoint + 2;
+        var breakpoint = start + 2;
+        var end = breakpoint + 8;
 
         data.slice(start, breakpoint).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
-        });
-        data.slice(breakpoint, end).forEach(post => {
           downstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
+        data.slice(breakpoint, end).forEach((post, index) => {
+          var gridRowStart = Math.ceil((8 - index) / 4);
+          var gridRowEnd = gridRowStart + 1;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail" style="grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${post.title}<a></div>`;
+        });
+        
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       } else {
         postsPerPage = 12;
@@ -119,17 +128,35 @@
         var breakpoint = start + 6;
         var end = breakpoint + 6;
 
-        data.slice(start, breakpoint).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
+        data.slice(start, breakpoint).forEach((post, index) => {
+          var gridRowStart = Math.ceil((6 - index) / 3);
+          var gridRowEnd = gridRowStart + 1;
+          downstairsPosts.innerHTML += `<div class="post-thumbnail" style="grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${post.title}<a></div>`;
         });
         data.slice(breakpoint, end).forEach(post => {
-          downstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
+
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       }
     }
 
+    function updateButtons() {
+      var nextButtons = document.querySelectorAll(".next-button");
+      var prevButtons = document.querySelectorAll(".previous-button");
+
+      nextButtons.forEach(function(button) {
+        button.style.color = (currentPage < totalPages) ? "inherit" : "grey";
+      });
+
+      prevButtons.forEach(function(button) {
+        button.style.color = (currentPage > 1) ? "inherit" : "grey";
+      });
+    }
+
+
     window.addEventListener("resize", updatePostsPerPage);
     updatePostsPerPage();
+    updateButtons();
   });
 </script>
