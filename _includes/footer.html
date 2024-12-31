@@ -79,7 +79,7 @@
         var end = start + postsPerPage;
 
         data.slice(start, end).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       } else if (width < 992) {
@@ -91,7 +91,7 @@
         var end = start + postsPerPage;
 
         data.slice(start, end).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       } else if (width < 1400) {
@@ -104,10 +104,10 @@
         var end = breakpoint + 2;
 
         data.slice(start, breakpoint).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
         data.slice(breakpoint, end).forEach(post => {
-          downstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+          downstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       } else {
@@ -120,10 +120,10 @@
         var end = breakpoint + 6;
 
         data.slice(start, breakpoint).forEach(post => {
-          upstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+          upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
         data.slice(breakpoint, end).forEach(post => {
-          downstairsPosts.innerHTML += `<div class="post-thumbnail">${post.title}</div>`;
+          downstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${post.title}<a></div>`;
         });
         pageNumber.textContent = `${currentPage} / ${totalPages}`;
       }
