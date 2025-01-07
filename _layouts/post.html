@@ -1,47 +1,12 @@
 <!doctype html>
 <html>
-    {% include head.html %}
-  <body>
-    {% include nav.html %}
-
-    <div class="line-container">
-        <div class="diagonal-line" style="left: 10%;"></div>
-        <div class="diagonal-line" style="left: 30%;"></div>
-        <div class="diagonal-line" style="left: 50%;"></div>
-        <div class="diagonal-line" style="left: 70%;"></div>
-        <div class="diagonal-line" style="left: 90%;"></div>
-    </div>
-
-    <main>
-      <article class="post">
-        <div class="post-title">
-          <h3>{{ page.title }}</h3>
-        </div>
-        <div class="post-datetime">
-          <p>{{ page.date | date_to_string }}</p>
-        </div>
-        <div class="post-text row">
-            <div class="col-4">
-                <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-                    * random line to make it work. This will be removed.
-                    {:toc}
-                </div>
-            </div>
-            <div class="col-8">
-                <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
-      </article>
-    </main>
-    {% include footer.html %}
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-    <script>
-      $(document).ready(function(e) {
-        $("#markdown-toc").multilingual(["ko", "en", "num"]);
-      });
-    </script>
-  </body>
+{% include head.html %}
+<body class="bg-light">
+  {% include nav.html %}
+  {% include header.html %}
+  <main>
+    {% include post-wrapper.html %}
+  </main>
+  {% include footer.html %}
+</body>
 </html>
