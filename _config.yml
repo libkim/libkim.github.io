@@ -3,7 +3,24 @@ title: 金立圖書館
 en-title: Lib Kim Library
 description: Welcome to Lib Kim Library.
 url: 'https://libkim.github.io/'
-permalink: '/:year/:month/:day/:title'
+permalink: '/:title'
+
+collections:
+  my_posts:
+    output: true
+    permalink: '/posts/:title:output_ext'
+
+defaults:
+  - scope:
+      path: ''
+      type: my_posts
+    values:
+      layout: post
+  - scope:
+      path: ''
+      type: projects
+    values:
+      layout: project
 
 #Manifest
 manifest_name: 金Lib. — Lib Kim Library

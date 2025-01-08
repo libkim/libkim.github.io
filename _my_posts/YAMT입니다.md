@@ -1,6 +1,6 @@
 ---
-title: YAMT 입니다!
-layout: post
+slug: this-is-yamt
+created-date: 2020-05-21
 categories: [Typography, Markdown, Tips]
 image: /assets/img/logo.jpg
 description: "Welcome to YAMT - Yet Another Minimal Theme."

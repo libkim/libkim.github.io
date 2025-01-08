@@ -1,6 +1,7 @@
 ---
 title: Blend Mode
-layout: post
+slug: blend-mode
+created-date: 2023-12-25
 ---
 
 |Blend Mode|방정식|치역|

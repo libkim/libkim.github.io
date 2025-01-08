@@ -1,7 +1,8 @@
 <div class="post-wrapper">
-  <div class="post-title">{{ page.title }}</div>
+  <div class="post-title">{{ page.name | replace: '.md', ''}}</div>
   <div class="post-metadata">
-    <div class="post-datetime">{{ page.date | date_to_string }}</div>
+    <div class="post-datetime">작성 날짜: {{ page.created-date | date: "%Y-%m-%d" }}</div>
+    <div class="post-datetime">수정 날짜:</div>
     <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
       * random line to make it work. This will be removed.
       {:toc}

@@ -1,6 +1,6 @@
 ---
-title: Special Formatting
-layout: post
+slug: special-formatting
+created-date: 2020-05-19
 categories: [Tips, Markdown, Typography]
 image: /assets/img/forest-snow.jpg
 description: "A bunch of tips on how to format your text."

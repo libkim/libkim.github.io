@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-layout: post
+slug: write-a-post
+created-date: 2020-05-20
 categories: [How-To, Markdown]
 image: /assets/img/airplane.jpg
 #gif: mygif

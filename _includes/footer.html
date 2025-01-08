@@ -48,7 +48,7 @@
 
 <script>
   var data = [
-    {% for post in site.posts reversed %}
+    {% for post in site.my_posts reversed %}
       {
         "title": "{{ post.title | replace: '\', '' | replace: '"', '\"' }}",
         "url": "{{ site.baseurl }}{{ post.url }}",

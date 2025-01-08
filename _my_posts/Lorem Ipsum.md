@@ -1,6 +1,6 @@
 ---
-title: Lorem Ipsum
-layout: post
+slug: lorem-ipsum
+created-date: 2020-04-11
 categories: [Tips, Markdown]
 image: /assets/img/oranges.jpg
 description: "Lorem Ipsum"
