@@ -16,7 +16,10 @@ jobs:
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 3.3
+          ruby-version: '3.3.6'
+
+      - name: Remove github-pages gem
+        run: bundle remove github-pages
 
       - name: Install dependencies
         run: |
@@ -27,7 +30,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
