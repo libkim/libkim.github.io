@@ -1,5 +1,12 @@
 <div class="post-wrapper">
-  <div class="post-title">{{ page.name }}</div>
+  <div class="post-title">
+    {% assign default_page_title = page.name | replace: page.ext, '' | downcase | capitalize %}
+    {% if page.title == default_page_title %}
+      {{ page.name | replace: page.ext, '' }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </div>
   <div class="post-metadata">
     <div class="post-datetime">작성 날짜: {{ page.created-date | date: "%Y-%m-%d" }}</div>
     <div class="post-datetime">수정 날짜:</div>

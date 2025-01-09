@@ -1,4 +1,5 @@
 ---
+title: YAMT입니다!
 slug: this-is-yamt
 created-date: 2020-05-21
 categories: [Typography, Markdown, Tips]

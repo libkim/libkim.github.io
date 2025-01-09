@@ -50,7 +50,7 @@
   var data = [
     {% for post in site.my_posts reversed %}
       {
-        "title": "{{ post.title | replace: '\', '' | replace: '"', '\"' }}",
+        "title": "{% assign default_post_title = post.name | replace: post.ext, '' | downcase | capitalize %}{% if post.title == default_post_title %}{{ post.name | replace: post.ext, '' }}{% else %}{{ post.title }}{% endif %}",
         "url": "{{ site.baseurl }}{{ post.url }}",
         "date": "{{ post.date }}"
       }{% unless forloop.last %},{% endunless %}
