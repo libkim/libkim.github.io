@@ -14,7 +14,7 @@ Dir.glob("_my_posts/*.md").each do |post|
   front_matter, body = content.match(/^(---\s*\n.*?\n?)^(---\s*$\n?)/m).captures
 
   # 프론트 매터를 해시로 변환
-  front_matter_hash = YAML.safe_load(front_matter, permitted_classes: [Date])
+  front_matter_hash = YAML.safe_load(front_matter, permitted_classes: [Date, Time])
 
   # 파일 생성일을 프론트 매터에 추가
   front_matter_hash['created-date'] = created_date
