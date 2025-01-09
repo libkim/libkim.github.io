@@ -18,9 +18,6 @@ jobs:
         with:
           ruby-version: '3.3.6'
 
-      - name: Remove github-pages gem
-        run: bundle remove github-pages
-
       - name: Install dependencies
         run: |
           gem install bundler
