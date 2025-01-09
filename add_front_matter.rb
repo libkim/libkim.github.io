@@ -1,5 +1,6 @@
 require 'yaml'
 require 'fileutils'
+require 'date'
 
 # 디렉토리 내의 모든 .md 파일을 순회
 Dir.glob("_my_posts/*.md").each do |post|
