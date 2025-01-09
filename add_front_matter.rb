@@ -20,7 +20,7 @@ Dir.glob("_my_posts/*.md").each do |post|
   front_matter_hash['created-date'] = created_date
 
   # 수정된 프론트 매터와 본문을 결합
-  new_content = front_matter_hash.to_yaml + "---\n" + body
+  new_content = front_matter_hash.to_yaml + "---\n\n" + body
 
   # 파일에 다시 쓰기
   File.write(post, new_content)
