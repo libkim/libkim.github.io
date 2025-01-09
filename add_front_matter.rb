@@ -11,7 +11,7 @@ Dir.glob("_my_posts/*.md").each do |post|
   content = File.read(post)
 
   # 프론트 매터 추출
-  front_matter, body = content.match(/^(---\s*\n.*?\n?)^---\s*$/m).captures
+  front_matter, body = content.split(/---\s*\n/m, 3)[1..2]
 
   # 프론트 매터를 해시로 변환
   front_matter_hash = YAML.safe_load(front_matter, permitted_classes: [Date, Time])
