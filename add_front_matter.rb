@@ -11,7 +11,7 @@ Dir.glob("_my_posts/*.md").each do |post|
   content = File.read(post)
 
   # 프론트 매터 추출
-  front_matter, body = content.match(/^(---\s*\n.*?\n?)^(---\s*$\n?)/m).captures
+  front_matter, body = content.match(/^(---\s*\n.*?\n?)^---\s*$/m).captures
 
   # 프론트 매터를 해시로 변환
   front_matter_hash = YAML.safe_load(front_matter, permitted_classes: [Date, Time])
@@ -20,7 +20,7 @@ Dir.glob("_my_posts/*.md").each do |post|
   front_matter_hash['created-date'] = created_date
 
   # 수정된 프론트 매터와 본문을 결합
-  new_content = front_matter_hash.to_yaml + "---\n" + body
+  new_content = front_matter_hash.to_yaml + body
 
   # 파일에 다시 쓰기
   File.write(post, new_content)
