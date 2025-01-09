@@ -26,4 +26,7 @@ Dir.glob("#{posts_dir}/*.md").each do |file|
 
   # 파일에 다시 쓰기
   File.write(file, new_content)
+
+  # 로그 메시지 출력
+  puts "Updated front matter for #{file}"
 end
