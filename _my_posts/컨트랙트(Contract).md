@@ -1,6 +1,6 @@
 ---
 slug: "contract"
-created-date: 2024-08-31T22:17:00
+date: 2024-08-31T22:17:00
 ---
 
 ## 종류

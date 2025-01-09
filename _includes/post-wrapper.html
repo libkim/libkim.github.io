@@ -8,8 +8,8 @@
     {% endif %}
   </div>
   <div class="post-metadata">
-    <div class="post-datetime">작성 날짜: {{ page.created-date | date: "%Y-%m-%d" }}</div>
-    <div class="post-datetime">수정 날짜:</div>
+    <div class="post-datetime">작성 날짜: {{ page.created-date }}</div>
+    <div class="post-datetime">수정 날짜: {{ page.date }}</div>
     <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
       * random line to make it work. This will be removed.
       {:toc}

@@ -29,6 +29,10 @@ jobs:
           bundler-cache: true
           cache-version: 0
           
+      - name: Run custom Ruby script
+        run: |
+          ruby add_front_matter.rb
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

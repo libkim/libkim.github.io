@@ -1,6 +1,6 @@
 ---
 slug: typography
-created-date: 2020-05-19
+date: 2020-05-19
 categories: [Typography, Markdown]
 image: /assets/img/rose.jpg
 description: "Basic typography and styling for your posts."
