@@ -1,16 +1,13 @@
 require 'yaml'
 require 'fileutils'
 
-# _my_post 디렉토리 경로
-posts_dir = '_my_post'
-
 # 디렉토리 내의 모든 .md 파일을 순회
-Dir.glob("#{posts_dir}/*.md").each do |file|
+Dir.glob("_my_posts/*.md").each do |post|
   # 파일 생성일 가져오기
-  created_date = File.birthtime(file)
+  created_date = File.birthtime(post)
 
   # 파일 내용 읽기
-  content = File.read(file)
+  content = File.read(post)
 
   # 프론트 매터 추출
   front_matter, body = content.match(/^(---\s*\n.*?\n?)^(---\s*$\n?)/m).captures
@@ -25,8 +22,8 @@ Dir.glob("#{posts_dir}/*.md").each do |file|
   new_content = front_matter_hash.to_yaml + body
 
   # 파일에 다시 쓰기
-  File.write(file, new_content)
+  File.write(post, new_content)
 
   # 로그 메시지 출력
-  puts "Updated front matter for #{file}"
+  puts "Updated front matter for #{post}"
 end
