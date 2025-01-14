@@ -56,6 +56,11 @@ webmaster_verifications:
   baidu:
 lang: en_US
 
+feed:
+  collections:
+    - my_posts
+
+
 # Highlighter
 kramdown:
   input: GFM

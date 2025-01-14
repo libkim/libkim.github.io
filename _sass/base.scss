@@ -22,6 +22,11 @@ a {
   text-decoration: inherit;
 }
 
+text {
+  font-family: ChosunKg;
+  font-weight: 900;
+}
+
 @media (min-width: 0px) {
   .post-container {
     width: 100%;
