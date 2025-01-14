@@ -84,6 +84,7 @@ text {
       "D D .";
     gap: 4px;
     aspect-ratio: 1 / 2;
+    background-color: white;
   }
   .upstairs-posts {
     display: grid;
@@ -219,7 +220,6 @@ text {
 
 .post-container-image {
   grid-area: D;
-  background-color: white;
 }
 
 .main-paginator {
@@ -243,7 +243,6 @@ text {
 
 .post-thumbnail {
   padding: 4px;
-  background-color: white;
 }
 
 @media (min-width: 0px) {

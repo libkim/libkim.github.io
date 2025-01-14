@@ -98,7 +98,7 @@
       data.slice(start, end).forEach((post, index) => {
         var gridRowStart = Math.ceil((6 - index) / 2);
         var gridRowEnd = gridRowStart + 1;
-        upstairsPosts.innerHTML += `<div class="post-thumbnail" style="grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a></div>`;
+        upstairsPosts.innerHTML += `<div class="post-thumbnail" style="font-size: 0.62rem; overflow: hidden; grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a>${post.content}</div>`;
       });
     } else if (width < 992) {
       var start = (currentPage - 1) * postsPerPage;
@@ -107,7 +107,7 @@
       data.slice(start, end).forEach((post, index) => {
         var gridRowStart = Math.ceil((9 - index) / 3);
         var gridRowEnd = gridRowStart + 1;
-        upstairsPosts.innerHTML += `<div class="post-thumbnail" style="font-size: 10px; overflow: hidden; grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a>${post.content}</div>`;
+        upstairsPosts.innerHTML += `<div class="post-thumbnail" style="font-size: 0.62rem; overflow: hidden; grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a>${post.content}</div>`;
       });
     } else if (width < 1400) {
       var start = (currentPage - 1) * postsPerPage;
@@ -115,12 +115,12 @@
       var end = breakpoint + 8;
 
       data.slice(start, breakpoint).forEach(post => {
-        downstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${typography(post.title)}</a></div>`;
+        downstairsPosts.innerHTML += `<div class="post-thumbnail" style="font-size: 0.62rem; overflow: hidden;"><a href="${post.url}">${typography(post.title)}</a>${post.content}</div>`;
       });
       data.slice(breakpoint, end).forEach((post, index) => {
         var gridRowStart = Math.ceil((8 - index) / 4);
         var gridRowEnd = gridRowStart + 1;
-        upstairsPosts.innerHTML += `<div class="post-thumbnail" style="grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a></div>`;
+        upstairsPosts.innerHTML += `<div class="post-thumbnail" style="font-size: 0.62rem; overflow: hidden; grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a>${post.content}</div>`;
       });
     } else {
       var start = (currentPage - 1) * postsPerPage;
@@ -130,10 +130,10 @@
       data.slice(start, breakpoint).forEach((post, index) => {
         var gridRowStart = Math.ceil((6 - index) / 3);
         var gridRowEnd = gridRowStart + 1;
-        downstairsPosts.innerHTML += `<div class="post-thumbnail" style="grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a></div>`;
+        downstairsPosts.innerHTML += `<div class="post-thumbnail" style="font-size: 0.62rem; overflow: hidden; grid-row: ${gridRowStart} / ${gridRowEnd};"><a href="${post.url}">${typography(post.title)}</a>${post.content}</div>`;
       });
       data.slice(breakpoint, end).forEach(post => {
-        upstairsPosts.innerHTML += `<div class="post-thumbnail"><a href="${post.url}">${typography(post.title)}</a></div>`;
+        upstairsPosts.innerHTML += `<div class="post-thumbnail" style="font-size: 0.62rem; overflow: hidden;"><a href="${post.url}">${typography(post.title)}</a>${post.content}</div>`;
       });
     }
   }
@@ -146,7 +146,13 @@
     const svgElements = words.map(word => {
       return `
         <svg width="100%" height="30">
-          <text x="0" y="20" font-size="20" textLength="100%" lengthAdjust="spacingAndGlyphs">${word}</text>
+          <filter id="myFilter">
+            <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+            <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+		        <feMorphology operator="dilate" radius="10" in="SourceGraphic" result="THICKNESS" />
+		        <feComposite operator="out" in="THICKNESS" in2="SourceGraphic" ></feComposite>
+	        </filter>
+          <text x="0" y="20" font-size="16" textLength="100%" lengthAdjust="spacingAndGlyphs" filter="url(#myFilter)">${word}</text>
         </svg>
       `;
     });
